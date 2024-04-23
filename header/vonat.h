@@ -1,33 +1,15 @@
 #ifndef VONAT_H 
 #define VONAT_H
 
-#include <iostream>
 /*
-* VONATok LEÍRÁSA * 
+ * file VONAT_H
 */
-
-class Ido{
-  int ora;
-  int perc;
-public:
-  Ido(int ora, int perc) : ora(ora), perc(perc) {}
-
-  int getOra();
-  int getPerc();
-  // std::ostream& operator<<(std:ostream& os ){ os << getOra() << ':' << getPerc << std::endl; }
-}; // END OF IDO
+#include <iostream>
+#include "./allomas.h"
 
 
-class Allomas {
-private:
-  const char* allomasNev; // STRING type adás neki?? 
-public:
-  Allomas(const char* allomas) : allomasNev(allomas) {} 
-}; // End of ALLOMAS
-
-
-// Vonat->Ido aggregációban. Ido megszűnik ha vonat megszűnik.
 class Vonat {
+private: 
   int szam;
   Allomas indulo;
   // Allomas* koztes;
@@ -35,19 +17,31 @@ class Vonat {
   // Ido indulas;
   // Ido erkezes;
   int kocsidb;
+
 public:
-  // Konstruktor
-  Vonat(int vszam, const char* indulop, const char* vegp, int kocsidb)
+  // Paraméter nélküli Konstruktor
+  Vonat() : szam(0), indulo(nullptr), veg(nullptr), kocsidb(0) {}
+
+  // Paraméteres Konstruktor
+  Vonat(int vszam, Allomas indulop, Allomas vegp, int kocsidb)
         : szam(vszam), indulo(indulop), veg(vegp), kocsidb(kocsidb) {} 
+
   // Setterek
   void setSzam(int szam = 0) { this->szam = szam; }
-  // void setIndulo(char* indulo) { this-> indulo = Allomas(indulo);}
-  // void setVeg(char* veg) { this->veg = Allomas(veg);}
+  void setIndulo(const char* indulo) { this-> indulo = Allomas(indulo);}
+  void setVeg(const char* veg) { this->veg = Allomas(veg);}
   void setKocsidb(int szam = 0) { this->szam = szam; }
 
+  // Getterek
+  int getSzam() const { return szam; }
+  Allomas getIndulo() const { return indulo; }
+  Allomas getVeg() const { return veg; }
+  int getKocsidb() const { return kocsidb; }
+
+  // Tagfüggvények 
   // void addTrain();
   
 }; // end of VONAt
 
 
-#endif // VONAT_H 
+#endif // !VONAT_H 

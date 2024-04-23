@@ -1,2 +1,2 @@
-123 Győr Budapest 1000 1230 5
-909 Budapest Győr 0700 0900 10
+123 Győr Budapest 3
+909 Budapest Győr 10
