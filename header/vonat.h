@@ -6,6 +6,7 @@
 */
 #include <iostream>
 #include "./allomas.h"
+#include "./ido.h"
 
 
 class Vonat {

@@ -1,38 +1,33 @@
 #ifndef JEGY_H
 #define JEGY_H
 
+
+/* BASICALLY EGY STRUCT */
 class Jegy {
-private:
-  int ar;
-
-
 public:
+  int vonatSzama;
+  Allomas honnan;
+  Allomas hova;
+  Ido indul;
+  Ido erkezik;
+  int ar;
+  int szazalek;
+
   virtual int ar();
-
-
+  void printJegy() const;
+  int getAr();
 };
 
-
+/* WHAT IF ÍROK EGY TEMPLATE CLASS-T A KEDVEZMÉNYESEKRE */
 class Diák : public Jegy{
 private:
-  char* tipus;
-  int kedvezmeny;
-
-public: 
-
-  int getKedv() { return kedvezmeny; }
+  String tipus;
+  int kedvezmeny; // Kedvezmény szazaleka
   
+public: 
+  int getKedv() { return kedvezmeny; }
   int ar(){ return ar * kedvezmeny; }
-
 };
-
-// class Kerékpár : public Jegy;
-
-
-
-
-
-
 
 
 

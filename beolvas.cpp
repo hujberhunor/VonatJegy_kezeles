@@ -3,6 +3,7 @@
 
 #include "./header/vonat.h"
 #include "./header/allomas.h"
+#include "./header/string5.h"
 
 static const int buffSize = 15;
 // Nagyon fontos!!!
@@ -11,10 +12,10 @@ static const int buffSize = 15;
 // // int currPos = 0;
 
 struct Seged {
-  char szam[15];
-  char indulo[15];
-  char veg[15];
-  char kocsidb[15];
+  char szam[buffSize];
+  char indulo[buffSize];
+  char veg[buffSize];
+  char kocsidb[buffSize];
 };
 
 /* VONATOK FILE BEOLVASÁSA */
@@ -23,18 +24,28 @@ struct Seged {
 void beolvas(int& currPos, Vonat& v){
     const char* vonatok = "./input/vonatok.txt";    // const mert megadtam, hogy hol van és ehhez nem nyúlsz hozzá
     std::ifstream file (vonatok);                   // Megynitom a file-t
-    char buffer[15];                                // Székesfehérvár a leghosszabb magyar városnél 14 karakterrel
 
     if (file.is_open()){ 
-
       Seged adatok;
+      
       file >> adatok.szam >> adatok.indulo >> adatok.veg >> adatok.kocsidb;
       // v.setSzam(std::atoi(adatok.szam));
       // v.setIndulo(adatok.indulo);
       // v.setVeg(adatok.veg);
       // v.setKocsidb(std::atoi(adatok.kocsidb));
-      Vonat(std::atoi(adatok.szam), adatok.indulo, adatok.veg, std::atoi(adatok.kocsidb));
+    
+      String s1(adatok.indulo, buffSize); 
+        std::cout << "String " << s1 << '\n';
+      String s2(adatok.veg, buffSize);
+        std::cout << "String " << s2 << '\n';
+      
+      Allomas a1(s1);
+        std::cout << "Allomas "<< a1 << '\n';
+      Allomas a2(s2);
 
+
+      Vonat v(std::atoi(adatok.szam), a1, a2, std::atoi(adatok.kocsidb));
+        std::cout << "GECI "<< v.getIndulo() << '\n';
 
       // // Ahol az előző befejezte onnan folytatja az olvasást. 
       // file.seekg(currPos);
@@ -69,13 +80,11 @@ void beolvas(int& currPos, Vonat& v){
 int main(){
   int currPos = 0;
 
-  Vonat a;
-  beolvas(currPos, a);
-  // Ellenőrzés
-  std::cout << "Szam: " << a.getSzam() << std::endl;
-  std::cout << "Indulo: " << a.getIndulo() << std::endl;
-  std::cout << "Veg: " << a.getVeg() << std::endl;
-  std::cout << "Kocsidb: " << a.getKocsidb() << std::endl;
+  Vonat v;
+  beolvas(currPos, v);
+
+  
+
 
   return 0;
 }

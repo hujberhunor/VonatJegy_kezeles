@@ -1,119 +1,97 @@
 /**
  *
  * \file string5.cpp
- *
- */
-
-#ifdef _MSC_VER
-// MSC ne adjon figyelmeztető üzenetet a stringkezelő függvényekre.
-  #define _CRT_SECURE_NO_WARNINGS
-#endif
+*/
+// #ifdef _MSC_VER
+// MSC ne adjon figyelmeztető üzenetet a C sztringkezelő függvényeire
+  // #define _CRT_SECURE_NO_WARNINGS
+// #endif
 
 #include <iostream>             // Kiíratáshoz
-#include <cstring>              // Stringműveletekhez
-
-#include "memtrace.h"           // a standard headerek után kell lennie
+#include <cstring>              // Sztringműveletekhez
+// #include "memtrace.h"           // a standard headerek után kell lennie
 #include "string5.h"
 
-using std::cin;
-using std::ios_base;
 
-/// Konstruktor: egy char karakterből (createStrFromChar)
-String::String(char ch) {
-   // Meghatározzuk a hosszát
-    len = 1;
-    // Lefoglalunk a helyet a hossznak + a lezaró nullának
-    pData = new char[len+1];
-    // Betesszük a karaktert
-    pData[0] = ch;
-    pData[1] = '\0';
+/// Konstruktorok: egy char karakterből (createString)
+///                egy nullával lezárt char sorozatból (createString)
+String::String(char c){
+   len=1;
+   pData=new char[2];
+   pData[0]=c;
+   pData[1]='\0';
+}
+
+/// Másoló konstruktor: String-ből készít (createString)
+String::String(const char* str){
+   if(str){
+   len=strlen(str);
+   pData=new char[len+1];
+   strcpy(pData,str);
+   }
+}
+
+String::String(const String& s0){
+   len=s0.len;
+   pData=new char[len+1];
+   strcpy(pData,s0.pData);
 }
 
 
-// Konstruktor: egy nullával lezárt char sorozatból (createStringFromCharStr)
-String::String(const char *p) {
-    // Meghatározzuk a hosszát
-    len = strlen(p);
-    // Helyet foglalunk
-    pData = new char[len+1];
-    // Bemásoljuk a stringet, ami le van zárva 0-val így használható az strcpy is
-    strcpy(pData, p);
+/// Destruktor (disposeString)
+String::~String(){
+   delete[] pData;
 }
 
-// Másoló konstruktor
-String::String(const String& s1) {
-    // Meghatározzuk a hosszát
-    len = s1.len;
-    // Helyet foglalunk
-    pData = new char[len+1];
-    // Bemásoljuk a stringet, ami le van zárva 0-val így használható az strcpy is
-    strcpy(pData, s1.pData);
+// Operatokrok
+String& String::operator=(const String &s0){
+   if(this!=&s0){
+      delete[] pData;
+      len=s0.len;
+      pData=new char[len+1];
+      strcpy(pData,s0.pData);
+   }
+   return *this;
 }
 
-// operator=
-String& String::operator=(const String& rhs_s) {
-    if (this != &rhs_s) {
-        delete[] pData;
-        len = rhs_s.len;
-        // Helyet foglalunk
-        pData = new char[len+1];
-        // Bemásoljuk a stringet, ami le van zárva 0-val így használható az strcpy is
-        strcpy(pData, rhs_s.pData);
-    }
-    return *this;
+
+String String::operator+ (const String &s0)const{
+   String s1; delete[] s1.pData;
+   s1.len=len+s0.len;
+   s1.pData=new char[s1.len+1];
+   strcpy(s1.pData,pData);
+   strcat(s1.pData,s0.pData);
+   return s1;
 }
 
-// [] operátorok: egy megadott indexű elem REFERENCIÁJÁVAL térnek vissza.
-// indexhiba esetén dobjon egy const char * típusú hibát!
-char& String::operator[](unsigned int idx) {
-    if (idx >= len) throw "String: indexelesi hiba";
-    return pData[idx];
+
+String String::operator+ (char c)const{
+   String s1; delete[] s1.pData;
+   s1.len=len+1;
+   s1.pData=new char[s1.len+1];
+   strcpy(s1.pData,pData);
+   s1.pData[s1.len-1]=c;
+   s1.pData[s1.len]='\0';
+   return s1;
 }
 
-const char& String::operator[](unsigned int idx) const {
-    if (idx >= len) throw "String: indexelesi hiba";
-    return pData[idx];
+
+String operator+ (char c, String s0){
+   String ch(c);
+   return String(ch+s0);
 }
 
-// + operátor, ami két stringet ad össze (concatString)
-String String::operator+(const String& rhs_s) const {
-    String temp;		// ide kerül az eredmény
-    // Meghatározza az új string hosszát
-    temp.len = len + rhs_s.len;
-    // Felszabadítja a temp adattaerületét
-    delete []temp.pData;
-    // lefoglalja a memóriát az új stringnek.
-    temp.pData = new char[temp.len+1];
-    // Az elejére bemásolja az első stringet
-    strcpy(temp.pData, pData);
-    // Bemásolja a második stringet.
-    strcat(temp.pData, rhs_s.pData);
 
-    return temp;		// visszatér az eredménnyel
-
-}
-// << operator, ami kiír az ostream-re
-std::ostream& operator<<(std::ostream& os, const String& s0) {
-    os << s0.c_str();
-    return os;
+char& String::operator[] (size_t n)const{
+   if (n>=len || n<0)
+      throw "OODMXV";
+   return pData[n];
 }
 
-// << operátor, ami beolvas az istreamről egy szót
-std::istream& operator>>(std::istream& is, String& s0) {
-    unsigned char ch;
-    s0 = String("");            // üres string, ehhez fűzünk hozzá
-	std::ios_base::fmtflags fl = is.flags(); // eltesszük a régi flag-eket
-	is.setf(ios_base::skipws);			// az elején eldobjuk a ws-t
-    while (is >> ch) {
-	    is.unsetf(ios_base::skipws);	// utána pedig már nem
-        if (isspace(ch)) {
-            is.putback(ch);             // na ezt nem kérjük
-            break;
-        } else {
-            s0 = s0 + ch;               // végére fűzzük a karaktert
-        }
-    }
-	is.setf(fl);						// visszaállítjuk a flag-eket
-    return is;
+
+/// << operator, ami kiír az ostream-re
+std::ostream& operator << (std::ostream& os, String const s0){
+   os<<s0.c_str();
+   return os;
 }
 
