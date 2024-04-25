@@ -3,6 +3,9 @@
 
 /* file ALLOMASH_H */
 
+
+FASZ FASZ FSAZ
+
 #include <iostream>
 #include "./string5.h"
 #include "./ido.h"
