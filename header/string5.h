@@ -1,9 +1,6 @@
 #ifndef STRING_H
 #define STRING_H
 
-#define ELKESZULT 10
-
-
 #include <iostream>
 #include <cstring>
 

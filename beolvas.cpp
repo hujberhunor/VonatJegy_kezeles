@@ -25,7 +25,7 @@ void beolvas(int& currPos, Vonat& v){
     const char* vonatok = "./input/vonatok.txt";    // const mert megadtam, hogy hol van és ehhez nem nyúlsz hozzá
     std::ifstream file (vonatok);                   // Megynitom a file-t
 
-    if (file.is_open()){ 
+    if (file.is_open() ){ 
       Seged adatok;
       
       file >> adatok.szam >> adatok.indulo >> adatok.veg >> adatok.kocsidb;
@@ -45,7 +45,7 @@ void beolvas(int& currPos, Vonat& v){
 
 
       Vonat v(std::atoi(adatok.szam), a1, a2, std::atoi(adatok.kocsidb));
-        std::cout << "GECI "<< v.getIndulo() << '\n';
+        std::cout << "GECI "<< v.getIndulo() << " Belső vége" << '\n';
 
       // // Ahol az előző befejezte onnan folytatja az olvasást. 
       // file.seekg(currPos);
@@ -82,6 +82,7 @@ int main(){
 
   Vonat v;
   beolvas(currPos, v);
+  std::cout << v.getIndulo() << std::endl ;
 
   
 

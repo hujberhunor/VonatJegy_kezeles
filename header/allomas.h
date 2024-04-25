@@ -28,7 +28,7 @@ class Allomas{
 private:
   String allomasNev;  
 public:    
-  Allomas(const char* allomas = "") : allomasNev(allomas) {}
+  Allomas(const char* allomas) : allomasNev(allomas) {}
   Allomas(const String& allomas) : allomasNev(allomas) {}
   
   // Getterek

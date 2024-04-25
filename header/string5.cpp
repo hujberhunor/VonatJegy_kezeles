@@ -12,7 +12,6 @@
 // #include "memtrace.h"           // a standard headerek után kell lennie
 #include "string5.h"
 
-
 /// Konstruktorok: egy char karakterből (createString)
 ///                egy nullával lezárt char sorozatból (createString)
 String::String(char c){
@@ -40,6 +39,7 @@ String::String(const String& s0){
 
 /// Destruktor (disposeString)
 String::~String(){
+  if(len == 0) return;
    delete[] pData;
 }
 
