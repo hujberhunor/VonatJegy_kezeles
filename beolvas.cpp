@@ -62,6 +62,12 @@ void addTrain(int& currPos){
 
 
 
+
+
+  char nextChar = file.peek(); 
+  if (nextChar == '\n') { 
+   currPos = file.tellg(); // Kurzor helyzete. 
+  } // end of peek
   file.close();
 } // end of addTrain
 
