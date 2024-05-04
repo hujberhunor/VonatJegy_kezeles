@@ -51,6 +51,22 @@ Vonat beolvas(int& currPos, Vonat& v){
   return v; 
 } // end of beolvas
 
+
+
+void addTrain(int& currPos){
+  const char* vonatok = "./input/vonatok.txt";    // const mert megadtam, hogy hol van és ehhez nem nyúlsz hozzá
+  std::ifstream file (vonatok);                   // Megynitom a file-t
+  file.seekg(currPos);                            // Odaugrom ahol abbahagytam az olvaásást / előző írást.
+
+
+
+
+
+  file.close();
+} // end of addTrain
+
+
+
 int main(){
   // Itt tárolon hol vagyok a file-ban
   // Mind a beolvasás mind pedig az íráshoz KELL!
