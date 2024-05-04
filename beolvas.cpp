@@ -53,23 +53,23 @@ Vonat beolvas(int& currPos, Vonat& v){
 
 
 
+
 void addTrain(int& currPos){
-  const char* vonatok = "./input/vonatok.txt";    // const mert megadtam, hogy hol van és ehhez nem nyúlsz hozzá
-  std::ifstream file (vonatok);                   // Megynitom a file-t
-  file.seekg(currPos);                            // Odaugrom ahol abbahagytam az olvaásást / előző írást.
+    const char* vonatok = "./input/vonatok.txt";    
+    std::ofstream file (vonatok, std::ios::app); 
+  
+    if(file.is_open()){
+      file.seekp(currPos); // Megfelelő helyre ugrok
+        
+      file << "123 betu betu 1 0000 1111";
 
+      currPos = file.tellp();
+      std::cout << currPos;
+    }
 
+    file.close();
+}
 
-
-
-
-
-  char nextChar = file.peek(); 
-  if (nextChar == '\n') { 
-   currPos = file.tellg(); // Kurzor helyzete. 
-  } // end of peek
-  file.close();
-} // end of addTrain
 
 
 
@@ -77,26 +77,13 @@ int main(){
   // Itt tárolon hol vagyok a file-ban
   // Mind a beolvasás mind pedig az íráshoz KELL!
   int currPos = 0;
-  Vonat v;
-  Vonat v1;
+  Vonat v, v1, v2, v3;
 
-  beolvas(currPos, v);
-  beolvas(currPos, v1);
-  v.kiir();
-  v1.kiir();
+  beolvas(currPos, v); v.kiir();
+  beolvas(currPos, v1); v1.kiir();
+  beolvas(currPos, v2); v2.kiir();
+  addTrain(currPos);
+  beolvas(currPos, v3); v3.kiir();
 
-  // std::cout << v.getSzam() << std::endl ;
-  // std::cout << v.getIndulo() << std::endl ;
-  // std::cout << v.getVeg() << std::endl ;
-  // std::cout << v.getKocsidb() << std::endl ;
-  // std::cout << v.getIndulas() << std::endl ;
-  // std::cout << v.getErkezes() << std::endl ;
-  // std::cout << "------" << std::endl;
-  // std::cout << v1.getSzam() << std::endl ;
-  // std::cout << v1.getIndulo() << std::endl ;
-  // std::cout << v1.getVeg() << std::endl ;
-  // std::cout << v1.getKocsidb() << std::endl ;
-  // std::cout << v1.getIndulas() << std::endl ;
-  // std::cout << v1.getErkezes() << std::endl ;
   return 0;
 }

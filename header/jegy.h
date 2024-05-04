@@ -4,19 +4,14 @@
 #include <iostream>
 
 /* BASICALLY EGY STRUCT */
-class Jegy {
+class Jegy : private Vonat {
 public:
-  int vonatSzama;
-  Allomas honnan;
-  Allomas hova;
-  Ido indul;
-  Ido erkezik;
   int ar;
   int szazalek;
 
   virtual int ar();
-  void printJegy() const;
-  int getAr();
+  virtual void printJegy() const;
+  virtual int getAr();
 };
 
 /* WHAT IF ÍROK EGY TEMPLATE CLASS-T A KEDVEZMÉNYESEKRE */
