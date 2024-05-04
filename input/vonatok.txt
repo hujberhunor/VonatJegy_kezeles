@@ -1,2 +1,2 @@
-123 Győr Budapest 3
-909 Budapest Győr 10
+123 Győr Budapest 3 0901 1230
+909 Budapest Győr 10 1111 1651

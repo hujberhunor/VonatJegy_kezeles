@@ -11,6 +11,8 @@ struct Seged {
   char indulo[buffSize];
   char veg[buffSize];
   char kocsidb[buffSize];
+  char indulas[buffSize];
+  char erkezes[buffSize];
 };
 
 /* VONATOK FILE BEOLVASÁSA */
@@ -26,13 +28,15 @@ Vonat beolvas(int& currPos, Vonat& v){
       file.seekg(currPos);
       // Fájl beolvasása egy segéd struktúrába 
       Seged seged;
-      file >> seged.szam >> seged.indulo >> seged.veg >> seged.kocsidb;
+      file >> seged.szam >> seged.indulo >> seged.veg >> seged.kocsidb >> seged.indulas >> seged.erkezes;
      
       // Setterek, mert a konstruktor nem akarja megenni
       v.setSzam(atoi(seged.szam));
       v.setIndulo(seged.indulo);
       v.setVeg(seged.veg);
       v.setKocsidb(atoi(seged.kocsidb));
+      v.setIndulas(seged.indulas);
+      v.setErkezes(seged.erkezes);
 
       // Minden új sor kezdeténél meg kell álnom és el kell tárolnom
       // az éppenleges kurzor helyzetet, hogy a következő objektumba  
@@ -56,15 +60,21 @@ int main(){
 
   beolvas(currPos, v);
   beolvas(currPos, v1);
+  v.kiir();
+  v1.kiir();
 
-  std::cout << v.getSzam() << std::endl ;
-  std::cout << v.getIndulo() << std::endl ;
-  std::cout << v.getVeg() << std::endl ;
-  std::cout << v.getKocsidb() << std::endl ;
-  std::cout << "------" << std::endl;
-  std::cout << v1.getSzam() << std::endl ;
-  std::cout << v1.getIndulo() << std::endl ;
-  std::cout << v1.getVeg() << std::endl ;
-  std::cout << v1.getKocsidb() << std::endl ;
+  // std::cout << v.getSzam() << std::endl ;
+  // std::cout << v.getIndulo() << std::endl ;
+  // std::cout << v.getVeg() << std::endl ;
+  // std::cout << v.getKocsidb() << std::endl ;
+  // std::cout << v.getIndulas() << std::endl ;
+  // std::cout << v.getErkezes() << std::endl ;
+  // std::cout << "------" << std::endl;
+  // std::cout << v1.getSzam() << std::endl ;
+  // std::cout << v1.getIndulo() << std::endl ;
+  // std::cout << v1.getVeg() << std::endl ;
+  // std::cout << v1.getKocsidb() << std::endl ;
+  // std::cout << v1.getIndulas() << std::endl ;
+  // std::cout << v1.getErkezes() << std::endl ;
   return 0;
 }
