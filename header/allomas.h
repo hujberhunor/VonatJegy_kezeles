@@ -3,39 +3,22 @@
 
 /* file ALLOMASH_H */
 
-
-FASZ FASZ FSAZ
+// STD::STRING-GEL MEGY A CUCCOKS
 
 #include <iostream>
-#include "./string5.h"
 #include "./ido.h"
-
-// class Allomas {
-// private:
-//   const char* allomasNev; // STRING type adás neki?? 
-// public:
-//   Allomas() : allomasNev(nullptr) {}
-//   Allomas(const char* allomas) : allomasNev(allomas) {} 
-//
-//   // Getterek
-//   const char* getAllomas() const { return allomasNev; }
-//
-// }; // End of ALLOMAS
-// // Allomas op<< overload
-// std::ostream& operator<<(std::ostream& os, const Allomas& allomas) { return os << allomas.getAllomas(); }
-//
-// --- // 
 
 /* STRINGGEL ÚJRAÍRVA */
 class Allomas{
 private:
-  String allomasNev;  
+  std::string allomasNev;  
 public:    
   Allomas(const char* allomas) : allomasNev(allomas) {}
-  Allomas(const String& allomas) : allomasNev(allomas) {}
+  Allomas(char* allomas) : allomasNev(allomas) {}
+  // Allomas(const std::string& allomas) : allomasNev(allomas) {}
   
   // Getterek
-  String getAllomas() const { return allomasNev; }
+  std::string getAllomas() const { return allomasNev; }
 
 }; // End of ALLOMAS
 // Allomas op<< overload

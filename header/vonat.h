@@ -21,17 +21,17 @@ private:
 
 public:
   // Paraméter nélküli Konstruktor
-  Vonat() : szam(0), indulo(nullptr), veg(nullptr), kocsidb(0) {}
+  Vonat() : szam(0), indulo(""), veg(""), kocsidb(0) {}
 
   // Paraméteres Konstruktor
   Vonat(int vszam, Allomas indulop, Allomas vegp, int kocsidb)
         : szam(vszam), indulo(indulop), veg(vegp), kocsidb(kocsidb) {} 
 
   // Setterek
-  void setSzam(int szam = 0) { this->szam = szam; }
+  void setSzam(int szam) { this->szam = szam; }
   void setIndulo(const char* indulo) { this-> indulo = Allomas(indulo);}
   void setVeg(const char* veg) { this->veg = Allomas(veg);}
-  void setKocsidb(int szam = 0) { this->szam = szam; }
+  void setKocsidb(int kocsidb ) { this->kocsidb = kocsidb; }
 
   // Getterek
   int getSzam() const { return szam; }

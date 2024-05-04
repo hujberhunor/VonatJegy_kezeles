@@ -1,6 +1,7 @@
 #ifndef JEGY_H
 #define JEGY_H
 
+#include <iostream>
 
 /* BASICALLY EGY STRUCT */
 class Jegy {
@@ -21,7 +22,7 @@ public:
 /* WHAT IF ÍROK EGY TEMPLATE CLASS-T A KEDVEZMÉNYESEKRE */
 class Diák : public Jegy{
 private:
-  String tipus;
+  std::string tipus;
   int kedvezmeny; // Kedvezmény szazaleka
   
 public: 
