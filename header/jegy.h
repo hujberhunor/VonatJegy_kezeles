@@ -5,14 +5,26 @@
 
 /* BASICALLY EGY STRUCT */
 class Jegy : private Vonat {
-public:
   int ar;
   int szazalek;
 
-  virtual int ar();
-  virtual void printJegy() const;
+public:
+  virtual int ar(){
+    return ar * szazalek;
+  }
+
+  virtual void printJegy(Vonat v) const{
+    v.kiir(); 
+    std::cout << "Ár "<< ar;
+    std::cout << "Százalék " << szazalek;
+  }
+
   virtual int getAr();
-};
+}; // END OF JEGY class
+
+
+
+
 
 /* WHAT IF ÍROK EGY TEMPLATE CLASS-T A KEDVEZMÉNYESEKRE */
 class Diák : public Jegy{

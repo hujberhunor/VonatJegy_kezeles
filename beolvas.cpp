@@ -62,6 +62,7 @@ void addTrain(int& currPos){
       file.seekp(currPos); // Megfelelő helyre ugrok
         
       file << "123 betu betu 1 0000 1111";
+      std::cout << "Write into the file" << std::endl;
 
       currPos = file.tellp();
       std::cout << currPos;
@@ -84,6 +85,7 @@ int main(){
   beolvas(currPos, v2); v2.kiir();
   addTrain(currPos);
   beolvas(currPos, v3); v3.kiir();
+  addTrain(currPos);
 
   return 0;
 }
