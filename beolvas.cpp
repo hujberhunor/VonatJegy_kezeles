@@ -31,7 +31,15 @@ Vonat beolvas(int& currPos, Vonat& v){
       v.setIndulo(seged.indulo);
       v.setVeg(seged.veg);
       v.setKocsidb(atoi(seged.kocsidb));
-
+    //   // Egy vonat objektum egy vonatot tartalmazhaz csak. 
+    //   // Minden új sor kezdeténél meg kell álnom és el kell tárolnom
+    //   // az éppenleges kurzor helyzetet, hogy a következő objektumba  
+    //   // olvasás tudja hol kell folytatni. 
+      char nextChar = file.peek(); 
+      if (nextChar == '\n') { 
+       currPos = file.tellg(); // Kurzor helyzete. 
+        std::cout << "Végére értem\n"; 
+      } // peek
     } // end of if
 
   file.close();
@@ -43,13 +51,19 @@ int main(){
   // Mind a beolvasás mind pedig az íráshoz KELL!
   int currPos = 0;
   Vonat v;
+  Vonat v1;
 
   beolvas(currPos, v);
+  beolvas(currPos, v1);
 
   std::cout << v.getSzam() << std::endl ;
   std::cout << v.getIndulo() << std::endl ;
   std::cout << v.getVeg() << std::endl ;
   std::cout << v.getKocsidb() << std::endl ;
-
+  std::cout << "------" << std::endl;
+  std::cout << v1.getSzam() << std::endl ;
+  std::cout << v1.getIndulo() << std::endl ;
+  std::cout << v1.getVeg() << std::endl ;
+  std::cout << v1.getKocsidb() << std::endl ;
   return 0;
 }
