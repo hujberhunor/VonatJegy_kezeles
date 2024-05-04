@@ -22,6 +22,8 @@ Vonat beolvas(int& currPos, Vonat& v){
     // Vonat v;
 
     if (file.is_open() ){ 
+      // A currpos poziciora ugrom
+      file.seekg(currPos);
       // Fájl beolvasása egy segéd struktúrába 
       Seged seged;
       file >> seged.szam >> seged.indulo >> seged.veg >> seged.kocsidb;
@@ -31,15 +33,14 @@ Vonat beolvas(int& currPos, Vonat& v){
       v.setIndulo(seged.indulo);
       v.setVeg(seged.veg);
       v.setKocsidb(atoi(seged.kocsidb));
-    //   // Egy vonat objektum egy vonatot tartalmazhaz csak. 
-    //   // Minden új sor kezdeténél meg kell álnom és el kell tárolnom
-    //   // az éppenleges kurzor helyzetet, hogy a következő objektumba  
-    //   // olvasás tudja hol kell folytatni. 
+
+      // Minden új sor kezdeténél meg kell álnom és el kell tárolnom
+      // az éppenleges kurzor helyzetet, hogy a következő objektumba  
+      // olvasás tudja hol kell folytatni. 
       char nextChar = file.peek(); 
       if (nextChar == '\n') { 
        currPos = file.tellg(); // Kurzor helyzete. 
-        std::cout << "Végére értem\n"; 
-      } // peek
+      } // end of peek
     } // end of if
 
   file.close();
