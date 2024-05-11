@@ -1,7 +1,7 @@
 Todo
 - [] Beolvas buffer overload kezelés
     - MaxMéret, ha tulnő megkétszerezem?
-
+- [] HIBAKEZELÉS, kivétekek dobálása
 Vonat->Ido aggregációban. Ido megszűnik ha vonat megszűnik.
 Same goes with Allomas és String
 

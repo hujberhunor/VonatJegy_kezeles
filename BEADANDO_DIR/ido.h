@@ -28,18 +28,11 @@ public:
   int getPerc() const {return perc; };
 
 }; // END OF IDO
-
-std::ostream& operator<<(std::ostream& os, const Ido& ido){
-  os << std::setw(2) << std::setfill('0') << ido.getOra();
-  os << std::setw(2) << std::setfill('0') << ido.getPerc();
-  return os;
-} // operator<<()
-
-
 // Globális tgf  
-// void print_ido(const Ido& ido) {
-//     std::cout << std::setw(2) << std::setfill('0') << ido.getOra() << ':';
-//     std::cout << std::setw(2) << std::setfill('0') << ido.getPerc();
-// }
+std::ostream& operator<<(std::ostream& os, const Ido& ido) {
+    os << std::setw(2) << std::setfill('0') << ido.getOra() << ':';
+    os << std::setw(2) << std::setfill('0') << ido.getPerc();
+    return os;
+}
 
 #endif // !IDO_H
