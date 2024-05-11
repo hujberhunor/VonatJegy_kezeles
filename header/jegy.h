@@ -2,40 +2,47 @@
 #define JEGY_H
 
 #include <iostream>
+#include "./vonat.h"
 
-/* BASICALLY EGY STRUCT */
+// Jegy minden elemét tartalmazza a vonatnak, hiszen mindet ki is kell írnom. 
 class Jegy : private Vonat {
   int ar;
   int szazalek;
 
 public:
-  virtual int ar(){
-    return ar * szazalek;
-  }
+  Jegy(int ar = 0, int szazalek = 0) : ar(ar), szazalek(szazalek)  {}
 
-  virtual void printJegy(Vonat v) const{
+  virtual int fizetendo(){ return ar * szazalek; }
+
+  virtual void nyomtat(Vonat& v){
+    std::cout << "### Jegy ###\n";
+   
+    std::cout << "--- Vonatod adatai ---" << std::endl;
+    
     v.kiir(); 
-    std::cout << "Ár "<< ar;
-    std::cout << "Százalék " << szazalek;
-  }
 
-  virtual int getAr();
+    std::cout << "--- Mocskos pénzügyek ---" << std::endl;
+    std::cout << "Ár: "<< ar << std::endl;
+    std::cout << "Százalék: " << szazalek << std::endl;
+    std::cout << "Fizetendő: " << fizetendo() << std::endl;
+   
+    std::cout << "--- Vonalkód ---" << std::endl;
+    std::cout << "||| | || | || |  |" << std::endl;
+  }
+ 
 }; // END OF JEGY class
 
 
-
-
-
-/* WHAT IF ÍROK EGY TEMPLATE CLASS-T A KEDVEZMÉNYESEKRE */
-class Diák : public Jegy{
-private:
-  std::string tipus;
-  int kedvezmeny; // Kedvezmény szazaleka
-  
-public: 
-  int getKedv() { return kedvezmeny; }
-  int ar(){ return ar * kedvezmeny; }
-};
+// /* WHAT IF ÍROK EGY TEMPLATE CLASS-T A KEDVEZMÉNYESEKRE */
+// class Diak : private Jegy{
+// private:
+//   std::string type = "Diak";
+//   int kedvezmeny = 50; // Kedvezmény szazaleka
+//   
+// public: 
+//   int getKedv() { return kedvezmeny; }
+//   int ar(){ return this->ar * kedvezmeny; }
+// };
 
 
 

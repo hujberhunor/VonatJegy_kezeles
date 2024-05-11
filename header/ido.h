@@ -27,6 +27,8 @@ public:
   int getOra() const { return ora; };
   int getPerc() const {return perc; };
 
+
+
 }; // END OF IDO
 
 std::ostream& operator<<(std::ostream& os, const Ido& ido){
@@ -35,11 +37,5 @@ std::ostream& operator<<(std::ostream& os, const Ido& ido){
   return os;
 } // operator<<()
 
-
-// Globális tgf  
-// void print_ido(const Ido& ido) {
-//     std::cout << std::setw(2) << std::setfill('0') << ido.getOra() << ':';
-//     std::cout << std::setw(2) << std::setfill('0') << ido.getPerc();
-// }
 
 #endif // !IDO_H

@@ -3,7 +3,17 @@
 
 #include "./header/vonat.h"
 #include "./header/allomas.h"
+#include "./header/jegy.h"
 
+/* 
+ * FILE BEOLVAS.CPP
+ */
+
+
+// Magyarország leghosszabb településneve 15 karakter
+// 25 karakterbe bele kell férnia
+// Biztosítani lehetne, egy gyors checkel 
+// és egy buffSize növeléssel, de nem láttam értelmét. 
 static const int buffSize = 25;
 struct Seged {
   char szam[buffSize];
@@ -15,8 +25,9 @@ struct Seged {
 };
 
 /* VONATOK FILE BEOLVASÁSA */
-// Beolvaásás a file-ból 
+// Beolvaásás a file-ból egy segéd strukturába, onnan pedig egy Vonat objektum feltöltés 
 // @param int& currPos a kurzor éppenleges helyzete a fileban. 
+// @return visszaad egy feltöltött Vonat objektumot
 Vonat beolvas(std::streampos& currPos){
     const char* vonatok = "./input/vonatok.txt";    // const mert megadtam, hogy hol van és ehhez nem nyúlsz hozzá
     std::ifstream file (vonatok);                   // Megynitom a file-t
@@ -29,7 +40,7 @@ Vonat beolvas(std::streampos& currPos){
       Seged seged;
       file >> seged.szam >> seged.indulo >> seged.veg >> seged.kocsidb >> seged.indulas >> seged.erkezes;
      
-      // Setterek, mert a konstruktor nem akarja megenni
+      // Setterek, mert a konstruktor nem akarta megenni
       von.setSzam(atoi(seged.szam));
       von.setIndulo(seged.indulo);
       von.setVeg(seged.veg);
@@ -51,17 +62,20 @@ Vonat beolvas(std::streampos& currPos){
 } // end of beolvas
 
 
+// Vonatok hozzáadása
+// @param currPos a streamben elfoglalt helyem
+// @param minden-más a vonat class feltöltéséhez szükséges adatok
 void addTrain(std::streampos& currPos, int szam, Allomas indulo, Allomas veg, int kocsidb, Ido indulas, Ido erkezes){
     const char* vonatok = "./input/vonatok.txt";    
     std::ofstream file (vonatok, std::ios::app); 
-  
+ 
+    // HIBAKEZELÉS IDE
+
     if(file.is_open()){
       file.seekp(currPos); // Megfelelő helyre ugrok
       
       file << szam << " " << indulo << " " << veg << " " << kocsidb << " "
            << indulas << " " << erkezes << std::endl;
-      
-      // currPos = file.tellp(); // A továbbiakban innen akarom folytatni. 
     }
     file.close();
 } // addTrain
@@ -73,12 +87,18 @@ int main(){
   // Mind a beolvasás mind pedig az íráshoz KELL!
   std::streampos currPos;
 
+  // Probálgatások
   beolvas(currPos).kiir(); std::cout << "---\n";
   beolvas(currPos).kiir(); std::cout << "---\n";
   beolvas(currPos).kiir(); std::cout << "---\n";
   beolvas(currPos).kiir(); std::cout << "---\n";
   addTrain(currPos, 69, "Ecséd", "Bivalybaszod", 5, "0440", "0630");
+  addTrain(currPos, 80, "Geci", "Nem-geci", 5, "0440", "0630");
   beolvas(currPos).kiir(); std::cout << "---\n";
+  Vonat v = beolvas(currPos); v.kiir(); std::cout << "---\n";
+
+  Jegy j1(100, 400);
+  j1.nyomtat(v);
   
   return 0;
 }

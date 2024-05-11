@@ -11,14 +11,13 @@
 
 class Vonat {
 private: 
-  int szam;
-  Allomas indulo;
+  int szam; // Vonatszám 
+  Allomas indulo; // Kiinduló állomas
   // Allomas* koztes;
-  Allomas veg;
-  int kocsidb;
-  Ido indulas;
-  Ido erkezes;
-
+  Allomas veg; // Végállomas
+  int kocsidb; // Kocsik darabszáma, basically semmit sem csinál
+  Ido indulas; // Indulási idő
+  Ido erkezes; // Érkezési idp
 
 public:
   // Paraméter nélküli Konstruktor
@@ -44,20 +43,22 @@ public:
   Ido getIndulas() const    { return indulas; }
   Ido getErkezes() const    { return erkezes; }
 
-
+  // Kiírja a vonat adatait. 
+  // A jegyhez használom
   void kiir() const {
     std::cout << "Vonat szama: " << szam << std::endl;
     std::cout << "Indulasi allomas: " << indulo << std::endl;
     std::cout << "Erkezesi allomas: " << veg << std::endl;
     std::cout << "Kocsi darabszam: " << kocsidb << std::endl;
-    std::cout << "Indulas idopontja: " << indulas << std::endl;
-    std::cout << "Erkezes idopontja: " << erkezes << std::endl;
+    std::cout << "Indulas idopontja: " << std::setw(2) << std::setfill('0') 
+              <<indulas.getOra() << ":" << indulas.getPerc() << std::endl; // Nagyon ronda, tudom...
+    std::cout << "Erkezes idopontja: " << std::setw(2) << std::setfill('0') 
+              <<erkezes.getOra() << ":" << erkezes.getPerc() << std::endl;
   }
 
-
-
-  // Tagfüggvények 
-  // void addTrain();
+  Vonat beolvas(std::streampos& currPos);
+  void addTrain(std::streampos& currPos, int szam, Allomas indulo,
+                Allomas veg, int kocsidb, Ido indulas, Ido erkezes);
   
 }; // end of VONAt
 
