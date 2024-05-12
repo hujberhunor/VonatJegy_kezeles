@@ -16,34 +16,17 @@ public:
 
   virtual void nyomtat(Vonat& v){
     std::cout << "### Jegy ###\n";
-   
     std::cout << "--- Vonatod adatai ---" << std::endl;
-    
     v.kiir(); 
-
     std::cout << "--- Mocskos pénzügyek ---" << std::endl;
     std::cout << "Ár: "<< ar << std::endl;
     std::cout << "Százalék: " << szazalek << std::endl;
     std::cout << "Fizetendő: " << fizetendo() << std::endl;
-   
     std::cout << "--- Vonalkód ---" << std::endl;
     std::cout << "||| | || | || |  |" << std::endl;
   }
  
 }; // END OF JEGY class
-
-
-// /* WHAT IF ÍROK EGY TEMPLATE CLASS-T A KEDVEZMÉNYESEKRE */
-// class Diak : private Jegy{
-// private:
-//   std::string type = "Diak";
-//   int kedvezmeny = 50; // Kedvezmény szazaleka
-//   
-// public: 
-//   int getKedv() { return kedvezmeny; }
-//   int ar(){ return this->ar * kedvezmeny; }
-// };
-
 
 
 

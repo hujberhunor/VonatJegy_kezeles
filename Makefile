@@ -7,7 +7,7 @@ PROG = wMakeMain
 SRCS = beolvas.cpp  
 
 # Header fileok
-HDRS = ./header/allomas.h ./header/vonat.h
+HDRS = ./header/allomas.h ./header/vonat.h ./header/jegy.h ./header/mav.h
 
 # Fordítási kapcsolók: legyen pedáns és legyenek figyelmeztetések
 CXXFLAGS = -pedantic -Wall

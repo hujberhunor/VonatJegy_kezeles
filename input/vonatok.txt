@@ -8,3 +8,5 @@
 80 Geci Nem-geci 5 0440 0630
 69 Ecséd Bivalybaszod 5 0440 0630
 80 Geci Nem-geci 5 0440 0630
+69 Ecséd Bivalybaszod 5 0440 0630
+80 Geci Nem-geci 5 0440 0630

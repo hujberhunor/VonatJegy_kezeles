@@ -55,7 +55,8 @@ public:
     std::cout << "Erkezes idopontja: " << std::setw(2) << std::setfill('0') 
               <<erkezes.getOra() << ":" << erkezes.getPerc() << std::endl;
   }
-
+  
+  // Leíráva a deklarációnál
   Vonat beolvas(std::streampos& currPos);
   void addTrain(std::streampos& currPos, int szam, Allomas indulo,
                 Allomas veg, int kocsidb, Ido indulas, Ido erkezes);

@@ -4,6 +4,8 @@
 #include "./header/vonat.h"
 #include "./header/allomas.h"
 #include "./header/jegy.h"
+#include "./header/mav.h"
+
 
 /* 
  * FILE BEOLVAS.CPP
@@ -27,17 +29,16 @@ struct Seged {
 /* VONATOK FILE BEOLVASÁSA */
 // Beolvaásás a file-ból egy segéd strukturába, onnan pedig egy Vonat objektum feltöltés 
 // @param int& currPos a kurzor éppenleges helyzete a fileban. 
+// @param Mav& mav class feltöltéséhez szükséges 
 // @return visszaad egy feltöltött Vonat objektumot
-Vonat beolvas(std::streampos& currPos){
+Vonat beolvas(std::streampos& currPos, Mav& mav){
     const char* vonatok = "./input/vonatok.txt";    // const mert megadtam, hogy hol van és ehhez nem nyúlsz hozzá
     std::ifstream file (vonatok);                   // Megynitom a file-t
     Vonat von;
 
     if (file.is_open() ){ 
-      // A currpos poziciora ugrom
-      file.seekg(currPos);
-      // Fájl beolvasása egy segéd struktúrába 
-      Seged seged;
+      file.seekg(currPos); // A currpos poziciora ugrom
+      Seged seged;         // Fájl beolvasása egy segéd struktúrába 
       file >> seged.szam >> seged.indulo >> seged.veg >> seged.kocsidb >> seged.indulas >> seged.erkezes;
      
       // Setterek, mert a konstruktor nem akarta megenni
@@ -47,6 +48,10 @@ Vonat beolvas(std::streampos& currPos){
       von.setKocsidb(atoi(seged.kocsidb));
       von.setIndulas(seged.indulas);
       von.setErkezes(seged.erkezes);
+
+      // Mav classban helyet foglaló Vonatok* tömb 
+      // feltöltése
+      mav.feltolt(von);
 
       // Minden új sor kezdeténél meg kell álnom és el kell tárolnom
       // az éppenleges kurzor helyzetet, hogy a következő objektumba  
@@ -86,19 +91,26 @@ int main(){
   // Itt tárolon hol vagyok a file-ban
   // Mind a beolvasás mind pedig az íráshoz KELL!
   std::streampos currPos;
+  Mav mav;
 
-  // Probálgatások
-  beolvas(currPos).kiir(); std::cout << "---\n";
-  beolvas(currPos).kiir(); std::cout << "---\n";
-  beolvas(currPos).kiir(); std::cout << "---\n";
-  beolvas(currPos).kiir(); std::cout << "---\n";
-  addTrain(currPos, 69, "Ecséd", "Bivalybaszod", 5, "0440", "0630");
-  addTrain(currPos, 80, "Geci", "Nem-geci", 5, "0440", "0630");
-  beolvas(currPos).kiir(); std::cout << "---\n";
-  Vonat v = beolvas(currPos); v.kiir(); std::cout << "---\n";
+  beolvas(currPos, mav);
+  beolvas(currPos, mav);
+  beolvas(currPos, mav);
+  beolvas(currPos, mav);
+    addTrain(currPos, 69, "Ecséd", "Bivalybaszod", 5, "0440", "0630");
+    addTrain(currPos, 80, "Geci", "Nem-geci", 5, "0440", "0630");
+  beolvas(currPos, mav);
+  Vonat v = beolvas(currPos, mav);
 
-  Jegy j1(100, 400);
-  j1.nyomtat(v);
+
+  mav.kiir();
+  mav.kiirAt(7);
+  // Jegy j1(100, 400);
+  // j1.nyomtat(v);
+  
+
+
+
   
   return 0;
 }

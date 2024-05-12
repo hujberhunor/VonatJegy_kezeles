@@ -42,10 +42,10 @@ int main() {
                 std::cout << "Add meg az adatokat: " << std::endl;
                 break;
             case ITEM_2:
-                std::cout << "Megnyomtad a 2. menüpontot!" << std::endl;
+                std::cout << "Vonatok listázása" << std::endl;
                 break;
             case ITEM_3:
-                std::cout << "Megnyomtad a 3. menüpontot!" << std::endl;
+                std::cout << "Nyomtassunk!" << std::endl;
                 break;
             case EXIT:
                 std::cout << "Kilépés a programból." << std::endl;
