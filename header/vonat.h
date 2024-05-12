@@ -5,19 +5,20 @@
  * file VONAT_H
 */
 #include <iostream>
+
 #include "./allomas.h"
 #include "./ido.h"
+#include "./mav.h"
 
 
 class Vonat {
 private: 
-  int szam; // Vonatszám 
+  int szam;       // Vonatszám 
   Allomas indulo; // Kiinduló állomas
-  // Allomas* koztes;
-  Allomas veg; // Végállomas
-  int kocsidb; // Kocsik darabszáma, basically semmit sem csinál
-  Ido indulas; // Indulási idő
-  Ido erkezes; // Érkezési idp
+  Allomas veg;    // Végállomas
+  int kocsidb;    // Kocsik darabszáma, basically semmit sem csinál
+  Ido indulas;    // Indulási idő
+  Ido erkezes;    // Érkezési idp
 
 public:
   // Paraméter nélküli Konstruktor
@@ -57,9 +58,9 @@ public:
   }
   
   // Leíráva a deklarációnál
-  Vonat beolvas(std::streampos& currPos);
-  void addTrain(std::streampos& currPos, int szam, Allomas indulo,
-                Allomas veg, int kocsidb, Ido indulas, Ido erkezes);
+  // Vonat beolvas(Mav& mav);
+  // void addTrain(std::streampos& currPos, int szam, Allomas indulo,
+  //               Allomas veg, int kocsidb, Ido indulas, Ido erkezes);
   
 }; // end of VONAt
 

@@ -1,12 +1,16 @@
 #ifndef MAV_H
 #define MAV_H
 
+#include <iostream>
 
+// #include "./vonat.h"
+#include "./allomas.h"
+#include "./ido.h"
 /* ### TODO ### 
   * Túlidenxelés kezelés
   * Ha a file nem létezik ne dobjon seg faultot
 */
-
+  
 class Mav {
   // HELYET KELL FOGLALNI NEKI!!
   Vonat* vonatok; // Vonatok kollekció
@@ -16,7 +20,7 @@ public:
   // Konstruktor
   Mav(size_t size = 0) : vonatok(nullptr), size(size) {} 
  
-  void feltolt(Vonat& vonat){
+  void add(Vonat& vonat){
     Vonat* temp = new Vonat[size + 1];  // Lefoglalok helyet 
     for (size_t i = 0; i < size; ++i) { // Átmásolom a tömb elemeit
       temp[i] = vonatok[i];
@@ -25,7 +29,6 @@ public:
     delete[] vonatok;
     vonatok = temp;
   } // End of feltolt
-
 
   // Vonatok tömb kiírása
   void kiir() {
@@ -45,22 +48,6 @@ public:
   Vonat operator[](int idx){ return vonatok[idx]; }
 
 }; // END OF MAv
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

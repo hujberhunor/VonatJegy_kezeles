@@ -3,10 +3,4 @@
 66 Pécs Győr 7 1212 0515
 123 betu betu 1 0000 1111
 69 Ecséd Bivalybaszod 5 0440 0630
-80 Geci Nem-geci 5 0440 0630
 69 Ecséd Bivalybaszod 5 0440 0630
-80 Geci Nem-geci 5 0440 0630
-69 Ecséd Bivalybaszod 5 0440 0630
-80 Geci Nem-geci 5 0440 0630
-69 Ecséd Bivalybaszod 5 0440 0630
-80 Geci Nem-geci 5 0440 0630
