@@ -57,10 +57,8 @@ public:
     std::cout << "Erkezes idopontja: " << std::setw(2) << std::setfill('0') 
               <<erkezes.getOra() << ":" << erkezes.getPerc() << std::endl;
   }
-
   
 }; // end of VONAt
-
 
 
 #endif // !VONAT_H 

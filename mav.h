@@ -55,20 +55,18 @@ public:
     vonatok[i].kiir();
   } // end of kiirAt
 
+  Vonat& getVonatAt(int i){ return vonatok[i]; }
 
-  Vonat operator[](int idx){ return vonatok[idx]; }
-
-
+  Vonat& operator[](int idx){ return vonatok[idx]; }
+ 
   void beolvas();
   void addTrain(std::streampos& currPos, int szam, Allomas indulo,
                 Allomas veg, int kocsidb, Ido indulas, Ido erkezes);
-
 
   // Destruktor
   ~Mav(){
     delete[] vonatok;
   }
-
 
 
 }; // END OF MAV
