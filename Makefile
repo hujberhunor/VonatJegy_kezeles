@@ -4,10 +4,10 @@
 PROG = wMakeMain
 
 # Program forrásfájljai
-SRCS = beolvas.cpp  
+SRCS = main.cpp allomas.cpp ido.cpp mav.cpp
 
 # Header fileok
-HDRS = ./header/allomas.h ./header/vonat.h ./header/jegy.h ./header/mav.h
+HDRS = allomas.h vonat.h jegy.h mav.h kiosk.h seged.h
 
 # Fordítási kapcsolók: legyen pedáns és legyenek figyelmeztetések
 CXXFLAGS = -pedantic -Wall
