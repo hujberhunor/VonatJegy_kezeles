@@ -1,0 +1,86 @@
+\doxysection{mav.\+h}
+\hypertarget{mav_8h_source}{}\label{mav_8h_source}\mbox{\hyperlink{mav_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ MAV\_H}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ MAV\_H}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00004}00004\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00005}00005\ \textcolor{comment}{\ *\ FILE\ MAV\_H}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00006}00006\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{vonat_8h}{./vonat.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{allomas_8h}{./allomas.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ido_8h}{./ido.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00015}00015\ \ \ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00016}\mbox{\hyperlink{classMav}{00016}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMav}{Mav}}\ \{}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00017}\mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{00017}}\ \ \ \mbox{\hyperlink{classVonat}{Vonat}}*\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}};\ \textcolor{comment}{//\ Vonatok\ kollekció}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00018}\mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{00018}}\ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}};\ \ \ \ \ \ \textcolor{comment}{//\ Vonatok\ kollekció\ mérete\ db\ számban}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00019}00019\ \ \ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00020}00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00021}00021\ \ \ \textcolor{comment}{//\ Konstruktor}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00022}\mbox{\hyperlink{classMav_aa22a1f92e54bea5db6969bee81db8e17}{00022}}\ \ \ \mbox{\hyperlink{classMav_aa22a1f92e54bea5db6969bee81db8e17}{Mav}}(\textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}}\ =\ 0)\ :\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}(nullptr),\ \mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}}(\mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}})\ \{\}\ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00023}00023\ \ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00024}00024\ \textcolor{comment}{\ \ /**}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00025}00025\ \textcolor{comment}{\ \ \ *\ Elem\ hozzáfűzése\ Vonatok\ kollekcióhoz}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00026}00026\ \textcolor{comment}{\ \ \ *\ @param\ vonat\ vonat\ referencia\ amit\ hozzáad}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00027}00027\ \textcolor{comment}{\ \ \ */}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00028}\mbox{\hyperlink{classMav_a81e2ee3d186b9303c7fa580f3afbbab8}{00028}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMav_a81e2ee3d186b9303c7fa580f3afbbab8}{add}}(\mbox{\hyperlink{classVonat}{Vonat}}\&\ vonat)\{}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00029}00029\ \ \ \ \ \mbox{\hyperlink{classVonat}{Vonat}}*\ temp\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classVonat}{Vonat}}[\mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}}\ +\ 1];\ \ \textcolor{comment}{//\ Lefoglalok\ helyet\ }}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00030}00030\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00031}00031\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ \mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}};\ ++i)\ \{\ \textcolor{comment}{//\ Átmásolom\ a\ tömb\ elemeit}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00032}00032\ \ \ \ \ \ \ temp[i]\ =\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}[i];}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00033}00033\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00034}00034\ \ \ \ \ temp[\mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}}++]\ =\ vonat;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Beleteszem\ a\ vonatot}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00035}00035\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00036}00036\ \ \ \ \ \textcolor{keyword}{delete}[]\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ "{}Régi"{}\ tömböt\ törlöm}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00037}00037\ \ \ \ \ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}\ =\ temp;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00038}00038\ \ \ \}\ \textcolor{comment}{//\ End\ of\ feltolt}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00040}00040\ \ \ \textcolor{comment}{//\ Vonatok\ tömb\ kiírása}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00041}\mbox{\hyperlink{classMav_aa9729202f8dac420111d5266bfa6c9e8}{00041}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMav_aa9729202f8dac420111d5266bfa6c9e8}{kiir}}()\ \{}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00042}00042\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ \mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}};\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00043}00043\ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}-\/-\/-\/\ "{}}\ <<\ i+1\ <<\ \textcolor{stringliteral}{"{}.vonat\ -\/-\/-\/"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00044}00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}[i].\mbox{\hyperlink{classVonat_accf19f7143540d637a8b2234a47efee6}{kiir}}();}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00045}00045\ \ \ \ \ \ \ \ \ std::cout\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00046}00046\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00047}00047\ \ \ \}\ \textcolor{comment}{//\ end\ of\ kiir}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00048}00048\ \ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00049}00049\ \ \ \textcolor{comment}{//\ i.edik\ elem\ kiírása}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00050}\mbox{\hyperlink{classMav_a77998398e7e7a0deedb86879012b098a}{00050}}\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMav_a77998398e7e7a0deedb86879012b098a}{kiirAt}}(\textcolor{keywordtype}{int}\ i)\{}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00051}00051\ \ \ \ \ \textcolor{comment}{//\ HIBAEKEZELÉS}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00052}00052\ \ \ \ \ std::cout\ <<\ i+1\ <<\textcolor{stringliteral}{"{}.vonat"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00053}00053\ \ \ \ \ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}[i].\mbox{\hyperlink{classVonat_accf19f7143540d637a8b2234a47efee6}{kiir}}();}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00054}00054\ \ \ \}\ \textcolor{comment}{//\ end\ of\ kiirAt}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00055}00055\ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00056}\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{00056}}\ \ \ \mbox{\hyperlink{classVonat}{Vonat}}\&\ \mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(\textcolor{keywordtype}{int}\ i)\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}[i-\/1];\ \}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00057}\mbox{\hyperlink{classMav_a4b70915946e42d3b77413f7506655a75}{00057}}\ \ \ \textcolor{keywordtype}{size\_t}\ \mbox{\hyperlink{classMav_a4b70915946e42d3b77413f7506655a75}{getSize}}()\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}});\ \}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00059}\mbox{\hyperlink{classMav_aa27feb10cfa445db4b2abe223895f220}{00059}}\ \ \ \mbox{\hyperlink{classVonat}{Vonat}}\&\ \mbox{\hyperlink{classMav_aa27feb10cfa445db4b2abe223895f220}{operator[]}}(\textcolor{keywordtype}{int}\ idx)\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}[idx];\ \}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00061}00061\ \ \ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00062}00062\ \textcolor{comment}{\ \ *\ @param\ fazs\ geci}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00063}00063\ \textcolor{comment}{\ \ *\ @param\ fasz\ geic}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00064}00064\ \textcolor{comment}{\ \ */}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00065}00065\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMav_a15899cdec1c1fe36a8460d956dad3104}{beolvas}}();}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00066}00066\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMav_a9838399fd397670c9d4e9f2d279c1a73}{addTrain}}(std::streampos\&\ currPos,\ \textcolor{keywordtype}{int}\ szam,\ \mbox{\hyperlink{classAllomas}{Allomas}}\ indulo,}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classAllomas}{Allomas}}\ veg,\ \textcolor{keywordtype}{int}\ kocsidb,\ \mbox{\hyperlink{classIdo}{Ido}}\ indulas,\ \mbox{\hyperlink{classIdo}{Ido}}\ erkezes);}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00069}00069\ \ \ \textcolor{comment}{//\ Destruktor}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00070}\mbox{\hyperlink{classMav_a993046c07dda4b4cdefcf1248ecd89c0}{00070}}\ \ \ \mbox{\hyperlink{classMav_a993046c07dda4b4cdefcf1248ecd89c0}{\string~Mav}}()\{}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00071}00071\ \ \ \ \ \textcolor{keyword}{delete}[]\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}};}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00072}00072\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00075}00075\ \};\ \textcolor{comment}{//\ END\ OF\ MAV}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00076}00076\ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00080}00080\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !MAV\_H}}
+\DoxyCodeLine{\Hypertarget{mav_8h_source_l00081}00081\ }
+
+\end{DoxyCode}

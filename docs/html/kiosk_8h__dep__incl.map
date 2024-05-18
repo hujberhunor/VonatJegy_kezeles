@@ -1,0 +1,13 @@
+<map id="kiosk.h" name="kiosk.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="53,5,121,33"/>
+<area shape="rect" id="Node000002" href="$kiosk_8cpp.html" title=" " alt="" coords="5,157,89,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="62,45,47,62,36,82,32,101,34,121,44,155,39,157,28,122,27,101,31,80,43,59,58,42"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html" title=" " alt="" coords="46,81,128,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="90,49,90,81,84,81,84,49"/>
+<area shape="rect" id="Node000004" href="$seged_8h.html" title=" " alt="" coords="152,81,225,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="119,40,172,78,169,83,116,45"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="151,118,73,159,71,154,149,114"/>
+<area shape="poly" id="edge6_Node000004_Node000004" title=" " alt="" coords="241,81,248,86,251,95,243,108,225,112,224,106,240,103,246,95,244,89,238,85"/>
+<area shape="rect" id="Node000005" href="$mav_8cpp.html" title=" " alt="" coords="150,157,227,184"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="191,124,191,156,186,156,186,124"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Kiosk::vonatHozza" name="Kiosk::vonatHozza">
+<area shape="rect" id="Node000001" title="Hozzá ad a user vonatokat a fájlhoz." alt="" coords="5,5,148,33"/>
+<area shape="rect" id="Node000002" href="$classMav.html#a9838399fd397670c9d4e9f2d279c1a73" title=" " alt="" coords="196,5,307,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,17,180,17,180,22,148,22"/>
+</map>

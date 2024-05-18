@@ -14,22 +14,22 @@ class Mav; // Nem ette meg a headerből, nem értem miért.
 
 class Vonat {
 private: 
-  int szam;       // Vonatszám 
-  Allomas indulo; // Kiinduló állomas
-  Allomas veg;    // Végállomas
-  int kocsidb;    // Kocsik darabszáma, basically semmit sem csinál
-  Ido indulas;    // Indulási idő
-  Ido erkezes;    // Érkezési idp
+  int szam;       /// Vonatszám 
+  Allomas indulo; /// Kiinduló állomas
+  Allomas veg;    /// Végállomas
+  int kocsidb;    /// Kocsik darabszáma, basically semmit sem csinál
+  Ido indulas;    /// Indulási idő
+  Ido erkezes;    /// Érkezési idp
 
 public:
-  // Paraméter nélküli Konstruktor
+  /// Paraméter nélküli Konstruktor
   Vonat() : szam(0), indulo(""), veg(""), kocsidb(0), indulas(0,0), erkezes(0,0) {}
 
-  // Paraméteres Konstruktor
+  /// Paraméteres Konstruktor
   Vonat(int vszam, Allomas indulop, Allomas vegp, int kocsidb, Ido indulasp, Ido erkezesp)
         : szam(vszam), indulo(indulop), veg(vegp), kocsidb(kocsidb), indulas(indulasp), erkezes(erkezesp) {} 
 
-  // Setterek
+  /// Setterek
   void setSzam(int szam)              { this->szam = szam; }
   void setIndulo(const char* indulo)  { this-> indulo = Allomas(indulo); }
   void setVeg(const char* veg)        { this->veg = Allomas(veg); }
@@ -37,7 +37,7 @@ public:
   void setIndulas(const char* ido)    { this->indulas = Ido(ido); }
   void setErkezes(const char* ido)    { this->erkezes = Ido(ido); }
 
-  // Getterek
+  /// Getterek
   int getSzam() const       { return szam; }
   Allomas getIndulo() const { return indulo; }
   Allomas getVeg() const    { return veg; }
@@ -45,19 +45,29 @@ public:
   Ido getIndulas() const    { return indulas; }
   Ido getErkezes() const    { return erkezes; }
 
-  // Kiírja a vonat adatait. 
-  // A jegyhez használom
+  /**
+  * Kiírja a vonat adatait
+  * Főképp a jegyváltáskor van meghívva + listázás.
+  */
   void kiir() const {
     std::cout << "Vonat szama: " << szam << std::endl;
     std::cout << "Indulasi allomas: " << indulo << std::endl;
     std::cout << "Erkezesi allomas: " << veg << std::endl;
     std::cout << "Kocsi darabszam: " << kocsidb << std::endl;
-    std::cout << "Indulas idopontja: " << std::setw(2) << std::setfill('0') 
-              <<indulas.getOra() << ":" << indulas.getPerc() << std::endl; // Nagyon ronda, tudom...
-    std::cout << "Erkezes idopontja: " << std::setw(2) << std::setfill('0') 
-              <<erkezes.getOra() << ":" << erkezes.getPerc() << std::endl;
+
+    std::cout << "Indulas idopontja: ";
+    std::cout << std::setw(2) << std::setfill('0') <<indulas.getOra();
+    std::cout << ":";
+    std::cout << std::setw(2) << std::setfill('0') << indulas.getPerc() << std::endl; // Nagyon ronda, tudom...
+    
+    std::cout << "Érkezés idopontja: ";
+    std::cout << std::setw(2) << std::setfill('0') << erkezes.getOra(); 
+    std::cout << ":";
+    std::cout << std::setw(2) << std::setfill('0') << erkezes.getPerc() << std::endl; // Nagyon ronda, tudom...
+
   }
-  
+ 
+
 }; // end of VONAt
 
 

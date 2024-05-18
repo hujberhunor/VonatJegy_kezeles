@@ -1,0 +1,199 @@
+\doxysection{Kutya Class Reference}
+\hypertarget{classKutya}{}\label{classKutya}\index{Kutya@{Kutya}}
+
+
+{\ttfamily \#include $<$jegy.\+h$>$}
+
+
+
+Inheritance diagram for Kutya\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classKutya__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Kutya\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classKutya__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classKutya_af7a548c1c3f07d24be85354320fa5a7f}{Kutya}} (int \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}}=1200, const double \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}}=0.\+2)
+\item 
+std\+::string \mbox{\hyperlink{classKutya_a7c027b5bb3b6eb1f9c528c0475e3d74a}{get\+Tipus}} ()
+\item 
+std\+::string \mbox{\hyperlink{classKutya_a045312268761ed842a69860fefd28adb}{get\+Kov}} ()
+\item 
+void \mbox{\hyperlink{classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d}{nyomtat}} (\mbox{\hyperlink{classVonat}{Vonat}} \&v)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classJegy}{Jegy}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classJegy_adc9ca2461bd2548e9aee2a4f473d9ed7}{Jegy}} (int \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}}=1200, double \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}}=0.\+7)
+\begin{DoxyCompactList}\small\item\em Kedvezméy százaléka, pontosabban mennyi az amit fizet százalék. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classJegy_ab4e5659753f5f143d279e79bd8863833}{fizetendo}} ()
+\begin{DoxyCompactList}\small\item\em Fizetendő összeg, ár és a kedvezmény szorzata. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classJegy_a78badd2f2f70b1a3e8ea7d48c8af817f}{get\+Ar}} ()
+\begin{DoxyCompactList}\small\item\em Getterek. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classJegy_af0cf7c3f63831586bc49261fc0738e70}{get\+Szaz}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \mbox{\hyperlink{classKutya_aea26e88caf844c32e3d769d654340449}{tipus\+Nev}} = "{}Kutya"{}
+\item 
+const std\+::string \mbox{\hyperlink{classKutya_a468868823bef6610f2d6326d597fd0dd}{kov}} = "{}Szájkosár"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00101}{101}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classKutya_af7a548c1c3f07d24be85354320fa5a7f}\label{classKutya_af7a548c1c3f07d24be85354320fa5a7f} 
+\index{Kutya@{Kutya}!Kutya@{Kutya}}
+\index{Kutya@{Kutya}!Kutya@{Kutya}}
+\doxysubsubsection{\texorpdfstring{Kutya()}{Kutya()}}
+{\footnotesize\ttfamily Kutya\+::\+Kutya (\begin{DoxyParamCaption}\item[{int}]{ar = {\ttfamily 1200},  }\item[{const double}]{szazalek = {\ttfamily 0.2} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor 
+\begin{DoxyParams}{Parameters}
+{\em ar} & megadja a jegy árát \\
+\hline
+{\em szazalek} & a kedvezmény értékét adja meg Meghívja a anya-\/class konstruktorát. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00112}{112}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00112\ :\ \mbox{\hyperlink{classJegy_adc9ca2461bd2548e9aee2a4f473d9ed7}{Jegy}}(\mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}},\ \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}})\ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classKutya_a045312268761ed842a69860fefd28adb}\label{classKutya_a045312268761ed842a69860fefd28adb} 
+\index{Kutya@{Kutya}!getKov@{getKov}}
+\index{getKov@{getKov}!Kutya@{Kutya}}
+\doxysubsubsection{\texorpdfstring{getKov()}{getKov()}}
+{\footnotesize\ttfamily std\+::string Kutya\+::get\+Kov (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00116}{116}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00116\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classKutya_a468868823bef6610f2d6326d597fd0dd}{kov}};\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classKutya_a045312268761ed842a69860fefd28adb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classKutya_a7c027b5bb3b6eb1f9c528c0475e3d74a}\label{classKutya_a7c027b5bb3b6eb1f9c528c0475e3d74a} 
+\index{Kutya@{Kutya}!getTipus@{getTipus}}
+\index{getTipus@{getTipus}!Kutya@{Kutya}}
+\doxysubsubsection{\texorpdfstring{getTipus()}{getTipus()}}
+{\footnotesize\ttfamily std\+::string Kutya\+::get\+Tipus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00115}{115}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00115\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classKutya_aea26e88caf844c32e3d769d654340449}{tipusNev}};\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classKutya_a7c027b5bb3b6eb1f9c528c0475e3d74a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d}\label{classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d} 
+\index{Kutya@{Kutya}!nyomtat@{nyomtat}}
+\index{nyomtat@{nyomtat}!Kutya@{Kutya}}
+\doxysubsubsection{\texorpdfstring{nyomtat()}{nyomtat()}}
+{\footnotesize\ttfamily void Kutya\+::nyomtat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVonat}{Vonat}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+megörökölt nyomtat fv overwrite-\/ja meghívja az "{}eredei"{}, főosztály nyomtatját 
+
+Reimplemented from \mbox{\hyperlink{classJegy_aa9e954a340eff827792a81cdccdb7426}{Jegy}}.
+
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00120}{120}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00121\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\#\#\#\ Jegy\ adatai\ \#\#\#\(\backslash\)n"{}};}
+\DoxyCodeLine{00122\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Jegy\ típusa:\ "{}}\ <<\ \mbox{\hyperlink{classKutya_a7c027b5bb3b6eb1f9c528c0475e3d74a}{getTipus}}()\ <<\ std::endl;}
+\DoxyCodeLine{00123\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Követelmény:\ "{}}\ <<\ \mbox{\hyperlink{classKutya_a045312268761ed842a69860fefd28adb}{getKov}}()\ <<\ std::endl;}
+\DoxyCodeLine{00124\ \ \ \ \ \mbox{\hyperlink{classJegy_aa9e954a340eff827792a81cdccdb7426}{Jegy::nyomtat}}(v);}
+\DoxyCodeLine{00125\ \ \ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{classKutya_a468868823bef6610f2d6326d597fd0dd}\label{classKutya_a468868823bef6610f2d6326d597fd0dd} 
+\index{Kutya@{Kutya}!kov@{kov}}
+\index{kov@{kov}!Kutya@{Kutya}}
+\doxysubsubsection{\texorpdfstring{kov}{kov}}
+{\footnotesize\ttfamily const std\+::string Kutya\+::kov = "{}Szájkosár"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00103}{103}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+\Hypertarget{classKutya_aea26e88caf844c32e3d769d654340449}\label{classKutya_aea26e88caf844c32e3d769d654340449} 
+\index{Kutya@{Kutya}!tipusNev@{tipusNev}}
+\index{tipusNev@{tipusNev}!Kutya@{Kutya}}
+\doxysubsubsection{\texorpdfstring{tipusNev}{tipusNev}}
+{\footnotesize\ttfamily const std\+::string Kutya\+::tipus\+Nev = "{}Kutya"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00102}{102}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{jegy_8h}{jegy.\+h}}\end{DoxyCompactItemize}

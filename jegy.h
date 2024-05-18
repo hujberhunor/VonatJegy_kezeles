@@ -1,7 +1,7 @@
 #ifndef JEGY_H
 #define JEGY_H
 
-/* 
+/**
 * FILE JEGY_H
 */
 
@@ -9,21 +9,30 @@
 #include "./vonat.h"
 
 class Jegy {
-  int ar;
-  double szazalek;
+  int ar; /// A jegy ára
+  double szazalek; /// Kedvezméy százaléka, pontosabban mennyi az amit fizet százalék.
 
 public:
-  // Konstruktor
+  /**
+   * Anya osztály Konstruktora 
+   * @param ar megadja a jegy árát
+   * @param szazalek a kedvezmény értékét adja meg
+   */
   Jegy(int ar = 1200, double szazalek = 0.7) : ar(ar), szazalek(szazalek)  {}
 
-  // Mennyi az aktuális összeg
+  /// Fizetendő összeg, ár és a kedvezmény szorzata
   virtual int fizetendo(){ return ar * szazalek; }
 
-  // Getterek
+  /// Getterek
   int getAr() { return ar; }
   double getSzaz() { return szazalek; }
 
-  // Jegy printelése
+  /**
+  * @param Vonat& megadott vonatra vonatkozik
+  * Kíírja a jegy adatinak egy felét. Azt a felét ami minden leszármazottál
+  * azonos. A felső pár so. 
+  * virtual mivel a leszármazottak megöröklik és felülírják.
+  */
   virtual void nyomtat(Vonat& v) {
     std::cout << "Fizetendő: " << fizetendo() << "JMF\n";
     std::cout << "### Vonatod adatai ###" << std::endl;
@@ -41,12 +50,19 @@ class Diak : public Jegy {
   // const double szazalek = 0.7;
 
 public:
-  // Konstruktor
+   /**
+   * Konstruktor
+   * @param ar megadja a jegy árát
+   * @param szazalek a kedvezmény értékét adja meg
+   * Meghívja a anya-class konstruktorát.
+  */
   Diak(int ar = 1200, const double szazalek = 0.7) : Jegy(ar, szazalek) {}
  
-  // Getterek
+  /// Getterek
   std::string getTipus() { return tipusNev; }
- 
+  
+  /// megörökölt nyomtat fv overwrite-ja 
+  /// meghívja az "eredei", főosztály nyomtatját
   void nyomtat(Vonat &v) {
     std::cout << "### Jegy adatai ###\n";
     std::cout << "Jegy típusa: " << getTipus() << std::endl;
@@ -61,10 +77,18 @@ class Teljes : public Jegy {
   // const double szazalek = 1.0;
 
 public:
+  /**
+   * Konstruktor
+   * @param ar megadja a jegy árát
+   * @param szazalek a kedvezmény értékét adja meg
+   * Meghívja a anya-class konstruktorát.
+  */
   Teljes(int ar = 1200, const double szazalek = 1.0) : Jegy(ar, szazalek) {}
   
   std::string getTipus() { return tipusNev; }
   
+  /// megörökölt nyomtat fv overwrite-ja 
+  /// meghívja az "eredei", főosztály nyomtatját
   void nyomtat(Vonat &v) {
     std::cout << "### Jegy adatai ###\n";
     std::cout << "Jegy típusa: " << getTipus() << std::endl;
@@ -79,13 +103,20 @@ class Kutya : public Jegy {
   const std::string kov = "Szájkosár";
 
 public:
+  /**
+   * Konstruktor
+   * @param ar megadja a jegy árát
+   * @param szazalek a kedvezmény értékét adja meg
+   * Meghívja a anya-class konstruktorát.
+  */
   Kutya(int ar = 1200, const double szazalek = 0.2) : Jegy(ar, szazalek) {}
   
   // Getterek
   std::string getTipus() { return tipusNev; }
   std::string getKov() { return kov; }
- 
-  // 
+
+  /// megörökölt nyomtat fv overwrite-ja 
+  /// meghívja az "eredei", főosztály nyomtatját
   void nyomtat(Vonat &v) {
     std::cout << "### Jegy adatai ###\n";
     std::cout << "Jegy típusa: " << getTipus() << std::endl;

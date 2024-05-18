@@ -1,0 +1,25 @@
+<map id="Vonat::kiir" name="Vonat::kiir">
+<area shape="rect" id="Node000001" title=" " alt="" coords="603,57,690,85"/>
+<area shape="rect" id="Node000002" href="$classMav.html#aa9729202f8dac420111d5266bfa6c9e8" title=" " alt="" coords="460,5,538,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="590,54,537,35,539,30,591,49"/>
+<area shape="rect" id="Node000006" href="$classMav.html#a77998398e7e7a0deedb86879012b098a" title=" " alt="" coords="453,57,545,85"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="587,74,545,74,545,69,587,69"/>
+<area shape="rect" id="Node000007" href="$classJegy.html#aa9e954a340eff827792a81cdccdb7426" title=" " alt="" coords="443,109,555,137"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="591,93,541,111,540,106,590,88"/>
+<area shape="rect" id="Node000003" href="$classKiosk.html#a196ec12845a5f5384f9145a3fbe086d1" title="Liszázza a vonatokat amiket beolvasott a fájlból." alt="" coords="285,5,385,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="444,22,385,22,385,17,444,17"/>
+<area shape="rect" id="Node000004" href="$classKiosk.html#af4fe3883e13b6e3658ac7b1001532fb4" title="jegyet vált a kiválasztott vonatra" alt="" coords="108,57,226,85"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="274,41,215,59,213,54,272,36"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,32,60,60"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="269,28,60,46,60,41,269,22"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="92,60,60,53,61,48,93,55"/>
+<area shape="rect" id="Node000008" href="$classDiak.html#a7121a13da47dce7a773809a385aefa27" title=" " alt="" coords="278,57,392,85"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="438,107,380,88,382,83,439,102"/>
+<area shape="rect" id="Node000009" href="$classTeljes.html#a6f147b902c77f74ba1542b4978ed99a4" title=" " alt="" coords="274,109,395,137"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="428,126,396,126,396,121,428,121"/>
+<area shape="rect" id="Node000010" href="$classKutya.html#a0bed6bf95538dcad16d1c8dfd53bb65d" title=" " alt="" coords="274,161,395,189"/>
+<area shape="poly" id="edge12_Node000007_Node000010" title=" " alt="" coords="439,145,382,163,380,158,438,140"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="262,74,227,74,227,69,262,69"/>
+<area shape="poly" id="edge11_Node000009_Node000004" title=" " alt="" coords="272,107,213,88,215,83,274,102"/>
+<area shape="poly" id="edge13_Node000010_Node000004" title=" " alt="" coords="283,157,273,151,223,118,184,88,187,83,226,114,275,146,286,152"/>
+</map>

@@ -1,0 +1,49 @@
+\doxysection{ido.\+cpp File Reference}
+\hypertarget{ido_8cpp}{}\label{ido_8cpp}\index{ido.cpp@{ido.cpp}}
+{\ttfamily \#include "{}./ido.\+h"{}}\newline
+Include dependency graph for ido.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{ido_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \mbox{\hyperlink{ido_8cpp_ac433647af32d9e7ec41d73faa9b12477}{operator$<$$<$}} (std\+::ostream \&os, const \mbox{\hyperlink{classIdo}{Ido}} \&ido)
+\begin{DoxyCompactList}\small\item\em \doxylink{classIdo}{Ido} class op\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}() overwrireja, a fájlba beíráskor hívódik meg. (add\+Train) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{ido_8cpp_ac433647af32d9e7ec41d73faa9b12477}\label{ido_8cpp_ac433647af32d9e7ec41d73faa9b12477} 
+\index{ido.cpp@{ido.cpp}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!ido.cpp@{ido.cpp}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily std\+::ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{const \mbox{\hyperlink{classIdo}{Ido}} \&}]{ido }\end{DoxyParamCaption})}
+
+
+
+\doxylink{classIdo}{Ido} class op\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<}() overwrireja, a fájlba beíráskor hívódik meg. (add\+Train) 
+
+
+
+Definition at line \mbox{\hyperlink{ido_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{ido_8cpp_source}{ido.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00004\ \ \ os\ <<\ std::setw(2)\ <<\ std::setfill(\textcolor{charliteral}{'0'})\ <<\ ido.\mbox{\hyperlink{classIdo_af8343a13fda687245c926f1843a316d0}{getOra}}();}
+\DoxyCodeLine{00005\ \ \ os\ <<\ std::setw(2)\ <<\ std::setfill(\textcolor{charliteral}{'0'})\ <<\ ido.\mbox{\hyperlink{classIdo_a3cada14b52b883bca244c40fa477ba15}{getPerc}}();}
+\DoxyCodeLine{00006\ \ \ \textcolor{keywordflow}{return}\ os;}
+\DoxyCodeLine{00007\ \}\ \textcolor{comment}{//\ operator<<()}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{ido_8cpp_ac433647af32d9e7ec41d73faa9b12477_cgraph}
+\end{center}
+\end{figure}

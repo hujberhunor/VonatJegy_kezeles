@@ -1,0 +1,101 @@
+\doxysection{kiosk.\+cpp}
+\hypertarget{kiosk_8cpp_source}{}\label{kiosk_8cpp_source}\mbox{\hyperlink{kiosk_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{kiosk_8h}{kiosk.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{jegy_8h}{jegy.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{seged_8h}{./seged.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{mav_8h}{./mav.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{vonat_8h}{./vonat.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{allomas_8h}{allomas.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ido_8h}{ido.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00013}\mbox{\hyperlink{classKiosk_a0720b9a024917b95f7ca167bdf19527d}{00013}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKiosk_a0720b9a024917b95f7ca167bdf19527d}{Kiosk::init}}()\ \{}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00014}00014\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\#\#\#\ Dönts\ \#\#\#"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00015}00015\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}1.\ Vonat\ hozzáadása\ "{}}\ \ \ \ \ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00016}00016\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}2.\ Vonatok\ listázása\ "{}}\ \ \ \ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00017}00017\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}3.\ Jegy\ nyomtatása"{}}\ \ \ \ \ \ \ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00018}00018\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}4.\ Kilépés"{}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00019}00019\ \}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00021}00021\ \textcolor{comment}{//\ User\ input\ az\ input\ streamről\ enum-\/má\ konvertálva}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00022}\mbox{\hyperlink{classKiosk_a9aa9dc56bb99ac2079705525e26813bc}{00022}}\ \mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867af}{menuItem}}\ \mbox{\hyperlink{classKiosk_a9aa9dc56bb99ac2079705525e26813bc}{Kiosk::userInput}}()\ \{}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00023}00023\ \ \ \ \textcolor{keywordtype}{int}\ valasz;}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00024}00024\ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Választott\ lehetőség:\ "{}};}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00025}00025\ \ \ \ std::cin\ >>\ valasz;}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00026}00026\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867af}{menuItem}}\textcolor{keyword}{>}(valasz);}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00027}00027\ \}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00029}00029\ \textcolor{comment}{//\ Liszázza\ az\ összes\ vonatot}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00030}\mbox{\hyperlink{classKiosk_a196ec12845a5f5384f9145a3fbe086d1}{00030}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKiosk_a196ec12845a5f5384f9145a3fbe086d1}{Kiosk::listaz}}(\mbox{\hyperlink{classMav}{Mav}}\&\ mav)\{}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00031}00031\ \ \ mav.\mbox{\hyperlink{classMav_aa9729202f8dac420111d5266bfa6c9e8}{kiir}}();\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00032}00032\ \}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00035}\mbox{\hyperlink{classKiosk_a86af671752c83d3624ab7aeb3652f290}{00035}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKiosk_a86af671752c83d3624ab7aeb3652f290}{Kiosk::vonatHozza}}(\mbox{\hyperlink{classMav}{Mav}}\&\ mav,\ std::streampos\ currPos)\{}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00036}00036\ \ \ \mbox{\hyperlink{structSeged}{Seged}}\ s;}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00038}00038\ \ \ std::cin\ >>\ s.\mbox{\hyperlink{structSeged_a6a1af90b30c3780068f4c54238f85126}{szam}};\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00039}00039\ \ \ \textcolor{comment}{//\ if(*(s.szam)\ ==\ '\(\backslash\)n')\ std::cout\ <<\ "{}FASZ"{};}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00040}00040\ \ \ std::cin\ >>\ s.\mbox{\hyperlink{structSeged_a9eed4ddac8bea1333197a75b6a4131d7}{indulo}};\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00041}00041\ \ \ std::cin\ >>\ s.\mbox{\hyperlink{structSeged_a5d858ded61ba3f9f2f7ff7aeb7705228}{veg}};\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00042}00042\ \ \ std::cin\ >>\ s.\mbox{\hyperlink{structSeged_a5d4c351ed460ee96b0cab1d6425ac02a}{kocsidb}};\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00043}00043\ \ \ std::cin\ >>\ s.\mbox{\hyperlink{structSeged_aea666b603eaa1e751bbaa5d91de4ad6f}{indulas}};\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00044}00044\ \ \ std::cin\ >>\ s.\mbox{\hyperlink{structSeged_a7d6286359ec3e59d1a1988843ce4cbd8}{erkezes}};\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00045}00045\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00046}00046\ \ \ mav.\mbox{\hyperlink{classMav_a9838399fd397670c9d4e9f2d279c1a73}{addTrain}}(currPos,\ atoi(s.\mbox{\hyperlink{structSeged_a6a1af90b30c3780068f4c54238f85126}{szam}}),\ \mbox{\hyperlink{classAllomas}{Allomas}}(s.\mbox{\hyperlink{structSeged_a9eed4ddac8bea1333197a75b6a4131d7}{indulo}}),\ \mbox{\hyperlink{classAllomas}{Allomas}}(s.\mbox{\hyperlink{structSeged_a5d858ded61ba3f9f2f7ff7aeb7705228}{veg}}),}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ atoi(s.\mbox{\hyperlink{structSeged_a5d4c351ed460ee96b0cab1d6425ac02a}{kocsidb}}),\ \mbox{\hyperlink{classIdo}{Ido}}(s.\mbox{\hyperlink{structSeged_aea666b603eaa1e751bbaa5d91de4ad6f}{indulas}}),\ \mbox{\hyperlink{classIdo}{Ido}}(s.\mbox{\hyperlink{structSeged_a7d6286359ec3e59d1a1988843ce4cbd8}{erkezes}}));}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00048}00048\ \}\ \textcolor{comment}{//\ End\ of\ vonatHozza}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00052}00052\ \textcolor{comment}{//\ Jegy\ vásárlás}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00053}\mbox{\hyperlink{classKiosk_af4fe3883e13b6e3658ac7b1001532fb4}{00053}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKiosk_af4fe3883e13b6e3658ac7b1001532fb4}{Kiosk::jegyValt}}(\mbox{\hyperlink{classMav}{Mav}}\&\ mav)\{}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00054}00054\ \ \ \textcolor{keywordtype}{int}\ idx,\ buf;}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00055}00055\ \ \ \mbox{\hyperlink{classKiosk_a196ec12845a5f5384f9145a3fbe086d1}{listaz}}(mav);}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00056}00056\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Valasz\ vonatot:\ "{}};}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00057}00057\ \ \ std::cin\ >>\ idx;}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00058}00058\ \ \ \textcolor{comment}{//\ Hibakezelés}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00059}00059\ \ \ \textcolor{keywordflow}{if}(\textcolor{keywordtype}{size\_t}(idx)\ >\ mav.\mbox{\hyperlink{classMav_a4b70915946e42d3b77413f7506655a75}{getSize}}())\{\ std::cout\ <<\ \textcolor{stringliteral}{"{}Túlindexelés\(\backslash\)n"{}};\ \textcolor{keywordflow}{return};\ \}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00060}00060\ \ \ std::cout\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00061}00061\ \ \ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00062}00062\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}1.Teljes,\ 2.Diak,\ 3.Kutya\(\backslash\)n\ "{}};}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00063}00063\ \ \ std::cin\ >>\ buf;}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00064}00064\ \ \ \textcolor{comment}{//\ Hibakezelés}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00065}00065\ \ \ \textcolor{keywordflow}{if}(buf\ >\ 3)\{\ std::cout\ <<\ \textcolor{stringliteral}{"{}Túlindexelés"{}};\ \textcolor{keywordflow}{return};\ \}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00066}00066\ \ \ std::cout\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00068}00068\ \ \ \textcolor{keywordflow}{switch}\ (buf)\ \{}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00069}00069\ \ \ \ \ \textcolor{keywordflow}{case}\ 1:\ \{}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00070}00070\ \ \ \ \ \ \ \mbox{\hyperlink{classTeljes}{Teljes}}\ t;}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00071}00071\ \ \ \ \ \ \ t.\mbox{\hyperlink{classTeljes_a6f147b902c77f74ba1542b4978ed99a4}{nyomtat}}(mav.\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(idx));}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00072}00072\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00073}00073\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00075}00075\ \ \ \ \ \textcolor{keywordflow}{case}\ 2:\ \{}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00076}00076\ \ \ \ \ \ \ \mbox{\hyperlink{classDiak}{Diak}}\ d;}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00077}00077\ \ \ \ \ \ \ d.\mbox{\hyperlink{classDiak_a7121a13da47dce7a773809a385aefa27}{nyomtat}}(mav.\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(idx));}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00078}00078\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00079}00079\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00081}00081\ \ \ \ \ \textcolor{keywordflow}{case}\ 3:\ \{}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00082}00082\ \ \ \ \ \ \ \mbox{\hyperlink{classKutya}{Kutya}}\ k;}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00083}00083\ \ \ \ \ \ \ k.\mbox{\hyperlink{classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d}{nyomtat}}(mav.\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(idx));}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00084}00084\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00085}00085\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00086}00086\ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00087}00087\ \ \ \}\ \textcolor{comment}{//\ end\ of\ switch}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00088}00088\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00089}00089\ \}\ \textcolor{comment}{//\ end\ of\ jegyValt}}
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00090}00090\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00094}00094\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8cpp_source_l00096}00096\ }
+
+\end{DoxyCode}

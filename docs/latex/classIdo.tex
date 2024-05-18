@@ -1,0 +1,158 @@
+\doxysection{Ido Class Reference}
+\hypertarget{classIdo}{}\label{classIdo}\index{Ido@{Ido}}
+
+
+{\ttfamily \#include $<$ido.\+h$>$}
+
+
+
+Collaboration diagram for Ido\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=144pt]{classIdo__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIdo_a3dc5a87f00236a7ba2aa248c4904896e}{Ido}} (const char \texorpdfstring{$\ast$}{*}ido)
+\item 
+\mbox{\hyperlink{classIdo_a9c28d8044b059577d50e3c1fb428930f}{Ido}} (int \mbox{\hyperlink{classIdo_a868d0ce90aa55c59666c33bdbaac2b42}{ora}}, int \mbox{\hyperlink{classIdo_a4e4215d40abe99985e29c8d9245e92a1}{perc}})
+\item 
+int \mbox{\hyperlink{classIdo_af8343a13fda687245c926f1843a316d0}{get\+Ora}} () const
+\item 
+int \mbox{\hyperlink{classIdo_a3cada14b52b883bca244c40fa477ba15}{get\+Perc}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classIdo_a868d0ce90aa55c59666c33bdbaac2b42}{ora}}
+\item 
+int \mbox{\hyperlink{classIdo_a4e4215d40abe99985e29c8d9245e92a1}{perc}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{ido_8h_source_l00012}{12}} of file \mbox{\hyperlink{ido_8h_source}{ido.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classIdo_a3dc5a87f00236a7ba2aa248c4904896e}\label{classIdo_a3dc5a87f00236a7ba2aa248c4904896e} 
+\index{Ido@{Ido}!Ido@{Ido}}
+\index{Ido@{Ido}!Ido@{Ido}}
+\doxysubsubsection{\texorpdfstring{Ido()}{Ido()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Ido\+::\+Ido (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{ido }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor 
+\begin{DoxyParams}{Parameters}
+{\em ido} & mivel beolvasáskor char\texorpdfstring{$\ast$}{*} típusokba olvasok bele char\texorpdfstring{$\ast$}{*}-\/ot kap paraméterként és azt kezeli megfelelően konvertálva. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{ido_8h_source_l00022}{22}} of file \mbox{\hyperlink{ido_8h_source}{ido.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{classIdo_a868d0ce90aa55c59666c33bdbaac2b42}{ora}}\ =\ (ido[0]\ -\/\ \textcolor{charliteral}{'0'})\ *\ 10\ +\ (ido[1]\ -\/\ \textcolor{charliteral}{'0'});}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{classIdo_a4e4215d40abe99985e29c8d9245e92a1}{perc}}\ =\ (ido[2]\ -\/\ \textcolor{charliteral}{'0'})\ *\ 10\ +\ (ido[3]\ -\/\ \textcolor{charliteral}{'0'});}
+\DoxyCodeLine{00025\ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classIdo_a9c28d8044b059577d50e3c1fb428930f}\label{classIdo_a9c28d8044b059577d50e3c1fb428930f} 
+\index{Ido@{Ido}!Ido@{Ido}}
+\index{Ido@{Ido}!Ido@{Ido}}
+\doxysubsubsection{\texorpdfstring{Ido()}{Ido()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Ido\+::\+Ido (\begin{DoxyParamCaption}\item[{int}]{ora,  }\item[{int}]{perc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{ido_8h_source_l00027}{27}} of file \mbox{\hyperlink{ido_8h_source}{ido.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027\ :\ \mbox{\hyperlink{classIdo_a868d0ce90aa55c59666c33bdbaac2b42}{ora}}(\mbox{\hyperlink{classIdo_a868d0ce90aa55c59666c33bdbaac2b42}{ora}}),\ \mbox{\hyperlink{classIdo_a4e4215d40abe99985e29c8d9245e92a1}{perc}}(\mbox{\hyperlink{classIdo_a4e4215d40abe99985e29c8d9245e92a1}{perc}})\ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classIdo_af8343a13fda687245c926f1843a316d0}\label{classIdo_af8343a13fda687245c926f1843a316d0} 
+\index{Ido@{Ido}!getOra@{getOra}}
+\index{getOra@{getOra}!Ido@{Ido}}
+\doxysubsubsection{\texorpdfstring{getOra()}{getOra()}}
+{\footnotesize\ttfamily int Ido\+::get\+Ora (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{ido_8h_source_l00036}{36}} of file \mbox{\hyperlink{ido_8h_source}{ido.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classIdo_a868d0ce90aa55c59666c33bdbaac2b42}{ora}};\ \};}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classIdo_af8343a13fda687245c926f1843a316d0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classIdo_a3cada14b52b883bca244c40fa477ba15}\label{classIdo_a3cada14b52b883bca244c40fa477ba15} 
+\index{Ido@{Ido}!getPerc@{getPerc}}
+\index{getPerc@{getPerc}!Ido@{Ido}}
+\doxysubsubsection{\texorpdfstring{getPerc()}{getPerc()}}
+{\footnotesize\ttfamily int Ido\+::get\+Perc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{ido_8h_source_l00037}{37}} of file \mbox{\hyperlink{ido_8h_source}{ido.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00037\ \{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classIdo_a4e4215d40abe99985e29c8d9245e92a1}{perc}};\ \};}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classIdo_a3cada14b52b883bca244c40fa477ba15_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{classIdo_a868d0ce90aa55c59666c33bdbaac2b42}\label{classIdo_a868d0ce90aa55c59666c33bdbaac2b42} 
+\index{Ido@{Ido}!ora@{ora}}
+\index{ora@{ora}!Ido@{Ido}}
+\doxysubsubsection{\texorpdfstring{ora}{ora}}
+{\footnotesize\ttfamily int Ido\+::ora\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{ido_8h_source_l00013}{13}} of file \mbox{\hyperlink{ido_8h_source}{ido.\+h}}.
+
+\Hypertarget{classIdo_a4e4215d40abe99985e29c8d9245e92a1}\label{classIdo_a4e4215d40abe99985e29c8d9245e92a1} 
+\index{Ido@{Ido}!perc@{perc}}
+\index{perc@{perc}!Ido@{Ido}}
+\doxysubsubsection{\texorpdfstring{perc}{perc}}
+{\footnotesize\ttfamily int Ido\+::perc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{ido_8h_source_l00014}{14}} of file \mbox{\hyperlink{ido_8h_source}{ido.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ido_8h}{ido.\+h}}\end{DoxyCompactItemize}

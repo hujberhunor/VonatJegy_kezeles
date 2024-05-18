@@ -9,6 +9,19 @@
 #include "ido.h"
 
 #include <fstream>
+#include <limits>
+
+/// Érvényes-e az input mikor számot kellene megadnom
+bool Kiosk::inputCheck(){
+  // Kb innen lopva https://stackoverflow.com/questions/12721911/c-how-to-verify-if-the-data-input-is-of-the-correct-datatype
+  if (std::cin.fail()) {
+        std::cout << "Nem sikerült érvényes inputot megadni... PRÓBÁLD ÚJRA" << std::endl;
+        std::cin.clear(); 
+        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        return false;
+  }
+  else return true;
+}
 
 void Kiosk::init() {
   std::cout << "### Dönts ###" << std::endl;
@@ -48,7 +61,6 @@ void Kiosk::vonatHozza(Mav& mav, std::streampos currPos){
 } // End of vonatHozza
 
 
-
 // Jegy vásárlás
 void Kiosk::jegyValt(Mav& mav){
   int idx, buf;
@@ -57,13 +69,22 @@ void Kiosk::jegyValt(Mav& mav){
   std::cin >> idx;
   // Hibakezelés
   if(size_t(idx) > mav.getSize()){ std::cout << "Túlindexelés\n"; return; }
-  std::cout << std::endl;
   
+  if(!(Kiosk::inputCheck())) return; // Érvényes inputot szűrök. 
+  
+  std::cout << std::endl; // szép kíírás miatt. 
+  // end if Hibakezelés  
+
+
   std::cout << "1.Teljes, 2.Diak, 3.Kutya\n ";
   std::cin >> buf;
   // Hibakezelés
   if(buf > 3){ std::cout << "Túlindexelés"; return; }
+
+  if(!(Kiosk::inputCheck())) return; 
+ 
   std::cout << std::endl;
+  // end of Hibakezelés
 
   switch (buf) {
     case 1: {

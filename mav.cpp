@@ -1,17 +1,11 @@
 #include "./mav.h"
 #include "./seged.h"
 
-// Magyarország leghosszabb településneve 15 karakter
-// 25 karakterbe bele kell férnia
-// Biztosítani lehetne, egy gyors checkel 
-// és egy buffSize növeléssel, de nem láttam értelmét. 
 
-
-
-
-/* VONATOK FILE BEOLVASÁSA */
-// Beolvaásás a file-ból egy segéd strukturába, onnan pedig egy Vonat objektum feltöltés 
-// @param Mav& mav class feltöltéséhez szükséges 
+/**
+ * Beolvaásás a file-ból egy segéd strukturába, onnan pedig egy Vonat objektum feltöltés 
+ * @param Mav& mav class feltöltéséhez szükséges 
+ */
 void Mav::beolvas() {
   // Inicalizálás
   const char* vonatok_file = "./vonatok.txt";    
@@ -23,6 +17,11 @@ void Mav::beolvas() {
     std::cout << "Megynitással van baj " << vonatok_file << std::endl;
     return;
   }
+
+  // Kiürítem a vonatok kollekciót, hogy ne legyen ráolvasás
+  delete[] vonatok;
+  vonatok = nullptr;
+  si = 0;
 
   while (file >> seged.szam >> seged.indulo >> seged.veg >> seged.kocsidb >> seged.indulas >> seged.erkezes) {
     v.setSzam(std::atoi(seged.szam));
@@ -38,10 +37,11 @@ void Mav::beolvas() {
   file.close();
 } // END OF BEOLVAS
 
-
-// Vonatok hozzáadása
-// @param currPos a streamben elfoglalt helyem
-// @param minden-más a vonat class feltöltéséhez szükséges adatok
+/*
+ * Vonatok hozzáadása
+ * @param currPos a streamben elfoglalt helyem
+ * @param minden-más a vonat class feltöltéséhez szükséges adatok
+*/
 void Mav::addTrain(std::streampos& currPos, int szam, Allomas indulo,
             Allomas veg, int kocsidb, Ido indulas, Ido erkezes){
   // Inicalizálás
@@ -53,6 +53,7 @@ void Mav::addTrain(std::streampos& currPos, int szam, Allomas indulo,
     std::cout << "Megynitással van baj " << vonatok << std::endl;
     return;
   }
+  // end of HIBAKEZELÉS
 
   if(file.is_open()){
     file.seekp(currPos); // Megfelelő helyre ugrok
@@ -60,6 +61,7 @@ void Mav::addTrain(std::streampos& currPos, int szam, Allomas indulo,
     file << szam << " " << indulo << " " << veg << " " << kocsidb << " "
          << indulas << " " << erkezes << std::endl;
   }
+
   file.close();
 } // END OF addTrain
 

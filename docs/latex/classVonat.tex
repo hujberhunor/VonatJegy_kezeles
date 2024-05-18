@@ -1,0 +1,470 @@
+\doxysection{Vonat Class Reference}
+\hypertarget{classVonat}{}\label{classVonat}\index{Vonat@{Vonat}}
+
+
+{\ttfamily \#include $<$vonat.\+h$>$}
+
+
+
+Collaboration diagram for Vonat\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{classVonat__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVonat_ab0e8522a84fbc4a4323cf4e703307719}{Vonat}} ()
+\begin{DoxyCompactList}\small\item\em Érkezési idp. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVonat_aef33a5106540ff8c59adcca8452bf459}{Vonat}} (int vszam, \mbox{\hyperlink{classAllomas}{Allomas}} indulop, \mbox{\hyperlink{classAllomas}{Allomas}} vegp, int \mbox{\hyperlink{classVonat_ad82574a0e9547609da02188dea14acb4}{kocsidb}}, \mbox{\hyperlink{classIdo}{Ido}} indulasp, \mbox{\hyperlink{classIdo}{Ido}} erkezesp)
+\begin{DoxyCompactList}\small\item\em Paraméteres Konstruktor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVonat_a191874e48371b4f07b8703cfd0c85934}{set\+Szam}} (int \mbox{\hyperlink{classVonat_a3fb587e1a16c69cd90fb83cc694ba2f3}{szam}})
+\begin{DoxyCompactList}\small\item\em Setterek. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVonat_a27a2c9da752ab6cee10e8386c89e60a3}{set\+Indulo}} (const char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classVonat_a0f3ee29b8d9d12c9a0e052e446d2f26b}{indulo}})
+\item 
+void \mbox{\hyperlink{classVonat_acec88991afa8817d7bd6f58190693155}{set\+Veg}} (const char \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classVonat_af55eb2228ab54ee2f11fc19311ad979c}{veg}})
+\item 
+void \mbox{\hyperlink{classVonat_a114542b472a68e864279f367f88dd95e}{set\+Kocsidb}} (int \mbox{\hyperlink{classVonat_ad82574a0e9547609da02188dea14acb4}{kocsidb}})
+\item 
+void \mbox{\hyperlink{classVonat_a6b31c3d13fe2bf39f70f4dac557d4b76}{set\+Indulas}} (const char \texorpdfstring{$\ast$}{*}ido)
+\item 
+void \mbox{\hyperlink{classVonat_a53b9de572bc678ec86a8916473067375}{set\+Erkezes}} (const char \texorpdfstring{$\ast$}{*}ido)
+\item 
+int \mbox{\hyperlink{classVonat_a18efd274d4ea6de105fa7761e8511799}{get\+Szam}} () const
+\begin{DoxyCompactList}\small\item\em Getterek. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAllomas}{Allomas}} \mbox{\hyperlink{classVonat_af72c3c1ed6de5148f2ee8492f8d1c509}{get\+Indulo}} () const
+\item 
+\mbox{\hyperlink{classAllomas}{Allomas}} \mbox{\hyperlink{classVonat_a02fb91a76526a9d1e4853665579a964c}{get\+Veg}} () const
+\item 
+int \mbox{\hyperlink{classVonat_acced304cedfe39ec6b79bf4604811a22}{get\+Kocsidb}} () const
+\item 
+\mbox{\hyperlink{classIdo}{Ido}} \mbox{\hyperlink{classVonat_ade4a6aa71f0a55fb67b2a5ee46cee948}{get\+Indulas}} () const
+\item 
+\mbox{\hyperlink{classIdo}{Ido}} \mbox{\hyperlink{classVonat_aa7c2d558c5ee625d577097c1452aa99e}{get\+Erkezes}} () const
+\item 
+void \mbox{\hyperlink{classVonat_accf19f7143540d637a8b2234a47efee6}{kiir}} () const
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classVonat_a3fb587e1a16c69cd90fb83cc694ba2f3}{szam}}
+\item 
+\mbox{\hyperlink{classAllomas}{Allomas}} \mbox{\hyperlink{classVonat_a0f3ee29b8d9d12c9a0e052e446d2f26b}{indulo}}
+\begin{DoxyCompactList}\small\item\em Vonatszám. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAllomas}{Allomas}} \mbox{\hyperlink{classVonat_af55eb2228ab54ee2f11fc19311ad979c}{veg}}
+\begin{DoxyCompactList}\small\item\em Kiinduló állomas. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classVonat_ad82574a0e9547609da02188dea14acb4}{kocsidb}}
+\begin{DoxyCompactList}\small\item\em Végállomas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIdo}{Ido}} \mbox{\hyperlink{classVonat_afd496a684266b6f9a48c610bdb4ade81}{indulas}}
+\begin{DoxyCompactList}\small\item\em Kocsik darabszáma, basically semmit sem csinál. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classIdo}{Ido}} \mbox{\hyperlink{classVonat_ae25129bce29f369c949e5fae4f614a29}{erkezes}}
+\begin{DoxyCompactList}\small\item\em Indulási idő \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00015}{15}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classVonat_ab0e8522a84fbc4a4323cf4e703307719}\label{classVonat_ab0e8522a84fbc4a4323cf4e703307719} 
+\index{Vonat@{Vonat}!Vonat@{Vonat}}
+\index{Vonat@{Vonat}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{Vonat()}{Vonat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Vonat\+::\+Vonat (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Érkezési idp. 
+
+Paraméter nélküli Konstruktor 
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00026}{26}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00026\ :\ \mbox{\hyperlink{classVonat_a3fb587e1a16c69cd90fb83cc694ba2f3}{szam}}(0),\ \mbox{\hyperlink{classVonat_a0f3ee29b8d9d12c9a0e052e446d2f26b}{indulo}}(\textcolor{stringliteral}{"{}"{}}),\ \mbox{\hyperlink{classVonat_af55eb2228ab54ee2f11fc19311ad979c}{veg}}(\textcolor{stringliteral}{"{}"{}}),\ \mbox{\hyperlink{classVonat_ad82574a0e9547609da02188dea14acb4}{kocsidb}}(0),\ \mbox{\hyperlink{classVonat_afd496a684266b6f9a48c610bdb4ade81}{indulas}}(0,0),\ \mbox{\hyperlink{classVonat_ae25129bce29f369c949e5fae4f614a29}{erkezes}}(0,0)\ \{\}}
+
+\end{DoxyCode}
+\Hypertarget{classVonat_aef33a5106540ff8c59adcca8452bf459}\label{classVonat_aef33a5106540ff8c59adcca8452bf459} 
+\index{Vonat@{Vonat}!Vonat@{Vonat}}
+\index{Vonat@{Vonat}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{Vonat()}{Vonat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Vonat\+::\+Vonat (\begin{DoxyParamCaption}\item[{int}]{vszam,  }\item[{\mbox{\hyperlink{classAllomas}{Allomas}}}]{indulop,  }\item[{\mbox{\hyperlink{classAllomas}{Allomas}}}]{vegp,  }\item[{int}]{kocsidb,  }\item[{\mbox{\hyperlink{classIdo}{Ido}}}]{indulasp,  }\item[{\mbox{\hyperlink{classIdo}{Ido}}}]{erkezesp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Paraméteres Konstruktor. 
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00029}{29}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classVonat_a3fb587e1a16c69cd90fb83cc694ba2f3}{szam}}(vszam),\ \mbox{\hyperlink{classVonat_a0f3ee29b8d9d12c9a0e052e446d2f26b}{indulo}}(indulop),\ \mbox{\hyperlink{classVonat_af55eb2228ab54ee2f11fc19311ad979c}{veg}}(vegp),\ \mbox{\hyperlink{classVonat_ad82574a0e9547609da02188dea14acb4}{kocsidb}}(\mbox{\hyperlink{classVonat_ad82574a0e9547609da02188dea14acb4}{kocsidb}}),\ \mbox{\hyperlink{classVonat_afd496a684266b6f9a48c610bdb4ade81}{indulas}}(indulasp),\ \mbox{\hyperlink{classVonat_ae25129bce29f369c949e5fae4f614a29}{erkezes}}(erkezesp)\ \{\}\ }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classVonat_aa7c2d558c5ee625d577097c1452aa99e}\label{classVonat_aa7c2d558c5ee625d577097c1452aa99e} 
+\index{Vonat@{Vonat}!getErkezes@{getErkezes}}
+\index{getErkezes@{getErkezes}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{getErkezes()}{getErkezes()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIdo}{Ido}} Vonat\+::get\+Erkezes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00046}{46}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00046\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classVonat_ae25129bce29f369c949e5fae4f614a29}{erkezes}};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classVonat_ade4a6aa71f0a55fb67b2a5ee46cee948}\label{classVonat_ade4a6aa71f0a55fb67b2a5ee46cee948} 
+\index{Vonat@{Vonat}!getIndulas@{getIndulas}}
+\index{getIndulas@{getIndulas}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{getIndulas()}{getIndulas()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIdo}{Ido}} Vonat\+::get\+Indulas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00045}{45}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00045\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classVonat_afd496a684266b6f9a48c610bdb4ade81}{indulas}};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classVonat_af72c3c1ed6de5148f2ee8492f8d1c509}\label{classVonat_af72c3c1ed6de5148f2ee8492f8d1c509} 
+\index{Vonat@{Vonat}!getIndulo@{getIndulo}}
+\index{getIndulo@{getIndulo}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{getIndulo()}{getIndulo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAllomas}{Allomas}} Vonat\+::get\+Indulo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00042}{42}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00042\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classVonat_a0f3ee29b8d9d12c9a0e052e446d2f26b}{indulo}};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classVonat_acced304cedfe39ec6b79bf4604811a22}\label{classVonat_acced304cedfe39ec6b79bf4604811a22} 
+\index{Vonat@{Vonat}!getKocsidb@{getKocsidb}}
+\index{getKocsidb@{getKocsidb}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{getKocsidb()}{getKocsidb()}}
+{\footnotesize\ttfamily int Vonat\+::get\+Kocsidb (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00044}{44}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00044\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classVonat_ad82574a0e9547609da02188dea14acb4}{kocsidb}};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classVonat_a18efd274d4ea6de105fa7761e8511799}\label{classVonat_a18efd274d4ea6de105fa7761e8511799} 
+\index{Vonat@{Vonat}!getSzam@{getSzam}}
+\index{getSzam@{getSzam}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{getSzam()}{getSzam()}}
+{\footnotesize\ttfamily int Vonat\+::get\+Szam (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getterek. 
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00041}{41}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00041\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classVonat_a3fb587e1a16c69cd90fb83cc694ba2f3}{szam}};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classVonat_a02fb91a76526a9d1e4853665579a964c}\label{classVonat_a02fb91a76526a9d1e4853665579a964c} 
+\index{Vonat@{Vonat}!getVeg@{getVeg}}
+\index{getVeg@{getVeg}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{getVeg()}{getVeg()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAllomas}{Allomas}} Vonat\+::get\+Veg (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00043}{43}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00043\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classVonat_af55eb2228ab54ee2f11fc19311ad979c}{veg}};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classVonat_accf19f7143540d637a8b2234a47efee6}\label{classVonat_accf19f7143540d637a8b2234a47efee6} 
+\index{Vonat@{Vonat}!kiir@{kiir}}
+\index{kiir@{kiir}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{kiir()}{kiir()}}
+{\footnotesize\ttfamily void Vonat\+::kiir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Kiírja a vonat adatait Főképp a jegyváltáskor van meghívva + listázás. 
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00052}{52}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00053\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Vonat\ szama:\ "{}}\ <<\ \mbox{\hyperlink{classVonat_a3fb587e1a16c69cd90fb83cc694ba2f3}{szam}}\ <<\ std::endl;}
+\DoxyCodeLine{00054\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Indulasi\ allomas:\ "{}}\ <<\ \mbox{\hyperlink{classVonat_a0f3ee29b8d9d12c9a0e052e446d2f26b}{indulo}}\ <<\ std::endl;}
+\DoxyCodeLine{00055\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Erkezesi\ allomas:\ "{}}\ <<\ \mbox{\hyperlink{classVonat_af55eb2228ab54ee2f11fc19311ad979c}{veg}}\ <<\ std::endl;}
+\DoxyCodeLine{00056\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Kocsi\ darabszam:\ "{}}\ <<\ \mbox{\hyperlink{classVonat_ad82574a0e9547609da02188dea14acb4}{kocsidb}}\ <<\ std::endl;}
+\DoxyCodeLine{00057\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Indulas\ idopontja:\ "{}}\ <<\ std::setw(2)\ <<\ std::setfill(\textcolor{charliteral}{'0'})\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\mbox{\hyperlink{classVonat_afd496a684266b6f9a48c610bdb4ade81}{indulas}}.\mbox{\hyperlink{classIdo_af8343a13fda687245c926f1843a316d0}{getOra}}()\ <<\ \textcolor{stringliteral}{"{}:"{}}\ <<\ \mbox{\hyperlink{classVonat_afd496a684266b6f9a48c610bdb4ade81}{indulas}}.\mbox{\hyperlink{classIdo_a3cada14b52b883bca244c40fa477ba15}{getPerc}}()\ <<\ std::endl;\ \textcolor{comment}{//\ Nagyon\ ronda,\ tudom...}}
+\DoxyCodeLine{00059\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Erkezes\ idopontja:\ "{}}\ <<\ std::setw(2)\ <<\ std::setfill(\textcolor{charliteral}{'0'})\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\mbox{\hyperlink{classVonat_ae25129bce29f369c949e5fae4f614a29}{erkezes}}.\mbox{\hyperlink{classIdo_af8343a13fda687245c926f1843a316d0}{getOra}}()\ <<\ \textcolor{stringliteral}{"{}:"{}}\ <<\ \mbox{\hyperlink{classVonat_ae25129bce29f369c949e5fae4f614a29}{erkezes}}.\mbox{\hyperlink{classIdo_a3cada14b52b883bca244c40fa477ba15}{getPerc}}()\ <<\ std::endl;}
+\DoxyCodeLine{00061\ \ \ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{classVonat_accf19f7143540d637a8b2234a47efee6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classVonat_accf19f7143540d637a8b2234a47efee6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classVonat_a53b9de572bc678ec86a8916473067375}\label{classVonat_a53b9de572bc678ec86a8916473067375} 
+\index{Vonat@{Vonat}!setErkezes@{setErkezes}}
+\index{setErkezes@{setErkezes}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{setErkezes()}{setErkezes()}}
+{\footnotesize\ttfamily void Vonat\+::set\+Erkezes (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{ido }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00038}{38}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00038\ \{\ this-\/>\mbox{\hyperlink{classVonat_ae25129bce29f369c949e5fae4f614a29}{erkezes}}\ =\ \mbox{\hyperlink{classIdo}{Ido}}(ido);\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classVonat_a53b9de572bc678ec86a8916473067375_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classVonat_a6b31c3d13fe2bf39f70f4dac557d4b76}\label{classVonat_a6b31c3d13fe2bf39f70f4dac557d4b76} 
+\index{Vonat@{Vonat}!setIndulas@{setIndulas}}
+\index{setIndulas@{setIndulas}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{setIndulas()}{setIndulas()}}
+{\footnotesize\ttfamily void Vonat\+::set\+Indulas (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{ido }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00037}{37}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00037\ \{\ this-\/>\mbox{\hyperlink{classVonat_afd496a684266b6f9a48c610bdb4ade81}{indulas}}\ =\ \mbox{\hyperlink{classIdo}{Ido}}(ido);\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classVonat_a6b31c3d13fe2bf39f70f4dac557d4b76_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classVonat_a27a2c9da752ab6cee10e8386c89e60a3}\label{classVonat_a27a2c9da752ab6cee10e8386c89e60a3} 
+\index{Vonat@{Vonat}!setIndulo@{setIndulo}}
+\index{setIndulo@{setIndulo}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{setIndulo()}{setIndulo()}}
+{\footnotesize\ttfamily void Vonat\+::set\+Indulo (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{indulo }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00034}{34}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00034\ \{\ this-\/>\ \mbox{\hyperlink{classVonat_a0f3ee29b8d9d12c9a0e052e446d2f26b}{indulo}}\ =\ \mbox{\hyperlink{classAllomas}{Allomas}}(\mbox{\hyperlink{classVonat_a0f3ee29b8d9d12c9a0e052e446d2f26b}{indulo}});\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classVonat_a27a2c9da752ab6cee10e8386c89e60a3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classVonat_a114542b472a68e864279f367f88dd95e}\label{classVonat_a114542b472a68e864279f367f88dd95e} 
+\index{Vonat@{Vonat}!setKocsidb@{setKocsidb}}
+\index{setKocsidb@{setKocsidb}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{setKocsidb()}{setKocsidb()}}
+{\footnotesize\ttfamily void Vonat\+::set\+Kocsidb (\begin{DoxyParamCaption}\item[{int}]{kocsidb }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00036}{36}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \{\ this-\/>\mbox{\hyperlink{classVonat_ad82574a0e9547609da02188dea14acb4}{kocsidb}}\ =\ \mbox{\hyperlink{classVonat_ad82574a0e9547609da02188dea14acb4}{kocsidb}};\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classVonat_a114542b472a68e864279f367f88dd95e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classVonat_a191874e48371b4f07b8703cfd0c85934}\label{classVonat_a191874e48371b4f07b8703cfd0c85934} 
+\index{Vonat@{Vonat}!setSzam@{setSzam}}
+\index{setSzam@{setSzam}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{setSzam()}{setSzam()}}
+{\footnotesize\ttfamily void Vonat\+::set\+Szam (\begin{DoxyParamCaption}\item[{int}]{szam }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Setterek. 
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00033}{33}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00033\ \{\ this-\/>\mbox{\hyperlink{classVonat_a3fb587e1a16c69cd90fb83cc694ba2f3}{szam}}\ =\ \mbox{\hyperlink{classVonat_a3fb587e1a16c69cd90fb83cc694ba2f3}{szam}};\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classVonat_a191874e48371b4f07b8703cfd0c85934_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classVonat_acec88991afa8817d7bd6f58190693155}\label{classVonat_acec88991afa8817d7bd6f58190693155} 
+\index{Vonat@{Vonat}!setVeg@{setVeg}}
+\index{setVeg@{setVeg}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{setVeg()}{setVeg()}}
+{\footnotesize\ttfamily void Vonat\+::set\+Veg (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{veg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00035}{35}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00035\ \{\ this-\/>\mbox{\hyperlink{classVonat_af55eb2228ab54ee2f11fc19311ad979c}{veg}}\ =\ \mbox{\hyperlink{classAllomas}{Allomas}}(\mbox{\hyperlink{classVonat_af55eb2228ab54ee2f11fc19311ad979c}{veg}});\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classVonat_acec88991afa8817d7bd6f58190693155_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{classVonat_ae25129bce29f369c949e5fae4f614a29}\label{classVonat_ae25129bce29f369c949e5fae4f614a29} 
+\index{Vonat@{Vonat}!erkezes@{erkezes}}
+\index{erkezes@{erkezes}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{erkezes}{erkezes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIdo}{Ido}} Vonat\+::erkezes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Indulási idő 
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00022}{22}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+\Hypertarget{classVonat_afd496a684266b6f9a48c610bdb4ade81}\label{classVonat_afd496a684266b6f9a48c610bdb4ade81} 
+\index{Vonat@{Vonat}!indulas@{indulas}}
+\index{indulas@{indulas}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{indulas}{indulas}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classIdo}{Ido}} Vonat\+::indulas\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Kocsik darabszáma, basically semmit sem csinál. 
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00021}{21}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+\Hypertarget{classVonat_a0f3ee29b8d9d12c9a0e052e446d2f26b}\label{classVonat_a0f3ee29b8d9d12c9a0e052e446d2f26b} 
+\index{Vonat@{Vonat}!indulo@{indulo}}
+\index{indulo@{indulo}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{indulo}{indulo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAllomas}{Allomas}} Vonat\+::indulo\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Vonatszám. 
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00018}{18}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+\Hypertarget{classVonat_ad82574a0e9547609da02188dea14acb4}\label{classVonat_ad82574a0e9547609da02188dea14acb4} 
+\index{Vonat@{Vonat}!kocsidb@{kocsidb}}
+\index{kocsidb@{kocsidb}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{kocsidb}{kocsidb}}
+{\footnotesize\ttfamily int Vonat\+::kocsidb\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Végállomas. 
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00020}{20}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+\Hypertarget{classVonat_a3fb587e1a16c69cd90fb83cc694ba2f3}\label{classVonat_a3fb587e1a16c69cd90fb83cc694ba2f3} 
+\index{Vonat@{Vonat}!szam@{szam}}
+\index{szam@{szam}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{szam}{szam}}
+{\footnotesize\ttfamily int Vonat\+::szam\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00017}{17}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+\Hypertarget{classVonat_af55eb2228ab54ee2f11fc19311ad979c}\label{classVonat_af55eb2228ab54ee2f11fc19311ad979c} 
+\index{Vonat@{Vonat}!veg@{veg}}
+\index{veg@{veg}!Vonat@{Vonat}}
+\doxysubsubsection{\texorpdfstring{veg}{veg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAllomas}{Allomas}} Vonat\+::veg\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Kiinduló állomas. 
+
+
+
+Definition at line \mbox{\hyperlink{vonat_8h_source_l00019}{19}} of file \mbox{\hyperlink{vonat_8h_source}{vonat.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{vonat_8h}{vonat.\+h}}\end{DoxyCompactItemize}

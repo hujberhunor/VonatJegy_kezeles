@@ -1,0 +1,17 @@
+<map id="Jegy::fizetendo" name="Jegy::fizetendo">
+<area shape="rect" id="Node000001" title="Fizetendő összeg, ár és a kedvezmény szorzata." alt="" coords="603,57,719,85"/>
+<area shape="rect" id="Node000002" href="$classJegy.html#aa9e954a340eff827792a81cdccdb7426" title=" " alt="" coords="443,57,555,85"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="587,74,555,74,555,69,587,69"/>
+<area shape="rect" id="Node000003" href="$classDiak.html#a7121a13da47dce7a773809a385aefa27" title=" " alt="" coords="278,5,392,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="438,55,380,36,382,31,439,50"/>
+<area shape="rect" id="Node000006" href="$classTeljes.html#a6f147b902c77f74ba1542b4978ed99a4" title=" " alt="" coords="274,57,395,85"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="428,74,396,74,396,69,428,69"/>
+<area shape="rect" id="Node000007" href="$classKutya.html#a0bed6bf95538dcad16d1c8dfd53bb65d" title=" " alt="" coords="274,109,395,137"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="439,93,382,111,380,106,438,88"/>
+<area shape="rect" id="Node000004" href="$classKiosk.html#af4fe3883e13b6e3658ac7b1001532fb4" title="jegyet vált a kiválasztott vonatra" alt="" coords="108,57,226,85"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="274,41,215,59,213,54,272,36"/>
+<area shape="rect" id="Node000005" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,57,60,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="92,74,60,74,60,69,92,69"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="259,74,227,74,227,69,259,69"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="272,107,213,88,215,83,274,102"/>
+</map>

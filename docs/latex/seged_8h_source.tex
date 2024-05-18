@@ -1,0 +1,38 @@
+\doxysection{seged.\+h}
+\hypertarget{seged_8h_source}{}\label{seged_8h_source}\mbox{\hyperlink{seged_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ SEGED\_H}}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ SEGED\_H}}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00006}00006\ }
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{allomas_8h}{./allomas.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ido_8h}{./ido.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{jegy_8h}{./jegy.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{kiosk_8h}{./kiosk.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{mav_8h}{./mav.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{seged_8h}{./seged.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{vonat_8h}{./vonat.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00015}00015\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00016}00016\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00017}00017\ \textcolor{comment}{*\ Magyarország\ leghosszabb\ településneve\ 15\ karakter}}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00018}00018\ \textcolor{comment}{*\ 25\ karakterbe\ bele\ kell\ férnia}}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00019}00019\ \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00020}\mbox{\hyperlink{structSeged}{00020}}\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structSeged}{Seged}}\ \{}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00021}\mbox{\hyperlink{structSeged_afb3b92d16f9ef790e8b5706c6d17488b}{00021}}\ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{structSeged_afb3b92d16f9ef790e8b5706c6d17488b}{buffSize}}\ =\ 25;}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00022}\mbox{\hyperlink{structSeged_a6a1af90b30c3780068f4c54238f85126}{00022}}\ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structSeged_a6a1af90b30c3780068f4c54238f85126}{szam}}[\mbox{\hyperlink{structSeged_afb3b92d16f9ef790e8b5706c6d17488b}{buffSize}}];}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00023}\mbox{\hyperlink{structSeged_a9eed4ddac8bea1333197a75b6a4131d7}{00023}}\ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structSeged_a9eed4ddac8bea1333197a75b6a4131d7}{indulo}}[\mbox{\hyperlink{structSeged_afb3b92d16f9ef790e8b5706c6d17488b}{buffSize}}];}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00024}\mbox{\hyperlink{structSeged_a5d858ded61ba3f9f2f7ff7aeb7705228}{00024}}\ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structSeged_a5d858ded61ba3f9f2f7ff7aeb7705228}{veg}}[\mbox{\hyperlink{structSeged_afb3b92d16f9ef790e8b5706c6d17488b}{buffSize}}];}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00025}\mbox{\hyperlink{structSeged_a5d4c351ed460ee96b0cab1d6425ac02a}{00025}}\ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structSeged_a5d4c351ed460ee96b0cab1d6425ac02a}{kocsidb}}[\mbox{\hyperlink{structSeged_afb3b92d16f9ef790e8b5706c6d17488b}{buffSize}}];}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00026}\mbox{\hyperlink{structSeged_aea666b603eaa1e751bbaa5d91de4ad6f}{00026}}\ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structSeged_aea666b603eaa1e751bbaa5d91de4ad6f}{indulas}}[\mbox{\hyperlink{structSeged_afb3b92d16f9ef790e8b5706c6d17488b}{buffSize}}];}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00027}\mbox{\hyperlink{structSeged_a7d6286359ec3e59d1a1988843ce4cbd8}{00027}}\ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{structSeged_a7d6286359ec3e59d1a1988843ce4cbd8}{erkezes}}[\mbox{\hyperlink{structSeged_afb3b92d16f9ef790e8b5706c6d17488b}{buffSize}}];}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00028}00028\ \};}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00030}00030\ }
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00031}00031\ }
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00032}00032\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !SEGED\_H}}
+\DoxyCodeLine{\Hypertarget{seged_8h_source_l00033}00033\ }
+
+\end{DoxyCode}

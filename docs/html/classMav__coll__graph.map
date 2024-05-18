@@ -1,0 +1,9 @@
+<map id="Mav" name="Mav">
+<area shape="rect" id="Node000001" title=" " alt="" coords="68,696,176,958"/>
+<area shape="rect" id="Node000002" href="$classVonat.html" title=" " alt="" coords="69,242,175,631"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,631,125,680,119,680,119,631"/>
+<area shape="rect" id="Node000003" href="$classAllomas.html" title=" " alt="" coords="5,27,116,139"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="73,138,88,225,83,226,68,139"/>
+<area shape="rect" id="Node000004" href="$classIdo.html" title=" " alt="" coords="141,5,226,160"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="173,160,161,226,156,225,167,159"/>
+</map>

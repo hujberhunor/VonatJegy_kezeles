@@ -1,0 +1,51 @@
+\doxysection{kiosk.\+h}
+\hypertarget{kiosk_8h_source}{}\label{kiosk_8h_source}\mbox{\hyperlink{kiosk_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ KIOSK\_H}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ KIOSK\_H}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00004}00004\ \textcolor{comment}{/*\ }}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00005}00005\ \textcolor{comment}{*\ FILE\ KIOSK\_H}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00006}00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{mav_8h}{mav.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{jegy_8h}{jegy.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00012}00012\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00013}00013\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00014}00014\ \textcolor{comment}{///\ Segéd\ "{}class"{}\ }}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00015}00015\ \textcolor{comment}{///\ A\ menü\ kezelését\ könnyíti\ meg.\ }}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00016}\mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867af}{00016}}\ \textcolor{comment}{}\textcolor{keyword}{enum}\ \mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867af}{menuItem}}\{}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00017}\mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867afa31a1b6ef20ecf273d47c0791816af46b}{00017}}\ \ \ \mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867afa31a1b6ef20ecf273d47c0791816af46b}{add}},}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00018}\mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867afa1ad282f7a4661a467bdb03ba3a69fad6}{00018}}\ \ \ \mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867afa1ad282f7a4661a467bdb03ba3a69fad6}{list}},}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00019}\mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867afaf5521d259f22e5c6a664da1517c09ca7}{00019}}\ \ \ \mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867afaf5521d259f22e5c6a664da1517c09ca7}{nyomtat}},}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00020}00020\ \ \ \mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867afad1ec3ad91f68e150978748d2badf3409}{kilep}}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00021}\mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867afad1ec3ad91f68e150978748d2badf3409}{00021}}\ \};}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00023}\mbox{\hyperlink{classKiosk}{00023}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classKiosk}{Kiosk}}\ \{}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00024}00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00025}00025\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00026}00026\ \textcolor{comment}{\ \ ///\ Inicializálja\ a\ menüt,\ ergo\ kiírja\ a\ lehetőségeket}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00027}00027\ \textcolor{comment}{}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKiosk_a0720b9a024917b95f7ca167bdf19527d}{init}}();\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00028}00028\ \textcolor{comment}{\ \ ///\ Felhasználótól\ bemenetet\ kér.\ }}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00029}00029\ \textcolor{comment}{\ \ ///\ @return\ menuItem\ fent\ említett\ enum\ class\ elemt\ ad\ vissza}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00030}00030\ \textcolor{comment}{}\ \ \mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867af}{menuItem}}\ \mbox{\hyperlink{classKiosk_a9aa9dc56bb99ac2079705525e26813bc}{userInput}}();}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00031}00031\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00032}00032\ \textcolor{comment}{\ \ ///\ Liszázza\ a\ vonatokat\ amiket\ beolvasott\ a\ fájlból}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00033}00033\ \textcolor{comment}{}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKiosk_a196ec12845a5f5384f9145a3fbe086d1}{listaz}}(\mbox{\hyperlink{classMav}{Mav}}\&\ mav);\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00034}00034\ \textcolor{comment}{\ \ ///\ Hozzá\ ad\ a\ user\ vonatokat\ a\ fájlhoz}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00035}00035\ \textcolor{comment}{}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKiosk_a86af671752c83d3624ab7aeb3652f290}{vonatHozza}}(\mbox{\hyperlink{classMav}{Mav}}\&\ mav,\ std::streampos\ currPos);\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00036}00036\ \textcolor{comment}{\ \ ///\ jegyet\ vált\ a\ kiválasztott\ vonatra}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00037}00037\ \textcolor{comment}{}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKiosk_af4fe3883e13b6e3658ac7b1001532fb4}{jegyValt}}(\mbox{\hyperlink{classMav}{Mav}}\&\ mav);}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00039}00039\ \};\ \textcolor{comment}{//\ end\ of\ Kiosk}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00046}00046\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !KIOSK\_H}}
+
+\end{DoxyCode}

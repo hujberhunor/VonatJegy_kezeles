@@ -1,0 +1,18 @@
+<map id="jegy.h" name="jegy.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="75,5,135,33"/>
+<area shape="rect" id="Node000002" href="$kiosk_8cpp.html" title=" " alt="" coords="89,232,172,260"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="78,45,49,73,23,109,14,127,9,146,9,165,17,183,31,200,49,214,89,232,87,237,46,219,27,204,12,186,4,166,3,146,9,125,18,106,45,70,74,41"/>
+<area shape="rect" id="Node000003" href="$kiosk_8h.html" title=" " alt="" coords="109,81,178,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,46,139,79,134,82,117,48"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html" title=" " alt="" coords="27,157,108,184"/>
+<area shape="poly" id="edge9_Node000001_Node000004" title=" " alt="" coords="101,49,73,157,68,155,95,47"/>
+<area shape="rect" id="Node000005" href="$seged_8h.html" title=" " alt="" coords="183,157,256,184"/>
+<area shape="poly" id="edge10_Node000001_Node000005" title=" " alt="" coords="146,39,171,57,192,79,212,119,220,155,215,157,207,121,188,83,167,61,143,43"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="144,124,134,232,129,232,138,124"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="121,121,83,158,79,154,117,118"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="170,118,208,154,204,158,166,121"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="194,197,148,234,144,230,190,192"/>
+<area shape="poly" id="edge8_Node000005_Node000005" title=" " alt="" coords="273,157,280,162,282,171,274,184,256,187,255,182,271,179,277,170,275,165,269,161"/>
+<area shape="rect" id="Node000006" href="$mav_8cpp.html" title=" " alt="" coords="196,232,272,260"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="228,199,234,231,229,232,223,200"/>
+</map>

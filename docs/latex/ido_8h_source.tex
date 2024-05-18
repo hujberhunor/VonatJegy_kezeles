@@ -1,0 +1,53 @@
+\doxysection{ido.\+h}
+\hypertarget{ido_8h_source}{}\label{ido_8h_source}\mbox{\hyperlink{ido_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ IDO\_H}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ IDO\_H}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00004}00004\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00005}00005\ \textcolor{comment}{*\ FILE\ IDO\_H}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00006}00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <iomanip>}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00012}\mbox{\hyperlink{classIdo}{00012}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classIdo}{Ido}}\{}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00013}\mbox{\hyperlink{classIdo_a868d0ce90aa55c59666c33bdbaac2b42}{00013}}\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classIdo_a868d0ce90aa55c59666c33bdbaac2b42}{ora}};}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00014}\mbox{\hyperlink{classIdo_a4e4215d40abe99985e29c8d9245e92a1}{00014}}\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classIdo_a4e4215d40abe99985e29c8d9245e92a1}{perc}};}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00015}00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00016}00016\ \ \ \textcolor{comment}{//\ Ido(int\ ora\ =\ 0,\ int\ perc\ =\ 0)\ :\ ora(ora),\ perc(perc)\ \{\}}\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00017}00017\ \textcolor{comment}{\ \ /**}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00018}00018\ \textcolor{comment}{\ \ *\ Konstruktor}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00019}00019\ \textcolor{comment}{\ \ *\ @param\ ido\ mivel\ beolvasáskor\ char*\ típusokba\ olvasok\ bele}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00020}00020\ \textcolor{comment}{\ \ *\ char*-\/ot\ kap\ paraméterként\ és\ azt\ kezeli\ megfelelően\ konvertálva.}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00021}00021\ \textcolor{comment}{\ \ */}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00022}\mbox{\hyperlink{classIdo_a3dc5a87f00236a7ba2aa248c4904896e}{00022}}\ \ \ \mbox{\hyperlink{classIdo_a3dc5a87f00236a7ba2aa248c4904896e}{Ido}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ ido)\ \{}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00023}00023\ \ \ \ \ \mbox{\hyperlink{classIdo_a868d0ce90aa55c59666c33bdbaac2b42}{ora}}\ =\ (ido[0]\ -\/\ \textcolor{charliteral}{'0'})\ *\ 10\ +\ (ido[1]\ -\/\ \textcolor{charliteral}{'0'});}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00024}00024\ \ \ \ \ \mbox{\hyperlink{classIdo_a4e4215d40abe99985e29c8d9245e92a1}{perc}}\ =\ (ido[2]\ -\/\ \textcolor{charliteral}{'0'})\ *\ 10\ +\ (ido[3]\ -\/\ \textcolor{charliteral}{'0'});}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00025}00025\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00027}\mbox{\hyperlink{classIdo_a9c28d8044b059577d50e3c1fb428930f}{00027}}\ \ \ \mbox{\hyperlink{classIdo_a9c28d8044b059577d50e3c1fb428930f}{Ido}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classIdo_a868d0ce90aa55c59666c33bdbaac2b42}{ora}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classIdo_a4e4215d40abe99985e29c8d9245e92a1}{perc}})\ :\ \mbox{\hyperlink{classIdo_a868d0ce90aa55c59666c33bdbaac2b42}{ora}}(\mbox{\hyperlink{classIdo_a868d0ce90aa55c59666c33bdbaac2b42}{ora}}),\ \mbox{\hyperlink{classIdo_a4e4215d40abe99985e29c8d9245e92a1}{perc}}(\mbox{\hyperlink{classIdo_a4e4215d40abe99985e29c8d9245e92a1}{perc}})\ \{\}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00029}00029\ \ \ \textcolor{comment}{//\ Setter}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00030}00030\ \ \ \textcolor{comment}{//\ void\ setIdo(char*\ ido)\{}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00031}00031\ \ \ \textcolor{comment}{//\ \ \ ora\ =\ (ido[0]\ -\/\ '0')\ *\ 10\ +\ (ido[1]\ -\/\ '0');}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00032}00032\ \ \ \textcolor{comment}{//\ \ \ perc\ =\ (ido[2]\ -\/\ '0')\ *\ 10\ +\ (ido[3]\ -\/\ '0');}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00033}00033\ \ \ \textcolor{comment}{//\ \}}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00035}00035\ \ \ \textcolor{comment}{//\ Gettere}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00036}\mbox{\hyperlink{classIdo_af8343a13fda687245c926f1843a316d0}{00036}}\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classIdo_af8343a13fda687245c926f1843a316d0}{getOra}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classIdo_a868d0ce90aa55c59666c33bdbaac2b42}{ora}};\ \};}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00037}\mbox{\hyperlink{classIdo_a3cada14b52b883bca244c40fa477ba15}{00037}}\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classIdo_a3cada14b52b883bca244c40fa477ba15}{getPerc}}()\textcolor{keyword}{\ const\ }\{\textcolor{keywordflow}{return}\ \mbox{\hyperlink{classIdo_a4e4215d40abe99985e29c8d9245e92a1}{perc}};\ \};}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00041}00041\ \};\ \textcolor{comment}{//\ END\ OF\ IDO}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00042}00042\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00043}00043\ \textcolor{comment}{///\ Ido\ class\ op<<()\ overwrireja,\ a\ fájlba\ beíráskor\ hívódik\ meg.\ (addTrain)}}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00044}00044\ \textcolor{comment}{}std::ostream\&\ \mbox{\hyperlink{ido_8h_ac433647af32d9e7ec41d73faa9b12477}{operator<<}}(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classIdo}{Ido}}\&\ ido);}
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{ido_8h_source_l00048}00048\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !IDO\_H}}
+
+\end{DoxyCode}

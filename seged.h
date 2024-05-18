@@ -13,6 +13,10 @@
 #include "./vonat.h"
 
 
+/**
+* Magyarország leghosszabb településneve 15 karakter
+* 25 karakterbe bele kell férnia
+*/
 struct Seged {
    static const int buffSize = 25;
    char szam[buffSize];

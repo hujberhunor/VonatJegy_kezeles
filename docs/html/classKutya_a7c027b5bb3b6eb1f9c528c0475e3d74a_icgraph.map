@@ -1,0 +1,9 @@
+<map id="Kutya::getTipus" name="Kutya::getTipus">
+<area shape="rect" id="Node000001" title=" " alt="" coords="443,5,566,33"/>
+<area shape="rect" id="Node000002" href="$classKutya.html#a0bed6bf95538dcad16d1c8dfd53bb65d" title=" " alt="" coords="274,5,395,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="428,22,396,22,396,17,428,17"/>
+<area shape="rect" id="Node000003" href="$classKiosk.html#af4fe3883e13b6e3658ac7b1001532fb4" title="jegyet vált a kiválasztott vonatra" alt="" coords="108,5,226,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="259,22,227,22,227,17,259,17"/>
+<area shape="rect" id="Node000004" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,33"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="92,22,60,22,60,17,92,17"/>
+</map>

@@ -1,0 +1,38 @@
+\doxysection{allomas.\+h}
+\hypertarget{allomas_8h_source}{}\label{allomas_8h_source}\mbox{\hyperlink{allomas_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ ALLOMASH\_H}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ ALLOMASH\_H}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00004}00004\ \textcolor{comment}{/*\ file\ ALLOMASH\_H\ */}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00006}00006\ \textcolor{comment}{//\ STD::STRING-\/GEL\ MEGY\ A\ CUCCOKS}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ido_8h}{./ido.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00010}00010\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00011}00011\ \textcolor{comment}{/**\ STRINGGEL\ ÚJRAÍRVA\ */}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00012}\mbox{\hyperlink{classAllomas}{00012}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classAllomas}{Allomas}}\{}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00013}00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00014}\mbox{\hyperlink{classAllomas_ac4eab8b3af6c6123e3de3d91e4586b5d}{00014}}\ \ \ std::string\ \mbox{\hyperlink{classAllomas_ac4eab8b3af6c6123e3de3d91e4586b5d}{allomasNev}};\ \textcolor{comment}{///\ Allomas\ nevét\ tartalmazo\ string\ }}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00015}00015\ \textcolor{keyword}{public}:\ \ \ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00016}00016\ \textcolor{comment}{\ \ /**}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00017}00017\ \textcolor{comment}{\ \ *\ Allomas\ konstrukor}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00018}00018\ \textcolor{comment}{\ \ *\ @param\ allomas\ itt\ egy\ char*\ egyértelműen.\ }}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00019}00019\ \textcolor{comment}{\ \ *\ a\ másik\ verzióban\ const,\ hogy\ fel\ lehessen\ közvetlen\ tölteni}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00020}00020\ \textcolor{comment}{\ \ *\ értsd:\ "{}Álloms\_neve"{}\ mint\ paraméter.}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00021}00021\ \textcolor{comment}{\ \ */}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00022}\mbox{\hyperlink{classAllomas_ab02ea7091d2996ab72d3d00a6d78a010}{00022}}\ \ \ \mbox{\hyperlink{classAllomas_ab02ea7091d2996ab72d3d00a6d78a010}{Allomas}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ allomas)\ :\ \mbox{\hyperlink{classAllomas_ac4eab8b3af6c6123e3de3d91e4586b5d}{allomasNev}}(allomas)\ \{\}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00023}\mbox{\hyperlink{classAllomas_acf9fe357b36a164d4e2ff0ff62ff12e1}{00023}}\ \ \ \mbox{\hyperlink{classAllomas_acf9fe357b36a164d4e2ff0ff62ff12e1}{Allomas}}(\textcolor{keywordtype}{char}*\ allomas)\ :\ \mbox{\hyperlink{classAllomas_ac4eab8b3af6c6123e3de3d91e4586b5d}{allomasNev}}(allomas)\ \{\}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00024}00024\ \ \ \textcolor{comment}{//\ Allomas(const\ std::string\&\ allomas)\ :\ allomasNev(allomas)\ \{\}}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00025}00025\ \ \ }
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00026}00026\ \ \ \textcolor{comment}{//\ Getterek}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00027}\mbox{\hyperlink{classAllomas_af91616c06d12102a9b7a50de9d43f127}{00027}}\ \ \ std::string\ \mbox{\hyperlink{classAllomas_af91616c06d12102a9b7a50de9d43f127}{getAllomas}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classAllomas_ac4eab8b3af6c6123e3de3d91e4586b5d}{allomasNev}};\ \}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00029}00029\ \};\ \textcolor{comment}{//\ End\ of\ ALLOMAS}\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00030}00030\ \textcolor{comment}{///\ Allomas\ op<<\ overload}}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00031}00031\ \textcolor{comment}{}std::ostream\&\ \mbox{\hyperlink{allomas_8h_a666384f57ccfc1d506acb76eb933082c}{operator<<}}(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{classAllomas}{Allomas}}\&\ allomas);}
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{allomas_8h_source_l00033}00033\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !ALLOMASH\_H}}
+
+\end{DoxyCode}

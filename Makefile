@@ -4,7 +4,7 @@
 PROG = wMakeMain
 
 # Program forrásfájljai
-SRCS = main.cpp allomas.cpp ido.cpp mav.cpp kiosk.cpp
+SRCS = main.cpp allomas.cpp ido.cpp mav.cpp kiosk.cpp #mav_test.cpp
 
 # Header fileok
 HDRS = allomas.h vonat.h jegy.h mav.h kiosk.h seged.h ido.h

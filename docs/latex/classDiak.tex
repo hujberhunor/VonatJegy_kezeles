@@ -1,0 +1,167 @@
+\doxysection{Diak Class Reference}
+\hypertarget{classDiak}{}\label{classDiak}\index{Diak@{Diak}}
+
+
+{\ttfamily \#include $<$jegy.\+h$>$}
+
+
+
+Inheritance diagram for Diak\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classDiak__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Diak\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classDiak__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDiak_aaa9fb6cf327aa01f086b4243afba01d9}{Diak}} (int \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}}=1200, const double \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}}=0.\+7)
+\item 
+std\+::string \mbox{\hyperlink{classDiak_aea9491caa6d858f98227a5a7e3494192}{get\+Tipus}} ()
+\begin{DoxyCompactList}\small\item\em Getterek. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDiak_a7121a13da47dce7a773809a385aefa27}{nyomtat}} (\mbox{\hyperlink{classVonat}{Vonat}} \&v)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classJegy}{Jegy}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classJegy_adc9ca2461bd2548e9aee2a4f473d9ed7}{Jegy}} (int \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}}=1200, double \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}}=0.\+7)
+\begin{DoxyCompactList}\small\item\em Kedvezméy százaléka, pontosabban mennyi az amit fizet százalék. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classJegy_ab4e5659753f5f143d279e79bd8863833}{fizetendo}} ()
+\begin{DoxyCompactList}\small\item\em Fizetendő összeg, ár és a kedvezmény szorzata. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classJegy_a78badd2f2f70b1a3e8ea7d48c8af817f}{get\+Ar}} ()
+\begin{DoxyCompactList}\small\item\em Getterek. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classJegy_af0cf7c3f63831586bc49261fc0738e70}{get\+Szaz}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \mbox{\hyperlink{classDiak_ad0db9fee1663ca009858d668c1524e6b}{tipus\+Nev}} = "{}Diák"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00048}{48}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classDiak_aaa9fb6cf327aa01f086b4243afba01d9}\label{classDiak_aaa9fb6cf327aa01f086b4243afba01d9} 
+\index{Diak@{Diak}!Diak@{Diak}}
+\index{Diak@{Diak}!Diak@{Diak}}
+\doxysubsubsection{\texorpdfstring{Diak()}{Diak()}}
+{\footnotesize\ttfamily Diak\+::\+Diak (\begin{DoxyParamCaption}\item[{int}]{ar = {\ttfamily 1200},  }\item[{const double}]{szazalek = {\ttfamily 0.7} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor 
+\begin{DoxyParams}{Parameters}
+{\em ar} & megadja a jegy árát \\
+\hline
+{\em szazalek} & a kedvezmény értékét adja meg Meghívja a anya-\/class konstruktorát. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00059}{59}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00059\ :\ \mbox{\hyperlink{classJegy_adc9ca2461bd2548e9aee2a4f473d9ed7}{Jegy}}(\mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}},\ \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}})\ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classDiak_aea9491caa6d858f98227a5a7e3494192}\label{classDiak_aea9491caa6d858f98227a5a7e3494192} 
+\index{Diak@{Diak}!getTipus@{getTipus}}
+\index{getTipus@{getTipus}!Diak@{Diak}}
+\doxysubsubsection{\texorpdfstring{getTipus()}{getTipus()}}
+{\footnotesize\ttfamily std\+::string Diak\+::get\+Tipus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getterek. 
+
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00062}{62}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00062\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classDiak_ad0db9fee1663ca009858d668c1524e6b}{tipusNev}};\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDiak_aea9491caa6d858f98227a5a7e3494192_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classDiak_a7121a13da47dce7a773809a385aefa27}\label{classDiak_a7121a13da47dce7a773809a385aefa27} 
+\index{Diak@{Diak}!nyomtat@{nyomtat}}
+\index{nyomtat@{nyomtat}!Diak@{Diak}}
+\doxysubsubsection{\texorpdfstring{nyomtat()}{nyomtat()}}
+{\footnotesize\ttfamily void Diak\+::nyomtat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVonat}{Vonat}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+megörökölt nyomtat fv overwrite-\/ja meghívja az "{}eredei"{}, főosztály nyomtatját 
+
+Reimplemented from \mbox{\hyperlink{classJegy_aa9e954a340eff827792a81cdccdb7426}{Jegy}}.
+
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00066}{66}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00067\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\#\#\#\ Jegy\ adatai\ \#\#\#\(\backslash\)n"{}};}
+\DoxyCodeLine{00068\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Jegy\ típusa:\ "{}}\ <<\ \mbox{\hyperlink{classDiak_aea9491caa6d858f98227a5a7e3494192}{getTipus}}()\ <<\ std::endl;}
+\DoxyCodeLine{00069\ \ \ \ \ \mbox{\hyperlink{classJegy_aa9e954a340eff827792a81cdccdb7426}{Jegy::nyomtat}}(v);}
+\DoxyCodeLine{00070\ \ \ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDiak_a7121a13da47dce7a773809a385aefa27_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDiak_a7121a13da47dce7a773809a385aefa27_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{classDiak_ad0db9fee1663ca009858d668c1524e6b}\label{classDiak_ad0db9fee1663ca009858d668c1524e6b} 
+\index{Diak@{Diak}!tipusNev@{tipusNev}}
+\index{tipusNev@{tipusNev}!Diak@{Diak}}
+\doxysubsubsection{\texorpdfstring{tipusNev}{tipusNev}}
+{\footnotesize\ttfamily const std\+::string Diak\+::tipus\+Nev = "{}Diák"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00049}{49}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{jegy_8h}{jegy.\+h}}\end{DoxyCompactItemize}

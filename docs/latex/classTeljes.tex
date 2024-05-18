@@ -1,0 +1,162 @@
+\doxysection{Teljes Class Reference}
+\hypertarget{classTeljes}{}\label{classTeljes}\index{Teljes@{Teljes}}
+
+
+{\ttfamily \#include $<$jegy.\+h$>$}
+
+
+
+Inheritance diagram for Teljes\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classTeljes__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Teljes\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classTeljes__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTeljes_ae5cf934fee3d9f097dbd991df3a6fc01}{Teljes}} (int \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}}=1200, const double \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}}=1.\+0)
+\item 
+std\+::string \mbox{\hyperlink{classTeljes_a2671e9f5af20412624362542e7c5b6fb}{get\+Tipus}} ()
+\item 
+void \mbox{\hyperlink{classTeljes_a6f147b902c77f74ba1542b4978ed99a4}{nyomtat}} (\mbox{\hyperlink{classVonat}{Vonat}} \&v)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classJegy}{Jegy}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classJegy_adc9ca2461bd2548e9aee2a4f473d9ed7}{Jegy}} (int \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}}=1200, double \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}}=0.\+7)
+\begin{DoxyCompactList}\small\item\em Kedvezméy százaléka, pontosabban mennyi az amit fizet százalék. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classJegy_ab4e5659753f5f143d279e79bd8863833}{fizetendo}} ()
+\begin{DoxyCompactList}\small\item\em Fizetendő összeg, ár és a kedvezmény szorzata. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classJegy_a78badd2f2f70b1a3e8ea7d48c8af817f}{get\+Ar}} ()
+\begin{DoxyCompactList}\small\item\em Getterek. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classJegy_af0cf7c3f63831586bc49261fc0738e70}{get\+Szaz}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \mbox{\hyperlink{classTeljes_a786bc1fdad1f0f0331150fa6ab41e461}{tipus\+Nev}} = "{}Teljes"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00075}{75}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classTeljes_ae5cf934fee3d9f097dbd991df3a6fc01}\label{classTeljes_ae5cf934fee3d9f097dbd991df3a6fc01} 
+\index{Teljes@{Teljes}!Teljes@{Teljes}}
+\index{Teljes@{Teljes}!Teljes@{Teljes}}
+\doxysubsubsection{\texorpdfstring{Teljes()}{Teljes()}}
+{\footnotesize\ttfamily Teljes\+::\+Teljes (\begin{DoxyParamCaption}\item[{int}]{ar = {\ttfamily 1200},  }\item[{const double}]{szazalek = {\ttfamily 1.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Konstruktor 
+\begin{DoxyParams}{Parameters}
+{\em ar} & megadja a jegy árát \\
+\hline
+{\em szazalek} & a kedvezmény értékét adja meg Meghívja a anya-\/class konstruktorát. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00086}{86}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00086\ :\ \mbox{\hyperlink{classJegy_adc9ca2461bd2548e9aee2a4f473d9ed7}{Jegy}}(\mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}},\ \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}})\ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTeljes_a2671e9f5af20412624362542e7c5b6fb}\label{classTeljes_a2671e9f5af20412624362542e7c5b6fb} 
+\index{Teljes@{Teljes}!getTipus@{getTipus}}
+\index{getTipus@{getTipus}!Teljes@{Teljes}}
+\doxysubsubsection{\texorpdfstring{getTipus()}{getTipus()}}
+{\footnotesize\ttfamily std\+::string Teljes\+::get\+Tipus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00088}{88}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00088\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classTeljes_a786bc1fdad1f0f0331150fa6ab41e461}{tipusNev}};\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTeljes_a2671e9f5af20412624362542e7c5b6fb_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classTeljes_a6f147b902c77f74ba1542b4978ed99a4}\label{classTeljes_a6f147b902c77f74ba1542b4978ed99a4} 
+\index{Teljes@{Teljes}!nyomtat@{nyomtat}}
+\index{nyomtat@{nyomtat}!Teljes@{Teljes}}
+\doxysubsubsection{\texorpdfstring{nyomtat()}{nyomtat()}}
+{\footnotesize\ttfamily void Teljes\+::nyomtat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVonat}{Vonat}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+megörökölt nyomtat fv overwrite-\/ja meghívja az "{}eredei"{}, főosztály nyomtatját 
+
+Reimplemented from \mbox{\hyperlink{classJegy_aa9e954a340eff827792a81cdccdb7426}{Jegy}}.
+
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00092}{92}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00093\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\#\#\#\ Jegy\ adatai\ \#\#\#\(\backslash\)n"{}};}
+\DoxyCodeLine{00094\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Jegy\ típusa:\ "{}}\ <<\ \mbox{\hyperlink{classTeljes_a2671e9f5af20412624362542e7c5b6fb}{getTipus}}()\ <<\ std::endl;}
+\DoxyCodeLine{00095\ \ \ \ \ \mbox{\hyperlink{classJegy_aa9e954a340eff827792a81cdccdb7426}{Jegy::nyomtat}}(v);}
+\DoxyCodeLine{00096\ \ \ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTeljes_a6f147b902c77f74ba1542b4978ed99a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classTeljes_a6f147b902c77f74ba1542b4978ed99a4_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{classTeljes_a786bc1fdad1f0f0331150fa6ab41e461}\label{classTeljes_a786bc1fdad1f0f0331150fa6ab41e461} 
+\index{Teljes@{Teljes}!tipusNev@{tipusNev}}
+\index{tipusNev@{tipusNev}!Teljes@{Teljes}}
+\doxysubsubsection{\texorpdfstring{tipusNev}{tipusNev}}
+{\footnotesize\ttfamily const std\+::string Teljes\+::tipus\+Nev = "{}Teljes"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00076}{76}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{jegy_8h}{jegy.\+h}}\end{DoxyCompactItemize}

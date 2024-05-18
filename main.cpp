@@ -6,22 +6,20 @@
 #include "./jegy.h" 
 #include "./kiosk.h"
 
+
 int main(){
   // Itt tárolon hol vagyok a file-ban
   // Mind a beolvasás mind pedig az íráshoz KELL!
- 
-  /* FÁJL BEOLVASÁS */
   std::streampos currPos;
   Mav mav;
-  
   mav.beolvas();
-
   /* KIOSK TEST */
+
+
   Kiosk k;
   k.init(); // Kiírja a lehetőségeket
-
   
-int choice = 0;
+  int choice = 0;
   while (choice != 4) {
     choice = k.userInput(); // Get user input once per loop iteration
     switch (choice) {
@@ -30,7 +28,7 @@ int choice = 0;
         std::cout << "Beolvas: " << std::endl;
         std::cout << "Szám Indulo Vég kocsidb Indulás erkezes" << std::endl;
         k.vonatHozza(mav, currPos);
-        system("clear"); // Tábla törlés 
+        // system("clear"); // Tábla törlés 
         std::cout << "\n" << "Vonat hozzáadva\n\n";
         mav.beolvas();
         k.init(); // Kiírja a lehetőségeket
@@ -59,7 +57,9 @@ int choice = 0;
         break;
       }
       default: {
-        std::cout << "Érvénytelen lehetőség" << std::endl;
+        // std::cout << "Érvénytelen lehetőség" << std::endl;
+        // Hibakezelés
+        if(!(k.inputCheck())) { std::cout << std::endl; k.init(); }
       }
     } // end of switch
   } // end of while

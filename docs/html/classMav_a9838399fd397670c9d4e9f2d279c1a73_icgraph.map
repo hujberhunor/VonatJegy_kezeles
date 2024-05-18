@@ -1,0 +1,7 @@
+<map id="Mav::addTrain" name="Mav::addTrain">
+<area shape="rect" id="Node000001" title=" " alt="" coords="298,5,409,33"/>
+<area shape="rect" id="Node000002" href="$classKiosk.html#a86af671752c83d3624ab7aeb3652f290" title="Hozzá ad a user vonatokat a fájlhoz." alt="" coords="108,5,250,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="282,22,250,22,250,17,282,17"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,22,60,22,60,17,92,17"/>
+</map>

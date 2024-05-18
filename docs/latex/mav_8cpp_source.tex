@@ -1,0 +1,71 @@
+\doxysection{mav.\+cpp}
+\hypertarget{mav_8cpp_source}{}\label{mav_8cpp_source}\mbox{\hyperlink{mav_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{mav_8h}{./mav.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{seged_8h}{./seged.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00004}00004\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00005}00005\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00006}00006\ \textcolor{comment}{\ *\ Beolvaásás\ a\ file-\/ból\ egy\ segéd\ strukturába,\ onnan\ pedig\ egy\ Vonat\ objektum\ feltöltés\ }}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00007}00007\ \textcolor{comment}{\ *\ @param\ Mav\&\ mav\ class\ feltöltéséhez\ szükséges\ }}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00008}00008\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00009}\mbox{\hyperlink{classMav_a15899cdec1c1fe36a8460d956dad3104}{00009}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMav_a15899cdec1c1fe36a8460d956dad3104}{Mav::beolvas}}()\ \{}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00010}00010\ \ \ \textcolor{comment}{//\ Inicalizálás}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00011}00011\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ vonatok\_file\ =\ \textcolor{stringliteral}{"{}./vonatok.txt"{}};\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00012}00012\ \ \ std::ifstream\ file(vonatok\_file);}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00013}00013\ \ \ \mbox{\hyperlink{classVonat}{Vonat}}\ v;}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00014}00014\ \ \ \mbox{\hyperlink{structSeged}{Seged}}\ seged;}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00016}00016\ \ \ \textcolor{keywordflow}{if}\ (!file.is\_open())\ \{}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00017}00017\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Megynitással\ van\ baj\ "{}}\ <<\ vonatok\_file\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00018}00018\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00019}00019\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00020}00020\ }
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00021}00021\ \ \ \textcolor{comment}{//\ Kiürítem\ a\ vonatok\ kollekciót,\ hogy\ ne\ legyen\ ráolvasás}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00022}00022\ \ \ \textcolor{keyword}{delete}[]\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}};}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00023}00023\ \ \ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00024}00024\ \ \ \mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}}\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00026}00026\ \ \ \textcolor{keywordflow}{while}\ (file\ >>\ seged.\mbox{\hyperlink{structSeged_a6a1af90b30c3780068f4c54238f85126}{szam}}\ >>\ seged.\mbox{\hyperlink{structSeged_a9eed4ddac8bea1333197a75b6a4131d7}{indulo}}\ >>\ seged.\mbox{\hyperlink{structSeged_a5d858ded61ba3f9f2f7ff7aeb7705228}{veg}}\ >>\ seged.\mbox{\hyperlink{structSeged_a5d4c351ed460ee96b0cab1d6425ac02a}{kocsidb}}\ >>\ seged.\mbox{\hyperlink{structSeged_aea666b603eaa1e751bbaa5d91de4ad6f}{indulas}}\ >>\ seged.\mbox{\hyperlink{structSeged_a7d6286359ec3e59d1a1988843ce4cbd8}{erkezes}})\ \{}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00027}00027\ \ \ \ \ v.\mbox{\hyperlink{classVonat_a191874e48371b4f07b8703cfd0c85934}{setSzam}}(std::atoi(seged.\mbox{\hyperlink{structSeged_a6a1af90b30c3780068f4c54238f85126}{szam}}));}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00028}00028\ \ \ \ \ v.\mbox{\hyperlink{classVonat_a27a2c9da752ab6cee10e8386c89e60a3}{setIndulo}}(seged.\mbox{\hyperlink{structSeged_a9eed4ddac8bea1333197a75b6a4131d7}{indulo}});}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00029}00029\ \ \ \ \ v.\mbox{\hyperlink{classVonat_acec88991afa8817d7bd6f58190693155}{setVeg}}(seged.\mbox{\hyperlink{structSeged_a5d858ded61ba3f9f2f7ff7aeb7705228}{veg}});}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00030}00030\ \ \ \ \ v.\mbox{\hyperlink{classVonat_a114542b472a68e864279f367f88dd95e}{setKocsidb}}(std::atoi(seged.\mbox{\hyperlink{structSeged_a5d4c351ed460ee96b0cab1d6425ac02a}{kocsidb}}));}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00031}00031\ \ \ \ \ v.\mbox{\hyperlink{classVonat_a6b31c3d13fe2bf39f70f4dac557d4b76}{setIndulas}}(seged.\mbox{\hyperlink{structSeged_aea666b603eaa1e751bbaa5d91de4ad6f}{indulas}});}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00032}00032\ \ \ \ \ v.\mbox{\hyperlink{classVonat_a53b9de572bc678ec86a8916473067375}{setErkezes}}(seged.\mbox{\hyperlink{structSeged_a7d6286359ec3e59d1a1988843ce4cbd8}{erkezes}});}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00033}00033\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00034}00034\ \ \ \ \ \textcolor{comment}{//\ feltöltöm\ a\ MAV\ "{}mgmt"{}\ class\ Vonat*\ tömbjét\ }}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00035}00035\ \ \ \ \ this-\/>\mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867afa31a1b6ef20ecf273d47c0791816af46b}{add}}(v);\ }
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00036}00036\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00037}00037\ \ \ file.close();}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00038}00038\ \}\ \textcolor{comment}{//\ END\ OF\ BEOLVAS}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00040}00040\ \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00041}00041\ \textcolor{comment}{\ *\ Vonatok\ hozzáadása}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00042}00042\ \textcolor{comment}{\ *\ @param\ currPos\ a\ streamben\ elfoglalt\ helyem}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00043}00043\ \textcolor{comment}{\ *\ @param\ minden-\/más\ a\ vonat\ class\ feltöltéséhez\ szükséges\ adatok}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00044}00044\ \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00045}\mbox{\hyperlink{classMav_a9838399fd397670c9d4e9f2d279c1a73}{00045}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classMav_a9838399fd397670c9d4e9f2d279c1a73}{Mav::addTrain}}(std::streampos\&\ currPos,\ \textcolor{keywordtype}{int}\ szam,\ \mbox{\hyperlink{classAllomas}{Allomas}}\ indulo,}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classAllomas}{Allomas}}\ veg,\ \textcolor{keywordtype}{int}\ kocsidb,\ \mbox{\hyperlink{classIdo}{Ido}}\ indulas,\ \mbox{\hyperlink{classIdo}{Ido}}\ erkezes)\{}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00047}00047\ \ \ \textcolor{comment}{//\ Inicalizálás}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00048}00048\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}\ =\ \textcolor{stringliteral}{"{}./vonatok.txt"{}};\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00049}00049\ \ \ std::ofstream\ file\ (\mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}},\ std::ios::app);\ \textcolor{comment}{//\ Hozzáfűzésesen\ nyitom\ meg.\ }}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00050}00050\ \ }
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00051}00051\ \ \ \textcolor{comment}{//\ HIBAKEZELÉS\ IDE}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00052}00052\ \ \ \textcolor{keywordflow}{if}\ (!file.is\_open())\ \{}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00053}00053\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Megynitással\ van\ baj\ "{}}\ <<\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00054}00054\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00055}00055\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00057}00057\ \ \ \textcolor{keywordflow}{if}(file.is\_open())\{}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00058}00058\ \ \ \ \ file.seekp(currPos);\ \textcolor{comment}{//\ Megfelelő\ helyre\ ugrok}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00059}00059\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00060}00060\ \ \ \ \ file\ <<\ szam\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ indulo\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ veg\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ kocsidb\ <<\ \textcolor{stringliteral}{"{}\ "{}}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \ <<\ indulas\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ erkezes\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00062}00062\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00063}00063\ \ \ file.close();}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00064}00064\ \}\ \textcolor{comment}{//\ END\ OF\ addTrain}}
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{mav_8cpp_source_l00066}00066\ }
+
+\end{DoxyCode}

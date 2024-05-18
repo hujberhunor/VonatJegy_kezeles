@@ -12,21 +12,19 @@
 #include "./allomas.h"
 #include "./ido.h"
 
-/* ### TODO ### 
-  * Túlidenxelés kezelés
-  * Ha a file nem létezik ne dobjon seg faultot
-*/
   
 class Mav {
-  // HELYET KELL FOGLALNI NEKI!!
   Vonat* vonatok; // Vonatok kollekció
   size_t si;      // Vonatok kollekció mérete db számban
   
 public:
   // Konstruktor
   Mav(size_t si = 0) : vonatok(nullptr), si(si) {} 
-  
-  // Új elem hozzáadása a mav kollekcióhoz
+ 
+  /**
+   * Elem hozzáfűzése Vonatok kollekcióhoz
+   * @param vonat vonat referencia amit hozzáad
+   */
   void add(Vonat& vonat){
     Vonat* temp = new Vonat[si + 1];  // Lefoglalok helyet 
    
@@ -59,7 +57,11 @@ public:
   size_t getSize() { return static_cast<int>(si); }
 
   Vonat& operator[](int idx){ return vonatok[idx]; }
- 
+
+  /*
+  * @param fazs geci
+  * @param fasz geic
+  */
   void beolvas();
   void addTrain(std::streampos& currPos, int szam, Allomas indulo,
                 Allomas veg, int kocsidb, Ido indulas, Ido erkezes);

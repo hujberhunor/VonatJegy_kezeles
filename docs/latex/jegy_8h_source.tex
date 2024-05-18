@@ -1,0 +1,135 @@
+\doxysection{jegy.\+h}
+\hypertarget{jegy_8h_source}{}\label{jegy_8h_source}\mbox{\hyperlink{jegy_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ JEGY\_H}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ JEGY\_H}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00003}00003\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00004}00004\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00005}00005\ \textcolor{comment}{*\ FILE\ JEGY\_H}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00006}00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{vonat_8h}{./vonat.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00011}\mbox{\hyperlink{classJegy}{00011}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classJegy}{Jegy}}\ \{}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00012}\mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{00012}}\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}};\ \textcolor{comment}{///\ A\ jegy\ ára}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00013}\mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{00013}}\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}};\ \textcolor{comment}{///\ Kedvezméy\ százaléka,\ pontosabban\ mennyi\ az\ amit\ fizet\ százalék.}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00015}00015\ \textcolor{keyword}{public}:\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00016}00016\ \textcolor{comment}{\ \ /**}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00017}00017\ \textcolor{comment}{\ \ \ *\ Anya\ osztály\ Konstruktora\ }}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00018}00018\ \textcolor{comment}{\ \ \ *\ @param\ ar\ megadja\ a\ jegy\ árát}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00019}00019\ \textcolor{comment}{\ \ \ *\ @param\ szazalek\ a\ kedvezmény\ értékét\ adja\ meg}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00020}00020\ \textcolor{comment}{\ \ \ */}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00021}\mbox{\hyperlink{classJegy_adc9ca2461bd2548e9aee2a4f473d9ed7}{00021}}\ \ \ \mbox{\hyperlink{classJegy_adc9ca2461bd2548e9aee2a4f473d9ed7}{Jegy}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}}\ =\ 1200,\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}}\ =\ 0.7)\ :\ \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}}(\mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}}),\ \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}}(\mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}})\ \ \{\}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00022}00022\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00023}00023\ \textcolor{comment}{\ \ ///\ Fizetendő\ összeg,\ ár\ és\ a\ kedvezmény\ szorzata}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00024}\mbox{\hyperlink{classJegy_ab4e5659753f5f143d279e79bd8863833}{00024}}\ \textcolor{comment}{}\ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classJegy_ab4e5659753f5f143d279e79bd8863833}{fizetendo}}()\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}}\ *\ \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}};\ \}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00025}00025\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00026}00026\ \textcolor{comment}{\ \ ///\ Getterek}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00027}\mbox{\hyperlink{classJegy_a78badd2f2f70b1a3e8ea7d48c8af817f}{00027}}\ \textcolor{comment}{}\ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classJegy_a78badd2f2f70b1a3e8ea7d48c8af817f}{getAr}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}};\ \}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00028}\mbox{\hyperlink{classJegy_af0cf7c3f63831586bc49261fc0738e70}{00028}}\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classJegy_af0cf7c3f63831586bc49261fc0738e70}{getSzaz}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}};\ \}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00029}00029\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00030}00030\ \textcolor{comment}{\ \ /**}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00031}00031\ \textcolor{comment}{\ \ *\ @param\ Vonat\&\ megadott\ vonatra\ vonatkozik}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00032}00032\ \textcolor{comment}{\ \ *\ Kíírja\ a\ jegy\ adatinak\ egy\ felét.\ Azt\ a\ felét\ ami\ minden\ leszármazottál}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00033}00033\ \textcolor{comment}{\ \ *\ azonos.\ A\ felső\ pár\ so.\ }}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00034}00034\ \textcolor{comment}{\ \ *\ virtual\ mivel\ a\ leszármazottak\ megöröklik\ és\ felülírják.}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00035}00035\ \textcolor{comment}{\ \ */}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00036}\mbox{\hyperlink{classJegy_aa9e954a340eff827792a81cdccdb7426}{00036}}\ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classJegy_aa9e954a340eff827792a81cdccdb7426}{nyomtat}}(\mbox{\hyperlink{classVonat}{Vonat}}\&\ v)\ \{}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00037}00037\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Fizetendő:\ "{}}\ <<\ \mbox{\hyperlink{classJegy_ab4e5659753f5f143d279e79bd8863833}{fizetendo}}()\ <<\ \textcolor{stringliteral}{"{}JMF\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00038}00038\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\#\#\#\ Vonatod\ adatai\ \#\#\#"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00039}00039\ \ \ \ \ v.\mbox{\hyperlink{classVonat_accf19f7143540d637a8b2234a47efee6}{kiir}}();}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00040}00040\ \ \ \ \ std::cout\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00041}00041\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00042}00042\ \ \ \textcolor{comment}{//\ virtual\ void\ abstract()\ =\ 0\ \{\}\ }}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00044}00044\ \};\ \textcolor{comment}{//\ END\ OF\ JEGY\ }}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00048}\mbox{\hyperlink{classDiak}{00048}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDiak}{Diak}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classJegy}{Jegy}}\ \{}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00049}\mbox{\hyperlink{classDiak_ad0db9fee1663ca009858d668c1524e6b}{00049}}\ \ \ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{classDiak_ad0db9fee1663ca009858d668c1524e6b}{tipusNev}}\ =\ \textcolor{stringliteral}{"{}Diák"{}};}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00050}00050\ \ \ \textcolor{comment}{//\ const\ double\ szazalek\ =\ 0.7;}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00052}00052\ \textcolor{keyword}{public}:\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00053}00053\ \textcolor{comment}{\ \ \ /**}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00054}00054\ \textcolor{comment}{\ \ \ *\ Konstruktor}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00055}00055\ \textcolor{comment}{\ \ \ *\ @param\ ar\ megadja\ a\ jegy\ árát}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00056}00056\ \textcolor{comment}{\ \ \ *\ @param\ szazalek\ a\ kedvezmény\ értékét\ adja\ meg}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00057}00057\ \textcolor{comment}{\ \ \ *\ Meghívja\ a\ anya-\/class\ konstruktorát.}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00058}00058\ \textcolor{comment}{\ \ */}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00059}\mbox{\hyperlink{classDiak_aaa9fb6cf327aa01f086b4243afba01d9}{00059}}\ \ \ \mbox{\hyperlink{classDiak_aaa9fb6cf327aa01f086b4243afba01d9}{Diak}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}}\ =\ 1200,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}}\ =\ 0.7)\ :\ \mbox{\hyperlink{classJegy}{Jegy}}(\mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}},\ \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}})\ \{\}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00060}00060\ \ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00061}00061\ \textcolor{comment}{\ \ ///\ Getterek}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00062}\mbox{\hyperlink{classDiak_aea9491caa6d858f98227a5a7e3494192}{00062}}\ \textcolor{comment}{}\ \ std::string\ \mbox{\hyperlink{classDiak_aea9491caa6d858f98227a5a7e3494192}{getTipus}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classDiak_ad0db9fee1663ca009858d668c1524e6b}{tipusNev}};\ \}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00063}00063\ \ \ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00064}00064\ \textcolor{comment}{\ \ ///\ megörökölt\ nyomtat\ fv\ overwrite-\/ja\ }}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00065}00065\ \textcolor{comment}{\ \ ///\ meghívja\ az\ "{}eredei"{},\ főosztály\ nyomtatját}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00066}\mbox{\hyperlink{classDiak_a7121a13da47dce7a773809a385aefa27}{00066}}\ \textcolor{comment}{}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDiak_a7121a13da47dce7a773809a385aefa27}{nyomtat}}(\mbox{\hyperlink{classVonat}{Vonat}}\ \&v)\ \{}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00067}00067\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\#\#\#\ Jegy\ adatai\ \#\#\#\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00068}00068\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Jegy\ típusa:\ "{}}\ <<\ \mbox{\hyperlink{classDiak_aea9491caa6d858f98227a5a7e3494192}{getTipus}}()\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00069}00069\ \ \ \ \ \mbox{\hyperlink{classJegy_aa9e954a340eff827792a81cdccdb7426}{Jegy::nyomtat}}(v);}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00070}00070\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00072}00072\ \};\ \textcolor{comment}{//\ end\ of\ diak}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00075}\mbox{\hyperlink{classTeljes}{00075}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTeljes}{Teljes}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classJegy}{Jegy}}\ \{}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00076}\mbox{\hyperlink{classTeljes_a786bc1fdad1f0f0331150fa6ab41e461}{00076}}\ \ \ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{classTeljes_a786bc1fdad1f0f0331150fa6ab41e461}{tipusNev}}\ =\ \textcolor{stringliteral}{"{}Teljes"{}};}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00077}00077\ \ \ \textcolor{comment}{//\ const\ double\ szazalek\ =\ 1.0;}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00079}00079\ \textcolor{keyword}{public}:\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00080}00080\ \textcolor{comment}{\ \ /**}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00081}00081\ \textcolor{comment}{\ \ \ *\ Konstruktor}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00082}00082\ \textcolor{comment}{\ \ \ *\ @param\ ar\ megadja\ a\ jegy\ árát}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00083}00083\ \textcolor{comment}{\ \ \ *\ @param\ szazalek\ a\ kedvezmény\ értékét\ adja\ meg}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00084}00084\ \textcolor{comment}{\ \ \ *\ Meghívja\ a\ anya-\/class\ konstruktorát.}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00085}00085\ \textcolor{comment}{\ \ */}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00086}\mbox{\hyperlink{classTeljes_ae5cf934fee3d9f097dbd991df3a6fc01}{00086}}\ \ \ \mbox{\hyperlink{classTeljes_ae5cf934fee3d9f097dbd991df3a6fc01}{Teljes}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}}\ =\ 1200,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}}\ =\ 1.0)\ :\ \mbox{\hyperlink{classJegy}{Jegy}}(\mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}},\ \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}})\ \{\}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00087}00087\ \ \ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00088}\mbox{\hyperlink{classTeljes_a2671e9f5af20412624362542e7c5b6fb}{00088}}\ \ \ std::string\ \mbox{\hyperlink{classTeljes_a2671e9f5af20412624362542e7c5b6fb}{getTipus}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classTeljes_a786bc1fdad1f0f0331150fa6ab41e461}{tipusNev}};\ \}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00089}00089\ \ \ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00090}00090\ \textcolor{comment}{\ \ ///\ megörökölt\ nyomtat\ fv\ overwrite-\/ja\ }}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00091}00091\ \textcolor{comment}{\ \ ///\ meghívja\ az\ "{}eredei"{},\ főosztály\ nyomtatját}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00092}\mbox{\hyperlink{classTeljes_a6f147b902c77f74ba1542b4978ed99a4}{00092}}\ \textcolor{comment}{}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTeljes_a6f147b902c77f74ba1542b4978ed99a4}{nyomtat}}(\mbox{\hyperlink{classVonat}{Vonat}}\ \&v)\ \{}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00093}00093\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\#\#\#\ Jegy\ adatai\ \#\#\#\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00094}00094\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Jegy\ típusa:\ "{}}\ <<\ \mbox{\hyperlink{classTeljes_a2671e9f5af20412624362542e7c5b6fb}{getTipus}}()\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00095}00095\ \ \ \ \ \mbox{\hyperlink{classJegy_aa9e954a340eff827792a81cdccdb7426}{Jegy::nyomtat}}(v);}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00096}00096\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00098}00098\ \};\ \textcolor{comment}{//\ end\ of\ Teljes}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00100}00100\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00101}\mbox{\hyperlink{classKutya}{00101}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classKutya}{Kutya}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classJegy}{Jegy}}\ \{}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00102}\mbox{\hyperlink{classKutya_aea26e88caf844c32e3d769d654340449}{00102}}\ \ \ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{classKutya_aea26e88caf844c32e3d769d654340449}{tipusNev}}\ =\ \textcolor{stringliteral}{"{}Kutya"{}};}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00103}\mbox{\hyperlink{classKutya_a468868823bef6610f2d6326d597fd0dd}{00103}}\ \ \ \textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{classKutya_a468868823bef6610f2d6326d597fd0dd}{kov}}\ =\ \textcolor{stringliteral}{"{}Szájkosár"{}};}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00105}00105\ \textcolor{keyword}{public}:\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00106}00106\ \textcolor{comment}{\ \ /**}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00107}00107\ \textcolor{comment}{\ \ \ *\ Konstruktor}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00108}00108\ \textcolor{comment}{\ \ \ *\ @param\ ar\ megadja\ a\ jegy\ árát}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00109}00109\ \textcolor{comment}{\ \ \ *\ @param\ szazalek\ a\ kedvezmény\ értékét\ adja\ meg}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00110}00110\ \textcolor{comment}{\ \ \ *\ Meghívja\ a\ anya-\/class\ konstruktorát.}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00111}00111\ \textcolor{comment}{\ \ */}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00112}\mbox{\hyperlink{classKutya_af7a548c1c3f07d24be85354320fa5a7f}{00112}}\ \ \ \mbox{\hyperlink{classKutya_af7a548c1c3f07d24be85354320fa5a7f}{Kutya}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}}\ =\ 1200,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}}\ =\ 0.2)\ :\ \mbox{\hyperlink{classJegy}{Jegy}}(\mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}},\ \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}})\ \{\}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00113}00113\ \ \ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00114}00114\ \ \ \textcolor{comment}{//\ Getterek}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00115}\mbox{\hyperlink{classKutya_a7c027b5bb3b6eb1f9c528c0475e3d74a}{00115}}\ \ \ std::string\ \mbox{\hyperlink{classKutya_a7c027b5bb3b6eb1f9c528c0475e3d74a}{getTipus}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classKutya_aea26e88caf844c32e3d769d654340449}{tipusNev}};\ \}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00116}\mbox{\hyperlink{classKutya_a045312268761ed842a69860fefd28adb}{00116}}\ \ \ std::string\ \mbox{\hyperlink{classKutya_a045312268761ed842a69860fefd28adb}{getKov}}()\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classKutya_a468868823bef6610f2d6326d597fd0dd}{kov}};\ \}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00117}00117\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00118}00118\ \textcolor{comment}{\ \ ///\ megörökölt\ nyomtat\ fv\ overwrite-\/ja\ }}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00119}00119\ \textcolor{comment}{\ \ ///\ meghívja\ az\ "{}eredei"{},\ főosztály\ nyomtatját}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00120}\mbox{\hyperlink{classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d}{00120}}\ \textcolor{comment}{}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d}{nyomtat}}(\mbox{\hyperlink{classVonat}{Vonat}}\ \&v)\ \{}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00121}00121\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\#\#\#\ Jegy\ adatai\ \#\#\#\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00122}00122\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Jegy\ típusa:\ "{}}\ <<\ \mbox{\hyperlink{classKutya_a7c027b5bb3b6eb1f9c528c0475e3d74a}{getTipus}}()\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00123}00123\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Követelmény:\ "{}}\ <<\ \mbox{\hyperlink{classKutya_a045312268761ed842a69860fefd28adb}{getKov}}()\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00124}00124\ \ \ \ \ \mbox{\hyperlink{classJegy_aa9e954a340eff827792a81cdccdb7426}{Jegy::nyomtat}}(v);}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00125}00125\ \ \ \}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00126}00126\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00127}00127\ \};\ \textcolor{comment}{//\ end\ of\ Kutya}}
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00128}00128\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00129}00129\ }
+\DoxyCodeLine{\Hypertarget{jegy_8h_source_l00130}00130\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !JEGY\_H}}
+
+\end{DoxyCode}

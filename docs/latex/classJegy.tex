@@ -1,0 +1,220 @@
+\doxysection{Jegy Class Reference}
+\hypertarget{classJegy}{}\label{classJegy}\index{Jegy@{Jegy}}
+
+
+{\ttfamily \#include $<$jegy.\+h$>$}
+
+
+
+Inheritance diagram for Jegy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{classJegy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Jegy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classJegy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classJegy_adc9ca2461bd2548e9aee2a4f473d9ed7}{Jegy}} (int \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}}=1200, double \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}}=0.\+7)
+\begin{DoxyCompactList}\small\item\em Kedvezméy százaléka, pontosabban mennyi az amit fizet százalék. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classJegy_ab4e5659753f5f143d279e79bd8863833}{fizetendo}} ()
+\begin{DoxyCompactList}\small\item\em Fizetendő összeg, ár és a kedvezmény szorzata. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classJegy_a78badd2f2f70b1a3e8ea7d48c8af817f}{get\+Ar}} ()
+\begin{DoxyCompactList}\small\item\em Getterek. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classJegy_af0cf7c3f63831586bc49261fc0738e70}{get\+Szaz}} ()
+\item 
+virtual void \mbox{\hyperlink{classJegy_aa9e954a340eff827792a81cdccdb7426}{nyomtat}} (\mbox{\hyperlink{classVonat}{Vonat}} \&v)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}}
+\item 
+double \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}}
+\begin{DoxyCompactList}\small\item\em A jegy ára. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+FILE JEGY\+\_\+H 
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00011}{11}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classJegy_adc9ca2461bd2548e9aee2a4f473d9ed7}\label{classJegy_adc9ca2461bd2548e9aee2a4f473d9ed7} 
+\index{Jegy@{Jegy}!Jegy@{Jegy}}
+\index{Jegy@{Jegy}!Jegy@{Jegy}}
+\doxysubsubsection{\texorpdfstring{Jegy()}{Jegy()}}
+{\footnotesize\ttfamily Jegy\+::\+Jegy (\begin{DoxyParamCaption}\item[{int}]{ar = {\ttfamily 1200},  }\item[{double}]{szazalek = {\ttfamily 0.7} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Kedvezméy százaléka, pontosabban mennyi az amit fizet százalék. 
+
+Anya osztály Konstruktora 
+\begin{DoxyParams}{Parameters}
+{\em ar} & megadja a jegy árát \\
+\hline
+{\em szazalek} & a kedvezmény értékét adja meg \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00021}{21}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00021\ :\ \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}}(\mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}}),\ \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}}(\mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}})\ \ \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classJegy_ab4e5659753f5f143d279e79bd8863833}\label{classJegy_ab4e5659753f5f143d279e79bd8863833} 
+\index{Jegy@{Jegy}!fizetendo@{fizetendo}}
+\index{fizetendo@{fizetendo}!Jegy@{Jegy}}
+\doxysubsubsection{\texorpdfstring{fizetendo()}{fizetendo()}}
+{\footnotesize\ttfamily virtual int Jegy\+::fizetendo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Fizetendő összeg, ár és a kedvezmény szorzata. 
+
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00024}{24}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}}\ *\ \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}};\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJegy_ab4e5659753f5f143d279e79bd8863833_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classJegy_a78badd2f2f70b1a3e8ea7d48c8af817f}\label{classJegy_a78badd2f2f70b1a3e8ea7d48c8af817f} 
+\index{Jegy@{Jegy}!getAr@{getAr}}
+\index{getAr@{getAr}!Jegy@{Jegy}}
+\doxysubsubsection{\texorpdfstring{getAr()}{getAr()}}
+{\footnotesize\ttfamily int Jegy\+::get\+Ar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getterek. 
+
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00027}{27}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classJegy_a80b706e5cab1d67e483a9b54710431e2}{ar}};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classJegy_af0cf7c3f63831586bc49261fc0738e70}\label{classJegy_af0cf7c3f63831586bc49261fc0738e70} 
+\index{Jegy@{Jegy}!getSzaz@{getSzaz}}
+\index{getSzaz@{getSzaz}!Jegy@{Jegy}}
+\doxysubsubsection{\texorpdfstring{getSzaz()}{getSzaz()}}
+{\footnotesize\ttfamily double Jegy\+::get\+Szaz (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00028}{28}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00028\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}{szazalek}};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classJegy_aa9e954a340eff827792a81cdccdb7426}\label{classJegy_aa9e954a340eff827792a81cdccdb7426} 
+\index{Jegy@{Jegy}!nyomtat@{nyomtat}}
+\index{nyomtat@{nyomtat}!Jegy@{Jegy}}
+\doxysubsubsection{\texorpdfstring{nyomtat()}{nyomtat()}}
+{\footnotesize\ttfamily virtual void Jegy\+::nyomtat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVonat}{Vonat}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em Vonat\&} & megadott vonatra vonatkozik Kíírja a jegy adatinak egy felét. Azt a felét ami minden leszármazottál azonos. A felső pár so. virtual mivel a leszármazottak megöröklik és felülírják. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classDiak_a7121a13da47dce7a773809a385aefa27}{Diak}}, \mbox{\hyperlink{classTeljes_a6f147b902c77f74ba1542b4978ed99a4}{Teljes}}, and \mbox{\hyperlink{classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d}{Kutya}}.
+
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00036}{36}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00037\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Fizetendő:\ "{}}\ <<\ \mbox{\hyperlink{classJegy_ab4e5659753f5f143d279e79bd8863833}{fizetendo}}()\ <<\ \textcolor{stringliteral}{"{}JMF\(\backslash\)n"{}};}
+\DoxyCodeLine{00038\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\#\#\#\ Vonatod\ adatai\ \#\#\#"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00039\ \ \ \ \ v.\mbox{\hyperlink{classVonat_accf19f7143540d637a8b2234a47efee6}{kiir}}();}
+\DoxyCodeLine{00040\ \ \ \ \ std::cout\ <<\ std::endl;}
+\DoxyCodeLine{00041\ \ \ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJegy_aa9e954a340eff827792a81cdccdb7426_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJegy_aa9e954a340eff827792a81cdccdb7426_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{classJegy_a80b706e5cab1d67e483a9b54710431e2}\label{classJegy_a80b706e5cab1d67e483a9b54710431e2} 
+\index{Jegy@{Jegy}!ar@{ar}}
+\index{ar@{ar}!Jegy@{Jegy}}
+\doxysubsubsection{\texorpdfstring{ar}{ar}}
+{\footnotesize\ttfamily int Jegy\+::ar\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00012}{12}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+\Hypertarget{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13}\label{classJegy_ac9c7bf5b801a70a2c3492effcb5fed13} 
+\index{Jegy@{Jegy}!szazalek@{szazalek}}
+\index{szazalek@{szazalek}!Jegy@{Jegy}}
+\doxysubsubsection{\texorpdfstring{szazalek}{szazalek}}
+{\footnotesize\ttfamily double Jegy\+::szazalek\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A jegy ára. 
+
+
+
+Definition at line \mbox{\hyperlink{jegy_8h_source_l00013}{13}} of file \mbox{\hyperlink{jegy_8h_source}{jegy.\+h}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{jegy_8h}{jegy.\+h}}\end{DoxyCompactItemize}

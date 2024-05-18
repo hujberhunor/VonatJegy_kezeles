@@ -1,0 +1,15 @@
+<map id="Diak::nyomtat" name="Diak::nyomtat">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,32,120,60"/>
+<area shape="rect" id="Node000002" href="$classDiak.html#aea9491caa6d858f98227a5a7e3494192" title="Getterek." alt="" coords="168,5,283,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,34,152,28,153,34,121,39"/>
+<area shape="rect" id="Node000003" href="$classJegy.html#aa9e954a340eff827792a81cdccdb7426" title=" " alt="" coords="170,57,281,85"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="121,52,154,57,154,63,120,57"/>
+<area shape="rect" id="Node000004" href="$classJegy.html#ab4e5659753f5f143d279e79bd8863833" title="Fizetendő összeg, ár és a kedvezmény szorzata." alt="" coords="331,31,447,58"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="281,60,315,54,316,59,282,65"/>
+<area shape="rect" id="Node000005" href="$classVonat.html#accf19f7143540d637a8b2234a47efee6" title=" " alt="" coords="346,83,433,110"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="282,77,331,85,330,90,281,82"/>
+<area shape="rect" id="Node000006" href="$classIdo.html#af8343a13fda687245c926f1843a316d0" title=" " alt="" coords="498,56,591,84"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="433,86,482,78,483,83,434,92"/>
+<area shape="rect" id="Node000007" href="$classIdo.html#a3cada14b52b883bca244c40fa477ba15" title=" " alt="" coords="495,108,594,136"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="434,101,481,109,480,114,433,106"/>
+</map>

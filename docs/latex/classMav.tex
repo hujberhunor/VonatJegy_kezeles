@@ -1,0 +1,372 @@
+\doxysection{Mav Class Reference}
+\hypertarget{classMav}{}\label{classMav}\index{Mav@{Mav}}
+
+
+{\ttfamily \#include $<$mav.\+h$>$}
+
+
+
+Collaboration diagram for Mav\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classMav__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMav_aa22a1f92e54bea5db6969bee81db8e17}{Mav}} (size\+\_\+t \mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}}=0)
+\item 
+void \mbox{\hyperlink{classMav_a81e2ee3d186b9303c7fa580f3afbbab8}{add}} (\mbox{\hyperlink{classVonat}{Vonat}} \&vonat)
+\item 
+void \mbox{\hyperlink{classMav_aa9729202f8dac420111d5266bfa6c9e8}{kiir}} ()
+\item 
+void \mbox{\hyperlink{classMav_a77998398e7e7a0deedb86879012b098a}{kiir\+At}} (int i)
+\item 
+\mbox{\hyperlink{classVonat}{Vonat}} \& \mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{get\+Vonat\+At}} (int i)
+\item 
+size\+\_\+t \mbox{\hyperlink{classMav_a4b70915946e42d3b77413f7506655a75}{get\+Size}} ()
+\item 
+\mbox{\hyperlink{classVonat}{Vonat}} \& \mbox{\hyperlink{classMav_aa27feb10cfa445db4b2abe223895f220}{operator\mbox{[}$\,$\mbox{]}}} (int idx)
+\item 
+void \mbox{\hyperlink{classMav_a15899cdec1c1fe36a8460d956dad3104}{beolvas}} ()
+\item 
+void \mbox{\hyperlink{classMav_a9838399fd397670c9d4e9f2d279c1a73}{add\+Train}} (std\+::streampos \&curr\+Pos, int szam, \mbox{\hyperlink{classAllomas}{Allomas}} indulo, \mbox{\hyperlink{classAllomas}{Allomas}} veg, int kocsidb, \mbox{\hyperlink{classIdo}{Ido}} indulas, \mbox{\hyperlink{classIdo}{Ido}} erkezes)
+\item 
+\mbox{\hyperlink{classMav_a993046c07dda4b4cdefcf1248ecd89c0}{\texorpdfstring{$\sim$}{\string~}\+Mav}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVonat}{Vonat}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{mav_8h_source_l00016}{16}} of file \mbox{\hyperlink{mav_8h_source}{mav.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classMav_aa22a1f92e54bea5db6969bee81db8e17}\label{classMav_aa22a1f92e54bea5db6969bee81db8e17} 
+\index{Mav@{Mav}!Mav@{Mav}}
+\index{Mav@{Mav}!Mav@{Mav}}
+\doxysubsubsection{\texorpdfstring{Mav()}{Mav()}}
+{\footnotesize\ttfamily Mav\+::\+Mav (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{si = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{mav_8h_source_l00022}{22}} of file \mbox{\hyperlink{mav_8h_source}{mav.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022\ :\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}(\textcolor{keyword}{nullptr}),\ \mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}}(\mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}})\ \{\}\ }
+
+\end{DoxyCode}
+\Hypertarget{classMav_a993046c07dda4b4cdefcf1248ecd89c0}\label{classMav_a993046c07dda4b4cdefcf1248ecd89c0} 
+\index{Mav@{Mav}!````~Mav@{\texorpdfstring{$\sim$}{\string~}Mav}}
+\index{````~Mav@{\texorpdfstring{$\sim$}{\string~}Mav}!Mav@{Mav}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Mav()}{\string~Mav()}}
+{\footnotesize\ttfamily Mav\+::\texorpdfstring{$\sim$}{\string~}\+Mav (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{mav_8h_source_l00070}{70}} of file \mbox{\hyperlink{mav_8h_source}{mav.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{delete}[]\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}};}
+\DoxyCodeLine{00072\ \ \ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classMav_a81e2ee3d186b9303c7fa580f3afbbab8}\label{classMav_a81e2ee3d186b9303c7fa580f3afbbab8} 
+\index{Mav@{Mav}!add@{add}}
+\index{add@{add}!Mav@{Mav}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Mav\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classVonat}{Vonat}} \&}]{vonat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Elem hozzáfűzése Vonatok kollekcióhoz 
+\begin{DoxyParams}{Parameters}
+{\em vonat} & vonat referencia amit hozzáad \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{mav_8h_source_l00028}{28}} of file \mbox{\hyperlink{mav_8h_source}{mav.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{classVonat}{Vonat}}*\ temp\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classVonat}{Vonat}}[\mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}}\ +\ 1];\ \ \textcolor{comment}{//\ Lefoglalok\ helyet\ }}
+\DoxyCodeLine{00030\ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ \mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}};\ ++i)\ \{\ \textcolor{comment}{//\ Átmásolom\ a\ tömb\ elemeit}}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ temp[i]\ =\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}[i];}
+\DoxyCodeLine{00033\ \ \ \ \ \}}
+\DoxyCodeLine{00034\ \ \ \ \ temp[\mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}}++]\ =\ vonat;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Beleteszem\ a\ vonatot}}
+\DoxyCodeLine{00035\ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{delete}[]\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ "{}Régi"{}\ tömböt\ törlöm}}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}\ =\ temp;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//}}
+\DoxyCodeLine{00038\ \ \ \}\ \textcolor{comment}{//\ End\ of\ feltolt}}
+
+\end{DoxyCode}
+\Hypertarget{classMav_a9838399fd397670c9d4e9f2d279c1a73}\label{classMav_a9838399fd397670c9d4e9f2d279c1a73} 
+\index{Mav@{Mav}!addTrain@{addTrain}}
+\index{addTrain@{addTrain}!Mav@{Mav}}
+\doxysubsubsection{\texorpdfstring{addTrain()}{addTrain()}}
+{\footnotesize\ttfamily void Mav\+::add\+Train (\begin{DoxyParamCaption}\item[{std\+::streampos \&}]{curr\+Pos,  }\item[{int}]{szam,  }\item[{\mbox{\hyperlink{classAllomas}{Allomas}}}]{indulo,  }\item[{\mbox{\hyperlink{classAllomas}{Allomas}}}]{veg,  }\item[{int}]{kocsidb,  }\item[{\mbox{\hyperlink{classIdo}{Ido}}}]{indulas,  }\item[{\mbox{\hyperlink{classIdo}{Ido}}}]{erkezes }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{mav_8cpp_source_l00045}{45}} of file \mbox{\hyperlink{mav_8cpp_source}{mav.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00047\ \ \ \textcolor{comment}{//\ Inicalizálás}}
+\DoxyCodeLine{00048\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}\ =\ \textcolor{stringliteral}{"{}./vonatok.txt"{}};\ \ \ \ }
+\DoxyCodeLine{00049\ \ \ std::ofstream\ file\ (\mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}},\ std::ios::app);\ \textcolor{comment}{//\ Hozzáfűzésesen\ nyitom\ meg.\ }}
+\DoxyCodeLine{00050\ \ }
+\DoxyCodeLine{00051\ \ \ \textcolor{comment}{//\ HIBAKEZELÉS\ IDE}}
+\DoxyCodeLine{00052\ \ \ \textcolor{keywordflow}{if}\ (!file.is\_open())\ \{}
+\DoxyCodeLine{00053\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Megynitással\ van\ baj\ "{}}\ <<\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}\ <<\ std::endl;}
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00055\ \ \ \}}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00057\ \ \ \textcolor{keywordflow}{if}(file.is\_open())\{}
+\DoxyCodeLine{00058\ \ \ \ \ file.seekp(currPos);\ \textcolor{comment}{//\ Megfelelő\ helyre\ ugrok}}
+\DoxyCodeLine{00059\ \ \ \ \ }
+\DoxyCodeLine{00060\ \ \ \ \ file\ <<\ szam\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ indulo\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ veg\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ kocsidb\ <<\ \textcolor{stringliteral}{"{}\ "{}}}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ <<\ indulas\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ erkezes\ <<\ std::endl;}
+\DoxyCodeLine{00062\ \ \ \}}
+\DoxyCodeLine{00063\ \ \ file.close();}
+\DoxyCodeLine{00064\ \}\ \textcolor{comment}{//\ END\ OF\ addTrain}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMav_a9838399fd397670c9d4e9f2d279c1a73_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMav_a15899cdec1c1fe36a8460d956dad3104}\label{classMav_a15899cdec1c1fe36a8460d956dad3104} 
+\index{Mav@{Mav}!beolvas@{beolvas}}
+\index{beolvas@{beolvas}!Mav@{Mav}}
+\doxysubsubsection{\texorpdfstring{beolvas()}{beolvas()}}
+{\footnotesize\ttfamily void Mav\+::beolvas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Beolvaásás a file-\/ból egy segéd strukturába, onnan pedig egy \doxylink{classVonat}{Vonat} objektum feltöltés 
+\begin{DoxyParams}{Parameters}
+{\em Mav\&} & mav class feltöltéséhez szükséges \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{mav_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{mav_8cpp_source}{mav.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00010\ \ \ \textcolor{comment}{//\ Inicalizálás}}
+\DoxyCodeLine{00011\ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ vonatok\_file\ =\ \textcolor{stringliteral}{"{}./vonatok.txt"{}};\ \ \ \ }
+\DoxyCodeLine{00012\ \ \ std::ifstream\ file(vonatok\_file);}
+\DoxyCodeLine{00013\ \ \ \mbox{\hyperlink{classVonat}{Vonat}}\ v;}
+\DoxyCodeLine{00014\ \ \ \mbox{\hyperlink{structSeged}{Seged}}\ seged;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \textcolor{keywordflow}{if}\ (!file.is\_open())\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Megynitással\ van\ baj\ "{}}\ <<\ vonatok\_file\ <<\ std::endl;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00019\ \ \ \}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \textcolor{comment}{//\ Kiürítem\ a\ vonatok\ kollekciót,\ hogy\ ne\ legyen\ ráolvasás}}
+\DoxyCodeLine{00022\ \ \ \textcolor{keyword}{delete}[]\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}};}
+\DoxyCodeLine{00023\ \ \ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00024\ \ \ \mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}}\ =\ 0;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \textcolor{keywordflow}{while}\ (file\ >>\ seged.\mbox{\hyperlink{structSeged_a6a1af90b30c3780068f4c54238f85126}{szam}}\ >>\ seged.\mbox{\hyperlink{structSeged_a9eed4ddac8bea1333197a75b6a4131d7}{indulo}}\ >>\ seged.\mbox{\hyperlink{structSeged_a5d858ded61ba3f9f2f7ff7aeb7705228}{veg}}\ >>\ seged.\mbox{\hyperlink{structSeged_a5d4c351ed460ee96b0cab1d6425ac02a}{kocsidb}}\ >>\ seged.\mbox{\hyperlink{structSeged_aea666b603eaa1e751bbaa5d91de4ad6f}{indulas}}\ >>\ seged.\mbox{\hyperlink{structSeged_a7d6286359ec3e59d1a1988843ce4cbd8}{erkezes}})\ \{}
+\DoxyCodeLine{00027\ \ \ \ \ v.\mbox{\hyperlink{classVonat_a191874e48371b4f07b8703cfd0c85934}{setSzam}}(std::atoi(seged.\mbox{\hyperlink{structSeged_a6a1af90b30c3780068f4c54238f85126}{szam}}));}
+\DoxyCodeLine{00028\ \ \ \ \ v.\mbox{\hyperlink{classVonat_a27a2c9da752ab6cee10e8386c89e60a3}{setIndulo}}(seged.\mbox{\hyperlink{structSeged_a9eed4ddac8bea1333197a75b6a4131d7}{indulo}});}
+\DoxyCodeLine{00029\ \ \ \ \ v.\mbox{\hyperlink{classVonat_acec88991afa8817d7bd6f58190693155}{setVeg}}(seged.\mbox{\hyperlink{structSeged_a5d858ded61ba3f9f2f7ff7aeb7705228}{veg}});}
+\DoxyCodeLine{00030\ \ \ \ \ v.\mbox{\hyperlink{classVonat_a114542b472a68e864279f367f88dd95e}{setKocsidb}}(std::atoi(seged.\mbox{\hyperlink{structSeged_a5d4c351ed460ee96b0cab1d6425ac02a}{kocsidb}}));}
+\DoxyCodeLine{00031\ \ \ \ \ v.\mbox{\hyperlink{classVonat_a6b31c3d13fe2bf39f70f4dac557d4b76}{setIndulas}}(seged.\mbox{\hyperlink{structSeged_aea666b603eaa1e751bbaa5d91de4ad6f}{indulas}});}
+\DoxyCodeLine{00032\ \ \ \ \ v.\mbox{\hyperlink{classVonat_a53b9de572bc678ec86a8916473067375}{setErkezes}}(seged.\mbox{\hyperlink{structSeged_a7d6286359ec3e59d1a1988843ce4cbd8}{erkezes}});}
+\DoxyCodeLine{00033\ \ \ \ \ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{comment}{//\ feltöltöm\ a\ MAV\ "{}mgmt"{}\ class\ Vonat*\ tömbjét\ }}
+\DoxyCodeLine{00035\ \ \ \ \ this-\/>\mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867afa31a1b6ef20ecf273d47c0791816af46b}{add}}(v);\ }
+\DoxyCodeLine{00036\ \ \ \}}
+\DoxyCodeLine{00037\ \ \ file.close();}
+\DoxyCodeLine{00038\ \}\ \textcolor{comment}{//\ END\ OF\ BEOLVAS}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{classMav_a15899cdec1c1fe36a8460d956dad3104_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=237pt]{classMav_a15899cdec1c1fe36a8460d956dad3104_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMav_a4b70915946e42d3b77413f7506655a75}\label{classMav_a4b70915946e42d3b77413f7506655a75} 
+\index{Mav@{Mav}!getSize@{getSize}}
+\index{getSize@{getSize}!Mav@{Mav}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily size\+\_\+t Mav\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{mav_8h_source_l00057}{57}} of file \mbox{\hyperlink{mav_8h_source}{mav.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00057\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}});\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMav_a4b70915946e42d3b77413f7506655a75_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}\label{classMav_a646a7d0ff13f1c6b35a7d22f890a4927} 
+\index{Mav@{Mav}!getVonatAt@{getVonatAt}}
+\index{getVonatAt@{getVonatAt}!Mav@{Mav}}
+\doxysubsubsection{\texorpdfstring{getVonatAt()}{getVonatAt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVonat}{Vonat}} \& Mav\+::get\+Vonat\+At (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{mav_8h_source_l00056}{56}} of file \mbox{\hyperlink{mav_8h_source}{mav.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00056\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}[i-\/1];\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMav_a646a7d0ff13f1c6b35a7d22f890a4927_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMav_aa9729202f8dac420111d5266bfa6c9e8}\label{classMav_aa9729202f8dac420111d5266bfa6c9e8} 
+\index{Mav@{Mav}!kiir@{kiir}}
+\index{kiir@{kiir}!Mav@{Mav}}
+\doxysubsubsection{\texorpdfstring{kiir()}{kiir()}}
+{\footnotesize\ttfamily void Mav\+::kiir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{mav_8h_source_l00041}{41}} of file \mbox{\hyperlink{mav_8h_source}{mav.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{size\_t}\ i\ =\ 0;\ i\ <\ \mbox{\hyperlink{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}{si}};\ ++i)\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}-\/-\/-\/\ "{}}\ <<\ i+1\ <<\ \textcolor{stringliteral}{"{}.vonat\ -\/-\/-\/"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}[i].\mbox{\hyperlink{classVonat_accf19f7143540d637a8b2234a47efee6}{kiir}}();}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ std::cout\ <<\ std::endl;}
+\DoxyCodeLine{00046\ \ \ \ \ \}}
+\DoxyCodeLine{00047\ \ \ \}\ \textcolor{comment}{//\ end\ of\ kiir}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{classMav_aa9729202f8dac420111d5266bfa6c9e8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMav_aa9729202f8dac420111d5266bfa6c9e8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMav_a77998398e7e7a0deedb86879012b098a}\label{classMav_a77998398e7e7a0deedb86879012b098a} 
+\index{Mav@{Mav}!kiirAt@{kiirAt}}
+\index{kiirAt@{kiirAt}!Mav@{Mav}}
+\doxysubsubsection{\texorpdfstring{kiirAt()}{kiirAt()}}
+{\footnotesize\ttfamily void Mav\+::kiir\+At (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{mav_8h_source_l00050}{50}} of file \mbox{\hyperlink{mav_8h_source}{mav.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{comment}{//\ HIBAEKEZELÉS}}
+\DoxyCodeLine{00052\ \ \ \ \ std::cout\ <<\ i+1\ <<\textcolor{stringliteral}{"{}.vonat"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00053\ \ \ \ \ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}[i].\mbox{\hyperlink{classVonat_accf19f7143540d637a8b2234a47efee6}{kiir}}();}
+\DoxyCodeLine{00054\ \ \ \}\ \textcolor{comment}{//\ end\ of\ kiirAt}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classMav_a77998398e7e7a0deedb86879012b098a_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classMav_aa27feb10cfa445db4b2abe223895f220}\label{classMav_aa27feb10cfa445db4b2abe223895f220} 
+\index{Mav@{Mav}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Mav@{Mav}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVonat}{Vonat}} \& Mav\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{idx }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line \mbox{\hyperlink{mav_8h_source_l00059}{59}} of file \mbox{\hyperlink{mav_8h_source}{mav.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00059\ \{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classMav_abc806fbb786efcf15c5c765257286ea2}{vonatok}}[idx];\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Field Documentation}
+\Hypertarget{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8}\label{classMav_ab1e7c38f90f3f6e9103c4807fd203fb8} 
+\index{Mav@{Mav}!si@{si}}
+\index{si@{si}!Mav@{Mav}}
+\doxysubsubsection{\texorpdfstring{si}{si}}
+{\footnotesize\ttfamily size\+\_\+t Mav\+::si\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{mav_8h_source_l00018}{18}} of file \mbox{\hyperlink{mav_8h_source}{mav.\+h}}.
+
+\Hypertarget{classMav_abc806fbb786efcf15c5c765257286ea2}\label{classMav_abc806fbb786efcf15c5c765257286ea2} 
+\index{Mav@{Mav}!vonatok@{vonatok}}
+\index{vonatok@{vonatok}!Mav@{Mav}}
+\doxysubsubsection{\texorpdfstring{vonatok}{vonatok}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVonat}{Vonat}}\texorpdfstring{$\ast$}{*} Mav\+::vonatok\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{mav_8h_source_l00017}{17}} of file \mbox{\hyperlink{mav_8h_source}{mav.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{mav_8h}{mav.\+h}}\item 
+\mbox{\hyperlink{mav_8cpp}{mav.\+cpp}}\end{DoxyCompactItemize}
