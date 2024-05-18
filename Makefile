@@ -4,10 +4,10 @@
 PROG = wMakeMain
 
 # Program forrásfájljai
-SRCS = main.cpp allomas.cpp ido.cpp mav.cpp
+SRCS = main.cpp allomas.cpp ido.cpp mav.cpp kiosk.cpp
 
 # Header fileok
-HDRS = allomas.h vonat.h jegy.h mav.h kiosk.h seged.h
+HDRS = allomas.h vonat.h jegy.h mav.h kiosk.h seged.h ido.h
 
 # Fordítási kapcsolók: legyen pedáns és legyenek figyelmeztetések
 CXXFLAGS = -pedantic -Wall

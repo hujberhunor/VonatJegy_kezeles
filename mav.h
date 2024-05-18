@@ -9,8 +9,8 @@
 #include <fstream>
 
 #include "./vonat.h"
-// #include "./allomas.h"
-// #include "./ido.h"
+#include "./allomas.h"
+#include "./ido.h"
 
 /* ### TODO ### 
   * Túlidenxelés kezelés
@@ -42,7 +42,7 @@ public:
   // Vonatok tömb kiírása
   void kiir() {
     for (size_t i = 0; i < si; ++i) {
-      std::cout << "---" << i+1 << ". vonat---" << std::endl;
+      std::cout << "--- " << i+1 << ".vonat ---" << std::endl;
         vonatok[i].kiir();
         std::cout << std::endl;
     }
@@ -55,7 +55,8 @@ public:
     vonatok[i].kiir();
   } // end of kiirAt
 
-  Vonat& getVonatAt(int i){ return vonatok[i]; }
+  Vonat& getVonatAt(int i){ return vonatok[i-1]; }
+  size_t getSize() { return static_cast<int>(si); }
 
   Vonat& operator[](int idx){ return vonatok[idx]; }
  

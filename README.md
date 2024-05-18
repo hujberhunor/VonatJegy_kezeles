@@ -3,5 +3,5 @@
 - [] HETEROGÉN KOLLEKCIÓ KELL!!!!
 
 - [] Jegy osztály absztrakt?? 
-
+- [] ADDTRAIN végén meghívni a BEOLVAS-t
 

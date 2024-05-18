@@ -5,8 +5,12 @@
 * FILE KIOSK_H
 */
 
-
 #include <iostream>
+
+#include "mav.h"
+#include "jegy.h"
+#include <fstream>
+
 
 enum menuItem{
   add,
@@ -17,28 +21,13 @@ enum menuItem{
 
 class Kiosk {
 public:
-  void init() {
-    std::cout << "Dönts:" << std::endl;
-    std::cout << "1. Vonat hozzáadása "     << std::endl;
-    std::cout << "2. Vonatok listázása "    << std::endl;
-    std::cout << "3. Jegy nyomtatása"       << std::endl;
-    std::cout << "4. Kilépés"               << std::endl;
-  }
 
-  // User input az input streamről enum-má konvertálva
-  menuItem userInput() {
-     int valasz;
-     std::cout << "Választott lehetőség: ";
-     std::cin >> valasz;
-     return static_cast<menuItem>(valasz);
-  }
+  void init();
+  menuItem userInput();
 
-  // vonatHozzaad(Mav& mav){
-  //   std::string input;
-  //   std::cin >> input;
-  //   mav.addTrain();
-  //
-  // }
+  void listaz(Mav& mav);
+  void vonatHozza(Mav& mav, std::streampos currPos);
+  void jegyValt(Mav& mav);
 
 }; // end of Kiosk
 

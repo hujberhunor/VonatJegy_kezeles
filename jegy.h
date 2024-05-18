@@ -42,7 +42,7 @@ class Diak : public Jegy {
 
 public:
   // Konstruktor
-  Diak(int ar = 1200,const double szazalek = 0.7) : Jegy(ar) {}
+  Diak(int ar = 1200, const double szazalek = 0.7) : Jegy(ar, szazalek) {}
  
   // Getterek
   std::string getTipus() { return tipusNev; }

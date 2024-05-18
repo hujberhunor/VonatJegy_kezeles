@@ -1,10 +1,10 @@
 #include <iostream>
 
 #include "./mav.h"
-// #include "./vonat.h"
-// #include "./allomas.h"
+#include "./vonat.h"
+#include "./allomas.h"
 #include "./jegy.h" 
-#include "kiosk.h"
+#include "./kiosk.h"
 
 int main(){
   // Itt tárolon hol vagyok a file-ban
@@ -13,35 +13,56 @@ int main(){
   /* FÁJL BEOLVASÁS */
   std::streampos currPos;
   Mav mav;
-  // addTrain(currPos, 80, "Faszomból", "Geci", 5, "0440", "0630");
+  
   mav.beolvas();
-  // mav.kiir(); //Összes vonat listázása indexekkel!
-  // mav.kiirAt(1);
-
-   mav.getVonatAt(3);
-
-  /* JEGY */
-  // Diak d1(1000, 0.7, "Diak");
-  Diak d1;
-  d1.nyomtat(mav.getVonatAt(1));
-
-  Teljes t1;
-  t1.nyomtat(mav.getVonatAt(3));
-
-  Kutya k1;
-  k1.nyomtat(mav.getVonatAt(1));
 
   /* KIOSK TEST */
-  // Kiosk k;
-  // k.init();
-  //
-  // switch (k.userInput()) {
-  //   case 1: std::cout << "Vonat hozzáadása: "; break;
-  //   case 2: std::cout << "2"; break;
-  //   default: std::cout << "Default";
-  // } // end of switch
-
+  Kiosk k;
+  k.init(); // Kiírja a lehetőségeket
 
   
+int choice = 0;
+  while (choice != 4) {
+    choice = k.userInput(); // Get user input once per loop iteration
+    switch (choice) {
+      // Vonat hozzáadása
+      case 1: {
+        std::cout << "Beolvas: " << std::endl;
+        std::cout << "Szám Indulo Vég kocsidb Indulás erkezes" << std::endl;
+        k.vonatHozza(mav, currPos);
+        system("clear"); // Tábla törlés 
+        std::cout << "\n" << "Vonat hozzáadva\n\n";
+        mav.beolvas();
+        k.init(); // Kiírja a lehetőségeket
+        break;
+      }
+      // Vonatok listázása
+      case 2: { 
+        std::cout << std::endl;
+        mav.beolvas();
+        k.listaz(mav);
+        std::cout << std::endl;
+        k.init(); // Kiírja a lehetőségeket
+        break;
+      }
+      // Jegy vásárlás
+      case 3: {
+        std::cout << std::endl; 
+        k.jegyValt(mav);
+        std::cout << std::endl;
+        k.init(); // Kiírja a lehetőségeket
+        break;
+      }
+      // Kilépés
+      case 4: {
+        std::cout << "Kilépés" << std::endl;
+        break;
+      }
+      default: {
+        std::cout << "Érvénytelen lehetőség" << std::endl;
+      }
+    } // end of switch
+  } // end of while
+  
   return 0;
-}
+} // end of main
