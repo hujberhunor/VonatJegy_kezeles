@@ -22,11 +22,11 @@ void \mbox{\hyperlink{classKiosk_a0720b9a024917b95f7ca167bdf19527d}{init}} ()
 \begin{DoxyCompactList}\small\item\em Inicializálja a menüt, ergo kiírja a lehetőségeket. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867af}{menu\+Item}} \mbox{\hyperlink{classKiosk_a9aa9dc56bb99ac2079705525e26813bc}{user\+Input}} ()
 \item 
-void \mbox{\hyperlink{classKiosk_a196ec12845a5f5384f9145a3fbe086d1}{listaz}} (\mbox{\hyperlink{classMav}{Mav}} \&mav)
+void \mbox{\hyperlink{classKiosk_a196ec12845a5f5384f9145a3fbe086d1}{listaz}} (\mbox{\hyperlink{classMav}{Mav}} \&\mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}})
 \begin{DoxyCompactList}\small\item\em Liszázza a vonatokat amiket beolvasott a fájlból. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classKiosk_a86af671752c83d3624ab7aeb3652f290}{vonat\+Hozza}} (\mbox{\hyperlink{classMav}{Mav}} \&mav, std\+::streampos curr\+Pos)
+void \mbox{\hyperlink{classKiosk_a86af671752c83d3624ab7aeb3652f290}{vonat\+Hozza}} (\mbox{\hyperlink{classMav}{Mav}} \&\mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}, std\+::streampos curr\+Pos)
 \begin{DoxyCompactList}\small\item\em Hozzá ad a user vonatokat a fájlhoz. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classKiosk_af4fe3883e13b6e3658ac7b1001532fb4}{jegy\+Valt}} (\mbox{\hyperlink{classMav}{Mav}} \&mav)
+void \mbox{\hyperlink{classKiosk_af4fe3883e13b6e3658ac7b1001532fb4}{jegy\+Valt}} (\mbox{\hyperlink{classMav}{Mav}} \&\mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}})
 \begin{DoxyCompactList}\small\item\em jegyet vált a kiválasztott vonatra \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -50,20 +50,22 @@ Inicializálja a menüt, ergo kiírja a lehetőségeket.
 
 
 
-Definition at line \mbox{\hyperlink{kiosk_8cpp_source_l00026}{26}} of file \mbox{\hyperlink{kiosk_8cpp_source}{kiosk.\+cpp}}.
+Definition at line \mbox{\hyperlink{kiosk_8cpp_source_l00027}{27}} of file \mbox{\hyperlink{kiosk_8cpp_source}{kiosk.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00027\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\#\#\#\ Dönts\ \#\#\#"{}}\ <<\ std::endl;}
-\DoxyCodeLine{00028\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}1.\ Vonat\ hozzáadása\ "{}}\ \ \ \ \ <<\ std::endl;}
-\DoxyCodeLine{00029\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}2.\ Vonatok\ listázása\ "{}}\ \ \ \ <<\ std::endl;}
-\DoxyCodeLine{00030\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}3.\ Jegy\ nyomtatása"{}}\ \ \ \ \ \ \ <<\ std::endl;}
-\DoxyCodeLine{00031\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}4.\ Kilépés"{}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ std::endl;}
-\DoxyCodeLine{00032\ \}}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\#\#\#\ Dönts\ \#\#\#"{}}\ <<\ std::endl;}
+\DoxyCodeLine{00029\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}1.\ Vonat\ hozzáadása\ "{}}\ \ \ \ \ <<\ std::endl;}
+\DoxyCodeLine{00030\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}2.\ Vonatok\ listázása\ "{}}\ \ \ \ <<\ std::endl;}
+\DoxyCodeLine{00031\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}3.\ Jegy\ nyomtatása"{}}\ \ \ \ \ \ \ <<\ std::endl;}
+\DoxyCodeLine{00032\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}4.\ Kilépés"{}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ std::endl;}
+\DoxyCodeLine{00033\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}5.\ Teszt"{}}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ std::endl;}
+\DoxyCodeLine{00034\ \}}
 
 \end{DoxyCode}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -79,8 +81,6 @@ Here is the caller graph for this function\+:\nopagebreak
 
 
 Hibakezelés. Érvényes input esetén. 
-
-Érvényes-\/e az input mikor számot kellene megadnom.
 
 \begin{DoxyReturn}{Returns}
 true, különben 
@@ -105,7 +105,8 @@ Definition at line \mbox{\hyperlink{kiosk_8cpp_source_l00015}{15}} of file \mbox
 \DoxyCodeLine{00024\ \}}
 
 \end{DoxyCode}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -122,68 +123,75 @@ Here is the caller graph for this function\+:\nopagebreak
 
 jegyet vált a kiválasztott vonatra 
 
+\doxylink{classJegy}{Jegy} vásárlás, nyomtatás 
+\begin{DoxyParams}{Parameters}
+{\em mav} & mav refereancia, ez az osztály tartalmazza a vonatok\texorpdfstring{$\ast$}{*} tömböt \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{kiosk_8cpp_source_l00065}{65}} of file \mbox{\hyperlink{kiosk_8cpp_source}{kiosk.\+cpp}}.
+Definition at line \mbox{\hyperlink{kiosk_8cpp_source_l00076}{76}} of file \mbox{\hyperlink{kiosk_8cpp_source}{kiosk.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00066\ \ \ \textcolor{keywordtype}{int}\ idx,\ buf;}
-\DoxyCodeLine{00067\ \ \ \mbox{\hyperlink{classKiosk_a196ec12845a5f5384f9145a3fbe086d1}{listaz}}(mav);}
-\DoxyCodeLine{00068\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Valasz\ vonatot:\ "{}};}
-\DoxyCodeLine{00069\ \ \ std::cin\ >>\ idx;}
-\DoxyCodeLine{00070\ \ \ \textcolor{comment}{//\ Hibakezelés}}
-\DoxyCodeLine{00071\ \ \ \textcolor{keywordflow}{if}(\textcolor{keywordtype}{size\_t}(idx)\ >\ mav.\mbox{\hyperlink{classMav_a4b70915946e42d3b77413f7506655a75}{getSize}}())\{\ std::cout\ <<\ \textcolor{stringliteral}{"{}Túlindexelés\(\backslash\)n"{}};\ \textcolor{keywordflow}{return};\ \}}
-\DoxyCodeLine{00072\ \ \ }
-\DoxyCodeLine{00073\ \ \ \textcolor{keywordflow}{if}(!(\mbox{\hyperlink{classKiosk_a618eeae0bf7647b223caef1e48e9b0eb}{Kiosk::inputCheck}}()))\ \textcolor{keywordflow}{return};\ \textcolor{comment}{//\ Érvényes\ inputot\ szűrök.\ }}
-\DoxyCodeLine{00074\ \ \ }
-\DoxyCodeLine{00075\ \ \ std::cout\ <<\ std::endl;\ \textcolor{comment}{//\ szép\ kíírás\ miatt.\ }}
-\DoxyCodeLine{00076\ \ \ \textcolor{comment}{//\ end\ if\ Hibakezelés\ \ }}
-\DoxyCodeLine{00077\ }
-\DoxyCodeLine{00078\ }
-\DoxyCodeLine{00079\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}1.Teljes,\ 2.Diak,\ 3.Kutya\(\backslash\)n\ "{}};}
-\DoxyCodeLine{00080\ \ \ std::cin\ >>\ buf;}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00077\ \ \ \textcolor{keywordtype}{int}\ idx,\ buf;}
+\DoxyCodeLine{00078\ \ \ \mbox{\hyperlink{classKiosk_a196ec12845a5f5384f9145a3fbe086d1}{listaz}}(\mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}});}
+\DoxyCodeLine{00079\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Valasz\ vonatot:\ "{}};}
+\DoxyCodeLine{00080\ \ \ std::cin\ >>\ idx;}
 \DoxyCodeLine{00081\ \ \ \textcolor{comment}{//\ Hibakezelés}}
-\DoxyCodeLine{00082\ \ \ \textcolor{keywordflow}{if}(buf\ >\ 3)\{\ std::cout\ <<\ \textcolor{stringliteral}{"{}Túlindexelés"{}};\ \textcolor{keywordflow}{return};\ \}}
-\DoxyCodeLine{00083\ }
-\DoxyCodeLine{00084\ \ \ \textcolor{keywordflow}{if}(!(\mbox{\hyperlink{classKiosk_a618eeae0bf7647b223caef1e48e9b0eb}{Kiosk::inputCheck}}()))\ \textcolor{keywordflow}{return};\ }
-\DoxyCodeLine{00085\ \ }
-\DoxyCodeLine{00086\ \ \ std::cout\ <<\ std::endl;}
-\DoxyCodeLine{00087\ \ \ \textcolor{comment}{//\ end\ of\ Hibakezelés}}
+\DoxyCodeLine{00082\ \ \ \textcolor{keywordflow}{if}(\textcolor{keywordtype}{size\_t}(idx)\ >\ \mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_a4b70915946e42d3b77413f7506655a75}{getSize}}())\{\ std::cout\ <<\ \textcolor{stringliteral}{"{}Túlindexelés\(\backslash\)n"{}};\ \textcolor{keywordflow}{return};\ \}}
+\DoxyCodeLine{00083\ \ \ }
+\DoxyCodeLine{00084\ \ \ \textcolor{keywordflow}{if}(!(\mbox{\hyperlink{classKiosk_a618eeae0bf7647b223caef1e48e9b0eb}{Kiosk::inputCheck}}()))\ \textcolor{keywordflow}{return};\ \textcolor{comment}{//\ Érvényes\ inputot\ szűrök.\ }}
+\DoxyCodeLine{00085\ \ \ }
+\DoxyCodeLine{00086\ \ \ std::cout\ <<\ std::endl;\ \textcolor{comment}{//\ szép\ kíírás\ miatt.\ }}
+\DoxyCodeLine{00087\ \ \ \textcolor{comment}{//\ end\ if\ Hibakezelés\ \ }}
 \DoxyCodeLine{00088\ }
-\DoxyCodeLine{00089\ \ \ \textcolor{keywordflow}{switch}\ (buf)\ \{}
-\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordflow}{case}\ 1:\ \{}
-\DoxyCodeLine{00091\ \ \ \ \ \ \ \mbox{\hyperlink{classTeljes}{Teljes}}\ t;}
-\DoxyCodeLine{00092\ \ \ \ \ \ \ t.\mbox{\hyperlink{classTeljes_a6f147b902c77f74ba1542b4978ed99a4}{nyomtat}}(mav.\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(idx));}
-\DoxyCodeLine{00093\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00094\ \ \ \ \ \}}
-\DoxyCodeLine{00095\ }
-\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordflow}{case}\ 2:\ \{}
-\DoxyCodeLine{00097\ \ \ \ \ \ \ \mbox{\hyperlink{classDiak}{Diak}}\ d;}
-\DoxyCodeLine{00098\ \ \ \ \ \ \ d.\mbox{\hyperlink{classDiak_a7121a13da47dce7a773809a385aefa27}{nyomtat}}(mav.\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(idx));}
-\DoxyCodeLine{00099\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00100\ \ \ \ \ \}}
-\DoxyCodeLine{00101\ }
-\DoxyCodeLine{00102\ \ \ \ \ \textcolor{keywordflow}{case}\ 3:\ \{}
-\DoxyCodeLine{00103\ \ \ \ \ \ \ \mbox{\hyperlink{classKutya}{Kutya}}\ k;}
-\DoxyCodeLine{00104\ \ \ \ \ \ \ k.\mbox{\hyperlink{classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d}{nyomtat}}(mav.\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(idx));}
-\DoxyCodeLine{00105\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
-\DoxyCodeLine{00106\ \ \ \ \ \}}
-\DoxyCodeLine{00107\ \ \ \ \ \ \ }
-\DoxyCodeLine{00108\ \ \ \}\ \textcolor{comment}{//\ end\ of\ switch}}
-\DoxyCodeLine{00109\ }
-\DoxyCodeLine{00110\ \}\ \textcolor{comment}{//\ end\ of\ jegyValt}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}1.Teljes,\ 2.Diak,\ 3.Kutya\(\backslash\)n\ "{}};}
+\DoxyCodeLine{00091\ \ \ std::cin\ >>\ buf;}
+\DoxyCodeLine{00092\ \ \ \textcolor{comment}{//\ Hibakezelés}}
+\DoxyCodeLine{00093\ \ \ \textcolor{keywordflow}{if}(buf\ >\ 3)\{\ std::cout\ <<\ \textcolor{stringliteral}{"{}Túlindexelés"{}};\ \textcolor{keywordflow}{return};\ \}}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00095\ \ \ \textcolor{keywordflow}{if}(!(\mbox{\hyperlink{classKiosk_a618eeae0bf7647b223caef1e48e9b0eb}{Kiosk::inputCheck}}()))\ \textcolor{keywordflow}{return};\ }
+\DoxyCodeLine{00096\ \ }
+\DoxyCodeLine{00097\ \ \ std::cout\ <<\ std::endl;}
+\DoxyCodeLine{00098\ \ \ \textcolor{comment}{//\ end\ of\ Hibakezelés}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \textcolor{keywordflow}{switch}\ (buf)\ \{}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordflow}{case}\ 1:\ \{}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \mbox{\hyperlink{classTeljes}{Teljes}}\ t;}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ t.\mbox{\hyperlink{classTeljes_a6f147b902c77f74ba1542b4978ed99a4}{nyomtat}}(\mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(idx));}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00105\ \ \ \ \ \}}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordflow}{case}\ 2:\ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \mbox{\hyperlink{classDiak}{Diak}}\ d;}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ d.\mbox{\hyperlink{classDiak_a7121a13da47dce7a773809a385aefa27}{nyomtat}}(\mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(idx));}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00111\ \ \ \ \ \}}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordflow}{case}\ 3:\ \{}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \mbox{\hyperlink{classKutya}{Kutya}}\ k;}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ k.\mbox{\hyperlink{classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d}{nyomtat}}(\mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(idx));}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00117\ \ \ \ \ \}}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ }
+\DoxyCodeLine{00119\ \ \ \}\ \textcolor{comment}{//\ end\ of\ switch}}
+\DoxyCodeLine{00120\ }
+\DoxyCodeLine{00121\ \}\ \textcolor{comment}{//\ end\ of\ jegyValt}}
 
 \end{DoxyCode}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classKiosk_af4fe3883e13b6e3658ac7b1001532fb4_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -200,25 +208,27 @@ Here is the caller graph for this function\+:\nopagebreak
 
 Liszázza a vonatokat amiket beolvasott a fájlból. 
 
+Liszázza az összes vonatot. 
 
-
-Definition at line \mbox{\hyperlink{kiosk_8cpp_source_l00043}{43}} of file \mbox{\hyperlink{kiosk_8cpp_source}{kiosk.\+cpp}}.
+Definition at line \mbox{\hyperlink{kiosk_8cpp_source_l00047}{47}} of file \mbox{\hyperlink{kiosk_8cpp_source}{kiosk.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00044\ \ \ mav.\mbox{\hyperlink{classMav_aa9729202f8dac420111d5266bfa6c9e8}{kiir}}();\ }
-\DoxyCodeLine{00045\ \}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00048\ \ \ \mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_aa9729202f8dac420111d5266bfa6c9e8}{kiir}}();\ }
+\DoxyCodeLine{00049\ \}}
 
 \end{DoxyCode}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classKiosk_a196ec12845a5f5384f9145a3fbe086d1_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -236,19 +246,20 @@ menu\+Item fent említett enum class elemt ad vissza
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{kiosk_8cpp_source_l00035}{35}} of file \mbox{\hyperlink{kiosk_8cpp_source}{kiosk.\+cpp}}.
+Definition at line \mbox{\hyperlink{kiosk_8cpp_source_l00039}{39}} of file \mbox{\hyperlink{kiosk_8cpp_source}{kiosk.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00036\ \ \ \ \textcolor{keywordtype}{int}\ valasz;}
-\DoxyCodeLine{00037\ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Választott\ lehetőség:\ "{}};}
-\DoxyCodeLine{00038\ \ \ \ std::cin\ >>\ valasz;}
-\DoxyCodeLine{00039\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867af}{menuItem}}\textcolor{keyword}{>}(valasz);}
-\DoxyCodeLine{00040\ \}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00040\ \ \ \ \textcolor{keywordtype}{int}\ valasz;}
+\DoxyCodeLine{00041\ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Választott\ lehetőség:\ "{}};}
+\DoxyCodeLine{00042\ \ \ \ std::cin\ >>\ valasz;}
+\DoxyCodeLine{00043\ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{static\_cast<}\mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867af}{menuItem}}\textcolor{keyword}{>}(valasz);}
+\DoxyCodeLine{00044\ \}}
 
 \end{DoxyCode}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -265,36 +276,45 @@ Here is the caller graph for this function\+:\nopagebreak
 
 Hozzá ad a user vonatokat a fájlhoz. 
 
+User hozzáadhat vonatot a file-\/hoz 
+\begin{DoxyParams}{Parameters}
+{\em mav} & a mav osztályra refereancia, ezt töltöm fel (\doxylink{classMav}{Mav}) \\
+\hline
+{\em currpos} & a kurzor éppenleges helye, ahova írni kell, hogy ne legyen felülírás (streampos) \\
+\hline
+\end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{kiosk_8cpp_source_l00048}{48}} of file \mbox{\hyperlink{kiosk_8cpp_source}{kiosk.\+cpp}}.
+Definition at line \mbox{\hyperlink{kiosk_8cpp_source_l00057}{57}} of file \mbox{\hyperlink{kiosk_8cpp_source}{kiosk.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
-\DoxyCodeLine{00049\ \ \ \mbox{\hyperlink{structSeged}{Seged}}\ s;}
-\DoxyCodeLine{00050\ }
-\DoxyCodeLine{00051\ \ \ std::cin\ >>\ s.\mbox{\hyperlink{structSeged_a6a1af90b30c3780068f4c54238f85126}{szam}};\ }
-\DoxyCodeLine{00052\ \ \ \textcolor{comment}{//\ if(*(s.szam)\ ==\ '\(\backslash\)n')\ std::cout\ <<\ "{}FASZ"{};}}
-\DoxyCodeLine{00053\ \ \ std::cin\ >>\ s.\mbox{\hyperlink{structSeged_a9eed4ddac8bea1333197a75b6a4131d7}{indulo}};\ }
-\DoxyCodeLine{00054\ \ \ std::cin\ >>\ s.\mbox{\hyperlink{structSeged_a5d858ded61ba3f9f2f7ff7aeb7705228}{veg}};\ }
-\DoxyCodeLine{00055\ \ \ std::cin\ >>\ s.\mbox{\hyperlink{structSeged_a5d4c351ed460ee96b0cab1d6425ac02a}{kocsidb}};\ }
-\DoxyCodeLine{00056\ \ \ std::cin\ >>\ s.\mbox{\hyperlink{structSeged_aea666b603eaa1e751bbaa5d91de4ad6f}{indulas}};\ }
-\DoxyCodeLine{00057\ \ \ std::cin\ >>\ s.\mbox{\hyperlink{structSeged_a7d6286359ec3e59d1a1988843ce4cbd8}{erkezes}};\ }
-\DoxyCodeLine{00058\ \ \ \ \ }
-\DoxyCodeLine{00059\ \ \ mav.\mbox{\hyperlink{classMav_a9838399fd397670c9d4e9f2d279c1a73}{addTrain}}(currPos,\ atoi(s.\mbox{\hyperlink{structSeged_a6a1af90b30c3780068f4c54238f85126}{szam}}),\ \mbox{\hyperlink{classAllomas}{Allomas}}(s.\mbox{\hyperlink{structSeged_a9eed4ddac8bea1333197a75b6a4131d7}{indulo}}),\ \mbox{\hyperlink{classAllomas}{Allomas}}(s.\mbox{\hyperlink{structSeged_a5d858ded61ba3f9f2f7ff7aeb7705228}{veg}}),}
-\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ atoi(s.\mbox{\hyperlink{structSeged_a5d4c351ed460ee96b0cab1d6425ac02a}{kocsidb}}),\ \mbox{\hyperlink{classIdo}{Ido}}(s.\mbox{\hyperlink{structSeged_aea666b603eaa1e751bbaa5d91de4ad6f}{indulas}}),\ \mbox{\hyperlink{classIdo}{Ido}}(s.\mbox{\hyperlink{structSeged_a7d6286359ec3e59d1a1988843ce4cbd8}{erkezes}}));}
-\DoxyCodeLine{00061\ \}\ \textcolor{comment}{//\ End\ of\ vonatHozza}}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00058\ \ \ \mbox{\hyperlink{structSeged}{Seged}}\ s;}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \ \ std::cin\ >>\ s.\mbox{\hyperlink{structSeged_a6a1af90b30c3780068f4c54238f85126}{szam}};\ }
+\DoxyCodeLine{00061\ \ \ \textcolor{comment}{//\ if(*(s.szam)\ ==\ '\(\backslash\)n')\ std::cout\ <<\ "{}FASZ"{};}}
+\DoxyCodeLine{00062\ \ \ std::cin\ >>\ s.\mbox{\hyperlink{structSeged_a9eed4ddac8bea1333197a75b6a4131d7}{indulo}};\ }
+\DoxyCodeLine{00063\ \ \ std::cin\ >>\ s.\mbox{\hyperlink{structSeged_a5d858ded61ba3f9f2f7ff7aeb7705228}{veg}};\ }
+\DoxyCodeLine{00064\ \ \ std::cin\ >>\ s.\mbox{\hyperlink{structSeged_a5d4c351ed460ee96b0cab1d6425ac02a}{kocsidb}};\ }
+\DoxyCodeLine{00065\ \ \ std::cin\ >>\ s.\mbox{\hyperlink{structSeged_aea666b603eaa1e751bbaa5d91de4ad6f}{indulas}};\ }
+\DoxyCodeLine{00066\ \ \ std::cin\ >>\ s.\mbox{\hyperlink{structSeged_a7d6286359ec3e59d1a1988843ce4cbd8}{erkezes}};\ }
+\DoxyCodeLine{00067\ \ \ \ \ }
+\DoxyCodeLine{00068\ \ \ \mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_a9838399fd397670c9d4e9f2d279c1a73}{addTrain}}(currPos,\ atoi(s.\mbox{\hyperlink{structSeged_a6a1af90b30c3780068f4c54238f85126}{szam}}),\ \mbox{\hyperlink{classAllomas}{Allomas}}(s.\mbox{\hyperlink{structSeged_a9eed4ddac8bea1333197a75b6a4131d7}{indulo}}),\ \mbox{\hyperlink{classAllomas}{Allomas}}(s.\mbox{\hyperlink{structSeged_a5d858ded61ba3f9f2f7ff7aeb7705228}{veg}}),}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ atoi(s.\mbox{\hyperlink{structSeged_a5d4c351ed460ee96b0cab1d6425ac02a}{kocsidb}}),\ \mbox{\hyperlink{classIdo}{Ido}}(s.\mbox{\hyperlink{structSeged_aea666b603eaa1e751bbaa5d91de4ad6f}{indulas}}),\ \mbox{\hyperlink{classIdo}{Ido}}(s.\mbox{\hyperlink{structSeged_a7d6286359ec3e59d1a1988843ce4cbd8}{erkezes}}));}
+\DoxyCodeLine{00070\ \}\ \textcolor{comment}{//\ End\ of\ vonatHozza}}
 
 \end{DoxyCode}
-Here is the call graph for this function\+:\nopagebreak
+Here is the call graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=306pt]{classKiosk_a86af671752c83d3624ab7aeb3652f290_cgraph}
 \end{center}
 \end{figure}
-Here is the caller graph for this function\+:\nopagebreak
+Here is the caller graph for this function\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode

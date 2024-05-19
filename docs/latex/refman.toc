@@ -35,7 +35,7 @@
 \contentsline {subsection}{\numberline {4.3.4}Field Documentation}{12}{subsection.4.3.4}%
 \contentsline {subsubsection}{\numberline {4.3.4.1}ora}{12}{subsubsection.4.3.4.1}%
 \contentsline {subsubsection}{\numberline {4.3.4.2}perc}{12}{subsubsection.4.3.4.2}%
-\contentsline {section}{\numberline {4.4}Jegy Class Reference}{13}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Jegy Class Reference}{12}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Detailed Description}{14}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Constructor \& Destructor Documentation}{14}{subsection.4.4.2}%
 \contentsline {subsubsection}{\numberline {4.4.2.1}Jegy()}{14}{subsubsection.4.4.2.1}%
@@ -57,121 +57,126 @@
 \contentsline {subsubsection}{\numberline {4.5.2.5}userInput()}{21}{subsubsection.4.5.2.5}%
 \contentsline {subsubsection}{\numberline {4.5.2.6}vonatHozza()}{21}{subsubsection.4.5.2.6}%
 \contentsline {section}{\numberline {4.6}Kutya Class Reference}{22}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{24}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Constructor \& Destructor Documentation}{24}{subsection.4.6.2}%
-\contentsline {subsubsection}{\numberline {4.6.2.1}Kutya()}{24}{subsubsection.4.6.2.1}%
-\contentsline {subsection}{\numberline {4.6.3}Member Function Documentation}{24}{subsection.4.6.3}%
-\contentsline {subsubsection}{\numberline {4.6.3.1}getKov()}{24}{subsubsection.4.6.3.1}%
-\contentsline {subsubsection}{\numberline {4.6.3.2}getTipus()}{24}{subsubsection.4.6.3.2}%
-\contentsline {subsubsection}{\numberline {4.6.3.3}nyomtat()}{25}{subsubsection.4.6.3.3}%
-\contentsline {subsection}{\numberline {4.6.4}Field Documentation}{26}{subsection.4.6.4}%
-\contentsline {subsubsection}{\numberline {4.6.4.1}kov}{26}{subsubsection.4.6.4.1}%
-\contentsline {subsubsection}{\numberline {4.6.4.2}tipusNev}{26}{subsubsection.4.6.4.2}%
-\contentsline {section}{\numberline {4.7}Mav Class Reference}{26}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{28}{subsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.7.2}Constructor \& Destructor Documentation}{28}{subsection.4.7.2}%
-\contentsline {subsubsection}{\numberline {4.7.2.1}Mav()}{28}{subsubsection.4.7.2.1}%
-\contentsline {subsubsection}{\numberline {4.7.2.2}$\sim $Mav()}{28}{subsubsection.4.7.2.2}%
-\contentsline {subsection}{\numberline {4.7.3}Member Function Documentation}{28}{subsection.4.7.3}%
-\contentsline {subsubsection}{\numberline {4.7.3.1}add()}{28}{subsubsection.4.7.3.1}%
-\contentsline {subsubsection}{\numberline {4.7.3.2}addTrain()}{29}{subsubsection.4.7.3.2}%
-\contentsline {subsubsection}{\numberline {4.7.3.3}beolvas()}{30}{subsubsection.4.7.3.3}%
-\contentsline {subsubsection}{\numberline {4.7.3.4}getSize()}{31}{subsubsection.4.7.3.4}%
-\contentsline {subsubsection}{\numberline {4.7.3.5}getVonatAt()}{32}{subsubsection.4.7.3.5}%
-\contentsline {subsubsection}{\numberline {4.7.3.6}kiir()}{32}{subsubsection.4.7.3.6}%
-\contentsline {subsubsection}{\numberline {4.7.3.7}kiirAt()}{33}{subsubsection.4.7.3.7}%
-\contentsline {subsubsection}{\numberline {4.7.3.8}operator[]()}{34}{subsubsection.4.7.3.8}%
-\contentsline {subsection}{\numberline {4.7.4}Field Documentation}{34}{subsection.4.7.4}%
-\contentsline {subsubsection}{\numberline {4.7.4.1}si}{34}{subsubsection.4.7.4.1}%
-\contentsline {subsubsection}{\numberline {4.7.4.2}vonatok}{34}{subsubsection.4.7.4.2}%
-\contentsline {section}{\numberline {4.8}Seged Struct Reference}{35}{section.4.8}%
-\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{35}{subsection.4.8.1}%
-\contentsline {subsection}{\numberline {4.8.2}Field Documentation}{35}{subsection.4.8.2}%
-\contentsline {subsubsection}{\numberline {4.8.2.1}buffSize}{35}{subsubsection.4.8.2.1}%
-\contentsline {subsubsection}{\numberline {4.8.2.2}erkezes}{36}{subsubsection.4.8.2.2}%
-\contentsline {subsubsection}{\numberline {4.8.2.3}indulas}{36}{subsubsection.4.8.2.3}%
-\contentsline {subsubsection}{\numberline {4.8.2.4}indulo}{36}{subsubsection.4.8.2.4}%
-\contentsline {subsubsection}{\numberline {4.8.2.5}kocsidb}{36}{subsubsection.4.8.2.5}%
-\contentsline {subsubsection}{\numberline {4.8.2.6}szam}{36}{subsubsection.4.8.2.6}%
-\contentsline {subsubsection}{\numberline {4.8.2.7}veg}{36}{subsubsection.4.8.2.7}%
-\contentsline {section}{\numberline {4.9}Teljes Class Reference}{37}{section.4.9}%
-\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{39}{subsection.4.9.1}%
-\contentsline {subsection}{\numberline {4.9.2}Constructor \& Destructor Documentation}{39}{subsection.4.9.2}%
-\contentsline {subsubsection}{\numberline {4.9.2.1}Teljes()}{39}{subsubsection.4.9.2.1}%
-\contentsline {subsection}{\numberline {4.9.3}Member Function Documentation}{39}{subsection.4.9.3}%
-\contentsline {subsubsection}{\numberline {4.9.3.1}getTipus()}{39}{subsubsection.4.9.3.1}%
-\contentsline {subsubsection}{\numberline {4.9.3.2}nyomtat()}{39}{subsubsection.4.9.3.2}%
-\contentsline {subsection}{\numberline {4.9.4}Field Documentation}{40}{subsection.4.9.4}%
-\contentsline {subsubsection}{\numberline {4.9.4.1}tipusNev}{40}{subsubsection.4.9.4.1}%
-\contentsline {section}{\numberline {4.10}Vonat Class Reference}{40}{section.4.10}%
-\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{42}{subsection.4.10.1}%
-\contentsline {subsection}{\numberline {4.10.2}Constructor \& Destructor Documentation}{42}{subsection.4.10.2}%
-\contentsline {subsubsection}{\numberline {4.10.2.1}Vonat()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{42}{subsubsection.4.10.2.1}%
-\contentsline {subsubsection}{\numberline {4.10.2.2}Vonat()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{43}{subsubsection.4.10.2.2}%
-\contentsline {subsection}{\numberline {4.10.3}Member Function Documentation}{43}{subsection.4.10.3}%
-\contentsline {subsubsection}{\numberline {4.10.3.1}getErkezes()}{43}{subsubsection.4.10.3.1}%
-\contentsline {subsubsection}{\numberline {4.10.3.2}getIndulas()}{43}{subsubsection.4.10.3.2}%
-\contentsline {subsubsection}{\numberline {4.10.3.3}getIndulo()}{43}{subsubsection.4.10.3.3}%
-\contentsline {subsubsection}{\numberline {4.10.3.4}getKocsidb()}{43}{subsubsection.4.10.3.4}%
-\contentsline {subsubsection}{\numberline {4.10.3.5}getSzam()}{44}{subsubsection.4.10.3.5}%
-\contentsline {subsubsection}{\numberline {4.10.3.6}getVeg()}{44}{subsubsection.4.10.3.6}%
-\contentsline {subsubsection}{\numberline {4.10.3.7}kiir()}{44}{subsubsection.4.10.3.7}%
-\contentsline {subsubsection}{\numberline {4.10.3.8}setErkezes()}{45}{subsubsection.4.10.3.8}%
-\contentsline {subsubsection}{\numberline {4.10.3.9}setIndulas()}{46}{subsubsection.4.10.3.9}%
-\contentsline {subsubsection}{\numberline {4.10.3.10}setIndulo()}{46}{subsubsection.4.10.3.10}%
-\contentsline {subsubsection}{\numberline {4.10.3.11}setKocsidb()}{46}{subsubsection.4.10.3.11}%
-\contentsline {subsubsection}{\numberline {4.10.3.12}setSzam()}{47}{subsubsection.4.10.3.12}%
-\contentsline {subsubsection}{\numberline {4.10.3.13}setVeg()}{47}{subsubsection.4.10.3.13}%
-\contentsline {subsection}{\numberline {4.10.4}Field Documentation}{47}{subsection.4.10.4}%
-\contentsline {subsubsection}{\numberline {4.10.4.1}erkezes}{47}{subsubsection.4.10.4.1}%
-\contentsline {subsubsection}{\numberline {4.10.4.2}indulas}{48}{subsubsection.4.10.4.2}%
-\contentsline {subsubsection}{\numberline {4.10.4.3}indulo}{48}{subsubsection.4.10.4.3}%
-\contentsline {subsubsection}{\numberline {4.10.4.4}kocsidb}{48}{subsubsection.4.10.4.4}%
-\contentsline {subsubsection}{\numberline {4.10.4.5}szam}{48}{subsubsection.4.10.4.5}%
-\contentsline {subsubsection}{\numberline {4.10.4.6}veg}{48}{subsubsection.4.10.4.6}%
-\contentsline {chapter}{\numberline {5}File Documentation}{49}{chapter.5}%
-\contentsline {section}{\numberline {5.1}allomas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{49}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Function Documentation}{50}{subsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.1.1}operator$<$$<$()}{50}{subsubsection.5.1.1.1}%
-\contentsline {section}{\numberline {5.2}allomas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{50}{section.5.2}%
-\contentsline {section}{\numberline {5.3}allomas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{50}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Function Documentation}{51}{subsection.5.3.1}%
-\contentsline {subsubsection}{\numberline {5.3.1.1}operator$<$$<$()}{51}{subsubsection.5.3.1.1}%
-\contentsline {section}{\numberline {5.4}allomas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{52}{section.5.4}%
-\contentsline {section}{\numberline {5.5}ido.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{52}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Function Documentation}{53}{subsection.5.5.1}%
-\contentsline {subsubsection}{\numberline {5.5.1.1}operator$<$$<$()}{53}{subsubsection.5.5.1.1}%
-\contentsline {section}{\numberline {5.6}ido.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{53}{section.5.6}%
-\contentsline {section}{\numberline {5.7}ido.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{53}{section.5.7}%
-\contentsline {subsection}{\numberline {5.7.1}Function Documentation}{54}{subsection.5.7.1}%
-\contentsline {subsubsection}{\numberline {5.7.1.1}operator$<$$<$()}{54}{subsubsection.5.7.1.1}%
-\contentsline {section}{\numberline {5.8}ido.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{55}{section.5.8}%
-\contentsline {section}{\numberline {5.9}jegy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{56}{section.5.9}%
-\contentsline {section}{\numberline {5.10}jegy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{57}{section.5.10}%
-\contentsline {section}{\numberline {5.11}kiosk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{59}{section.5.11}%
-\contentsline {section}{\numberline {5.12}kiosk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{59}{section.5.12}%
-\contentsline {section}{\numberline {5.13}kiosk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{61}{section.5.13}%
-\contentsline {subsection}{\numberline {5.13.1}Enumeration Type Documentation}{62}{subsection.5.13.1}%
-\contentsline {subsubsection}{\numberline {5.13.1.1}menuItem}{62}{subsubsection.5.13.1.1}%
-\contentsline {section}{\numberline {5.14}kiosk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{63}{section.5.14}%
-\contentsline {section}{\numberline {5.15}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{63}{section.5.15}%
-\contentsline {subsection}{\numberline {5.15.1}Function Documentation}{64}{subsection.5.15.1}%
-\contentsline {subsubsection}{\numberline {5.15.1.1}main()}{64}{subsubsection.5.15.1.1}%
-\contentsline {section}{\numberline {5.16}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{66}{section.5.16}%
-\contentsline {section}{\numberline {5.17}mav.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{66}{section.5.17}%
-\contentsline {section}{\numberline {5.18}mav.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{67}{section.5.18}%
-\contentsline {section}{\numberline {5.19}mav.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{68}{section.5.19}%
-\contentsline {section}{\numberline {5.20}mav.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{70}{section.5.20}%
-\contentsline {section}{\numberline {5.21}mav\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}test.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{71}{section.5.21}%
-\contentsline {subsection}{\numberline {5.21.1}Function Documentation}{71}{subsection.5.21.1}%
-\contentsline {subsubsection}{\numberline {5.21.1.1}main()}{71}{subsubsection.5.21.1.1}%
-\contentsline {subsubsection}{\numberline {5.21.1.2}testMavAdd()}{72}{subsubsection.5.21.1.2}%
-\contentsline {subsubsection}{\numberline {5.21.1.3}testMavAddTrain()}{73}{subsubsection.5.21.1.3}%
-\contentsline {subsubsection}{\numberline {5.21.1.4}testMavBeolvas()}{74}{subsubsection.5.21.1.4}%
-\contentsline {subsubsection}{\numberline {5.21.1.5}testMavKiir()}{75}{subsubsection.5.21.1.5}%
-\contentsline {subsubsection}{\numberline {5.21.1.6}testMavKiirAt()}{76}{subsubsection.5.21.1.6}%
-\contentsline {section}{\numberline {5.22}mav\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}test.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{77}{section.5.22}%
-\contentsline {section}{\numberline {5.23}seged.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{79}{section.5.23}%
-\contentsline {section}{\numberline {5.24}seged.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{80}{section.5.24}%
-\contentsline {section}{\numberline {5.25}vonat.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{80}{section.5.25}%
-\contentsline {section}{\numberline {5.26}vonat.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{82}{section.5.26}%
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{25}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Constructor \& Destructor Documentation}{25}{subsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.1}Kutya()}{25}{subsubsection.4.6.2.1}%
+\contentsline {subsection}{\numberline {4.6.3}Member Function Documentation}{25}{subsection.4.6.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.1}getKov()}{25}{subsubsection.4.6.3.1}%
+\contentsline {subsubsection}{\numberline {4.6.3.2}getTipus()}{25}{subsubsection.4.6.3.2}%
+\contentsline {subsubsection}{\numberline {4.6.3.3}nyomtat()}{26}{subsubsection.4.6.3.3}%
+\contentsline {subsection}{\numberline {4.6.4}Field Documentation}{27}{subsection.4.6.4}%
+\contentsline {subsubsection}{\numberline {4.6.4.1}kov}{27}{subsubsection.4.6.4.1}%
+\contentsline {subsubsection}{\numberline {4.6.4.2}tipusNev}{27}{subsubsection.4.6.4.2}%
+\contentsline {section}{\numberline {4.7}Mav Class Reference}{27}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{29}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Constructor \& Destructor Documentation}{29}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}Mav()}{29}{subsubsection.4.7.2.1}%
+\contentsline {subsubsection}{\numberline {4.7.2.2}$\sim $Mav()}{29}{subsubsection.4.7.2.2}%
+\contentsline {subsection}{\numberline {4.7.3}Member Function Documentation}{29}{subsection.4.7.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.1}add()}{29}{subsubsection.4.7.3.1}%
+\contentsline {subsubsection}{\numberline {4.7.3.2}addTrain()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{30}{subsubsection.4.7.3.2}%
+\contentsline {subsubsection}{\numberline {4.7.3.3}addTrain()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{31}{subsubsection.4.7.3.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.4}beolvas()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{31}{subsubsection.4.7.3.4}%
+\contentsline {subsubsection}{\numberline {4.7.3.5}beolvas()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{33}{subsubsection.4.7.3.5}%
+\contentsline {subsubsection}{\numberline {4.7.3.6}getSize()}{34}{subsubsection.4.7.3.6}%
+\contentsline {subsubsection}{\numberline {4.7.3.7}getVonatAt()}{35}{subsubsection.4.7.3.7}%
+\contentsline {subsubsection}{\numberline {4.7.3.8}kiir()}{35}{subsubsection.4.7.3.8}%
+\contentsline {subsubsection}{\numberline {4.7.3.9}kiirAt()}{36}{subsubsection.4.7.3.9}%
+\contentsline {subsubsection}{\numberline {4.7.3.10}operator[]()}{36}{subsubsection.4.7.3.10}%
+\contentsline {subsection}{\numberline {4.7.4}Field Documentation}{36}{subsection.4.7.4}%
+\contentsline {subsubsection}{\numberline {4.7.4.1}si}{36}{subsubsection.4.7.4.1}%
+\contentsline {subsubsection}{\numberline {4.7.4.2}vonatok}{36}{subsubsection.4.7.4.2}%
+\contentsline {section}{\numberline {4.8}Seged Struct Reference}{37}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{37}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Field Documentation}{37}{subsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.1}buffSize}{37}{subsubsection.4.8.2.1}%
+\contentsline {subsubsection}{\numberline {4.8.2.2}erkezes}{38}{subsubsection.4.8.2.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.3}indulas}{38}{subsubsection.4.8.2.3}%
+\contentsline {subsubsection}{\numberline {4.8.2.4}indulo}{38}{subsubsection.4.8.2.4}%
+\contentsline {subsubsection}{\numberline {4.8.2.5}kocsidb}{38}{subsubsection.4.8.2.5}%
+\contentsline {subsubsection}{\numberline {4.8.2.6}szam}{38}{subsubsection.4.8.2.6}%
+\contentsline {subsubsection}{\numberline {4.8.2.7}veg}{38}{subsubsection.4.8.2.7}%
+\contentsline {section}{\numberline {4.9}Teljes Class Reference}{39}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{41}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}Constructor \& Destructor Documentation}{41}{subsection.4.9.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.1}Teljes()}{41}{subsubsection.4.9.2.1}%
+\contentsline {subsection}{\numberline {4.9.3}Member Function Documentation}{41}{subsection.4.9.3}%
+\contentsline {subsubsection}{\numberline {4.9.3.1}getTipus()}{41}{subsubsection.4.9.3.1}%
+\contentsline {subsubsection}{\numberline {4.9.3.2}nyomtat()}{41}{subsubsection.4.9.3.2}%
+\contentsline {subsection}{\numberline {4.9.4}Field Documentation}{42}{subsection.4.9.4}%
+\contentsline {subsubsection}{\numberline {4.9.4.1}tipusNev}{42}{subsubsection.4.9.4.1}%
+\contentsline {section}{\numberline {4.10}Vonat Class Reference}{42}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{44}{subsection.4.10.1}%
+\contentsline {subsection}{\numberline {4.10.2}Constructor \& Destructor Documentation}{44}{subsection.4.10.2}%
+\contentsline {subsubsection}{\numberline {4.10.2.1}Vonat()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{44}{subsubsection.4.10.2.1}%
+\contentsline {subsubsection}{\numberline {4.10.2.2}Vonat()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{45}{subsubsection.4.10.2.2}%
+\contentsline {subsection}{\numberline {4.10.3}Member Function Documentation}{45}{subsection.4.10.3}%
+\contentsline {subsubsection}{\numberline {4.10.3.1}getErkezes()}{45}{subsubsection.4.10.3.1}%
+\contentsline {subsubsection}{\numberline {4.10.3.2}getIndulas()}{45}{subsubsection.4.10.3.2}%
+\contentsline {subsubsection}{\numberline {4.10.3.3}getIndulo()}{45}{subsubsection.4.10.3.3}%
+\contentsline {subsubsection}{\numberline {4.10.3.4}getKocsidb()}{46}{subsubsection.4.10.3.4}%
+\contentsline {subsubsection}{\numberline {4.10.3.5}getSzam()}{46}{subsubsection.4.10.3.5}%
+\contentsline {subsubsection}{\numberline {4.10.3.6}getVeg()}{46}{subsubsection.4.10.3.6}%
+\contentsline {subsubsection}{\numberline {4.10.3.7}kiir()}{47}{subsubsection.4.10.3.7}%
+\contentsline {subsubsection}{\numberline {4.10.3.8}setErkezes()}{48}{subsubsection.4.10.3.8}%
+\contentsline {subsubsection}{\numberline {4.10.3.9}setIndulas()}{48}{subsubsection.4.10.3.9}%
+\contentsline {subsubsection}{\numberline {4.10.3.10}setIndulo()}{48}{subsubsection.4.10.3.10}%
+\contentsline {subsubsection}{\numberline {4.10.3.11}setKocsidb()}{49}{subsubsection.4.10.3.11}%
+\contentsline {subsubsection}{\numberline {4.10.3.12}setSzam()}{49}{subsubsection.4.10.3.12}%
+\contentsline {subsubsection}{\numberline {4.10.3.13}setVeg()}{50}{subsubsection.4.10.3.13}%
+\contentsline {subsection}{\numberline {4.10.4}Field Documentation}{50}{subsection.4.10.4}%
+\contentsline {subsubsection}{\numberline {4.10.4.1}erkezes}{50}{subsubsection.4.10.4.1}%
+\contentsline {subsubsection}{\numberline {4.10.4.2}indulas}{50}{subsubsection.4.10.4.2}%
+\contentsline {subsubsection}{\numberline {4.10.4.3}indulo}{50}{subsubsection.4.10.4.3}%
+\contentsline {subsubsection}{\numberline {4.10.4.4}kocsidb}{50}{subsubsection.4.10.4.4}%
+\contentsline {subsubsection}{\numberline {4.10.4.5}szam}{51}{subsubsection.4.10.4.5}%
+\contentsline {subsubsection}{\numberline {4.10.4.6}veg}{51}{subsubsection.4.10.4.6}%
+\contentsline {chapter}{\numberline {5}File Documentation}{52}{chapter.5}%
+\contentsline {section}{\numberline {5.1}allomas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{52}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Function Documentation}{53}{subsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.1}operator$<$$<$()}{53}{subsubsection.5.1.1.1}%
+\contentsline {section}{\numberline {5.2}allomas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{53}{section.5.2}%
+\contentsline {section}{\numberline {5.3}allomas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{53}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Function Documentation}{54}{subsection.5.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.1.1}operator$<$$<$()}{54}{subsubsection.5.3.1.1}%
+\contentsline {section}{\numberline {5.4}allomas.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{55}{section.5.4}%
+\contentsline {section}{\numberline {5.5}ido.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{55}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Function Documentation}{56}{subsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.1.1}operator$<$$<$()}{56}{subsubsection.5.5.1.1}%
+\contentsline {section}{\numberline {5.6}ido.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{56}{section.5.6}%
+\contentsline {section}{\numberline {5.7}ido.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{56}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Function Documentation}{57}{subsection.5.7.1}%
+\contentsline {subsubsection}{\numberline {5.7.1.1}operator$<$$<$()}{57}{subsubsection.5.7.1.1}%
+\contentsline {section}{\numberline {5.8}ido.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{58}{section.5.8}%
+\contentsline {section}{\numberline {5.9}jegy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{59}{section.5.9}%
+\contentsline {section}{\numberline {5.10}jegy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{60}{section.5.10}%
+\contentsline {section}{\numberline {5.11}kiosk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{62}{section.5.11}%
+\contentsline {section}{\numberline {5.12}kiosk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{62}{section.5.12}%
+\contentsline {section}{\numberline {5.13}kiosk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{64}{section.5.13}%
+\contentsline {subsection}{\numberline {5.13.1}Enumeration Type Documentation}{66}{subsection.5.13.1}%
+\contentsline {subsubsection}{\numberline {5.13.1.1}menuItem}{66}{subsubsection.5.13.1.1}%
+\contentsline {section}{\numberline {5.14}kiosk.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{66}{section.5.14}%
+\contentsline {section}{\numberline {5.15}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{67}{section.5.15}%
+\contentsline {subsection}{\numberline {5.15.1}Function Documentation}{68}{subsection.5.15.1}%
+\contentsline {subsubsection}{\numberline {5.15.1.1}main()}{68}{subsubsection.5.15.1.1}%
+\contentsline {section}{\numberline {5.16}main.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{69}{section.5.16}%
+\contentsline {section}{\numberline {5.17}mav.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{70}{section.5.17}%
+\contentsline {section}{\numberline {5.18}mav.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{71}{section.5.18}%
+\contentsline {section}{\numberline {5.19}mav.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{73}{section.5.19}%
+\contentsline {section}{\numberline {5.20}mav.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{74}{section.5.20}%
+\contentsline {section}{\numberline {5.21}seged.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{75}{section.5.21}%
+\contentsline {section}{\numberline {5.22}seged.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{77}{section.5.22}%
+\contentsline {section}{\numberline {5.23}test.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp File Reference}{77}{section.5.23}%
+\contentsline {subsection}{\numberline {5.23.1}Function Documentation}{78}{subsection.5.23.1}%
+\contentsline {subsubsection}{\numberline {5.23.1.1}mav\_test()}{78}{subsubsection.5.23.1.1}%
+\contentsline {subsubsection}{\numberline {5.23.1.2}vonat\_test()}{80}{subsubsection.5.23.1.2}%
+\contentsline {subsection}{\numberline {5.23.2}Variable Documentation}{81}{subsection.5.23.2}%
+\contentsline {subsubsection}{\numberline {5.23.2.1}mav}{81}{subsubsection.5.23.2.1}%
+\contentsline {section}{\numberline {5.24}test.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{82}{section.5.24}%
+\contentsline {section}{\numberline {5.25}test.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{83}{section.5.25}%
+\contentsline {subsection}{\numberline {5.25.1}Function Documentation}{84}{subsection.5.25.1}%
+\contentsline {subsubsection}{\numberline {5.25.1.1}mav\_test()}{84}{subsubsection.5.25.1.1}%
+\contentsline {subsubsection}{\numberline {5.25.1.2}vonat\_test()}{86}{subsubsection.5.25.1.2}%
+\contentsline {section}{\numberline {5.26}test.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{87}{section.5.26}%
+\contentsline {section}{\numberline {5.27}vonat.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{87}{section.5.27}%
+\contentsline {section}{\numberline {5.28}vonat.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{89}{section.5.28}%

@@ -1,0 +1,138 @@
+\doxysection{test.\+cpp}
+\hypertarget{test_8cpp_source}{}\label{test_8cpp_source}\mbox{\hyperlink{test_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}gtest\_lite.h"{}}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{mav_8h}{mav.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{vonat_8h}{vonat.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{allomas_8h}{allomas.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ido_8h}{ido.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{seged_8h}{seged.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{test_8h}{test.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00013}\mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{00013}}\ \mbox{\hyperlink{classMav}{Mav}}\ \mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}};\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00014}00014\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00015}00015\ \textcolor{comment}{*\ TEST\ FILE}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00016}00016\ \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00017}00017\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00018}00018\ \textcolor{comment}{/**}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00019}00019\ \textcolor{comment}{*\ MAV\ TEST}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00020}00020\ \textcolor{comment}{*/}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00021}\mbox{\hyperlink{test_8cpp_a488c91226b818bff9fbe0ffe7e81aabc}{00021}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{test_8cpp_a488c91226b818bff9fbe0ffe7e81aabc}{mav\_test}}()\{\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00022}00022\ \textcolor{comment}{\ \ ///\ Mav\ def\ ctor\ test}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00023}00023\ \textcolor{comment}{}\ \ TEST(\mbox{\hyperlink{classMav}{Mav}},\ \textcolor{keywordflow}{default}\ ctor)\{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00024}00024\ \ \ \ \ \mbox{\hyperlink{classMav}{Mav}}\ \mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{comment}{//\ EXPECT\_EQ(0,\ mav.getSize());}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00026}00026\ \ \ \}\ ENDM;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00027}00027\ \ \ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00028}00028\ \textcolor{comment}{\ \ ///\ Mav\ ctor\ test}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00029}00029\ \textcolor{comment}{}\ \ TEST(\mbox{\hyperlink{classMav}{Mav}},\ ctor)\{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00030}00030\ \ \ \ \ \mbox{\hyperlink{classMav}{Mav}}\ \mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}(10);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00031}00031\ \ \ \ \ EXPECT\_EQ(\textcolor{keywordtype}{int}(10),\ \textcolor{keywordtype}{int}(\mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_a4b70915946e42d3b77413f7506655a75}{getSize}}()));}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00032}00032\ \ \ \}\ ENDM;\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00033}00033\ \ \ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00034}00034\ \textcolor{comment}{\ \ ///\ Mav\ add()\ test\ default\ ctor}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00035}00035\ \textcolor{comment}{}\ \ TEST(\mbox{\hyperlink{classMav}{Mav}},\ \textcolor{keywordflow}{default}\ \mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867afa31a1b6ef20ecf273d47c0791816af46b}{add}}())\{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00036}00036\ \ \ \ \ \mbox{\hyperlink{classMav}{Mav}}\ \mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00037}00037\ \ \ \ \ \mbox{\hyperlink{classVonat}{Vonat}}\ v;\ \textcolor{comment}{//\ default\ ctor}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00038}00038\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00039}00039\ \ \ \ \ \mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_a81e2ee3d186b9303c7fa580f3afbbab8}{add}}(v);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00040}00040\ \ \ \ \ EXPECT\_EQ(\textcolor{keywordtype}{size\_t}(1)\ ,\ \mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_a4b70915946e42d3b77413f7506655a75}{getSize}}());\ \textcolor{comment}{//\ növelte\ a\ méretét}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00041}00041\ \ \ \ \ EXPECT\_EQ(\mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(1).\mbox{\hyperlink{classVonat_a18efd274d4ea6de105fa7761e8511799}{getSzam}}(),\ 0);\ \textcolor{comment}{//\ 1\ mivel\ a\ getvonat\ i-\/1\ el\ számol}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00042}00042\ \ \ \}\ ENDM;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00044}00044\ \ \ \textcolor{comment}{//\ Mav\ add\ test\ parraméteres\ ctor}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00045}00045\ \ \ TEST(\mbox{\hyperlink{classMav}{Mav}},\ \mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867afa31a1b6ef20ecf273d47c0791816af46b}{add}}())\{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00046}00046\ \ \ \ \ \mbox{\hyperlink{classMav}{Mav}}\ \mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00047}00047\ \ \ \ \ \mbox{\hyperlink{classVonat}{Vonat}}\ vonat1(1,\ \textcolor{stringliteral}{"{}Budapest"{}},\ \textcolor{stringliteral}{"{}Szeged"{}},\ 10,\ \mbox{\hyperlink{classIdo}{Ido}}(8,\ 0),\ \mbox{\hyperlink{classIdo}{Ido}}(10,\ 0));}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00048}00048\ \ \ \ \ \mbox{\hyperlink{classVonat}{Vonat}}\ vonat2(2,\ \textcolor{stringliteral}{"{}Szeged"{}},\ \textcolor{stringliteral}{"{}Debrecen"{}},\ 8,\ \mbox{\hyperlink{classIdo}{Ido}}(12,\ 0),\ \mbox{\hyperlink{classIdo}{Ido}}(14,\ 0));}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00049}00049\ \ \ \ \ \mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_a81e2ee3d186b9303c7fa580f3afbbab8}{add}}(vonat1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00050}00050\ \ \ \ \ \mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_a81e2ee3d186b9303c7fa580f3afbbab8}{add}}(vonat2);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00052}00052\ \ \ \ \ \textcolor{comment}{//\ EXPECT\_EQ(mav.getSize(),\ 2);}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00053}00053\ \ \ \ \ EXPECT\_EQ(\mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(1).\mbox{\hyperlink{classVonat_a18efd274d4ea6de105fa7761e8511799}{getSzam}}(),\ 1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00054}00054\ \ \ \ \ EXPECT\_EQ(\mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(2).\mbox{\hyperlink{classVonat_a18efd274d4ea6de105fa7761e8511799}{getSzam}}(),\ 2);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00055}00055\ \ \ \}\ ENDM;\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00057}00057\ \ \ \textcolor{comment}{//\ Nagyon\ sok\ helyről\ összeollózott\ teszt.}\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00058}00058\ \textcolor{comment}{\ \ ///\ addTrain\ metódust\ tesztel\ a\ mav\ classnak}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00059}00059\ \textcolor{comment}{}\ \ TEST(\mbox{\hyperlink{classMav}{Mav}},\ AddTrain())\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00060}00060\ \ \ \ \ \textcolor{comment}{//\ Csinálok\ egy\ test\ file-\/t}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00061}00061\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ testFile\ =\ \textcolor{stringliteral}{"{}./test\_vonatok.txt"{}};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00062}00062\ \ \ \ \ std::ofstream\ file(testFile);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00063}00063\ \ \ \ \ file.close();}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00064}00064\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00065}00065\ \ \ \ \ \textcolor{comment}{//\ Inicializálás}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00066}00066\ \ \ \ \ \mbox{\hyperlink{classMav}{Mav}}\ \mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00067}00067\ \ \ \ \ std::streampos\ currPos\ =\ 0;\ \textcolor{comment}{//\ Nullátol\ olvasson\ be.\ }}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00068}00068\ \ \ \ \ \mbox{\hyperlink{classAllomas}{Allomas}}\ indulo(\textcolor{stringliteral}{"{}Szeged"{}});}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00069}00069\ \ \ \ \ \mbox{\hyperlink{classAllomas}{Allomas}}\ veg(\textcolor{stringliteral}{"{}Debrecen"{}});}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00070}00070\ \ \ \ \ \mbox{\hyperlink{classIdo}{Ido}}\ indulas(12,\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00071}00071\ \ \ \ \ \mbox{\hyperlink{classIdo}{Ido}}\ erkezes(14,\ 0);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00072}00072\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00073}00073\ \ \ \ \ \textcolor{comment}{//\ Tényleges\ fv\ meghívása}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00074}00074\ \ \ \ \ \mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_a9838399fd397670c9d4e9f2d279c1a73}{addTrain}}(currPos,\ testFile,\ 2,\ indulo,\ veg,\ 8,\ indulas,\ erkezes);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00075}00075\ \ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00076}00076\ \ \ \ \ std::ifstream\ beolvasott(\textcolor{stringliteral}{"{}./test\_vonatok.txt"{}});}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00077}00077\ \ \ \ \ std::stringstream\ buffer;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00078}00078\ \ \ \ \ buffer\ <<\ beolvasott.rdbuf();\ \textcolor{comment}{//\ ???,\ de\ működik}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00079}00079\ \ \ \ \ beolvasott.close();}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00080}00080\ \ \ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00081}00081\ \ \ \ \ std::string\ elvart\ =\ \textcolor{stringliteral}{"{}2\ Szeged\ Debrecen\ 8\ 1200\ 1400\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00082}00082\ \ \ \ \ EXPECT\_EQ(buffer.str(),elvart);\ \ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00084}00084\ \ \ \ \ \textcolor{comment}{//\ Megnyilkolom\ a\ teszt\ file-\/t}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00085}00085\ \ \ \ \ std::remove(\textcolor{stringliteral}{"{}./test\_vonatok.txt"{}});}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00086}00086\ \ \ \}\ ENDM;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00087}00087\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00088}00088\ \textcolor{comment}{\ \ ///\ Beolvas()\ teszt\ }}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00089}00089\ \textcolor{comment}{\ \ ///\ Mav\ class\ beolvas()\ metódust\ tesztel}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00090}00090\ \textcolor{comment}{}\ \ TEST(\mbox{\hyperlink{classMav}{Mav}},\ Beolvas())\ \{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00091}00091\ \ \ \ \ \textcolor{comment}{//\ Mindenhonnan\ összeollózott,\ nincs\ konkrét\ forrás}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00092}00092\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ test\ =\ \textcolor{stringliteral}{"{}./test\_vonatok.txt"{}};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00093}00093\ \ \ \ \ std::ofstream\ file(test);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00094}00094\ \ \ \ \ file\ <<\ \textcolor{stringliteral}{"{}1\ Budapest\ Szeged\ 10\ 0800\ 1000\(\backslash\)n"{}}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00095}00095\ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}2\ Szeged\ Debrecen\ 8\ 1200\ 1400\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00096}00096\ \ \ \ \ file.close();}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00097}00097\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00098}00098\ \ \ \ \ \mbox{\hyperlink{classMav}{Mav}}\ \mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}};}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00099}00099\ \ \ \ \ \mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_a15899cdec1c1fe36a8460d956dad3104}{beolvas}}(test);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00100}00100\ \ \ \ \ EXPECT\_EQ(\mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_a4b70915946e42d3b77413f7506655a75}{getSize}}(),\textcolor{keywordtype}{size\_t}(2));}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00101}00101\ \ \ \ \ EXPECT\_EQ(\mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(1).\mbox{\hyperlink{classVonat_a18efd274d4ea6de105fa7761e8511799}{getSzam}}(),\ 1);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00102}00102\ \ \ \ \ EXPECT\_EQ(\mbox{\hyperlink{test_8cpp_a47a6439272917a02fe426a0ce7cfe4bf}{mav}}.\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(2).\mbox{\hyperlink{classVonat_a18efd274d4ea6de105fa7761e8511799}{getSzam}}(),\ 2);}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00103}00103\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00104}00104\ \ \ \ \ std::remove(\textcolor{stringliteral}{"{}./test\_vonatok.txt"{}});}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00105}00105\ \ \ \}\ ENDM;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00107}00107\ \}\ \textcolor{comment}{//\ end\ of\ mav\ test}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00108}00108\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00110}\mbox{\hyperlink{test_8cpp_aa88ac1d7a29c16841a6d19b7edfe0409}{00110}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{test_8cpp_aa88ac1d7a29c16841a6d19b7edfe0409}{vonat\_test}}()\{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00111}00111\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00112}00112\ \textcolor{comment}{\ \ ///\ Vonat\ def\ ctor\ test}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00113}00113\ \textcolor{comment}{}\ \ TEST(\mbox{\hyperlink{classVonat}{Vonat}},\ \textcolor{keywordflow}{default}\ ctor)\{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00114}00114\ \ \ \ \ \mbox{\hyperlink{classVonat}{Vonat}}\ v;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00115}00115\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00116}00116\ \ \ \ \ EXPECT\_EQ(0,\ v.\mbox{\hyperlink{classVonat_a18efd274d4ea6de105fa7761e8511799}{getSzam}}());}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00117}00117\ \ \ \ \ EXPECT\_EQ(\textcolor{stringliteral}{"{}"{}},\ std::string(v.\mbox{\hyperlink{classVonat_af72c3c1ed6de5148f2ee8492f8d1c509}{getIndulo}}().\mbox{\hyperlink{classAllomas_af91616c06d12102a9b7a50de9d43f127}{getAllomas}}()));}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00118}00118\ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00119}00119\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00120}00120\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00121}00121\ \ \ \}\ ENDM;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00122}00122\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00123}00123\ \textcolor{comment}{\ \ ///\ Vonat\ ctor\ test}}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00124}00124\ \textcolor{comment}{}\ \ TEST(\mbox{\hyperlink{classVonat}{Vonat}},\ ctor)\{}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00125}00125\ \ \ \ \ \mbox{\hyperlink{classVonat}{Vonat}}\ v(1,\ \textcolor{stringliteral}{"{}Budapest"{}},\ \textcolor{stringliteral}{"{}Szeged"{}},\ 10,\ \mbox{\hyperlink{classIdo}{Ido}}(8,\ 0),\ \mbox{\hyperlink{classIdo}{Ido}}(10,\ 0));}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00126}00126\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00127}00127\ \ \ \ \ EXPECT\_EQ(1,\ v.\mbox{\hyperlink{classVonat_a18efd274d4ea6de105fa7761e8511799}{getSzam}}());}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00128}00128\ \ \ \ \ EXPECT\_EQ(10,\ v.\mbox{\hyperlink{classVonat_acced304cedfe39ec6b79bf4604811a22}{getKocsidb}}());}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00129}00129\ \ \ \ \ EXPECT\_EQ(\textcolor{stringliteral}{"{}Budapest"{}},\ std::string(v.\mbox{\hyperlink{classVonat_af72c3c1ed6de5148f2ee8492f8d1c509}{getIndulo}}().\mbox{\hyperlink{classAllomas_af91616c06d12102a9b7a50de9d43f127}{getAllomas}}()));}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00131}00131\ \ \ \}\ ENDM;}
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00132}00132\ }
+\DoxyCodeLine{\Hypertarget{test_8cpp_source_l00133}00133\ \}\ \textcolor{comment}{//\ end\ of\ vonat\ test}}
+
+\end{DoxyCode}

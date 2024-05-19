@@ -16,6 +16,7 @@ EXTRACT_PRIVATE        = YES
 EXTRACT_STATIC         = YES
 EXTRACT_LOCAL_METHODS  = YES
 
+
 # Configuration options related to source browsing
 SOURCE_BROWSER         = YES
 INLINE_SOURCES         = YES
@@ -25,9 +26,10 @@ STRIP_CODE_COMMENTS    = NO
 INPUT                  = .
 FILE_PATTERNS          = *.cpp *.h
 RECURSIVE              = NO
+EXCLUDE 		= ./gtest_lite.h
 
 # Configuration options related to the output files
-GENERATE_HTML          = YES
+GENERATE_HTML          = NO
 HTML_OUTPUT            = html
 GENERATE_LATEX         = YES
 GENERATE_MAN           = NO

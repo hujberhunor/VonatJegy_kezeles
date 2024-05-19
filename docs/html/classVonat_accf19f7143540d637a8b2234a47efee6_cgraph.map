@@ -1,7 +1,0 @@
-<map id="Vonat::kiir" name="Vonat::kiir">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,32,93,60"/>
-<area shape="rect" id="Node000002" href="$classIdo.html#af8343a13fda687245c926f1843a316d0" title=" " alt="" coords="143,5,237,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,35,127,28,128,34,94,40"/>
-<area shape="rect" id="Node000003" href="$classIdo.html#a3cada14b52b883bca244c40fa477ba15" title=" " alt="" coords="141,57,239,85"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="94,51,126,57,125,62,93,56"/>
-</map>

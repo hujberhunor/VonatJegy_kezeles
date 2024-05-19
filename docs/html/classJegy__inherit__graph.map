@@ -1,9 +1,0 @@
-<map id="Jegy" name="Jegy">
-<area shape="rect" id="Node000001" title=" " alt="" coords="119,5,215,181"/>
-<area shape="rect" id="Node000002" href="$classDiak.html" title=" " alt="" coords="5,251,97,363"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,196,84,252,79,250,110,193"/>
-<area shape="rect" id="Node000003" href="$classKutya.html" title=" " alt="" coords="121,229,213,384"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,196,170,230,165,230,165,196"/>
-<area shape="rect" id="Node000004" href="$classTeljes.html" title=" " alt="" coords="237,251,329,363"/>
-<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="225,193,256,250,251,252,220,196"/>
-</map>

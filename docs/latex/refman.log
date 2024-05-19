@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.5.18)  18 MAY 2024 22:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024/Arch Linux) (preloaded format=pdflatex 2024.5.18)  19 MAY 2024 14:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -713,6 +713,30 @@ Package: etoc 2023/10/29 v1.2d Completely customisable TOCs (JFB)
 \etoc@framed@titlebox=\box121
 \etoc@framed@contentsbox=\box122
 )
+(/usr/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2024/01/21 v0.5y Insert pages of external PDF documents (AM)
+
+(/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen268
+\ESO@tempdimb=\dimen269
+)
+\AM@pagewidth=\dimen270
+\AM@pageheight=\dimen271
+\AM@fboxrule=\dimen272
+
+(/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2024/01/21 v0.5y Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count345
+\AM@pagebox=\box123
+\AM@global@opts=\toks37
+\AM@pagecnt=\count346
+\AM@toc@title=\toks38
+\AM@lof@heading=\toks39
+\c@AM@survey=\count347
+\AM@templatesizebox=\box124
+)
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 18
 4.
 
@@ -724,8 +748,8 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count345
-\l__pdf_internal_box=\box123
+\l__color_backend_stack_int=\count348
+\l__pdf_internal_box=\box125
 ) (./refman.aux)
 \openout1 = `refman.aux'.
 
@@ -749,17 +773,17 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 184.
 LaTeX Font Info:    ... okay on input line 184.
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count346
-\scratchdimen=\dimen268
-\scratchbox=\box124
-\nofMPsegments=\count347
-\nofMParguments=\count348
-\everyMPshowfont=\toks37
-\MPscratchCnt=\count349
-\MPscratchDim=\dimen269
-\MPnumerator=\count350
-\makeMPintoPDFobject=\count351
-\everyMPtoPDFconversion=\toks38
+\scratchcounter=\count349
+\scratchdimen=\dimen273
+\scratchbox=\box126
+\nofMPsegments=\count350
+\nofMParguments=\count351
+\everyMPshowfont=\toks40
+\MPscratchCnt=\count352
+\MPscratchDim=\dimen274
+\MPnumerator=\count353
+\makeMPintoPDFobject=\count354
+\everyMPtoPDFconversion=\toks41
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -812,6 +836,19 @@ Package hyperref Info: Link coloring ON on input line 184.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \Etoc@tf=\read4
+
+(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
 Package hyperref Info: Option `pageanchor' set `false' on input line 192.
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 192.
 
@@ -824,12 +861,14 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 6.29996pt on input line 198.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 198
 .
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 198
 .
- (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
+
+(/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+wasy on input line 19
@@ -842,33 +881,101 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts
 /enc/dvips/base/8r.enc}]
+
+! LaTeX Error: \begin{document} ended by \end{center}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.209   \end{center}
+                    
+? 
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.209   \end{center}
+                    
+? 
+
+! LaTeX Error: \begin{document} ended by \end{titlepage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.210   \end{titlepage}
+                       
+? 
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.210   \end{titlepage}
+                       
+? 
+ <./UML.pdf>
+<UML.pdf, id=737, 666.23906pt x 450.18187pt>
+File: UML.pdf Graphic file (type pdf)
+<use UML.pdf>
+Package pdftex.def Info: UML.pdf  used on input line 212.
+(pdftex.def)             Requested size: 666.23743pt x 450.18077pt.
+ <./UML.pdf>
+File: UML.pdf Graphic file (type pdf)
+<use UML.pdf>
+Package pdftex.def Info: UML.pdf  used on input line 212.
+(pdftex.def)             Requested size: 666.23743pt x 450.18077pt.
+ <./UML.pdf> <./UML.pdf>
+<UML.pdf, id=1093, page=1, 666.23906pt x 450.18187pt>
+File: UML.pdf Graphic file (type pdf)
+<use UML.pdf, page 1>
+Package pdftex.def Info: UML.pdf , page1 used on input line 212.
+(pdftex.def)             Requested size: 666.23743pt x 450.18077pt.
+File: UML.pdf Graphic file (type pdf)
+<use UML.pdf, page 1>
+Package pdftex.def Info: UML.pdf , page1 used on input line 212.
+(pdftex.def)             Requested size: 597.71873pt x 403.88226pt.
+File: UML.pdf Graphic file (type pdf)
+<use UML.pdf, page 1>
+Package pdftex.def Info: UML.pdf , page1 used on input line 212.
+(pdftex.def)             Requested size: 597.71873pt x 403.88226pt.
+File: UML.pdf Graphic file (type pdf)
+<use UML.pdf, page 1>
+Package pdftex.def Info: UML.pdf , page1 used on input line 212.
+(pdftex.def)             Requested size: 597.71873pt x 403.88226pt.
+File: UML.pdf Graphic file (type pdf)
+<use UML.pdf, page 1>
+Package pdftex.def Info: UML.pdf , page1 used on input line 212.
+(pdftex.def)             Requested size: 597.71873pt x 403.88226pt.
+ [2
+
+]
 \tf@toc=\write6
 \openout6 = `refman.toc'.
 
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 206.
+(Font)              scaled to size 8.99994pt on input line 217.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 206.
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 20
-6.
+(Font)              scaled to size 7.19995pt on input line 217.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 21
+7.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 206.
+(Font)              scaled to size 6.29996pt on input line 217.
  [1
 
 ] [2] [3] [4] [5]
-Package hyperref Info: Option `pageanchor' set `true' on input line 209.
+Package hyperref Info: Option `pageanchor' set `true' on input line 220.
 
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 211.
+(Font)              scaled to size 18.66588pt on input line 224.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 18.66588pt on input line 211.
+(Font)              scaled to size 18.66588pt on input line 224.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 22.39185pt on input line 211.
+(Font)              scaled to size 22.39185pt on input line 224.
 (./hierarchy.tex
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
@@ -886,56 +993,56 @@ Chapter 3.
 ]
 Chapter 4.
 (./classAllomas.tex <./classAllomas__coll__graph.pdf>
-<classAllomas__coll__graph.pdf, id=1007, 163.61125pt x 164.615pt>
+<classAllomas__coll__graph.pdf, id=1514, 163.61125pt x 164.615pt>
 File: classAllomas__coll__graph.pdf Graphic file (type pdf)
 <use classAllomas__coll__graph.pdf>
-Package pdftex.def Info: classAllomas__coll__graph.pdf  used on input line 14.
+Package pdftex.def Info: classAllomas__coll__graph.pdf  used on input line 13.
 (pdftex.def)             Requested size: 163.0pt x 163.99919pt.
-LaTeX Font Info:    Trying to load font information for TS1+phv on input line 2
-0.
+LaTeX Font Info:    Trying to load font information for TS1+phv on input line 1
+9.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 20.
+(Font)              scaled to size 8.99994pt on input line 19.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 21.
+(Font)              scaled to size 8.09995pt on input line 20.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 21.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 20.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 21.
+(Font)              scaled to size 8.09995pt on input line 20.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 33.
+(Font)              scaled to size 10.79993pt on input line 32.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.19995pt on input line 44.
+(Font)              scaled to size 7.19995pt on input line 43.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 45.
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 44.
  [4
 
 ] <./classAllomas_af91616c06d12102a9b7a50de9d43f127_icgraph.pdf>
-<classAllomas_af91616c06d12102a9b7a50de9d43f127_icgraph.pdf, id=1048, 308.15125
-pt x 101.37875pt>
+<classAllomas_af91616c06d12102a9b7a50de9d43f127_icgraph.pdf, id=1555, 385.44pt 
+x 140.525pt>
 File: classAllomas_af91616c06d12102a9b7a50de9d43f127_icgraph.pdf Graphic file (
 type pdf)
 <use classAllomas_af91616c06d12102a9b7a50de9d43f127_icgraph.pdf>
 Package pdftex.def Info: classAllomas_af91616c06d12102a9b7a50de9d43f127_icgraph
-.pdf  used on input line 103.
-(pdftex.def)             Requested size: 307.0pt x 101.00723pt.
-) (./classDiak.tex [5] <./classDiak__inherit__graph.pdf>
-<classDiak__inherit__graph.pdf, id=1073, 152.57pt x 333.245pt>
+.pdf  used on input line 102.
+(pdftex.def)             Requested size: 350.0pt x 127.60347pt.
+ [5]) (./classDiak.tex <./classDiak__inherit__graph.pdf>
+<classDiak__inherit__graph.pdf, id=1581, 152.57pt x 333.245pt>
 File: classDiak__inherit__graph.pdf Graphic file (type pdf)
 <use classDiak__inherit__graph.pdf>
 Package pdftex.def Info: classDiak__inherit__graph.pdf  used on input line 14.
 (pdftex.def)             Requested size: 152.0pt x 332.01361pt.
  <./classDiak__coll__graph.pdf>
-<classDiak__coll__graph.pdf, id=1088, 152.57pt x 333.245pt>
+<classDiak__coll__graph.pdf, id=1596, 152.57pt x 333.245pt>
 File: classDiak__coll__graph.pdf Graphic file (type pdf)
 <use classDiak__coll__graph.pdf>
 Package pdftex.def Info: classDiak__coll__graph.pdf  used on input line 24.
 (pdftex.def)             Requested size: 152.0pt x 332.01361pt.
  [6] [7] <./classDiak_aea9491caa6d858f98227a5a7e3494192_icgraph.pdf>
-<classDiak_aea9491caa6d858f98227a5a7e3494192_icgraph.pdf, id=1155, 491.8375pt x
+<classDiak_aea9491caa6d858f98227a5a7e3494192_icgraph.pdf, id=1662, 491.8375pt x
  101.37875pt>
 File: classDiak_aea9491caa6d858f98227a5a7e3494192_icgraph.pdf Graphic file (typ
 e pdf)
@@ -944,7 +1051,7 @@ Package pdftex.def Info: classDiak_aea9491caa6d858f98227a5a7e3494192_icgraph.pd
 f  used on input line 111.
 (pdftex.def)             Requested size: 350.0pt x 72.14493pt.
  <./classDiak_a7121a13da47dce7a773809a385aefa27_cgraph.pdf>
-<classDiak_a7121a13da47dce7a773809a385aefa27_cgraph.pdf, id=1169, 522.95375pt x
+<classDiak_a7121a13da47dce7a773809a385aefa27_cgraph.pdf, id=1676, 522.95375pt x
  178.6675pt>
 File: classDiak_a7121a13da47dce7a773809a385aefa27_cgraph.pdf Graphic file (type
  pdf)
@@ -953,7 +1060,7 @@ Package pdftex.def Info: classDiak_a7121a13da47dce7a773809a385aefa27_cgraph.pdf
   used on input line 142.
 (pdftex.def)             Requested size: 350.0pt x 119.57846pt.
  [8] <./classDiak_a7121a13da47dce7a773809a385aefa27_icgraph.pdf>
-<classDiak_a7121a13da47dce7a773809a385aefa27_icgraph.pdf, id=1195, 368.37625pt 
+<classDiak_a7121a13da47dce7a773809a385aefa27_icgraph.pdf, id=1703, 368.37625pt 
 x 101.37875pt>
 File: classDiak_a7121a13da47dce7a773809a385aefa27_icgraph.pdf Graphic file (typ
 e pdf)
@@ -962,78 +1069,78 @@ Package pdftex.def Info: classDiak_a7121a13da47dce7a773809a385aefa27_icgraph.pd
 f  used on input line 150.
 (pdftex.def)             Requested size: 350.0pt x 96.32008pt.
 ) (./classIdo.tex <./classIdo__coll__graph.pdf>
-<classIdo__coll__graph.pdf, id=1206, 144.54pt x 196.735pt>
+<classIdo__coll__graph.pdf, id=1714, 144.54pt x 196.735pt>
 File: classIdo__coll__graph.pdf Graphic file (type pdf)
 <use classIdo__coll__graph.pdf>
-Package pdftex.def Info: classIdo__coll__graph.pdf  used on input line 14.
+Package pdftex.def Info: classIdo__coll__graph.pdf  used on input line 13.
 (pdftex.def)             Requested size: 144.0pt x 196.01102pt.
  [9] [10] <./classIdo_af8343a13fda687245c926f1843a316d0_icgraph.pdf>
-<classIdo_af8343a13fda687245c926f1843a316d0_icgraph.pdf, id=1265, 710.655pt x 2
-97.11pt>
+<classIdo_af8343a13fda687245c926f1843a316d0_icgraph.pdf, id=1773, 710.655pt x 2
+18.8175pt>
 File: classIdo_af8343a13fda687245c926f1843a316d0_icgraph.pdf Graphic file (type
  pdf)
 <use classIdo_af8343a13fda687245c926f1843a316d0_icgraph.pdf>
 Package pdftex.def Info: classIdo_af8343a13fda687245c926f1843a316d0_icgraph.pdf
-  used on input line 106.
-(pdftex.def)             Requested size: 350.0pt x 146.33319pt.
+  used on input line 112.
+(pdftex.def)             Requested size: 350.0pt x 107.77242pt.
  <./classIdo_a3cada14b52b883bca244c40fa477ba15_icgraph.pdf>
-<classIdo_a3cada14b52b883bca244c40fa477ba15_icgraph.pdf, id=1276, 714.67pt x 29
-7.11pt>
+<classIdo_a3cada14b52b883bca244c40fa477ba15_icgraph.pdf, id=1784, 714.67pt x 21
+8.8175pt>
 File: classIdo_a3cada14b52b883bca244c40fa477ba15_icgraph.pdf Graphic file (type
  pdf)
 <use classIdo_a3cada14b52b883bca244c40fa477ba15_icgraph.pdf>
 Package pdftex.def Info: classIdo_a3cada14b52b883bca244c40fa477ba15_icgraph.pdf
-  used on input line 129.
-(pdftex.def)             Requested size: 350.0pt x 145.50356pt.
+  used on input line 135.
+(pdftex.def)             Requested size: 350.0pt x 107.1614pt.
  [11]) (./classJegy.tex <./classJegy__inherit__graph.pdf>
-<classJegy__inherit__graph.pdf, id=1299, 324.21124pt x 365.365pt>
+<classJegy__inherit__graph.pdf, id=1809, 324.21124pt x 365.365pt>
 File: classJegy__inherit__graph.pdf Graphic file (type pdf)
 <use classJegy__inherit__graph.pdf>
 Package pdftex.def Info: classJegy__inherit__graph.pdf  used on input line 14.
 (pdftex.def)             Requested size: 323.0pt x 364.02052pt.
 
 [12] <./classJegy__coll__graph.pdf>
-<classJegy__coll__graph.pdf, id=1323, 152.57pt x 212.795pt>
+<classJegy__coll__graph.pdf, id=1834, 152.57pt x 212.795pt>
 File: classJegy__coll__graph.pdf Graphic file (type pdf)
 <use classJegy__coll__graph.pdf>
-Package pdftex.def Info: classJegy__coll__graph.pdf  used on input line 24.
+Package pdftex.def Info: classJegy__coll__graph.pdf  used on input line 23.
 (pdftex.def)             Requested size: 152.0pt x 212.00868pt.
  [13] [14] <./classJegy_ab4e5659753f5f143d279e79bd8863833_icgraph.pdf>
-<classJegy_ab4e5659753f5f143d279e79bd8863833_icgraph.pdf, id=1378, 617.30624pt 
+<classJegy_ab4e5659753f5f143d279e79bd8863833_icgraph.pdf, id=1887, 617.30624pt 
 x 179.67125pt>
 File: classJegy_ab4e5659753f5f143d279e79bd8863833_icgraph.pdf Graphic file (typ
 e pdf)
 <use classJegy_ab4e5659753f5f143d279e79bd8863833_icgraph.pdf>
 Package pdftex.def Info: classJegy_ab4e5659753f5f143d279e79bd8863833_icgraph.pd
-f  used on input line 110.
+f  used on input line 109.
 (pdftex.def)             Requested size: 350.0pt x 101.87357pt.
  <./classJegy_aa9e954a340eff827792a81cdccdb7426_cgraph.pdf>
-<classJegy_aa9e954a340eff827792a81cdccdb7426_cgraph.pdf, id=1407, 398.48875pt x
+<classJegy_aa9e954a340eff827792a81cdccdb7426_cgraph.pdf, id=1916, 398.48875pt x
  159.59625pt>
 File: classJegy_aa9e954a340eff827792a81cdccdb7426_cgraph.pdf Graphic file (type
  pdf)
 <use classJegy_aa9e954a340eff827792a81cdccdb7426_cgraph.pdf>
 Package pdftex.def Info: classJegy_aa9e954a340eff827792a81cdccdb7426_cgraph.pdf
-  used on input line 181.
+  used on input line 180.
 (pdftex.def)             Requested size: 350.0pt x 140.1821pt.
  [15] <./classJegy_aa9e954a340eff827792a81cdccdb7426_icgraph.pdf>
-<classJegy_aa9e954a340eff827792a81cdccdb7426_icgraph.pdf, id=1436, 493.845pt x 
+<classJegy_aa9e954a340eff827792a81cdccdb7426_icgraph.pdf, id=1946, 493.845pt x 
 179.67125pt>
 File: classJegy_aa9e954a340eff827792a81cdccdb7426_icgraph.pdf Graphic file (typ
 e pdf)
 <use classJegy_aa9e954a340eff827792a81cdccdb7426_icgraph.pdf>
 Package pdftex.def Info: classJegy_aa9e954a340eff827792a81cdccdb7426_icgraph.pd
-f  used on input line 189.
+f  used on input line 188.
 (pdftex.def)             Requested size: 350.0pt x 127.33717pt.
 )
 (./classKiosk.tex <./classKiosk__coll__graph.pdf>
-<classKiosk__coll__graph.pdf, id=1449, 165.61874pt x 212.795pt>
+<classKiosk__coll__graph.pdf, id=1959, 165.61874pt x 212.795pt>
 File: classKiosk__coll__graph.pdf Graphic file (type pdf)
 <use classKiosk__coll__graph.pdf>
-Package pdftex.def Info: classKiosk__coll__graph.pdf  used on input line 14.
+Package pdftex.def Info: classKiosk__coll__graph.pdf  used on input line 13.
 (pdftex.def)             Requested size: 165.0pt x 212.00868pt.
  [16] <./classKiosk_a0720b9a024917b95f7ca167bdf19527d_icgraph.pdf>
-<classKiosk_a0720b9a024917b95f7ca167bdf19527d_icgraph.pdf, id=1480, 222.8325pt 
+<classKiosk_a0720b9a024917b95f7ca167bdf19527d_icgraph.pdf, id=1993, 222.8325pt 
 x 101.37875pt>
 File: classKiosk_a0720b9a024917b95f7ca167bdf19527d_icgraph.pdf Graphic file (ty
 pe pdf)
@@ -1042,105 +1149,105 @@ Package pdftex.def Info: classKiosk_a0720b9a024917b95f7ca167bdf19527d_icgraph.p
 df  used on input line 72.
 (pdftex.def)             Requested size: 222.0pt x 101.00104pt.
  [17]
-Underfull \hbox (badness 10000) detected at line 87
+Underfull \hbox (badness 10000) detected at line 85
 [][][]
  []
 
  <./classKiosk_a618eeae0bf7647b223caef1e48e9b0eb_icgraph.pdf>
-<classKiosk_a618eeae0bf7647b223caef1e48e9b0eb_icgraph.pdf, id=1507, 386.44376pt
+<classKiosk_a618eeae0bf7647b223caef1e48e9b0eb_icgraph.pdf, id=2020, 386.44376pt
  x 120.45pt>
 File: classKiosk_a618eeae0bf7647b223caef1e48e9b0eb_icgraph.pdf Graphic file (ty
 pe pdf)
 <use classKiosk_a618eeae0bf7647b223caef1e48e9b0eb_icgraph.pdf>
 Package pdftex.def Info: classKiosk_a618eeae0bf7647b223caef1e48e9b0eb_icgraph.p
-df  used on input line 115.
+df  used on input line 113.
 (pdftex.def)             Requested size: 350.0pt x 109.09135pt.
  [18] <./classKiosk_af4fe3883e13b6e3658ac7b1001532fb4_cgraph.pdf>
-<classKiosk_af4fe3883e13b6e3658ac7b1001532fb4_cgraph.pdf, id=1541, 671.50874pt 
+<classKiosk_af4fe3883e13b6e3658ac7b1001532fb4_cgraph.pdf, id=2062, 671.50874pt 
 x 394.47375pt>
 File: classKiosk_af4fe3883e13b6e3658ac7b1001532fb4_cgraph.pdf Graphic file (typ
 e pdf)
 <use classKiosk_af4fe3883e13b6e3658ac7b1001532fb4_cgraph.pdf>
 Package pdftex.def Info: classKiosk_af4fe3883e13b6e3658ac7b1001532fb4_cgraph.pd
-f  used on input line 187.
+f  used on input line 190.
 (pdftex.def)             Requested size: 350.0pt x 205.60304pt.
- <./classKiosk_af4fe3883e13b6e3658ac7b1001532fb4_icgraph.pdf>
-<classKiosk_af4fe3883e13b6e3658ac7b1001532fb4_icgraph.pdf, id=1556, 246.9225pt 
+ [19] <./classKiosk_af4fe3883e13b6e3658ac7b1001532fb4_icgraph.pdf>
+<classKiosk_af4fe3883e13b6e3658ac7b1001532fb4_icgraph.pdf, id=2085, 246.9225pt 
 x 101.37875pt>
 File: classKiosk_af4fe3883e13b6e3658ac7b1001532fb4_icgraph.pdf Graphic file (ty
 pe pdf)
 <use classKiosk_af4fe3883e13b6e3658ac7b1001532fb4_icgraph.pdf>
 Package pdftex.def Info: classKiosk_af4fe3883e13b6e3658ac7b1001532fb4_icgraph.p
-df  used on input line 195.
+df  used on input line 198.
 (pdftex.def)             Requested size: 246.0pt x 100.9995pt.
- [19] <./classKiosk_a196ec12845a5f5384f9145a3fbe086d1_cgraph.pdf>
-<classKiosk_a196ec12845a5f5384f9145a3fbe086d1_cgraph.pdf, id=1578, 462.72874pt 
+ <./classKiosk_a196ec12845a5f5384f9145a3fbe086d1_cgraph.pdf>
+<classKiosk_a196ec12845a5f5384f9145a3fbe086d1_cgraph.pdf, id=2098, 462.72874pt 
 x 140.525pt>
 File: classKiosk_a196ec12845a5f5384f9145a3fbe086d1_cgraph.pdf Graphic file (typ
 e pdf)
 <use classKiosk_a196ec12845a5f5384f9145a3fbe086d1_cgraph.pdf>
 Package pdftex.def Info: classKiosk_a196ec12845a5f5384f9145a3fbe086d1_cgraph.pd
-f  used on input line 224.
+f  used on input line 227.
 (pdftex.def)             Requested size: 350.0pt x 106.29192pt.
  <./classKiosk_a196ec12845a5f5384f9145a3fbe086d1_icgraph.pdf>
-<classKiosk_a196ec12845a5f5384f9145a3fbe086d1_icgraph.pdf, id=1586, 358.33875pt
+<classKiosk_a196ec12845a5f5384f9145a3fbe086d1_icgraph.pdf, id=2106, 358.33875pt
  x 120.45pt>
 File: classKiosk_a196ec12845a5f5384f9145a3fbe086d1_icgraph.pdf Graphic file (ty
 pe pdf)
 <use classKiosk_a196ec12845a5f5384f9145a3fbe086d1_icgraph.pdf>
 Package pdftex.def Info: classKiosk_a196ec12845a5f5384f9145a3fbe086d1_icgraph.p
-df  used on input line 232.
+df  used on input line 235.
 (pdftex.def)             Requested size: 350.0pt x 117.65422pt.
 
 [20]
-Underfull \hbox (badness 10000) detected at line 241
+Underfull \hbox (badness 10000) detected at line 244
 [][][]
  []
 
  <./classKiosk_a9aa9dc56bb99ac2079705525e26813bc_icgraph.pdf>
-<classKiosk_a9aa9dc56bb99ac2079705525e26813bc_icgraph.pdf, id=1609, 252.945pt x
+<classKiosk_a9aa9dc56bb99ac2079705525e26813bc_icgraph.pdf, id=2128, 252.945pt x
  101.37875pt>
 File: classKiosk_a9aa9dc56bb99ac2079705525e26813bc_icgraph.pdf Graphic file (ty
 pe pdf)
 <use classKiosk_a9aa9dc56bb99ac2079705525e26813bc_icgraph.pdf>
 Package pdftex.def Info: classKiosk_a9aa9dc56bb99ac2079705525e26813bc_icgraph.p
-df  used on input line 263.
+df  used on input line 266.
 (pdftex.def)             Requested size: 252.0pt x 101.0026pt.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 270.
- <./classKiosk_a86af671752c83d3624ab7aeb3652f290_cgraph.pdf>
-<classKiosk_a86af671752c83d3624ab7aeb3652f290_cgraph.pdf, id=1638, 307.1475pt x
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 273.
+ [21] <./classKiosk_a86af671752c83d3624ab7aeb3652f290_cgraph.pdf>
+<classKiosk_a86af671752c83d3624ab7aeb3652f290_cgraph.pdf, id=2169, 307.1475pt x
  101.37875pt>
 File: classKiosk_a86af671752c83d3624ab7aeb3652f290_cgraph.pdf Graphic file (typ
 e pdf)
 <use classKiosk_a86af671752c83d3624ab7aeb3652f290_cgraph.pdf>
 Package pdftex.def Info: classKiosk_a86af671752c83d3624ab7aeb3652f290_cgraph.pd
-f  used on input line 303.
+f  used on input line 313.
 (pdftex.def)             Requested size: 306.0pt x 101.00568pt.
  <./classKiosk_a86af671752c83d3624ab7aeb3652f290_icgraph.pdf>
-<classKiosk_a86af671752c83d3624ab7aeb3652f290_icgraph.pdf, id=1646, 264.99pt x 
+<classKiosk_a86af671752c83d3624ab7aeb3652f290_icgraph.pdf, id=2177, 264.99pt x 
 101.37875pt>
 File: classKiosk_a86af671752c83d3624ab7aeb3652f290_icgraph.pdf Graphic file (ty
 pe pdf)
 <use classKiosk_a86af671752c83d3624ab7aeb3652f290_icgraph.pdf>
 Package pdftex.def Info: classKiosk_a86af671752c83d3624ab7aeb3652f290_icgraph.p
-df  used on input line 311.
+df  used on input line 321.
 (pdftex.def)             Requested size: 264.0pt x 101.00723pt.
- [21]) (./classKutya.tex <./classKutya__inherit__graph.pdf>
-<classKutya__inherit__graph.pdf, id=1672, 152.57pt x 365.365pt>
+) (./classKutya.tex <./classKutya__inherit__graph.pdf>
+<classKutya__inherit__graph.pdf, id=2188, 152.57pt x 365.365pt>
 File: classKutya__inherit__graph.pdf Graphic file (type pdf)
 <use classKutya__inherit__graph.pdf>
 Package pdftex.def Info: classKutya__inherit__graph.pdf  used on input line 14.
 
 (pdftex.def)             Requested size: 152.0pt x 364.01494pt.
- <./classKutya__coll__graph.pdf>
-<classKutya__coll__graph.pdf, id=1687, 152.57pt x 365.365pt>
+ [22] <./classKutya__coll__graph.pdf>
+<classKutya__coll__graph.pdf, id=2219, 152.57pt x 365.365pt>
 File: classKutya__coll__graph.pdf Graphic file (type pdf)
 <use classKutya__coll__graph.pdf>
 Package pdftex.def Info: classKutya__coll__graph.pdf  used on input line 24.
 (pdftex.def)             Requested size: 152.0pt x 364.01494pt.
- [22] [23] <./classKutya_a045312268761ed842a69860fefd28adb_icgraph.pdf>
-<classKutya_a045312268761ed842a69860fefd28adb_icgraph.pdf, id=1750, 493.845pt x
+ [23] [24] <./classKutya_a045312268761ed842a69860fefd28adb_icgraph.pdf>
+<classKutya_a045312268761ed842a69860fefd28adb_icgraph.pdf, id=2281, 493.845pt x
  101.37875pt>
 File: classKutya_a045312268761ed842a69860fefd28adb_icgraph.pdf Graphic file (ty
 pe pdf)
@@ -1149,7 +1256,7 @@ Package pdftex.def Info: classKutya_a045312268761ed842a69860fefd28adb_icgraph.p
 df  used on input line 111.
 (pdftex.def)             Requested size: 350.0pt x 71.84946pt.
  <./classKutya_a7c027b5bb3b6eb1f9c528c0475e3d74a_icgraph.pdf>
-<classKutya_a7c027b5bb3b6eb1f9c528c0475e3d74a_icgraph.pdf, id=1761, 501.875pt x
+<classKutya_a7c027b5bb3b6eb1f9c528c0475e3d74a_icgraph.pdf, id=2292, 501.875pt x
  101.37875pt>
 File: classKutya_a7c027b5bb3b6eb1f9c528c0475e3d74a_icgraph.pdf Graphic file (ty
 pe pdf)
@@ -1157,8 +1264,8 @@ pe pdf)
 Package pdftex.def Info: classKutya_a7c027b5bb3b6eb1f9c528c0475e3d74a_icgraph.p
 df  used on input line 134.
 (pdftex.def)             Requested size: 350.0pt x 70.7032pt.
- [24] <./classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d_cgraph.pdf>
-<classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d_cgraph.pdf, id=1787, 533.995pt x 
+ [25] <./classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d_cgraph.pdf>
+<classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d_cgraph.pdf, id=2319, 533.995pt x 
 217.81375pt>
 File: classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d_cgraph.pdf Graphic file (typ
 e pdf)
@@ -1167,7 +1274,7 @@ Package pdftex.def Info: classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d_cgraph.pd
 f  used on input line 166.
 (pdftex.def)             Requested size: 350.0pt x 142.76707pt.
  <./classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d_icgraph.pdf>
-<classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d_icgraph.pdf, id=1802, 374.39874pt
+<classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d_icgraph.pdf, id=2334, 374.39874pt
  x 101.37875pt>
 File: classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d_icgraph.pdf Graphic file (ty
 pe pdf)
@@ -1175,124 +1282,124 @@ pe pdf)
 Package pdftex.def Info: classKutya_a0bed6bf95538dcad16d1c8dfd53bb65d_icgraph.p
 df  used on input line 174.
 (pdftex.def)             Requested size: 350.0pt x 94.7778pt.
- [25]) (./classMav.tex <./classMav__coll__graph.pdf>
-<classMav__coll__graph.pdf, id=1825, 246.9225pt x 796.9775pt>
+ [26])
+(./classMav.tex <./classMav__coll__graph.pdf>
+<classMav__coll__graph.pdf, id=2356, 246.9225pt x 829.0975pt>
 File: classMav__coll__graph.pdf Graphic file (type pdf)
 <use classMav__coll__graph.pdf>
 Package pdftex.def Info: classMav__coll__graph.pdf  used on input line 14.
-(pdftex.def)             Requested size: 170.4106pt x 550.0pt.
- [26] [27] [28] <./classMav_a81e2ee3d186b9303c7fa580f3afbbab8_icgraph.pdf>
-<classMav_a81e2ee3d186b9303c7fa580f3afbbab8_icgraph.pdf, id=1907, 337.26pt x 17
-9.67125pt>
+(pdftex.def)             Requested size: 163.80577pt x 550.0pt.
+ [27] [28] [29] <./classMav_a81e2ee3d186b9303c7fa580f3afbbab8_icgraph.pdf>
+<classMav_a81e2ee3d186b9303c7fa580f3afbbab8_icgraph.pdf, id=2445, 316.18124pt x
+ 101.37875pt>
 File: classMav_a81e2ee3d186b9303c7fa580f3afbbab8_icgraph.pdf Graphic file (type
  pdf)
 <use classMav_a81e2ee3d186b9303c7fa580f3afbbab8_icgraph.pdf>
 Package pdftex.def Info: classMav_a81e2ee3d186b9303c7fa580f3afbbab8_icgraph.pdf
-  used on input line 127.
-(pdftex.def)             Requested size: 336.0pt x 179.00458pt.
- <./classMav_a9838399fd397670c9d4e9f2d279c1a73_icgraph.pdf>
-<classMav_a9838399fd397670c9d4e9f2d279c1a73_icgraph.pdf, id=1924, 384.43625pt x
+  used on input line 135.
+(pdftex.def)             Requested size: 315.0pt x 101.00723pt.
+ [30] <./classMav_a9838399fd397670c9d4e9f2d279c1a73_icgraph.pdf>
+<classMav_a9838399fd397670c9d4e9f2d279c1a73_icgraph.pdf, id=2482, 384.43625pt x
  140.525pt>
 File: classMav_a9838399fd397670c9d4e9f2d279c1a73_icgraph.pdf Graphic file (type
  pdf)
 <use classMav_a9838399fd397670c9d4e9f2d279c1a73_icgraph.pdf>
 Package pdftex.def Info: classMav_a9838399fd397670c9d4e9f2d279c1a73_icgraph.pdf
-  used on input line 170.
+  used on input line 206.
 (pdftex.def)             Requested size: 350.0pt x 127.94655pt.
- [29] <./classMav_a15899cdec1c1fe36a8460d956dad3104_cgraph.pdf>
-<classMav_a15899cdec1c1fe36a8460d956dad3104_cgraph.pdf, id=1968, 300.12125pt x 
+ [31] <./classMav_a15899cdec1c1fe36a8460d956dad3104_cgraph.pdf>
+<classMav_a15899cdec1c1fe36a8460d956dad3104_cgraph.pdf, id=2526, 300.12125pt x 
 297.11pt>
 File: classMav_a15899cdec1c1fe36a8460d956dad3104_cgraph.pdf Graphic file (type 
 pdf)
 <use classMav_a15899cdec1c1fe36a8460d956dad3104_cgraph.pdf>
 Package pdftex.def Info: classMav_a15899cdec1c1fe36a8460d956dad3104_cgraph.pdf 
- used on input line 227.
+ used on input line 263.
 (pdftex.def)             Requested size: 299.0pt x 296.02574pt.
- [30] <./classMav_a15899cdec1c1fe36a8460d956dad3104_icgraph.pdf>
-<classMav_a15899cdec1c1fe36a8460d956dad3104_icgraph.pdf, id=1992, 369.38pt x 14
-0.525pt>
+ <./classMav_a15899cdec1c1fe36a8460d956dad3104_icgraph.pdf>
+<classMav_a15899cdec1c1fe36a8460d956dad3104_icgraph.pdf, id=2534, 336.25626pt x
+ 120.45pt>
 File: classMav_a15899cdec1c1fe36a8460d956dad3104_icgraph.pdf Graphic file (type
  pdf)
 <use classMav_a15899cdec1c1fe36a8460d956dad3104_icgraph.pdf>
 Package pdftex.def Info: classMav_a15899cdec1c1fe36a8460d956dad3104_icgraph.pdf
-  used on input line 235.
-(pdftex.def)             Requested size: 350.0pt x 133.15276pt.
- <./classMav_a4b70915946e42d3b77413f7506655a75_icgraph.pdf>
-<classMav_a4b70915946e42d3b77413f7506655a75_icgraph.pdf, id=2003, 367.3725pt x 
-179.67125pt>
+  used on input line 271.
+(pdftex.def)             Requested size: 335.0pt x 120.00124pt.
+ [32] <./classMav_a1db25a674a5cd5dd0b3d8224f672b980_cgraph.pdf>
+<classMav_a1db25a674a5cd5dd0b3d8224f672b980_cgraph.pdf, id=2583, 300.12125pt x 
+297.11pt>
+File: classMav_a1db25a674a5cd5dd0b3d8224f672b980_cgraph.pdf Graphic file (type 
+pdf)
+<use classMav_a1db25a674a5cd5dd0b3d8224f672b980_cgraph.pdf>
+Package pdftex.def Info: classMav_a1db25a674a5cd5dd0b3d8224f672b980_cgraph.pdf 
+ used on input line 322.
+(pdftex.def)             Requested size: 299.0pt x 296.02574pt.
+ [33] <./classMav_a4b70915946e42d3b77413f7506655a75_icgraph.pdf>
+<classMav_a4b70915946e42d3b77413f7506655a75_icgraph.pdf, id=2602, 361.35pt x 14
+0.525pt>
 File: classMav_a4b70915946e42d3b77413f7506655a75_icgraph.pdf Graphic file (type
  pdf)
 <use classMav_a4b70915946e42d3b77413f7506655a75_icgraph.pdf>
 Package pdftex.def Info: classMav_a4b70915946e42d3b77413f7506655a75_icgraph.pdf
-  used on input line 258.
-(pdftex.def)             Requested size: 350.0pt x 171.18565pt.
- [31] <./classMav_a646a7d0ff13f1c6b35a7d22f890a4927_icgraph.pdf>
-<classMav_a646a7d0ff13f1c6b35a7d22f890a4927_icgraph.pdf, id=2024, 385.44pt x 17
-9.67125pt>
+  used on input line 345.
+(pdftex.def)             Requested size: 350.0pt x 136.1118pt.
+ <./classMav_a646a7d0ff13f1c6b35a7d22f890a4927_icgraph.pdf>
+<classMav_a646a7d0ff13f1c6b35a7d22f890a4927_icgraph.pdf, id=2614, 379.4175pt x 
+140.525pt>
 File: classMav_a646a7d0ff13f1c6b35a7d22f890a4927_icgraph.pdf Graphic file (type
  pdf)
 <use classMav_a646a7d0ff13f1c6b35a7d22f890a4927_icgraph.pdf>
 Package pdftex.def Info: classMav_a646a7d0ff13f1c6b35a7d22f890a4927_icgraph.pdf
-  used on input line 281.
-(pdftex.def)             Requested size: 350.0pt x 163.15015pt.
- <./classMav_aa9729202f8dac420111d5266bfa6c9e8_cgraph.pdf>
-<classMav_aa9729202f8dac420111d5266bfa6c9e8_cgraph.pdf, id=2037, 350.30875pt x 
+  used on input line 368.
+(pdftex.def)             Requested size: 350.0pt x 129.63191pt.
+ [34] <./classMav_aa9729202f8dac420111d5266bfa6c9e8_cgraph.pdf>
+<classMav_aa9729202f8dac420111d5266bfa6c9e8_cgraph.pdf, id=2635, 350.30875pt x 
 140.525pt>
 File: classMav_aa9729202f8dac420111d5266bfa6c9e8_cgraph.pdf Graphic file (type 
 pdf)
 <use classMav_aa9729202f8dac420111d5266bfa6c9e8_cgraph.pdf>
 Package pdftex.def Info: classMav_aa9729202f8dac420111d5266bfa6c9e8_cgraph.pdf 
- used on input line 310.
+ used on input line 397.
 (pdftex.def)             Requested size: 349.0pt x 140.01003pt.
-
-[32] <./classMav_aa9729202f8dac420111d5266bfa6c9e8_icgraph.pdf>
-<classMav_aa9729202f8dac420111d5266bfa6c9e8_icgraph.pdf, id=2054, 452.69125pt x
- 177.66376pt>
+ <./classMav_aa9729202f8dac420111d5266bfa6c9e8_icgraph.pdf>
+<classMav_aa9729202f8dac420111d5266bfa6c9e8_icgraph.pdf, id=2643, 452.69125pt x
+ 120.45pt>
 File: classMav_aa9729202f8dac420111d5266bfa6c9e8_icgraph.pdf Graphic file (type
  pdf)
 <use classMav_aa9729202f8dac420111d5266bfa6c9e8_icgraph.pdf>
 Package pdftex.def Info: classMav_aa9729202f8dac420111d5266bfa6c9e8_icgraph.pdf
-  used on input line 318.
-(pdftex.def)             Requested size: 350.0pt x 137.35995pt.
- <./classMav_a77998398e7e7a0deedb86879012b098a_cgraph.pdf>
-<classMav_a77998398e7e7a0deedb86879012b098a_cgraph.pdf, id=2066, 361.35pt x 140
+  used on input line 405.
+(pdftex.def)             Requested size: 350.0pt x 93.12538pt.
+ [35] <./classMav_a77998398e7e7a0deedb86879012b098a_cgraph.pdf>
+<classMav_a77998398e7e7a0deedb86879012b098a_cgraph.pdf, id=2666, 361.35pt x 140
 .525pt>
 File: classMav_a77998398e7e7a0deedb86879012b098a_cgraph.pdf Graphic file (type 
 pdf)
 <use classMav_a77998398e7e7a0deedb86879012b098a_cgraph.pdf>
 Package pdftex.def Info: classMav_a77998398e7e7a0deedb86879012b098a_cgraph.pdf 
- used on input line 345.
+ used on input line 432.
 (pdftex.def)             Requested size: 350.0pt x 136.1118pt.
- <./classMav_a77998398e7e7a0deedb86879012b098a_icgraph.pdf>
-<classMav_a77998398e7e7a0deedb86879012b098a_icgraph.pdf, id=2074, 345.29pt x 10
-1.37875pt>
-File: classMav_a77998398e7e7a0deedb86879012b098a_icgraph.pdf Graphic file (type
- pdf)
-<use classMav_a77998398e7e7a0deedb86879012b098a_icgraph.pdf>
-Package pdftex.def Info: classMav_a77998398e7e7a0deedb86879012b098a_icgraph.pdf
-  used on input line 353.
-(pdftex.def)             Requested size: 344.0pt x 101.00104pt.
- [33]) (./structSeged.tex <./structSeged__coll__graph.pdf>
-<structSeged__coll__graph.pdf, id=2103, 139.52126pt x 228.855pt>
+) (./structSeged.tex <./structSeged__coll__graph.pdf>
+<structSeged__coll__graph.pdf, id=2685, 139.52126pt x 228.855pt>
 File: structSeged__coll__graph.pdf Graphic file (type pdf)
 <use structSeged__coll__graph.pdf>
-Package pdftex.def Info: structSeged__coll__graph.pdf  used on input line 14.
+Package pdftex.def Info: structSeged__coll__graph.pdf  used on input line 13.
 (pdftex.def)             Requested size: 139.0pt x 228.00586pt.
- [34] [35]) (./classTeljes.tex <./classTeljes__inherit__graph.pdf>
-<classTeljes__inherit__graph.pdf, id=2175, 152.57pt x 333.245pt>
+ [36] [37]) (./classTeljes.tex <./classTeljes__inherit__graph.pdf>
+<classTeljes__inherit__graph.pdf, id=2759, 152.57pt x 333.245pt>
 File: classTeljes__inherit__graph.pdf Graphic file (type pdf)
 <use classTeljes__inherit__graph.pdf>
 Package pdftex.def Info: classTeljes__inherit__graph.pdf  used on input line 14
 .
 (pdftex.def)             Requested size: 152.0pt x 332.01361pt.
- [36] <./classTeljes__coll__graph.pdf>
-<classTeljes__coll__graph.pdf, id=2201, 152.57pt x 333.245pt>
+ [38] <./classTeljes__coll__graph.pdf>
+<classTeljes__coll__graph.pdf, id=2785, 152.57pt x 333.245pt>
 File: classTeljes__coll__graph.pdf Graphic file (type pdf)
 <use classTeljes__coll__graph.pdf>
 Package pdftex.def Info: classTeljes__coll__graph.pdf  used on input line 24.
 (pdftex.def)             Requested size: 152.0pt x 332.01361pt.
- [37] [38] <./classTeljes_a2671e9f5af20412624362542e7c5b6fb_icgraph.pdf>
-<classTeljes_a2671e9f5af20412624362542e7c5b6fb_icgraph.pdf, id=2259, 501.875pt 
+ [39] [40] <./classTeljes_a2671e9f5af20412624362542e7c5b6fb_icgraph.pdf>
+<classTeljes_a2671e9f5af20412624362542e7c5b6fb_icgraph.pdf, id=2842, 501.875pt 
 x 101.37875pt>
 File: classTeljes_a2671e9f5af20412624362542e7c5b6fb_icgraph.pdf Graphic file (t
 ype pdf)
@@ -1301,7 +1408,7 @@ Package pdftex.def Info: classTeljes_a2671e9f5af20412624362542e7c5b6fb_icgraph.
 pdf  used on input line 107.
 (pdftex.def)             Requested size: 350.0pt x 70.7032pt.
  <./classTeljes_a6f147b902c77f74ba1542b4978ed99a4_cgraph.pdf>
-<classTeljes_a6f147b902c77f74ba1542b4978ed99a4_cgraph.pdf, id=2273, 533.995pt x
+<classTeljes_a6f147b902c77f74ba1542b4978ed99a4_cgraph.pdf, id=2856, 533.995pt x
  178.6675pt>
 File: classTeljes_a6f147b902c77f74ba1542b4978ed99a4_cgraph.pdf Graphic file (ty
 pe pdf)
@@ -1309,8 +1416,8 @@ pe pdf)
 Package pdftex.def Info: classTeljes_a6f147b902c77f74ba1542b4978ed99a4_cgraph.p
 df  used on input line 138.
 (pdftex.def)             Requested size: 350.0pt x 117.10847pt.
- [39] <./classTeljes_a6f147b902c77f74ba1542b4978ed99a4_icgraph.pdf>
-<classTeljes_a6f147b902c77f74ba1542b4978ed99a4_icgraph.pdf, id=2298, 374.39874p
+ [41] <./classTeljes_a6f147b902c77f74ba1542b4978ed99a4_icgraph.pdf>
+<classTeljes_a6f147b902c77f74ba1542b4978ed99a4_icgraph.pdf, id=2882, 374.39874p
 t x 101.37875pt>
 File: classTeljes_a6f147b902c77f74ba1542b4978ed99a4_icgraph.pdf Graphic file (t
 ype pdf)
@@ -1318,106 +1425,123 @@ ype pdf)
 Package pdftex.def Info: classTeljes_a6f147b902c77f74ba1542b4978ed99a4_icgraph.
 pdf  used on input line 146.
 (pdftex.def)             Requested size: 350.0pt x 94.7778pt.
-)
-(./classVonat.tex <./classVonat__coll__graph.pdf>
-<classVonat__coll__graph.pdf, id=2309, 246.9225pt x 552.0625pt>
+) (./classVonat.tex <./classVonat__coll__graph.pdf>
+<classVonat__coll__graph.pdf, id=2893, 246.9225pt x 552.0625pt>
 File: classVonat__coll__graph.pdf Graphic file (type pdf)
 <use classVonat__coll__graph.pdf>
 Package pdftex.def Info: classVonat__coll__graph.pdf  used on input line 14.
 (pdftex.def)             Requested size: 246.0pt x 549.99731pt.
- [40] [41] [42] <./classVonat_a18efd274d4ea6de105fa7761e8511799_icgraph.pdf>
-<classVonat_a18efd274d4ea6de105fa7761e8511799_icgraph.pdf, id=2435, 381.425pt x
- 140.525pt>
+ [42] [43] [44] <./classVonat_af72c3c1ed6de5148f2ee8492f8d1c509_icgraph.pdf>
+<classVonat_af72c3c1ed6de5148f2ee8492f8d1c509_icgraph.pdf, id=3014, 357.335pt x
+ 101.37875pt>
+File: classVonat_af72c3c1ed6de5148f2ee8492f8d1c509_icgraph.pdf Graphic file (ty
+pe pdf)
+<use classVonat_af72c3c1ed6de5148f2ee8492f8d1c509_icgraph.pdf>
+Package pdftex.def Info: classVonat_af72c3c1ed6de5148f2ee8492f8d1c509_icgraph.p
+df  used on input line 166.
+(pdftex.def)             Requested size: 350.0pt x 99.30254pt.
+ <./classVonat_acced304cedfe39ec6b79bf4604811a22_icgraph.pdf>
+<classVonat_acced304cedfe39ec6b79bf4604811a22_icgraph.pdf, id=3025, 365.365pt x
+ 101.37875pt>
+File: classVonat_acced304cedfe39ec6b79bf4604811a22_icgraph.pdf Graphic file (ty
+pe pdf)
+<use classVonat_acced304cedfe39ec6b79bf4604811a22_icgraph.pdf>
+Package pdftex.def Info: classVonat_acced304cedfe39ec6b79bf4604811a22_icgraph.p
+df  used on input line 189.
+(pdftex.def)             Requested size: 350.0pt x 97.11984pt.
+ [45] <./classVonat_a18efd274d4ea6de105fa7761e8511799_icgraph.pdf>
+<classVonat_a18efd274d4ea6de105fa7761e8511799_icgraph.pdf, id=3046, 354.32375pt
+ x 140.525pt>
 File: classVonat_a18efd274d4ea6de105fa7761e8511799_icgraph.pdf Graphic file (ty
 pe pdf)
 <use classVonat_a18efd274d4ea6de105fa7761e8511799_icgraph.pdf>
 Package pdftex.def Info: classVonat_a18efd274d4ea6de105fa7761e8511799_icgraph.p
-df  used on input line 200.
-(pdftex.def)             Requested size: 350.0pt x 128.9522pt.
- [43] <./classVonat_accf19f7143540d637a8b2234a47efee6_cgraph.pdf>
-<classVonat_accf19f7143540d637a8b2234a47efee6_cgraph.pdf, id=2472, 255.95625pt 
+df  used on input line 216.
+(pdftex.def)             Requested size: 350.0pt x 138.81354pt.
+ [46] <./classVonat_accf19f7143540d637a8b2234a47efee6_cgraph.pdf>
+<classVonat_accf19f7143540d637a8b2234a47efee6_cgraph.pdf, id=3082, 255.95625pt 
 x 140.525pt>
 File: classVonat_accf19f7143540d637a8b2234a47efee6_cgraph.pdf Graphic file (typ
 e pdf)
 <use classVonat_accf19f7143540d637a8b2234a47efee6_cgraph.pdf>
 Package pdftex.def Info: classVonat_accf19f7143540d637a8b2234a47efee6_cgraph.pd
-f  used on input line 254.
+f  used on input line 270.
 (pdftex.def)             Requested size: 255.0pt x 139.9993pt.
- [44] <./classVonat_accf19f7143540d637a8b2234a47efee6_icgraph.pdf>
-<classVonat_accf19f7143540d637a8b2234a47efee6_icgraph.pdf, id=2489, 596.2275pt 
-x 297.11pt>
+ <./classVonat_accf19f7143540d637a8b2234a47efee6_icgraph.pdf>
+<classVonat_accf19f7143540d637a8b2234a47efee6_icgraph.pdf, id=3090, 596.2275pt 
+x 218.8175pt>
 File: classVonat_accf19f7143540d637a8b2234a47efee6_icgraph.pdf Graphic file (ty
 pe pdf)
 <use classVonat_accf19f7143540d637a8b2234a47efee6_icgraph.pdf>
 Package pdftex.def Info: classVonat_accf19f7143540d637a8b2234a47efee6_icgraph.p
-df  used on input line 262.
-(pdftex.def)             Requested size: 350.0pt x 174.40933pt.
+df  used on input line 278.
+(pdftex.def)             Requested size: 350.0pt x 128.45012pt.
  <./classVonat_a53b9de572bc678ec86a8916473067375_icgraph.pdf>
-<classVonat_a53b9de572bc678ec86a8916473067375_icgraph.pdf, id=2501, 507.8975pt 
-x 140.525pt>
+<classVonat_a53b9de572bc678ec86a8916473067375_icgraph.pdf, id=3102, 474.77374pt
+ x 140.525pt>
 File: classVonat_a53b9de572bc678ec86a8916473067375_icgraph.pdf Graphic file (ty
 pe pdf)
 <use classVonat_a53b9de572bc678ec86a8916473067375_icgraph.pdf>
 Package pdftex.def Info: classVonat_a53b9de572bc678ec86a8916473067375_icgraph.p
-df  used on input line 285.
-(pdftex.def)             Requested size: 350.0pt x 96.84012pt.
- [45] <./classVonat_a6b31c3d13fe2bf39f70f4dac557d4b76_icgraph.pdf>
-<classVonat_a6b31c3d13fe2bf39f70f4dac557d4b76_icgraph.pdf, id=2522, 505.89pt x 
-140.525pt>
+df  used on input line 301.
+(pdftex.def)             Requested size: 350.0pt x 103.59875pt.
+ [47] <./classVonat_a6b31c3d13fe2bf39f70f4dac557d4b76_icgraph.pdf>
+<classVonat_a6b31c3d13fe2bf39f70f4dac557d4b76_icgraph.pdf, id=3123, 472.76625pt
+ x 140.525pt>
 File: classVonat_a6b31c3d13fe2bf39f70f4dac557d4b76_icgraph.pdf Graphic file (ty
 pe pdf)
 <use classVonat_a6b31c3d13fe2bf39f70f4dac557d4b76_icgraph.pdf>
 Package pdftex.def Info: classVonat_a6b31c3d13fe2bf39f70f4dac557d4b76_icgraph.p
-df  used on input line 308.
-(pdftex.def)             Requested size: 350.0pt x 97.22394pt.
+df  used on input line 324.
+(pdftex.def)             Requested size: 350.0pt x 104.03618pt.
  <./classVonat_a27a2c9da752ab6cee10e8386c89e60a3_icgraph.pdf>
-<classVonat_a27a2c9da752ab6cee10e8386c89e60a3_icgraph.pdf, id=2535, 500.87125pt
- x 140.525pt>
+<classVonat_a27a2c9da752ab6cee10e8386c89e60a3_icgraph.pdf, id=3136, 467.7475pt 
+x 140.525pt>
 File: classVonat_a27a2c9da752ab6cee10e8386c89e60a3_icgraph.pdf Graphic file (ty
 pe pdf)
 <use classVonat_a27a2c9da752ab6cee10e8386c89e60a3_icgraph.pdf>
 Package pdftex.def Info: classVonat_a27a2c9da752ab6cee10e8386c89e60a3_icgraph.p
-df  used on input line 331.
-(pdftex.def)             Requested size: 350.0pt x 98.19957pt.
- <./classVonat_a114542b472a68e864279f367f88dd95e_icgraph.pdf>
-<classVonat_a114542b472a68e864279f367f88dd95e_icgraph.pdf, id=2547, 507.8975pt 
-x 140.525pt>
+df  used on input line 347.
+(pdftex.def)             Requested size: 350.0pt x 105.15547pt.
+ [48] <./classVonat_a114542b472a68e864279f367f88dd95e_icgraph.pdf>
+<classVonat_a114542b472a68e864279f367f88dd95e_icgraph.pdf, id=3159, 474.77374pt
+ x 140.525pt>
 File: classVonat_a114542b472a68e864279f367f88dd95e_icgraph.pdf Graphic file (ty
 pe pdf)
 <use classVonat_a114542b472a68e864279f367f88dd95e_icgraph.pdf>
 Package pdftex.def Info: classVonat_a114542b472a68e864279f367f88dd95e_icgraph.p
-df  used on input line 354.
-(pdftex.def)             Requested size: 350.0pt x 96.84012pt.
- [46] <./classVonat_a191874e48371b4f07b8703cfd0c85934_icgraph.pdf>
-<classVonat_a191874e48371b4f07b8703cfd0c85934_icgraph.pdf, id=2571, 497.86pt x 
-140.525pt>
+df  used on input line 370.
+(pdftex.def)             Requested size: 350.0pt x 103.59875pt.
+ <./classVonat_a191874e48371b4f07b8703cfd0c85934_icgraph.pdf>
+<classVonat_a191874e48371b4f07b8703cfd0c85934_icgraph.pdf, id=3171, 464.73625pt
+ x 140.525pt>
 File: classVonat_a191874e48371b4f07b8703cfd0c85934_icgraph.pdf Graphic file (ty
 pe pdf)
 <use classVonat_a191874e48371b4f07b8703cfd0c85934_icgraph.pdf>
 Package pdftex.def Info: classVonat_a191874e48371b4f07b8703cfd0c85934_icgraph.p
-df  used on input line 381.
-(pdftex.def)             Requested size: 350.0pt x 98.79137pt.
- <./classVonat_acec88991afa8817d7bd6f58190693155_icgraph.pdf>
-<classVonat_acec88991afa8817d7bd6f58190693155_icgraph.pdf, id=2584, 488.82625pt
- x 140.525pt>
+df  used on input line 397.
+(pdftex.def)             Requested size: 350.0pt x 105.83519pt.
+ [49] <./classVonat_acec88991afa8817d7bd6f58190693155_icgraph.pdf>
+<classVonat_acec88991afa8817d7bd6f58190693155_icgraph.pdf, id=3194, 455.7025pt 
+x 140.525pt>
 File: classVonat_acec88991afa8817d7bd6f58190693155_icgraph.pdf Graphic file (ty
 pe pdf)
 <use classVonat_acec88991afa8817d7bd6f58190693155_icgraph.pdf>
 Package pdftex.def Info: classVonat_acec88991afa8817d7bd6f58190693155_icgraph.p
-df  used on input line 404.
-(pdftex.def)             Requested size: 350.0pt x 100.61826pt.
-[47]) [48]
+df  used on input line 420.
+(pdftex.def)             Requested size: 350.0pt x 107.93225pt.
+ [50]) [51]
 Chapter 5.
 (./allomas_8cpp.tex <./allomas_8cpp__incl.pdf>
-<allomas_8cpp__incl.pdf, id=2628, 214.8025pt x 272.01625pt>
+<allomas_8cpp__incl.pdf, id=3237, 214.8025pt x 272.01625pt>
 File: allomas_8cpp__incl.pdf Graphic file (type pdf)
 <use allomas_8cpp__incl.pdf>
 Package pdftex.def Info: allomas_8cpp__incl.pdf  used on input line 9.
 (pdftex.def)             Requested size: 214.0pt x 271.00282pt.
- [49
+ [52
 
 ] <./allomas_8cpp_a666384f57ccfc1d506acb76eb933082c_cgraph.pdf>
-<allomas_8cpp_a666384f57ccfc1d506acb76eb933082c_cgraph.pdf, id=2655, 308.15125p
+<allomas_8cpp_a666384f57ccfc1d506acb76eb933082c_cgraph.pdf, id=3262, 308.15125p
 t x 101.37875pt>
 File: allomas_8cpp_a666384f57ccfc1d506acb76eb933082c_cgraph.pdf Graphic file (t
 ype pdf)
@@ -1427,20 +1551,20 @@ pdf  used on input line 44.
 (pdftex.def)             Requested size: 307.0pt x 101.00723pt.
 ) (./allomas_8cpp_source.tex)
 (./allomas_8h.tex <./allomas_8h__incl.pdf>
-<allomas_8h__incl.pdf, id=2669, 214.8025pt x 214.8025pt>
+<allomas_8h__incl.pdf, id=3276, 214.8025pt x 214.8025pt>
 File: allomas_8h__incl.pdf Graphic file (type pdf)
 <use allomas_8h__incl.pdf>
 Package pdftex.def Info: allomas_8h__incl.pdf  used on input line 10.
 (pdftex.def)             Requested size: 214.0pt x 214.00223pt.
  <./allomas_8h__dep__incl.pdf>
-<allomas_8h__dep__incl.pdf, id=2677, 827.09pt x 442.65375pt>
+<allomas_8h__dep__incl.pdf, id=3284, 827.09pt x 442.65375pt>
 File: allomas_8h__dep__incl.pdf Graphic file (type pdf)
 <use allomas_8h__dep__incl.pdf>
 Package pdftex.def Info: allomas_8h__dep__incl.pdf  used on input line 18.
 (pdftex.def)             Requested size: 350.0pt x 187.31819pt.
 
-[50] <./allomas_8h_a666384f57ccfc1d506acb76eb933082c_cgraph.pdf>
-<allomas_8h_a666384f57ccfc1d506acb76eb933082c_cgraph.pdf, id=2707, 308.15125pt 
+[53] <./allomas_8h_a666384f57ccfc1d506acb76eb933082c_cgraph.pdf>
+<allomas_8h_a666384f57ccfc1d506acb76eb933082c_cgraph.pdf, id=3314, 308.15125pt 
 x 101.37875pt>
 File: allomas_8h_a666384f57ccfc1d506acb76eb933082c_cgraph.pdf Graphic file (typ
 e pdf)
@@ -1449,8 +1573,8 @@ Package pdftex.def Info: allomas_8h_a666384f57ccfc1d506acb76eb933082c_cgraph.pd
 f  used on input line 58.
 (pdftex.def)             Requested size: 307.0pt x 101.00723pt.
 )
-(./allomas_8h_source.tex [51]) (./ido_8cpp.tex <./ido_8cpp__incl.pdf>
-<ido_8cpp__incl.pdf, id=2742, 214.8025pt x 214.8025pt>
+(./allomas_8h_source.tex [54]) (./ido_8cpp.tex <./ido_8cpp__incl.pdf>
+<ido_8cpp__incl.pdf, id=3351, 214.8025pt x 214.8025pt>
 File: ido_8cpp__incl.pdf Graphic file (type pdf)
 <use ido_8cpp__incl.pdf>
 Package pdftex.def Info: ido_8cpp__incl.pdf  used on input line 9.
@@ -1459,8 +1583,8 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 16.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 6.29996pt on input line 16.
- [52] <./ido_8cpp_ac433647af32d9e7ec41d73faa9b12477_cgraph.pdf>
-<ido_8cpp_ac433647af32d9e7ec41d73faa9b12477_cgraph.pdf, id=2796, 264.99pt x 140
+ [55] <./ido_8cpp_ac433647af32d9e7ec41d73faa9b12477_cgraph.pdf>
+<ido_8cpp_ac433647af32d9e7ec41d73faa9b12477_cgraph.pdf, id=3404, 264.99pt x 140
 .525pt>
 File: ido_8cpp_ac433647af32d9e7ec41d73faa9b12477_cgraph.pdf Graphic file (type 
 pdf)
@@ -1470,19 +1594,19 @@ Package pdftex.def Info: ido_8cpp_ac433647af32d9e7ec41d73faa9b12477_cgraph.pdf
 (pdftex.def)             Requested size: 264.0pt x 140.01003pt.
 ) (./ido_8cpp_source.tex)
 (./ido_8h.tex <./ido_8h__incl.pdf>
-<ido_8h__incl.pdf, id=2811, 214.8025pt x 158.5925pt>
+<ido_8h__incl.pdf, id=3419, 214.8025pt x 158.5925pt>
 File: ido_8h__incl.pdf Graphic file (type pdf)
 <use ido_8h__incl.pdf>
 Package pdftex.def Info: ido_8h__incl.pdf  used on input line 10.
 (pdftex.def)             Requested size: 214.0pt x 158.00162pt.
- [53] <./ido_8h__dep__incl.pdf>
-<ido_8h__dep__incl.pdf, id=2834, 917.4275pt x 499.8675pt>
+ [56] <./ido_8h__dep__incl.pdf>
+<ido_8h__dep__incl.pdf, id=3443, 917.4275pt x 499.8675pt>
 File: ido_8h__dep__incl.pdf Graphic file (type pdf)
 <use ido_8h__dep__incl.pdf>
 Package pdftex.def Info: ido_8h__dep__incl.pdf  used on input line 18.
 (pdftex.def)             Requested size: 350.0pt x 190.6991pt.
- [54] <./ido_8h_ac433647af32d9e7ec41d73faa9b12477_cgraph.pdf>
-<ido_8h_ac433647af32d9e7ec41d73faa9b12477_cgraph.pdf, id=2863, 264.99pt x 140.5
+ [57] <./ido_8h_ac433647af32d9e7ec41d73faa9b12477_cgraph.pdf>
+<ido_8h_ac433647af32d9e7ec41d73faa9b12477_cgraph.pdf, id=3471, 264.99pt x 140.5
 25pt>
 File: ido_8h_ac433647af32d9e7ec41d73faa9b12477_cgraph.pdf Graphic file (type pd
 f)
@@ -1492,209 +1616,192 @@ sed on input line 62.
 (pdftex.def)             Requested size: 264.0pt x 140.01003pt.
 ) (./ido_8h_source.tex)
 (./jegy_8h.tex <./jegy_8h__incl.pdf>
-<jegy_8h__incl.pdf, id=2898, 353.32pt x 386.44376pt>
+<jegy_8h__incl.pdf, id=3506, 353.32pt x 386.44376pt>
 File: jegy_8h__incl.pdf Graphic file (type pdf)
 <use jegy_8h__incl.pdf>
 Package pdftex.def Info: jegy_8h__incl.pdf  used on input line 10.
 (pdftex.def)             Requested size: 350.0pt x 382.81636pt.
- [55] <./jegy_8h__dep__incl.pdf>
-<jegy_8h__dep__incl.pdf, id=2954, 354.32375pt x 272.01625pt>
+ [58] <./jegy_8h__dep__incl.pdf>
+<jegy_8h__dep__incl.pdf, id=3559, 344.28625pt x 272.01625pt>
 File: jegy_8h__dep__incl.pdf Graphic file (type pdf)
 <use jegy_8h__dep__incl.pdf>
 Package pdftex.def Info: jegy_8h__dep__incl.pdf  used on input line 18.
-(pdftex.def)             Requested size: 350.0pt x 268.70337pt.
- [56])
-(./jegy_8h_source.tex [57] [58]) (./kiosk_8cpp.tex <./kiosk_8cpp__incl.pdf>
-<kiosk_8cpp__incl.pdf, id=3175, 731.73375pt x 499.8675pt>
+(pdftex.def)             Requested size: 343.0pt x 271.00282pt.
+ [59])
+(./jegy_8h_source.tex [60] [61]) (./kiosk_8cpp.tex <./kiosk_8cpp__incl.pdf>
+<kiosk_8cpp__incl.pdf, id=3780, 731.73375pt x 499.8675pt>
 File: kiosk_8cpp__incl.pdf Graphic file (type pdf)
 <use kiosk_8cpp__incl.pdf>
 Package pdftex.def Info: kiosk_8cpp__incl.pdf  used on input line 17.
 (pdftex.def)             Requested size: 350.0pt x 239.09467pt.
 )
-(./kiosk_8cpp_source.tex [59] [60]) (./kiosk_8h.tex <./kiosk_8h__incl.pdf>
-<kiosk_8h__incl.pdf, id=3350, 441.65pt x 386.44376pt>
+(./kiosk_8cpp_source.tex [62] [63]) (./kiosk_8h.tex <./kiosk_8h__incl.pdf>
+<kiosk_8h__incl.pdf, id=3965, 441.65pt x 386.44376pt>
 File: kiosk_8h__incl.pdf Graphic file (type pdf)
 <use kiosk_8h__incl.pdf>
 Package pdftex.def Info: kiosk_8h__incl.pdf  used on input line 12.
 (pdftex.def)             Requested size: 350.0pt x 306.26607pt.
- <./kiosk_8h__dep__incl.pdf>
-<kiosk_8h__dep__incl.pdf, id=3358, 333.245pt x 214.8025pt>
+
+[64] <./kiosk_8h__dep__incl.pdf>
+<kiosk_8h__dep__incl.pdf, id=4015, 306.14375pt x 214.8025pt>
 File: kiosk_8h__dep__incl.pdf Graphic file (type pdf)
 <use kiosk_8h__dep__incl.pdf>
 Package pdftex.def Info: kiosk_8h__dep__incl.pdf  used on input line 20.
-(pdftex.def)             Requested size: 332.0pt x 214.01534pt.
- [61]
+(pdftex.def)             Requested size: 305.0pt x 214.01205pt.
+ [65]
 Underfull \hbox (badness 10000) in paragraph at lines 46--47
 
  []
 
-) (./kiosk_8h_source.tex [62]) (./main_8cpp.tex <./main_8cpp__incl.pdf>
-<main_8cpp__incl.pdf, id=3450, 453.695pt x 442.65375pt>
+) (./kiosk_8h_source.tex [66]) (./main_8cpp.tex <./main_8cpp__incl.pdf>
+<main_8cpp__incl.pdf, id=4115, 548.0475pt x 442.65375pt>
 File: main_8cpp__incl.pdf Graphic file (type pdf)
 <use main_8cpp__incl.pdf>
-Package pdftex.def Info: main_8cpp__incl.pdf  used on input line 14.
-(pdftex.def)             Requested size: 350.0pt x 341.48608pt.
+Package pdftex.def Info: main_8cpp__incl.pdf  used on input line 15.
+(pdftex.def)             Requested size: 350.0pt x 282.69627pt.
 
-[63] [64] <./main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf>
-<main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf, id=3537, 766.865pt x 6
-10.28pt>
+[67] <./main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf>
+<main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf, id=4174, 790.955pt x 7
+66.865pt>
 File: main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf Graphic file (type
  pdf)
 <use main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf>
 Package pdftex.def Info: main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf
-  used on input line 103.
-(pdftex.def)             Requested size: 350.0pt x 278.53455pt.
+  used on input line 117.
+(pdftex.def)             Requested size: 350.0pt x 339.34068pt.
 )
-(./main_8cpp_source.tex [65]) (./mav_8cpp.tex <./mav_8cpp__incl.pdf>
-<mav_8cpp__incl.pdf, id=3582, 519.9425pt x 499.8675pt>
+(./main_8cpp_source.tex [68] [69]) (./mav_8cpp.tex <./mav_8cpp__incl.pdf>
+<mav_8cpp__incl.pdf, id=4268, 519.9425pt x 499.8675pt>
 File: mav_8cpp__incl.pdf Graphic file (type pdf)
 <use mav_8cpp__incl.pdf>
 Package pdftex.def Info: mav_8cpp__incl.pdf  used on input line 10.
 (pdftex.def)             Requested size: 350.0pt x 336.48834pt.
 )
-(./mav_8cpp_source.tex [66] [67]) (./mav_8h.tex <./mav_8h__incl.pdf>
-<mav_8h__incl.pdf, id=3736, 350.30875pt x 329.23pt>
+(./mav_8cpp_source.tex [70] [71] [72]) (./mav_8h.tex <./mav_8h__incl.pdf>
+<mav_8h__incl.pdf, id=4529, 350.30875pt x 329.23pt>
 File: mav_8h__incl.pdf Graphic file (type pdf)
 <use mav_8h__incl.pdf>
 Package pdftex.def Info: mav_8h__incl.pdf  used on input line 13.
 (pdftex.def)             Requested size: 349.0pt x 328.0235pt.
- [68] <./mav_8h__dep__incl.pdf>
-<mav_8h__dep__incl.pdf, id=3786, 599.23875pt x 386.44376pt>
+ <./mav_8h__dep__incl.pdf>
+<mav_8h__dep__incl.pdf, id=4537, 598.235pt x 386.44376pt>
 File: mav_8h__dep__incl.pdf Graphic file (type pdf)
 <use mav_8h__dep__incl.pdf>
 Package pdftex.def Info: mav_8h__dep__incl.pdf  used on input line 21.
-(pdftex.def)             Requested size: 350.0pt x 225.71783pt.
-) (./mav_8h_source.tex [69]) (./mav__test_8cpp.tex <./mav__test_8cpp__incl.pdf>
-<mav__test_8cpp__incl.pdf, id=3860, 758.835pt x 499.8675pt>
-File: mav__test_8cpp__incl.pdf Graphic file (type pdf)
-<use mav__test_8cpp__incl.pdf>
-Package pdftex.def Info: mav__test_8cpp__incl.pdf  used on input line 16.
-(pdftex.def)             Requested size: 350.0pt x 230.55965pt.
- [70] <./mav__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf>
-<mav__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf, id=3956, 637.3812
-6pt x 433.62pt>
-File: mav__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf Graphic file 
-(type pdf)
-<use mav__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.pdf>
-Package pdftex.def Info: mav__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgrap
-h.pdf  used on input line 66.
-(pdftex.def)             Requested size: 350.0pt x 238.10797pt.
- [71] <./mav__test_8cpp_af0d5cf4d7fcc1fc8dc662c54ff728971_cgraph.pdf>
-<mav__test_8cpp_af0d5cf4d7fcc1fc8dc662c54ff728971_cgraph.pdf, id=3997, 288.0762
-5pt x 218.8175pt>
-File: mav__test_8cpp_af0d5cf4d7fcc1fc8dc662c54ff728971_cgraph.pdf Graphic file 
-(type pdf)
-<use mav__test_8cpp_af0d5cf4d7fcc1fc8dc662c54ff728971_cgraph.pdf>
-Package pdftex.def Info: mav__test_8cpp_af0d5cf4d7fcc1fc8dc662c54ff728971_cgrap
-h.pdf  used on input line 102.
-(pdftex.def)             Requested size: 287.0pt x 218.00894pt.
-[72] <./mav__test_8cpp_af0d5cf4d7fcc1fc8dc662c54ff728971_icgraph.pdf>
-<mav__test_8cpp_af0d5cf4d7fcc1fc8dc662c54ff728971_icgraph.pdf, id=4012, 231.866
-26pt x 101.37875pt>
-File: mav__test_8cpp_af0d5cf4d7fcc1fc8dc662c54ff728971_icgraph.pdf Graphic file
- (type pdf)
-<use mav__test_8cpp_af0d5cf4d7fcc1fc8dc662c54ff728971_icgraph.pdf>
-Package pdftex.def Info: mav__test_8cpp_af0d5cf4d7fcc1fc8dc662c54ff728971_icgra
-ph.pdf  used on input line 110.
-(pdftex.def)             Requested size: 231.0pt x 101.0026pt.
- [73] <./mav__test_8cpp_afef077688356b3f18f5c338f972e724c_cgraph.pdf>
-<mav__test_8cpp_afef077688356b3f18f5c338f972e724c_cgraph.pdf, id=4036, 298.1137
-5pt x 101.37875pt>
-File: mav__test_8cpp_afef077688356b3f18f5c338f972e724c_cgraph.pdf Graphic file 
-(type pdf)
-<use mav__test_8cpp_afef077688356b3f18f5c338f972e724c_cgraph.pdf>
-Package pdftex.def Info: mav__test_8cpp_afef077688356b3f18f5c338f972e724c_cgrap
-h.pdf  used on input line 163.
-(pdftex.def)             Requested size: 297.0pt x 101.00568pt.
- <./mav__test_8cpp_afef077688356b3f18f5c338f972e724c_icgraph.pdf>
-<mav__test_8cpp_afef077688356b3f18f5c338f972e724c_icgraph.pdf, id=4044, 255.956
-25pt x 101.37875pt>
-File: mav__test_8cpp_afef077688356b3f18f5c338f972e724c_icgraph.pdf Graphic file
- (type pdf)
-<use mav__test_8cpp_afef077688356b3f18f5c338f972e724c_icgraph.pdf>
-Package pdftex.def Info: mav__test_8cpp_afef077688356b3f18f5c338f972e724c_icgra
-ph.pdf  used on input line 171.
-(pdftex.def)             Requested size: 255.0pt x 100.9995pt.
- <./mav__test_8cpp_a036733b2ee6dfd299e68a0d0a7655838_cgraph.pdf>
-<mav__test_8cpp_a036733b2ee6dfd299e68a0d0a7655838_cgraph.pdf, id=4062, 446.6687
-5pt x 317.185pt>
-File: mav__test_8cpp_a036733b2ee6dfd299e68a0d0a7655838_cgraph.pdf Graphic file 
-(type pdf)
-<use mav__test_8cpp_a036733b2ee6dfd299e68a0d0a7655838_cgraph.pdf>
-Package pdftex.def Info: mav__test_8cpp_a036733b2ee6dfd299e68a0d0a7655838_cgrap
-h.pdf  used on input line 215.
-(pdftex.def)             Requested size: 350.0pt x 248.54549pt.
- [74] <./mav__test_8cpp_a036733b2ee6dfd299e68a0d0a7655838_icgraph.pdf>
-<mav__test_8cpp_a036733b2ee6dfd299e68a0d0a7655838_icgraph.pdf, id=4079, 252.945
-pt x 101.37875pt>
-File: mav__test_8cpp_a036733b2ee6dfd299e68a0d0a7655838_icgraph.pdf Graphic file
- (type pdf)
-<use mav__test_8cpp_a036733b2ee6dfd299e68a0d0a7655838_icgraph.pdf>
-Package pdftex.def Info: mav__test_8cpp_a036733b2ee6dfd299e68a0d0a7655838_icgra
-ph.pdf  used on input line 223.
-(pdftex.def)             Requested size: 252.0pt x 101.0026pt.
- <./mav__test_8cpp_a3b25d4b163cc565ff4d2b4d0ae7db2d4_cgraph.pdf>
-<mav__test_8cpp_a3b25d4b163cc565ff4d2b4d0ae7db2d4_cgraph.pdf, id=4100, 461.725p
-t x 159.59625pt>
-File: mav__test_8cpp_a3b25d4b163cc565ff4d2b4d0ae7db2d4_cgraph.pdf Graphic file 
-(type pdf)
-<use mav__test_8cpp_a3b25d4b163cc565ff4d2b4d0ae7db2d4_cgraph.pdf>
-Package pdftex.def Info: mav__test_8cpp_a3b25d4b163cc565ff4d2b4d0ae7db2d4_cgrap
-h.pdf  used on input line 266.
-(pdftex.def)             Requested size: 350.0pt x 120.97781pt.
- [75] <./mav__test_8cpp_a3b25d4b163cc565ff4d2b4d0ae7db2d4_icgraph.pdf>
-<mav__test_8cpp_a3b25d4b163cc565ff4d2b4d0ae7db2d4_icgraph.pdf, id=4116, 229.858
-75pt x 101.37875pt>
-File: mav__test_8cpp_a3b25d4b163cc565ff4d2b4d0ae7db2d4_icgraph.pdf Graphic file
- (type pdf)
-<use mav__test_8cpp_a3b25d4b163cc565ff4d2b4d0ae7db2d4_icgraph.pdf>
-Package pdftex.def Info: mav__test_8cpp_a3b25d4b163cc565ff4d2b4d0ae7db2d4_icgra
-ph.pdf  used on input line 274.
-(pdftex.def)             Requested size: 229.0pt x 101.00568pt.
- <./mav__test_8cpp_a488bf57abf2a8719e20d8180c1f70889_cgraph.pdf>
-<mav__test_8cpp_a488bf57abf2a8719e20d8180c1f70889_cgraph.pdf, id=4137, 480.7962
-5pt x 159.59625pt>
-File: mav__test_8cpp_a488bf57abf2a8719e20d8180c1f70889_cgraph.pdf Graphic file 
-(type pdf)
-<use mav__test_8cpp_a488bf57abf2a8719e20d8180c1f70889_cgraph.pdf>
-Package pdftex.def Info: mav__test_8cpp_a488bf57abf2a8719e20d8180c1f70889_cgrap
-h.pdf  used on input line 315.
-(pdftex.def)             Requested size: 350.0pt x 116.18282pt.
- [76] <./mav__test_8cpp_a488bf57abf2a8719e20d8180c1f70889_icgraph.pdf>
-<mav__test_8cpp_a488bf57abf2a8719e20d8180c1f70889_icgraph.pdf, id=4153, 240.9pt
- x 101.37875pt>
-File: mav__test_8cpp_a488bf57abf2a8719e20d8180c1f70889_icgraph.pdf Graphic file
- (type pdf)
-<use mav__test_8cpp_a488bf57abf2a8719e20d8180c1f70889_icgraph.pdf>
-Package pdftex.def Info: mav__test_8cpp_a488bf57abf2a8719e20d8180c1f70889_icgra
-ph.pdf  used on input line 323.
-(pdftex.def)             Requested size: 240.0pt x 101.0026pt.
-)
-(./mav__test_8cpp_source.tex [77] [78]) (./seged_8h.tex <./seged_8h__incl.pdf>
-<seged_8h__incl.pdf, id=4363, 511.9125pt x 499.8675pt>
+(pdftex.def)             Requested size: 350.0pt x 226.09521pt.
+ [73]) (./mav_8h_source.tex [74]) (./seged_8h.tex <./seged_8h__incl.pdf>
+<seged_8h__incl.pdf, id=4660, 511.9125pt x 499.8675pt>
 File: seged_8h__incl.pdf Graphic file (type pdf)
 <use seged_8h__incl.pdf>
 Package pdftex.def Info: seged_8h__incl.pdf  used on input line 17.
 (pdftex.def)             Requested size: 350.0pt x 341.76646pt.
- <./seged_8h__dep__incl.pdf>
-<seged_8h__dep__incl.pdf, id=4371, 319.1925pt x 158.5925pt>
+ [75] <./seged_8h__dep__incl.pdf>
+<seged_8h__dep__incl.pdf, id=4735, 292.09125pt x 158.5925pt>
 File: seged_8h__dep__incl.pdf Graphic file (type pdf)
 <use seged_8h__dep__incl.pdf>
 Package pdftex.def Info: seged_8h__dep__incl.pdf  used on input line 25.
-(pdftex.def)             Requested size: 318.0pt x 158.00162pt.
- [79]) (./seged_8h_source.tex) (./vonat_8h.tex <./vonat_8h__incl.pdf>
-<vonat_8h__incl.pdf, id=4428, 324.21124pt x 329.23pt>
+(pdftex.def)             Requested size: 291.0pt x 158.01372pt.
+) (./seged_8h_source.tex [76])
+(./test_8cpp.tex <./test_8cpp__incl.pdf>
+<test_8cpp__incl.pdf, id=4782, 864.22874pt x 499.8675pt>
+File: test_8cpp__incl.pdf Graphic file (type pdf)
+<use test_8cpp__incl.pdf>
+Package pdftex.def Info: test_8cpp__incl.pdf  used on input line 18.
+(pdftex.def)             Requested size: 350.0pt x 202.43759pt.
+ [77] [78] <./test_8cpp_a488c91226b818bff9fbe0ffe7e81aabc_cgraph.pdf>
+<test_8cpp_a488c91226b818bff9fbe0ffe7e81aabc_cgraph.pdf, id=4905, 413.545pt x 3
+17.185pt>
+File: test_8cpp_a488c91226b818bff9fbe0ffe7e81aabc_cgraph.pdf Graphic file (type
+ pdf)
+<use test_8cpp_a488c91226b818bff9fbe0ffe7e81aabc_cgraph.pdf>
+Package pdftex.def Info: test_8cpp_a488c91226b818bff9fbe0ffe7e81aabc_cgraph.pdf
+  used on input line 150.
+(pdftex.def)             Requested size: 350.0pt x 268.45178pt.
+ [79] <./test_8cpp_a488c91226b818bff9fbe0ffe7e81aabc_icgraph.pdf>
+<test_8cpp_a488c91226b818bff9fbe0ffe7e81aabc_icgraph.pdf, id=4918, 219.82124pt 
+x 101.37875pt>
+File: test_8cpp_a488c91226b818bff9fbe0ffe7e81aabc_icgraph.pdf Graphic file (typ
+e pdf)
+<use test_8cpp_a488c91226b818bff9fbe0ffe7e81aabc_icgraph.pdf>
+Package pdftex.def Info: test_8cpp_a488c91226b818bff9fbe0ffe7e81aabc_icgraph.pd
+f  used on input line 158.
+(pdftex.def)             Requested size: 219.0pt x 101.0026pt.
+ [80] <./test_8cpp_aa88ac1d7a29c16841a6d19b7edfe0409_cgraph.pdf>
+<test_8cpp_aa88ac1d7a29c16841a6d19b7edfe0409_cgraph.pdf, id=4951, 302.12875pt x
+ 218.8175pt>
+File: test_8cpp_aa88ac1d7a29c16841a6d19b7edfe0409_cgraph.pdf Graphic file (type
+ pdf)
+<use test_8cpp_aa88ac1d7a29c16841a6d19b7edfe0409_cgraph.pdf>
+Package pdftex.def Info: test_8cpp_aa88ac1d7a29c16841a6d19b7edfe0409_cgraph.pdf
+  used on input line 206.
+(pdftex.def)             Requested size: 301.0pt x 217.99892pt.
+ <./test_8cpp_aa88ac1d7a29c16841a6d19b7edfe0409_icgraph.pdf>
+<test_8cpp_aa88ac1d7a29c16841a6d19b7edfe0409_icgraph.pdf, id=4959, 225.84375pt 
+x 101.37875pt>
+File: test_8cpp_aa88ac1d7a29c16841a6d19b7edfe0409_icgraph.pdf Graphic file (typ
+e pdf)
+<use test_8cpp_aa88ac1d7a29c16841a6d19b7edfe0409_icgraph.pdf>
+Package pdftex.def Info: test_8cpp_aa88ac1d7a29c16841a6d19b7edfe0409_icgraph.pd
+f  used on input line 214.
+(pdftex.def)             Requested size: 225.0pt x 101.00568pt.
+)
+(./test_8cpp_source.tex [81] [82]) (./test_8h.tex <./test_8h__dep__incl.pdf>
+<test_8h__dep__incl.pdf, id=5153, 214.8025pt x 158.5925pt>
+File: test_8h__dep__incl.pdf Graphic file (type pdf)
+<use test_8h__dep__incl.pdf>
+Package pdftex.def Info: test_8h__dep__incl.pdf  used on input line 8.
+(pdftex.def)             Requested size: 214.0pt x 158.00162pt.
+
+[83] [84] <./test_8h_a488c91226b818bff9fbe0ffe7e81aabc_cgraph.pdf>
+<test_8h_a488c91226b818bff9fbe0ffe7e81aabc_cgraph.pdf, id=5297, 413.545pt x 317
+.185pt>
+File: test_8h_a488c91226b818bff9fbe0ffe7e81aabc_cgraph.pdf Graphic file (type p
+df)
+<use test_8h_a488c91226b818bff9fbe0ffe7e81aabc_cgraph.pdf>
+Package pdftex.def Info: test_8h_a488c91226b818bff9fbe0ffe7e81aabc_cgraph.pdf  
+used on input line 135.
+(pdftex.def)             Requested size: 350.0pt x 268.45178pt.
+ <./test_8h_a488c91226b818bff9fbe0ffe7e81aabc_icgraph.pdf>
+<test_8h_a488c91226b818bff9fbe0ffe7e81aabc_icgraph.pdf, id=5305, 219.82124pt x 
+101.37875pt>
+File: test_8h_a488c91226b818bff9fbe0ffe7e81aabc_icgraph.pdf Graphic file (type 
+pdf)
+<use test_8h_a488c91226b818bff9fbe0ffe7e81aabc_icgraph.pdf>
+Package pdftex.def Info: test_8h_a488c91226b818bff9fbe0ffe7e81aabc_icgraph.pdf 
+ used on input line 143.
+(pdftex.def)             Requested size: 219.0pt x 101.0026pt.
+ [85] <./test_8h_aa88ac1d7a29c16841a6d19b7edfe0409_cgraph.pdf>
+<test_8h_aa88ac1d7a29c16841a6d19b7edfe0409_cgraph.pdf, id=5336, 302.12875pt x 2
+18.8175pt>
+File: test_8h_aa88ac1d7a29c16841a6d19b7edfe0409_cgraph.pdf Graphic file (type p
+df)
+<use test_8h_aa88ac1d7a29c16841a6d19b7edfe0409_cgraph.pdf>
+Package pdftex.def Info: test_8h_aa88ac1d7a29c16841a6d19b7edfe0409_cgraph.pdf  
+used on input line 191.
+(pdftex.def)             Requested size: 301.0pt x 217.99892pt.
+ <./test_8h_aa88ac1d7a29c16841a6d19b7edfe0409_icgraph.pdf>
+<test_8h_aa88ac1d7a29c16841a6d19b7edfe0409_icgraph.pdf, id=5344, 225.84375pt x 
+101.37875pt>
+File: test_8h_aa88ac1d7a29c16841a6d19b7edfe0409_icgraph.pdf Graphic file (type 
+pdf)
+<use test_8h_aa88ac1d7a29c16841a6d19b7edfe0409_icgraph.pdf>
+Package pdftex.def Info: test_8h_aa88ac1d7a29c16841a6d19b7edfe0409_icgraph.pdf 
+ used on input line 199.
+(pdftex.def)             Requested size: 225.0pt x 101.00568pt.
+) (./test_8h_source.tex [86]) (./vonat_8h.tex <./vonat_8h__incl.pdf>
+<vonat_8h__incl.pdf, id=5363, 324.21124pt x 329.23pt>
 File: vonat_8h__incl.pdf Graphic file (type pdf)
 <use vonat_8h__incl.pdf>
 Package pdftex.def Info: vonat_8h__incl.pdf  used on input line 12.
 (pdftex.def)             Requested size: 323.0pt x 328.01848pt.
- [80] <./vonat_8h__dep__incl.pdf>
-<vonat_8h__dep__incl.pdf, id=4468, 437.635pt x 329.23pt>
+
+[87] <./vonat_8h__dep__incl.pdf>
+<vonat_8h__dep__incl.pdf, id=5386, 424.58624pt x 329.23pt>
 File: vonat_8h__dep__incl.pdf Graphic file (type pdf)
 <use vonat_8h__dep__incl.pdf>
 Package pdftex.def Info: vonat_8h__dep__incl.pdf  used on input line 20.
-(pdftex.def)             Requested size: 350.0pt x 263.30397pt.
- [81]) (./vonat_8h_source.tex) [82] [83]
+(pdftex.def)             Requested size: 350.0pt x 271.4071pt.
+ [88]) (./vonat_8h_source.tex) [89] [90]
 No file refman.ind.
 (./refman.aux)
  ***********
@@ -1706,16 +1813,16 @@ L3 programming layer <2024-02-20>
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 537E25DD5CF85733BFA597AD74EFDB2B;32026.
+(rerunfilecheck)             Checksum: 368E39BB0249C4E0FB83683F898A3D71;32917.
  ) 
 Here is how much of TeX's memory you used:
- 20557 strings out of 476076
- 367252 string characters out of 5793775
+ 21444 strings out of 476076
+ 381586 string characters out of 5793775
  1950187 words of memory out of 5000000
- 40886 multiletter control sequences out of 15000+600000
+ 41616 multiletter control sequences out of 15000+600000
  614695 words of font info for 112 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 101i,16n,117p,814b,744s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,17n,117p,814b,744s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texmf-dist/fonts/type1/public/
@@ -1727,10 +1834,10 @@ rro8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/shar
 e/texmf-dist/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texmf-dist/fonts/
 type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/u
 hvro8a.pfb>
-Output written on refman.pdf (89 pages, 1022795 bytes).
+Output written on refman.pdf (97 pages, 1796098 bytes).
 PDF statistics:
- 4997 PDF objects out of 5155 (max. 8388607)
- 4504 compressed objects within 46 object streams
- 1374 named destinations out of 1440 (max. 500000)
- 1879 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5940 PDF objects out of 6186 (max. 8388607)
+ 5191 compressed objects within 52 object streams
+ 1504 named destinations out of 1728 (max. 500000)
+ 1939 words of extra memory for PDF output out of 10000 (max. 10000000)
 
