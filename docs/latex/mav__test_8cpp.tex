@@ -1,0 +1,313 @@
+\doxysection{mav\+\_\+test.\+cpp File Reference}
+\hypertarget{mav__test_8cpp}{}\label{mav__test_8cpp}\index{mav\_test.cpp@{mav\_test.cpp}}
+{\ttfamily \#include "{}gtest\+\_\+lite.\+h"{}}\newline
+{\ttfamily \#include "{}mav.\+h"{}}\newline
+{\ttfamily \#include "{}vonat.\+h"{}}\newline
+{\ttfamily \#include "{}allomas.\+h"{}}\newline
+{\ttfamily \#include "{}ido.\+h"{}}\newline
+{\ttfamily \#include "{}seged.\+h"{}}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+Include dependency graph for mav\+\_\+test.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mav__test_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{mav__test_8cpp_af0d5cf4d7fcc1fc8dc662c54ff728971}{test\+Mav\+Add}} ()
+\item 
+void \mbox{\hyperlink{mav__test_8cpp_a3b25d4b163cc565ff4d2b4d0ae7db2d4}{test\+Mav\+Kiir}} ()
+\item 
+void \mbox{\hyperlink{mav__test_8cpp_a488bf57abf2a8719e20d8180c1f70889}{test\+Mav\+Kiir\+At}} ()
+\item 
+void \mbox{\hyperlink{mav__test_8cpp_a036733b2ee6dfd299e68a0d0a7655838}{test\+Mav\+Beolvas}} ()
+\item 
+void \mbox{\hyperlink{mav__test_8cpp_afef077688356b3f18f5c338f972e724c}{test\+Mav\+Add\+Train}} ()
+\item 
+int \mbox{\hyperlink{mav__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{mav__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{mav__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{mav\_test.cpp@{mav\_test.cpp}!main@{main}}
+\index{main@{main}!mav\_test.cpp@{mav\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{mav__test_8cpp_source_l00122}{122}} of file \mbox{\hyperlink{mav__test_8cpp_source}{mav\+\_\+test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00123\ \ \ \ \ \mbox{\hyperlink{mav__test_8cpp_af0d5cf4d7fcc1fc8dc662c54ff728971}{testMavAdd}}();}
+\DoxyCodeLine{00124\ \ \ \ \ \mbox{\hyperlink{mav__test_8cpp_a3b25d4b163cc565ff4d2b4d0ae7db2d4}{testMavKiir}}();}
+\DoxyCodeLine{00125\ \ \ \ \ \mbox{\hyperlink{mav__test_8cpp_a488bf57abf2a8719e20d8180c1f70889}{testMavKiirAt}}();}
+\DoxyCodeLine{00126\ \ \ \ \ \mbox{\hyperlink{mav__test_8cpp_a036733b2ee6dfd299e68a0d0a7655838}{testMavBeolvas}}();}
+\DoxyCodeLine{00127\ \ \ \ \ \mbox{\hyperlink{mav__test_8cpp_afef077688356b3f18f5c338f972e724c}{testMavAddTrain}}();}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00129\ \ \ \ \ GTEND(std::cerr);\ \ \textcolor{comment}{//\ Csak\ C(J)PORTA\ működéséhez\ kell}}
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00131\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mav__test_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mav__test_8cpp_af0d5cf4d7fcc1fc8dc662c54ff728971}\label{mav__test_8cpp_af0d5cf4d7fcc1fc8dc662c54ff728971} 
+\index{mav\_test.cpp@{mav\_test.cpp}!testMavAdd@{testMavAdd}}
+\index{testMavAdd@{testMavAdd}!mav\_test.cpp@{mav\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{testMavAdd()}{testMavAdd()}}
+{\footnotesize\ttfamily void test\+Mav\+Add (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{mav__test_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{mav__test_8cpp_source}{mav\+\_\+test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{classMav}{Mav}}\ mav;}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{classVonat}{Vonat}}\ vonat1(1,\ \textcolor{stringliteral}{"{}Budapest"{}},\ \textcolor{stringliteral}{"{}Szeged"{}},\ 10,\ \mbox{\hyperlink{classIdo}{Ido}}(8,\ 0),\ \mbox{\hyperlink{classIdo}{Ido}}(10,\ 0));}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{classVonat}{Vonat}}\ vonat2(2,\ \textcolor{stringliteral}{"{}Szeged"{}},\ \textcolor{stringliteral}{"{}Debrecen"{}},\ 8,\ \mbox{\hyperlink{classIdo}{Ido}}(12,\ 0),\ \mbox{\hyperlink{classIdo}{Ido}}(14,\ 0));}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ mav.\mbox{\hyperlink{classMav_a81e2ee3d186b9303c7fa580f3afbbab8}{add}}(vonat1);}
+\DoxyCodeLine{00016\ \ \ \ \ mav.\mbox{\hyperlink{classMav_a81e2ee3d186b9303c7fa580f3afbbab8}{add}}(vonat2);}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ TEST(\mbox{\hyperlink{classMav}{Mav}},\ AddFunction)\ \{}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ EXPECT\_EQ(mav.\mbox{\hyperlink{classMav_a4b70915946e42d3b77413f7506655a75}{getSize}}(),\ 2);}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ EXPECT\_EQ(mav.\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(1).\mbox{\hyperlink{classVonat_a18efd274d4ea6de105fa7761e8511799}{getSzam}}(),\ 1);}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ EXPECT\_EQ(mav.\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(2).\mbox{\hyperlink{classVonat_a18efd274d4ea6de105fa7761e8511799}{getSzam}}(),\ 2);}
+\DoxyCodeLine{00022\ \ \ \ \ \}\ END}
+\DoxyCodeLine{00023\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{mav__test_8cpp_af0d5cf4d7fcc1fc8dc662c54ff728971_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{mav__test_8cpp_af0d5cf4d7fcc1fc8dc662c54ff728971_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mav__test_8cpp_afef077688356b3f18f5c338f972e724c}\label{mav__test_8cpp_afef077688356b3f18f5c338f972e724c} 
+\index{mav\_test.cpp@{mav\_test.cpp}!testMavAddTrain@{testMavAddTrain}}
+\index{testMavAddTrain@{testMavAddTrain}!mav\_test.cpp@{mav\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{testMavAddTrain()}{testMavAddTrain()}}
+{\footnotesize\ttfamily void test\+Mav\+Add\+Train (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{mav__test_8cpp_source_l00090}{90}} of file \mbox{\hyperlink{mav__test_8cpp_source}{mav\+\_\+test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{comment}{//\ Create\ a\ temporary\ test\ file}}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ testFilename\ =\ \textcolor{stringliteral}{"{}./test\_vonatok.txt"{}};}
+\DoxyCodeLine{00093\ \ \ \ \ std::ofstream\ outFile(testFilename);}
+\DoxyCodeLine{00094\ \ \ \ \ outFile\ <<\ \textcolor{stringliteral}{"{}1\ Budapest\ Szeged\ 10\ 08:00\ 10:00\(\backslash\)n"{}};}
+\DoxyCodeLine{00095\ \ \ \ \ outFile.close();}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{comment}{//\ Change\ the\ file\ to\ be\ read\ by\ the\ Mav\ class\ to\ the\ test\ file}}
+\DoxyCodeLine{00098\ \ \ \ \ std::rename(testFilename,\ \textcolor{stringliteral}{"{}./vonatok.txt"{}});}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ \ \ \mbox{\hyperlink{classMav}{Mav}}\ mav;}
+\DoxyCodeLine{00101\ \ \ \ \ std::streampos\ currPos\ =\ 0;}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00103\ \ \ \ \ TEST(\mbox{\hyperlink{classMav}{Mav}},\ AddTrainFunction)\ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classAllomas}{Allomas}}\ indulo(\textcolor{stringliteral}{"{}Szeged"{}}),\ veg(\textcolor{stringliteral}{"{}Debrecen"{}});}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classIdo}{Ido}}\ indulas(12,\ 0),\ erkezes(14,\ 0);}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ mav.\mbox{\hyperlink{classMav_a9838399fd397670c9d4e9f2d279c1a73}{addTrain}}(currPos,\ 2,\ indulo,\ veg,\ 8,\ indulas,\ erkezes);}
+\DoxyCodeLine{00107\ }
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ std::ifstream\ inFile(\textcolor{stringliteral}{"{}./vonatok.txt"{}});}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ std::stringstream\ buffer;}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ buffer\ <<\ inFile.rdbuf();}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ inFile.close();}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ std::string\ expectedContent\ =\ \textcolor{stringliteral}{"{}1\ Budapest\ Szeged\ 10\ 08:00\ 10:00\(\backslash\)n"{}}}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}2\ Szeged\ Debrecen\ 8\ 12:00\ 14:00\(\backslash\)n"{}};}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ EXPECT\_EQ(buffer.str(),\ expectedContent);}
+\DoxyCodeLine{00116\ \ \ \ \ \}\ END}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{comment}{//\ Clean\ up\ the\ test\ file}}
+\DoxyCodeLine{00119\ \ \ \ \ std::remove(\textcolor{stringliteral}{"{}./vonatok.txt"{}});}
+\DoxyCodeLine{00120\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{mav__test_8cpp_afef077688356b3f18f5c338f972e724c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{mav__test_8cpp_afef077688356b3f18f5c338f972e724c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mav__test_8cpp_a036733b2ee6dfd299e68a0d0a7655838}\label{mav__test_8cpp_a036733b2ee6dfd299e68a0d0a7655838} 
+\index{mav\_test.cpp@{mav\_test.cpp}!testMavBeolvas@{testMavBeolvas}}
+\index{testMavBeolvas@{testMavBeolvas}!mav\_test.cpp@{mav\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{testMavBeolvas()}{testMavBeolvas()}}
+{\footnotesize\ttfamily void test\+Mav\+Beolvas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{mav__test_8cpp_source_l00067}{67}} of file \mbox{\hyperlink{mav__test_8cpp_source}{mav\+\_\+test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{comment}{//\ Create\ a\ temporary\ test\ file}}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ testFilename\ =\ \textcolor{stringliteral}{"{}./test\_vonatok.txt"{}};}
+\DoxyCodeLine{00070\ \ \ \ \ std::ofstream\ outFile(testFilename);}
+\DoxyCodeLine{00071\ \ \ \ \ outFile\ <<\ \textcolor{stringliteral}{"{}1\ Budapest\ Szeged\ 10\ 08:00\ 10:00\(\backslash\)n"{}}}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}2\ Szeged\ Debrecen\ 8\ 12:00\ 14:00\(\backslash\)n"{}};}
+\DoxyCodeLine{00073\ \ \ \ \ outFile.close();}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{comment}{//\ Change\ the\ file\ to\ be\ read\ by\ the\ Mav\ class\ to\ the\ test\ file}}
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{classMav}{Mav}}\ mav;}
+\DoxyCodeLine{00077\ \ \ \ \ std::rename(testFilename,\ \textcolor{stringliteral}{"{}./vonatok.txt"{}});}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ TEST(\mbox{\hyperlink{classMav}{Mav}},\ BeolvasFunction)\ \{}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ mav.\mbox{\hyperlink{classMav_a15899cdec1c1fe36a8460d956dad3104}{beolvas}}();}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ EXPECT\_EQ(mav.\mbox{\hyperlink{classMav_a4b70915946e42d3b77413f7506655a75}{getSize}}(),\ 2);}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ EXPECT\_EQ(mav.\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(1).\mbox{\hyperlink{classVonat_a18efd274d4ea6de105fa7761e8511799}{getSzam}}(),\ 1);}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ EXPECT\_EQ(mav.\mbox{\hyperlink{classMav_a646a7d0ff13f1c6b35a7d22f890a4927}{getVonatAt}}(2).\mbox{\hyperlink{classVonat_a18efd274d4ea6de105fa7761e8511799}{getSzam}}(),\ 2);}
+\DoxyCodeLine{00084\ \ \ \ \ \}\ END}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{comment}{//\ Clean\ up\ the\ test\ file}}
+\DoxyCodeLine{00087\ \ \ \ \ std::remove(\textcolor{stringliteral}{"{}./vonatok.txt"{}});}
+\DoxyCodeLine{00088\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mav__test_8cpp_a036733b2ee6dfd299e68a0d0a7655838_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{mav__test_8cpp_a036733b2ee6dfd299e68a0d0a7655838_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mav__test_8cpp_a3b25d4b163cc565ff4d2b4d0ae7db2d4}\label{mav__test_8cpp_a3b25d4b163cc565ff4d2b4d0ae7db2d4} 
+\index{mav\_test.cpp@{mav\_test.cpp}!testMavKiir@{testMavKiir}}
+\index{testMavKiir@{testMavKiir}!mav\_test.cpp@{mav\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{testMavKiir()}{testMavKiir()}}
+{\footnotesize\ttfamily void test\+Mav\+Kiir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{mav__test_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{mav__test_8cpp_source}{mav\+\_\+test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{classMav}{Mav}}\ mav;}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classVonat}{Vonat}}\ vonat1(1,\ \textcolor{stringliteral}{"{}Budapest"{}},\ \textcolor{stringliteral}{"{}Szeged"{}},\ 10,\ \mbox{\hyperlink{classIdo}{Ido}}(8,\ 0),\ \mbox{\hyperlink{classIdo}{Ido}}(10,\ 0));}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{classVonat}{Vonat}}\ vonat2(2,\ \textcolor{stringliteral}{"{}Szeged"{}},\ \textcolor{stringliteral}{"{}Debrecen"{}},\ 8,\ \mbox{\hyperlink{classIdo}{Ido}}(12,\ 0),\ \mbox{\hyperlink{classIdo}{Ido}}(14,\ 0));}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ mav.\mbox{\hyperlink{classMav_a81e2ee3d186b9303c7fa580f3afbbab8}{add}}(vonat1);}
+\DoxyCodeLine{00031\ \ \ \ \ mav.\mbox{\hyperlink{classMav_a81e2ee3d186b9303c7fa580f3afbbab8}{add}}(vonat2);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \ \ \ TEST(\mbox{\hyperlink{classMav}{Mav}},\ KiirFunction)\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ std::stringstream\ output;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ std::streambuf*\ oldCoutBuffer\ =\ std::cout.rdbuf(output.rdbuf());}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ mav.\mbox{\hyperlink{classMav_aa9729202f8dac420111d5266bfa6c9e8}{kiir}}();}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ std::cout.rdbuf(oldCoutBuffer);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ std::string\ expectedOutput\ =\ \textcolor{stringliteral}{"{}-\/-\/-\/\ 1.vonat\ -\/-\/-\/\(\backslash\)n"{}}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}1:\ Budapest\ -\/>\ Szeged,\ 10\ kocsival,\ Indulás:\ 08:00,\ Érkezés:\ 10:00\(\backslash\)n\(\backslash\)n"{}}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}-\/-\/-\/\ 2.vonat\ -\/-\/-\/\(\backslash\)n"{}}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}2:\ Szeged\ -\/>\ Debrecen,\ 8\ kocsival,\ Indulás:\ 12:00,\ Érkezés:\ 14:00\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ EXPECT\_EQ(output.str(),\ expectedOutput);}
+\DoxyCodeLine{00044\ \ \ \ \ \}\ END}
+\DoxyCodeLine{00045\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mav__test_8cpp_a3b25d4b163cc565ff4d2b4d0ae7db2d4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{mav__test_8cpp_a3b25d4b163cc565ff4d2b4d0ae7db2d4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mav__test_8cpp_a488bf57abf2a8719e20d8180c1f70889}\label{mav__test_8cpp_a488bf57abf2a8719e20d8180c1f70889} 
+\index{mav\_test.cpp@{mav\_test.cpp}!testMavKiirAt@{testMavKiirAt}}
+\index{testMavKiirAt@{testMavKiirAt}!mav\_test.cpp@{mav\_test.cpp}}
+\doxysubsubsection{\texorpdfstring{testMavKiirAt()}{testMavKiirAt()}}
+{\footnotesize\ttfamily void test\+Mav\+Kiir\+At (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{mav__test_8cpp_source_l00047}{47}} of file \mbox{\hyperlink{mav__test_8cpp_source}{mav\+\_\+test.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{classMav}{Mav}}\ mav;}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{classVonat}{Vonat}}\ vonat1(1,\ \textcolor{stringliteral}{"{}Budapest"{}},\ \textcolor{stringliteral}{"{}Szeged"{}},\ 10,\ \mbox{\hyperlink{classIdo}{Ido}}(8,\ 0),\ \mbox{\hyperlink{classIdo}{Ido}}(10,\ 0));}
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{classVonat}{Vonat}}\ vonat2(2,\ \textcolor{stringliteral}{"{}Szeged"{}},\ \textcolor{stringliteral}{"{}Debrecen"{}},\ 8,\ \mbox{\hyperlink{classIdo}{Ido}}(12,\ 0),\ \mbox{\hyperlink{classIdo}{Ido}}(14,\ 0));}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ mav.\mbox{\hyperlink{classMav_a81e2ee3d186b9303c7fa580f3afbbab8}{add}}(vonat1);}
+\DoxyCodeLine{00053\ \ \ \ \ mav.\mbox{\hyperlink{classMav_a81e2ee3d186b9303c7fa580f3afbbab8}{add}}(vonat2);}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00055\ \ \ \ \ TEST(\mbox{\hyperlink{classMav}{Mav}},\ KiirAtFunction)\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ std::stringstream\ output;}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ std::streambuf*\ oldCoutBuffer\ =\ std::cout.rdbuf(output.rdbuf());}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ mav.\mbox{\hyperlink{classMav_a77998398e7e7a0deedb86879012b098a}{kiirAt}}(0);}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ std::cout.rdbuf(oldCoutBuffer);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ std::string\ expectedOutput\ =\ \textcolor{stringliteral}{"{}1.vonat\(\backslash\)n"{}}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}1:\ Budapest\ -\/>\ Szeged,\ 10\ kocsival,\ Indulás:\ 08:00,\ Érkezés:\ 10:00\(\backslash\)n"{}};}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ EXPECT\_EQ(output.str(),\ expectedOutput);}
+\DoxyCodeLine{00064\ \ \ \ \ \}\ END}
+\DoxyCodeLine{00065\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mav__test_8cpp_a488bf57abf2a8719e20d8180c1f70889_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{mav__test_8cpp_a488bf57abf2a8719e20d8180c1f70889_icgraph}
+\end{center}
+\end{figure}

@@ -138,18 +138,20 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Megynitással van baj &quot;</span> &lt;&lt; <a class="code hl_variable" href="classMav.html#abc806fbb786efcf15c5c765257286ea2">vonatok</a> &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  }</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordflow">if</span>(file.is_open()){</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    file.seekp(currPos); <span class="comment">// Megfelelő helyre ugrok</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    file &lt;&lt; szam &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; indulo &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; veg &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; kocsidb &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>         &lt;&lt; indulas &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; erkezes &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  }</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  file.close();</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>} <span class="comment">// END OF addTrain</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="comment">// end of HIBAKEZELÉS</span></div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordflow">if</span>(file.is_open()){</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    file.seekp(currPos); <span class="comment">// Megfelelő helyre ugrok</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    file &lt;&lt; szam &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; indulo &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; veg &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; kocsidb &lt;&lt; <span class="stringliteral">&quot; &quot;</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>         &lt;&lt; indulas &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; erkezes &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  file.close();</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>} <span class="comment">// END OF addTrain</span></div>
 </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
 <div class="ttc" id="aclassAllomas_html"><div class="ttname"><a href="classAllomas.html">Allomas</a></div><div class="ttdef"><b>Definition</b> <a href="allomas_8h_source.html#l00012">allomas.h:12</a></div></div>
 <div class="ttc" id="aclassIdo_html"><div class="ttname"><a href="classIdo.html">Ido</a></div><div class="ttdef"><b>Definition</b> <a href="ido_8h_source.html#l00012">ido.h:12</a></div></div>
 <div class="ttc" id="aclassMav_html_a15899cdec1c1fe36a8460d956dad3104"><div class="ttname"><a href="classMav.html#a15899cdec1c1fe36a8460d956dad3104">Mav::beolvas</a></div><div class="ttdeci">void beolvas()</div><div class="ttdef"><b>Definition</b> <a href="#l00009">mav.cpp:9</a></div></div>

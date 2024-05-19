@@ -1,7 +1,11 @@
 <map id="Vonat::setIndulo" name="Vonat::setIndulo">
-<area shape="rect" id="Node000001" title=" " alt="" coords="263,5,389,33"/>
-<area shape="rect" id="Node000002" href="$classMav.html#a15899cdec1c1fe36a8460d956dad3104" title=" " alt="" coords="108,5,215,33"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="247,22,215,22,215,17,247,17"/>
-<area shape="rect" id="Node000003" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="92,22,60,22,60,17,92,17"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="437,32,564,60"/>
+<area shape="rect" id="Node000002" href="$classMav.html#a15899cdec1c1fe36a8460d956dad3104" title=" " alt="" coords="282,32,389,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="422,49,390,49,390,43,422,43"/>
+<area shape="rect" id="Node000003" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="144,5,198,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="266,37,198,26,199,21,267,32"/>
+<area shape="rect" id="Node000004" href="$mav__test_8cpp.html#a036733b2ee6dfd299e68a0d0a7655838" title=" " alt="" coords="108,57,234,85"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="267,59,235,64,234,59,266,54"/>
+<area shape="rect" id="Node000005" href="$mav__test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,57,60,85"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="92,74,60,74,60,69,92,69"/>
 </map>

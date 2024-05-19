@@ -11,7 +11,7 @@
 #include <fstream>
 #include <limits>
 
-/// Érvényes-e az input mikor számot kellene megadnom
+/// Hibakezelés. Érvényes input esetén @return true, különben @return false
 bool Kiosk::inputCheck(){
   // Kb innen lopva https://stackoverflow.com/questions/12721911/c-how-to-verify-if-the-data-input-is-of-the-correct-datatype
   if (std::cin.fail()) {
@@ -23,14 +23,18 @@ bool Kiosk::inputCheck(){
   else return true;
 }
 
+/// Inicializálja a menüt, ergo kiírja a lehetőségeket
 void Kiosk::init() {
   std::cout << "### Dönts ###" << std::endl;
   std::cout << "1. Vonat hozzáadása "     << std::endl;
   std::cout << "2. Vonatok listázása "    << std::endl;
   std::cout << "3. Jegy nyomtatása"       << std::endl;
   std::cout << "4. Kilépés"               << std::endl;
+  std::cout << "5. Teszt"                 << std::endl;
 }
 
+/// Felhasználótól bemenetet kér. 
+/// @return menuItem fent említett enum class elemt ad vissza
 // User input az input streamről enum-má konvertálva
 menuItem Kiosk::userInput() {
    int valasz;
@@ -39,12 +43,17 @@ menuItem Kiosk::userInput() {
    return static_cast<menuItem>(valasz);
 }
 
-// Liszázza az összes vonatot
+/// Liszázza az összes vonatot
 void Kiosk::listaz(Mav& mav){
   mav.kiir(); 
 }
 
-
+/**
+* User hozzáadhat vonatot a file-hoz
+* @param mav a mav osztályra refereancia, ezt töltöm fel (Mav)
+* @param currpos a kurzor éppenleges helye, ahova írni kell, hogy 
+* ne legyen felülírás (streampos)
+*/
 void Kiosk::vonatHozza(Mav& mav, std::streampos currPos){
   Seged s;
 
@@ -60,8 +69,10 @@ void Kiosk::vonatHozza(Mav& mav, std::streampos currPos){
                     atoi(s.kocsidb), Ido(s.indulas), Ido(s.erkezes));
 } // End of vonatHozza
 
-
-// Jegy vásárlás
+/** 
+* Jegy vásárlás, nyomtatás
+* @param mav mav refereancia, ez az osztály tartalmazza a vonatok* tömböt
+*/
 void Kiosk::jegyValt(Mav& mav){
   int idx, buf;
   listaz(mav);

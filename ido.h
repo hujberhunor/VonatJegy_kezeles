@@ -13,7 +13,6 @@ class Ido{
   int ora;
   int perc;
 public:
-  // Ido(int ora = 0, int perc = 0) : ora(ora), perc(perc) {}
   /**
   * Konstruktor
   * @param ido mivel beolvasáskor char* típusokba olvasok bele
@@ -24,19 +23,17 @@ public:
     perc = (ido[2] - '0') * 10 + (ido[3] - '0');
   }
 
+  /**
+  * Ido Konstruktor
+  * @param ora (int)
+  * @param perc (int)
+  * Főképp tesztekhez volt használva. 
+  */
   Ido(int ora, int perc) : ora(ora), perc(perc) {}
 
-  // Setter
-  // void setIdo(char* ido){
-  //   ora = (ido[0] - '0') * 10 + (ido[1] - '0');
-  //   perc = (ido[2] - '0') * 10 + (ido[3] - '0');
-  // }
-
-  // Gettere
+  // Getterek
   int getOra() const { return ora; };
   int getPerc() const {return perc; };
-
-
 
 }; // END OF IDO
 

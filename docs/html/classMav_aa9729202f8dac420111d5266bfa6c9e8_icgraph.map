@@ -1,10 +1,14 @@
 <map id="Mav::kiir" name="Mav::kiir">
-<area shape="rect" id="Node000001" title=" " alt="" coords="422,31,500,58"/>
-<area shape="rect" id="Node000002" href="$classKiosk.html#a196ec12845a5f5384f9145a3fbe086d1" title="Liszázza a vonatokat amiket beolvasott a fájlból." alt="" coords="274,31,374,58"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="407,47,375,47,375,42,407,42"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="422,81,500,109"/>
+<area shape="rect" id="Node000002" href="$classKiosk.html#a196ec12845a5f5384f9145a3fbe086d1" title="Liszázza a vonatokat amiket beolvasott a fájlból." alt="" coords="274,55,374,82"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="406,87,374,81,375,76,407,82"/>
+<area shape="rect" id="Node000005" href="$mav__test_8cpp.html#a3b25d4b163cc565ff4d2b4d0ae7db2d4" title=" " alt="" coords="276,107,372,134"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="408,108,373,114,373,109,407,102"/>
 <area shape="rect" id="Node000003" href="$classKiosk.html#af4fe3883e13b6e3658ac7b1001532fb4" title="jegyet vált a kiválasztott vonatra" alt="" coords="108,5,226,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="258,37,226,31,227,26,259,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="263,52,212,36,214,31,264,47"/>
 <area shape="rect" id="Node000004" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,60,58"/>
-<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="259,47,60,47,60,42,259,42"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="258,66,60,49,60,44,259,61"/>
 <area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="93,36,61,42,60,37,92,31"/>
+<area shape="rect" id="Node000006" href="$mav__test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="140,107,194,134"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="261,123,194,123,194,118,261,118"/>
 </map>

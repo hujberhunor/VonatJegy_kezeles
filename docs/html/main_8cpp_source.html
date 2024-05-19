@@ -93,71 +93,71 @@ $(function() { codefold.init(0); });
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">   10</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>(){</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="comment">// Itt tárolon hol vagyok a file-ban</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="comment">// Mind a beolvasás mind pedig az íráshoz KELL!</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="comment">/* FÁJL BEOLVASÁS */</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  std::streampos currPos;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <a class="code hl_class" href="classMav.html">Mav</a> mav;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  mav.<a class="code hl_function" href="classMav.html#a15899cdec1c1fe36a8460d956dad3104">beolvas</a>();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="comment">/* KIOSK TEST */</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <a class="code hl_class" href="classKiosk.html">Kiosk</a> k;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  k.<a class="code hl_function" href="classKiosk.html#a0720b9a024917b95f7ca167bdf19527d">init</a>(); <span class="comment">// Kiírja a lehetőségeket</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keywordtype">int</span> choice = 0;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordflow">while</span> (choice != 4) {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    choice = k.<a class="code hl_function" href="classKiosk.html#a9aa9dc56bb99ac2079705525e26813bc">userInput</a>(); <span class="comment">// Get user input once per loop iteration</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">switch</span> (choice) {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      <span class="comment">// Vonat hozzáadása</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      <span class="keywordflow">case</span> 1: {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Beolvas: &quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Szám Indulo Vég kocsidb Indulás erkezes&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        k.<a class="code hl_function" href="classKiosk.html#a86af671752c83d3624ab7aeb3652f290">vonatHozza</a>(mav, currPos);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="comment">// system(&quot;clear&quot;); // Tábla törlés </span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Vonat hozzáadva\n\n&quot;</span>;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        mav.<a class="code hl_function" href="classMav.html#a15899cdec1c1fe36a8460d956dad3104">beolvas</a>();</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        k.<a class="code hl_function" href="classKiosk.html#a0720b9a024917b95f7ca167bdf19527d">init</a>(); <span class="comment">// Kiírja a lehetőségeket</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      }</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      <span class="comment">// Vonatok listázása</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      <span class="keywordflow">case</span> 2: { </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  std::streampos currPos;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <a class="code hl_class" href="classMav.html">Mav</a> mav;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  mav.<a class="code hl_function" href="classMav.html#a15899cdec1c1fe36a8460d956dad3104">beolvas</a>();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="comment">/* KIOSK TEST */</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <a class="code hl_class" href="classKiosk.html">Kiosk</a> k;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  k.<a class="code hl_function" href="classKiosk.html#a0720b9a024917b95f7ca167bdf19527d">init</a>(); <span class="comment">// Kiírja a lehetőségeket</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordtype">int</span> choice = 0;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordflow">while</span> (choice != 4) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    choice = k.<a class="code hl_function" href="classKiosk.html#a9aa9dc56bb99ac2079705525e26813bc">userInput</a>(); <span class="comment">// Get user input once per loop iteration</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">switch</span> (choice) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      <span class="comment">// Vonat hozzáadása</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      <span class="keywordflow">case</span> 1: {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Beolvas: &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Szám Indulo Vég kocsidb Indulás erkezes&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        k.<a class="code hl_function" href="classKiosk.html#a86af671752c83d3624ab7aeb3652f290">vonatHozza</a>(mav, currPos);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="comment">// system(&quot;clear&quot;); // Tábla törlés </span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Vonat hozzáadva\n\n&quot;</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        mav.<a class="code hl_function" href="classMav.html#a15899cdec1c1fe36a8460d956dad3104">beolvas</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        k.<a class="code hl_function" href="classKiosk.html#a0720b9a024917b95f7ca167bdf19527d">init</a>(); <span class="comment">// Kiírja a lehetőségeket</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      <span class="comment">// Vonatok listázása</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      <span class="keywordflow">case</span> 2: { </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        std::cout &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        mav.<a class="code hl_function" href="classMav.html#a15899cdec1c1fe36a8460d956dad3104">beolvas</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        k.<a class="code hl_function" href="classKiosk.html#a196ec12845a5f5384f9145a3fbe086d1">listaz</a>(mav);</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        std::cout &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        mav.<a class="code hl_function" href="classMav.html#a15899cdec1c1fe36a8460d956dad3104">beolvas</a>();</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        k.<a class="code hl_function" href="classKiosk.html#a196ec12845a5f5384f9145a3fbe086d1">listaz</a>(mav);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        std::cout &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        k.<a class="code hl_function" href="classKiosk.html#a0720b9a024917b95f7ca167bdf19527d">init</a>(); <span class="comment">// Kiírja a lehetőségeket</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      }</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      <span class="comment">// Jegy vásárlás</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      <span class="keywordflow">case</span> 3: {</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        std::cout &lt;&lt; std::endl; </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        k.<a class="code hl_function" href="classKiosk.html#af4fe3883e13b6e3658ac7b1001532fb4">jegyValt</a>(mav);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        std::cout &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        k.<a class="code hl_function" href="classKiosk.html#a0720b9a024917b95f7ca167bdf19527d">init</a>(); <span class="comment">// Kiírja a lehetőségeket</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      }</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      <span class="comment">// Kilépés</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <span class="keywordflow">case</span> 4: {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Kilépés&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <span class="keywordflow">default</span>: {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Érvénytelen lehetőség&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    } <span class="comment">// end of switch</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  } <span class="comment">// end of while</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>} <span class="comment">// end of main</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        k.<a class="code hl_function" href="classKiosk.html#a0720b9a024917b95f7ca167bdf19527d">init</a>(); <span class="comment">// Kiírja a lehetőségeket</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      <span class="comment">// Jegy vásárlás</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      <span class="keywordflow">case</span> 3: {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        std::cout &lt;&lt; std::endl; </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        k.<a class="code hl_function" href="classKiosk.html#af4fe3883e13b6e3658ac7b1001532fb4">jegyValt</a>(mav);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        std::cout &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        k.<a class="code hl_function" href="classKiosk.html#a0720b9a024917b95f7ca167bdf19527d">init</a>(); <span class="comment">// Kiírja a lehetőségeket</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      <span class="comment">// Kilépés</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      <span class="keywordflow">case</span> 4: {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Kilépés&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <span class="keywordflow">default</span>: {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="comment">// std::cout &lt;&lt; &quot;Érvénytelen lehetőség&quot; &lt;&lt; std::endl;</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="comment">// Hibakezelés</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordflow">if</span>(!(k.<a class="code hl_function" href="classKiosk.html#a618eeae0bf7647b223caef1e48e9b0eb">inputCheck</a>())) { std::cout &lt;&lt; std::endl; k.<a class="code hl_function" href="classKiosk.html#a0720b9a024917b95f7ca167bdf19527d">init</a>(); }</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    } <span class="comment">// end of switch</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  } <span class="comment">// end of while</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>} <span class="comment">// end of main</span></div>
 </div>
 <div class="ttc" id="aallomas_8h_html"><div class="ttname"><a href="allomas_8h.html">allomas.h</a></div></div>
 <div class="ttc" id="aclassKiosk_html"><div class="ttname"><a href="classKiosk.html">Kiosk</a></div><div class="ttdef"><b>Definition</b> <a href="kiosk_8h_source.html#l00023">kiosk.h:23</a></div></div>
-<div class="ttc" id="aclassKiosk_html_a0720b9a024917b95f7ca167bdf19527d"><div class="ttname"><a href="classKiosk.html#a0720b9a024917b95f7ca167bdf19527d">Kiosk::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">Inicializálja a menüt, ergo kiírja a lehetőségeket.</div><div class="ttdef"><b>Definition</b> <a href="kiosk_8cpp_source.html#l00013">kiosk.cpp:13</a></div></div>
-<div class="ttc" id="aclassKiosk_html_a196ec12845a5f5384f9145a3fbe086d1"><div class="ttname"><a href="classKiosk.html#a196ec12845a5f5384f9145a3fbe086d1">Kiosk::listaz</a></div><div class="ttdeci">void listaz(Mav &amp;mav)</div><div class="ttdoc">Liszázza a vonatokat amiket beolvasott a fájlból.</div><div class="ttdef"><b>Definition</b> <a href="kiosk_8cpp_source.html#l00030">kiosk.cpp:30</a></div></div>
-<div class="ttc" id="aclassKiosk_html_a86af671752c83d3624ab7aeb3652f290"><div class="ttname"><a href="classKiosk.html#a86af671752c83d3624ab7aeb3652f290">Kiosk::vonatHozza</a></div><div class="ttdeci">void vonatHozza(Mav &amp;mav, std::streampos currPos)</div><div class="ttdoc">Hozzá ad a user vonatokat a fájlhoz.</div><div class="ttdef"><b>Definition</b> <a href="kiosk_8cpp_source.html#l00035">kiosk.cpp:35</a></div></div>
-<div class="ttc" id="aclassKiosk_html_a9aa9dc56bb99ac2079705525e26813bc"><div class="ttname"><a href="classKiosk.html#a9aa9dc56bb99ac2079705525e26813bc">Kiosk::userInput</a></div><div class="ttdeci">menuItem userInput()</div><div class="ttdef"><b>Definition</b> <a href="kiosk_8cpp_source.html#l00022">kiosk.cpp:22</a></div></div>
-<div class="ttc" id="aclassKiosk_html_af4fe3883e13b6e3658ac7b1001532fb4"><div class="ttname"><a href="classKiosk.html#af4fe3883e13b6e3658ac7b1001532fb4">Kiosk::jegyValt</a></div><div class="ttdeci">void jegyValt(Mav &amp;mav)</div><div class="ttdoc">jegyet vált a kiválasztott vonatra</div><div class="ttdef"><b>Definition</b> <a href="kiosk_8cpp_source.html#l00053">kiosk.cpp:53</a></div></div>
+<div class="ttc" id="aclassKiosk_html_a0720b9a024917b95f7ca167bdf19527d"><div class="ttname"><a href="classKiosk.html#a0720b9a024917b95f7ca167bdf19527d">Kiosk::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">Inicializálja a menüt, ergo kiírja a lehetőségeket.</div><div class="ttdef"><b>Definition</b> <a href="kiosk_8cpp_source.html#l00026">kiosk.cpp:26</a></div></div>
+<div class="ttc" id="aclassKiosk_html_a196ec12845a5f5384f9145a3fbe086d1"><div class="ttname"><a href="classKiosk.html#a196ec12845a5f5384f9145a3fbe086d1">Kiosk::listaz</a></div><div class="ttdeci">void listaz(Mav &amp;mav)</div><div class="ttdoc">Liszázza a vonatokat amiket beolvasott a fájlból.</div><div class="ttdef"><b>Definition</b> <a href="kiosk_8cpp_source.html#l00043">kiosk.cpp:43</a></div></div>
+<div class="ttc" id="aclassKiosk_html_a618eeae0bf7647b223caef1e48e9b0eb"><div class="ttname"><a href="classKiosk.html#a618eeae0bf7647b223caef1e48e9b0eb">Kiosk::inputCheck</a></div><div class="ttdeci">bool inputCheck()</div><div class="ttdoc">Hibakezelés. Érvényes input esetén.</div><div class="ttdef"><b>Definition</b> <a href="kiosk_8cpp_source.html#l00015">kiosk.cpp:15</a></div></div>
+<div class="ttc" id="aclassKiosk_html_a86af671752c83d3624ab7aeb3652f290"><div class="ttname"><a href="classKiosk.html#a86af671752c83d3624ab7aeb3652f290">Kiosk::vonatHozza</a></div><div class="ttdeci">void vonatHozza(Mav &amp;mav, std::streampos currPos)</div><div class="ttdoc">Hozzá ad a user vonatokat a fájlhoz.</div><div class="ttdef"><b>Definition</b> <a href="kiosk_8cpp_source.html#l00048">kiosk.cpp:48</a></div></div>
+<div class="ttc" id="aclassKiosk_html_a9aa9dc56bb99ac2079705525e26813bc"><div class="ttname"><a href="classKiosk.html#a9aa9dc56bb99ac2079705525e26813bc">Kiosk::userInput</a></div><div class="ttdeci">menuItem userInput()</div><div class="ttdef"><b>Definition</b> <a href="kiosk_8cpp_source.html#l00035">kiosk.cpp:35</a></div></div>
+<div class="ttc" id="aclassKiosk_html_af4fe3883e13b6e3658ac7b1001532fb4"><div class="ttname"><a href="classKiosk.html#af4fe3883e13b6e3658ac7b1001532fb4">Kiosk::jegyValt</a></div><div class="ttdeci">void jegyValt(Mav &amp;mav)</div><div class="ttdoc">jegyet vált a kiválasztott vonatra</div><div class="ttdef"><b>Definition</b> <a href="kiosk_8cpp_source.html#l00065">kiosk.cpp:65</a></div></div>
 <div class="ttc" id="aclassMav_html"><div class="ttname"><a href="classMav.html">Mav</a></div><div class="ttdef"><b>Definition</b> <a href="mav_8h_source.html#l00016">mav.h:16</a></div></div>
 <div class="ttc" id="aclassMav_html_a15899cdec1c1fe36a8460d956dad3104"><div class="ttname"><a href="classMav.html#a15899cdec1c1fe36a8460d956dad3104">Mav::beolvas</a></div><div class="ttdeci">void beolvas()</div><div class="ttdef"><b>Definition</b> <a href="mav_8cpp_source.html#l00009">mav.cpp:9</a></div></div>
 <div class="ttc" id="ajegy_8h_html"><div class="ttname"><a href="jegy_8h.html">jegy.h</a></div></div>

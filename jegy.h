@@ -9,8 +9,8 @@
 #include "./vonat.h"
 
 class Jegy {
-  int ar; /// A jegy ára
-  double szazalek; /// Kedvezméy százaléka, pontosabban mennyi az amit fizet százalék.
+  int ar;           /// A jegy ára
+  double szazalek;  /// Kedvezméy százaléka, pontosabban mennyi az amit fizet százalék.
 
 public:
   /**

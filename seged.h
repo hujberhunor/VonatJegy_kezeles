@@ -16,6 +16,7 @@
 /**
 * Magyarország leghosszabb településneve 15 karakter
 * 25 karakterbe bele kell férnia
+* Egyszerű segédstruktúra a beolvasáshoz segédkezett mind midle man
 */
 struct Seged {
    static const int buffSize = 25;

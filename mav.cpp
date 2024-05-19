@@ -37,6 +37,38 @@ void Mav::beolvas() {
   file.close();
 } // END OF BEOLVAS
 
+/**
+ * Mav beolvas overwrite 
+ * Csak a teszt miatt kell, meg kell tudnom neki adni egy 
+ * teszt vonatok.txt-t 
+ * @param file file path (const char*)
+ */
+void Mav::beolvas(const char* test) {
+  // Inicalizálás
+  std::ifstream file(test);
+  Vonat v;
+  Seged seged;
+
+  // Kiürítem a vonatok kollekciót, hogy ne legyen ráolvasás
+  delete[] vonatok;
+  vonatok = nullptr;
+  si = 0;
+
+  while (file >> seged.szam >> seged.indulo >> seged.veg >> seged.kocsidb >> seged.indulas >> seged.erkezes) {
+    v.setSzam(std::atoi(seged.szam));
+    v.setIndulo(seged.indulo);
+    v.setVeg(seged.veg);
+    v.setKocsidb(std::atoi(seged.kocsidb));
+    v.setIndulas(seged.indulas);
+    v.setErkezes(seged.erkezes);
+    
+    // feltöltöm a MAV "mgmt" class Vonat* tömbjét 
+    this->add(v); 
+  }
+  file.close();
+} // END OF BEOLVAS
+
+
 /*
  * Vonatok hozzáadása
  * @param currPos a streamben elfoglalt helyem
@@ -55,6 +87,27 @@ void Mav::addTrain(std::streampos& currPos, int szam, Allomas indulo,
   }
   // end of HIBAKEZELÉS
 
+  if(file.is_open()){
+    file.seekp(currPos); // Megfelelő helyre ugrok
+    
+    file << szam << " " << indulo << " " << veg << " " << kocsidb << " "
+         << indulas << " " << erkezes << std::endl;
+  }
+
+  file.close();
+} // END OF addTrain
+
+/**
+* addTrain() teszt miatti overwriteja
+* Csak abban különbözik, hogy a fájl amit megnyit nem a hard coded
+* hanem a test file
+  */
+void Mav::addTrain(std::streampos& currPos, const char* test, int szam, Allomas indulo,
+            Allomas veg, int kocsidb, Ido indulas, Ido erkezes){
+  // Inicalizálás
+  const char* vonatok = test;    
+  std::ofstream file (vonatok, std::ios::app); // Hozzáfűzésesen nyitom meg. 
+ 
   if(file.is_open()){
     file.seekp(currPos); // Megfelelő helyre ugrok
     

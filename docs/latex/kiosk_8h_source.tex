@@ -25,27 +25,29 @@
 \DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00022}00022\ }
 \DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00023}\mbox{\hyperlink{classKiosk}{00023}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classKiosk}{Kiosk}}\ \{}
 \DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00024}00024\ \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00025}00025\ \textcolor{comment}{}}
-\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00026}00026\ \textcolor{comment}{\ \ ///\ Inicializálja\ a\ menüt,\ ergo\ kiírja\ a\ lehetőségeket}}
-\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00027}00027\ \textcolor{comment}{}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKiosk_a0720b9a024917b95f7ca167bdf19527d}{init}}();\textcolor{comment}{}}
-\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00028}00028\ \textcolor{comment}{\ \ ///\ Felhasználótól\ bemenetet\ kér.\ }}
-\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00029}00029\ \textcolor{comment}{\ \ ///\ @return\ menuItem\ fent\ említett\ enum\ class\ elemt\ ad\ vissza}}
-\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00030}00030\ \textcolor{comment}{}\ \ \mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867af}{menuItem}}\ \mbox{\hyperlink{classKiosk_a9aa9dc56bb99ac2079705525e26813bc}{userInput}}();}
-\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00031}00031\ \textcolor{comment}{}}
-\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00032}00032\ \textcolor{comment}{\ \ ///\ Liszázza\ a\ vonatokat\ amiket\ beolvasott\ a\ fájlból}}
-\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00033}00033\ \textcolor{comment}{}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKiosk_a196ec12845a5f5384f9145a3fbe086d1}{listaz}}(\mbox{\hyperlink{classMav}{Mav}}\&\ mav);\textcolor{comment}{}}
-\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00034}00034\ \textcolor{comment}{\ \ ///\ Hozzá\ ad\ a\ user\ vonatokat\ a\ fájlhoz}}
-\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00035}00035\ \textcolor{comment}{}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKiosk_a86af671752c83d3624ab7aeb3652f290}{vonatHozza}}(\mbox{\hyperlink{classMav}{Mav}}\&\ mav,\ std::streampos\ currPos);\textcolor{comment}{}}
-\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00036}00036\ \textcolor{comment}{\ \ ///\ jegyet\ vált\ a\ kiválasztott\ vonatra}}
-\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00037}00037\ \textcolor{comment}{}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKiosk_af4fe3883e13b6e3658ac7b1001532fb4}{jegyValt}}(\mbox{\hyperlink{classMav}{Mav}}\&\ mav);}
-\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00038}00038\ }
-\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00039}00039\ \};\ \textcolor{comment}{//\ end\ of\ Kiosk}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00025}00025\ \ \ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00026}00026\ \textcolor{comment}{\ \ ///\ Hibakezelés.\ Érvényes\ input\ esetén\ @return\ true,\ különben\ @return\ false}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00027}00027\ \textcolor{comment}{}\ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classKiosk_a618eeae0bf7647b223caef1e48e9b0eb}{inputCheck}}();\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00028}00028\ \textcolor{comment}{\ \ ///\ Inicializálja\ a\ menüt,\ ergo\ kiírja\ a\ lehetőségeket}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00029}00029\ \textcolor{comment}{}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKiosk_a0720b9a024917b95f7ca167bdf19527d}{init}}();\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00030}00030\ \textcolor{comment}{\ \ ///\ Felhasználótól\ bemenetet\ kér.\ }}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00031}00031\ \textcolor{comment}{\ \ ///\ @return\ menuItem\ fent\ említett\ enum\ class\ elemt\ ad\ vissza}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00032}00032\ \textcolor{comment}{}\ \ \mbox{\hyperlink{kiosk_8h_aabc3f2cf12fb29423df578e334e867af}{menuItem}}\ \mbox{\hyperlink{classKiosk_a9aa9dc56bb99ac2079705525e26813bc}{userInput}}();}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00033}00033\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00034}00034\ \textcolor{comment}{\ \ ///\ Liszázza\ a\ vonatokat\ amiket\ beolvasott\ a\ fájlból}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00035}00035\ \textcolor{comment}{}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKiosk_a196ec12845a5f5384f9145a3fbe086d1}{listaz}}(\mbox{\hyperlink{classMav}{Mav}}\&\ mav);\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00036}00036\ \textcolor{comment}{\ \ ///\ Hozzá\ ad\ a\ user\ vonatokat\ a\ fájlhoz}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00037}00037\ \textcolor{comment}{}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKiosk_a86af671752c83d3624ab7aeb3652f290}{vonatHozza}}(\mbox{\hyperlink{classMav}{Mav}}\&\ mav,\ std::streampos\ currPos);\textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00038}00038\ \textcolor{comment}{\ \ ///\ jegyet\ vált\ a\ kiválasztott\ vonatra}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00039}00039\ \textcolor{comment}{}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classKiosk_af4fe3883e13b6e3658ac7b1001532fb4}{jegyValt}}(\mbox{\hyperlink{classMav}{Mav}}\&\ mav);}
 \DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00040}00040\ }
-\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00041}00041\ \};\ \textcolor{comment}{//\ end\ of\ Kiosk}}
 \DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00042}00042\ }
 \DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00043}00043\ }
 \DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00044}00044\ }
 \DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00045}00045\ }
-\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00046}00046\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !KIOSK\_H}}
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{kiosk_8h_source_l00048}00048\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ !KIOSK\_H}}
 
 \end{DoxyCode}

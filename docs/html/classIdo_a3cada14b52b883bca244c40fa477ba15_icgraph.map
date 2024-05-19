@@ -1,29 +1,36 @@
 <map id="Ido::getPerc" name="Ido::getPerc">
-<area shape="rect" id="Node000001" title=" " alt="" coords="749,84,847,112"/>
-<area shape="rect" id="Node000002" href="$classVonat.html#accf19f7143540d637a8b2234a47efee6" title=" " alt="" coords="608,57,696,85"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="733,89,695,82,696,76,734,84"/>
-<area shape="rect" id="Node000012" href="$ido_8cpp.html#ac433647af32d9e7ec41d73faa9b12477" title="Ido class op&lt;&lt;() overwrireja, a fájlba beíráskor hívódik meg. (addTrain)" alt="" coords="603,109,701,137"/>
-<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="734,112,702,117,701,112,733,106"/>
-<area shape="rect" id="Node000003" href="$classMav.html#aa9729202f8dac420111d5266bfa6c9e8" title=" " alt="" coords="460,5,538,33"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="594,54,537,35,539,30,595,49"/>
-<area shape="rect" id="Node000007" href="$classMav.html#a77998398e7e7a0deedb86879012b098a" title=" " alt="" coords="453,57,545,85"/>
-<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="593,74,545,74,545,69,593,69"/>
-<area shape="rect" id="Node000008" href="$classJegy.html#aa9e954a340eff827792a81cdccdb7426" title=" " alt="" coords="443,109,555,137"/>
-<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="595,93,543,111,541,106,594,88"/>
-<area shape="rect" id="Node000004" href="$classKiosk.html#a196ec12845a5f5384f9145a3fbe086d1" title="Liszázza a vonatokat amiket beolvasott a fájlból." alt="" coords="285,5,385,33"/>
-<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="444,22,385,22,385,17,444,17"/>
-<area shape="rect" id="Node000005" href="$classKiosk.html#af4fe3883e13b6e3658ac7b1001532fb4" title="jegyet vált a kiválasztott vonatra" alt="" coords="108,57,226,85"/>
-<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="274,41,215,59,213,54,272,36"/>
-<area shape="rect" id="Node000006" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,32,60,60"/>
-<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="269,28,60,46,60,41,269,22"/>
-<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="92,60,60,53,61,48,93,55"/>
-<area shape="rect" id="Node000009" href="$classDiak.html#a7121a13da47dce7a773809a385aefa27" title=" " alt="" coords="278,57,392,85"/>
-<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="438,107,380,88,382,83,439,102"/>
-<area shape="rect" id="Node000010" href="$classTeljes.html#a6f147b902c77f74ba1542b4978ed99a4" title=" " alt="" coords="274,109,395,137"/>
-<area shape="poly" id="edge11_Node000008_Node000010" title=" " alt="" coords="428,126,396,126,396,121,428,121"/>
-<area shape="rect" id="Node000011" href="$classKutya.html#a0bed6bf95538dcad16d1c8dfd53bb65d" title=" " alt="" coords="274,161,395,189"/>
-<area shape="poly" id="edge13_Node000008_Node000011" title=" " alt="" coords="439,145,382,163,380,158,438,140"/>
-<area shape="poly" id="edge10_Node000009_Node000005" title=" " alt="" coords="262,74,227,74,227,69,262,69"/>
-<area shape="poly" id="edge12_Node000010_Node000005" title=" " alt="" coords="272,107,213,88,215,83,274,102"/>
-<area shape="poly" id="edge14_Node000011_Node000005" title=" " alt="" coords="283,157,273,151,223,118,184,88,187,83,226,114,275,146,286,152"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="749,215,847,242"/>
+<area shape="rect" id="Node000002" href="$classVonat.html#accf19f7143540d637a8b2234a47efee6" title=" " alt="" coords="608,188,696,216"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="733,219,695,212,696,207,734,214"/>
+<area shape="rect" id="Node000015" href="$ido_8cpp.html#ac433647af32d9e7ec41d73faa9b12477" title="Ido class op&lt;&lt;() overwrireja, a fájlba beíráskor hívódik meg. (addTrain)" alt="" coords="603,240,701,268"/>
+<area shape="poly" id="edge19_Node000001_Node000015" title=" " alt="" coords="734,242,702,248,701,243,733,237"/>
+<area shape="rect" id="Node000003" href="$classMav.html#aa9729202f8dac420111d5266bfa6c9e8" title=" " alt="" coords="460,188,538,216"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="593,205,538,205,538,199,593,199"/>
+<area shape="rect" id="Node000009" href="$classMav.html#a77998398e7e7a0deedb86879012b098a" title=" " alt="" coords="453,240,545,268"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="595,224,543,242,541,237,594,219"/>
+<area shape="rect" id="Node000011" href="$classJegy.html#aa9e954a340eff827792a81cdccdb7426" title=" " alt="" coords="443,84,555,112"/>
+<area shape="poly" id="edge12_Node000002_Node000011" title=" " alt="" coords="616,181,520,114,523,110,619,177"/>
+<area shape="rect" id="Node000004" href="$classKiosk.html#a196ec12845a5f5384f9145a3fbe086d1" title="Liszázza a vonatokat amiket beolvasott a fájlból." alt="" coords="285,161,385,189"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="445,196,385,186,386,181,445,191"/>
+<area shape="rect" id="Node000007" href="$mav__test_8cpp.html#a3b25d4b163cc565ff4d2b4d0ae7db2d4" title=" " alt="" coords="287,213,383,241"/>
+<area shape="poly" id="edge7_Node000003_Node000007" title=" " alt="" coords="445,213,383,222,383,217,445,207"/>
+<area shape="rect" id="Node000005" href="$classKiosk.html#af4fe3883e13b6e3658ac7b1001532fb4" title="jegyet vált a kiválasztott vonatra" alt="" coords="108,109,226,137"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="272,159,213,140,215,135,274,154"/>
+<area shape="rect" id="Node000006" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,136,60,164"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="269,172,60,155,60,149,269,167"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="93,141,61,147,60,142,92,135"/>
+<area shape="rect" id="Node000008" href="$mav__test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="140,239,194,266"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="271,239,195,251,194,246,270,234"/>
+<area shape="rect" id="Node000010" href="$mav__test_8cpp.html#a488bf57abf2a8719e20d8180c1f70889" title=" " alt="" coords="280,265,390,293"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="438,266,391,273,390,268,438,261"/>
+<area shape="poly" id="edge11_Node000010_Node000008" title=" " alt="" coords="264,271,194,259,195,254,265,265"/>
+<area shape="rect" id="Node000012" href="$classDiak.html#a7121a13da47dce7a773809a385aefa27" title=" " alt="" coords="278,5,392,33"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="455,79,394,48,368,36,370,31,396,43,458,74"/>
+<area shape="rect" id="Node000013" href="$classTeljes.html#a6f147b902c77f74ba1542b4978ed99a4" title=" " alt="" coords="274,57,395,85"/>
+<area shape="poly" id="edge15_Node000011_Node000013" title=" " alt="" coords="428,89,395,84,396,78,428,84"/>
+<area shape="rect" id="Node000014" href="$classKutya.html#a0bed6bf95538dcad16d1c8dfd53bb65d" title=" " alt="" coords="274,109,395,137"/>
+<area shape="poly" id="edge17_Node000011_Node000014" title=" " alt="" coords="428,111,396,116,395,111,428,106"/>
+<area shape="poly" id="edge14_Node000012_Node000005" title=" " alt="" coords="286,42,275,48,226,81,187,111,184,107,223,76,273,44,283,38"/>
+<area shape="poly" id="edge16_Node000013_Node000005" title=" " alt="" coords="274,93,215,111,213,106,272,88"/>
+<area shape="poly" id="edge18_Node000014_Node000005" title=" " alt="" coords="259,126,227,126,227,121,259,121"/>
 </map>

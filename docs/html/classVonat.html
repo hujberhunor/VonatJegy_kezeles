@@ -385,7 +385,22 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="vonat_8h_source.html#l00041">41</a> of file <a class="el" href="vonat_8h_source.html">vonat.h</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   41</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="#a3fb587e1a16c69cd90fb83cc694ba2f3">szam</a>; }</div>
-</div><!-- fragment -->
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classVonat_a18efd274d4ea6de105fa7761e8511799_icgraph.png" border="0" usemap="#aclassVonat_a18efd274d4ea6de105fa7761e8511799_icgraph" alt=""/></div>
+<map name="aclassVonat_a18efd274d4ea6de105fa7761e8511799_icgraph" id="aclassVonat_a18efd274d4ea6de105fa7761e8511799_icgraph">
+<area shape="rect" title="Getterek." alt="" coords="282,32,405,60"/>
+<area shape="rect" href="mav__test_8cpp.html#af0d5cf4d7fcc1fc8dc662c54ff728971" title=" " alt="" coords="121,5,221,33"/>
+<area shape="poly" title=" " alt="" coords="266,37,221,29,221,24,267,31"/>
+<area shape="rect" href="mav__test_8cpp.html#a036733b2ee6dfd299e68a0d0a7655838" title=" " alt="" coords="108,57,234,85"/>
+<area shape="poly" title=" " alt="" coords="267,60,235,65,234,59,266,54"/>
+<area shape="rect" href="mav__test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,32,60,60"/>
+<area shape="poly" title=" " alt="" coords="106,34,61,43,60,38,105,29"/>
+<area shape="poly" title=" " alt="" coords="92,59,60,53,61,48,93,54"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a02fb91a76526a9d1e4853665579a964c" name="a02fb91a76526a9d1e4853665579a964c"></a>
@@ -446,11 +461,18 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   54</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Indulasi allomas: &quot;</span> &lt;&lt; <a class="code hl_variable" href="#a0f3ee29b8d9d12c9a0e052e446d2f26b">indulo</a> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   55</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Erkezesi allomas: &quot;</span> &lt;&lt; <a class="code hl_variable" href="#af55eb2228ab54ee2f11fc19311ad979c">veg</a> &lt;&lt; std::endl;</div>
 <div class="line"><span class="lineno">   56</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Kocsi darabszam: &quot;</span> &lt;&lt; <a class="code hl_variable" href="#ad82574a0e9547609da02188dea14acb4">kocsidb</a> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   57</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Indulas idopontja: &quot;</span> &lt;&lt; std::setw(2) &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) </div>
-<div class="line"><span class="lineno">   58</span>              &lt;&lt;<a class="code hl_variable" href="#afd496a684266b6f9a48c610bdb4ade81">indulas</a>.<a class="code hl_function" href="classIdo.html#af8343a13fda687245c926f1843a316d0">getOra</a>() &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; <a class="code hl_variable" href="#afd496a684266b6f9a48c610bdb4ade81">indulas</a>.<a class="code hl_function" href="classIdo.html#a3cada14b52b883bca244c40fa477ba15">getPerc</a>() &lt;&lt; std::endl; <span class="comment">// Nagyon ronda, tudom...</span></div>
-<div class="line"><span class="lineno">   59</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Erkezes idopontja: &quot;</span> &lt;&lt; std::setw(2) &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) </div>
-<div class="line"><span class="lineno">   60</span>              &lt;&lt;<a class="code hl_variable" href="#ae25129bce29f369c949e5fae4f614a29">erkezes</a>.<a class="code hl_function" href="classIdo.html#af8343a13fda687245c926f1843a316d0">getOra</a>() &lt;&lt; <span class="stringliteral">&quot;:&quot;</span> &lt;&lt; <a class="code hl_variable" href="#ae25129bce29f369c949e5fae4f614a29">erkezes</a>.<a class="code hl_function" href="classIdo.html#a3cada14b52b883bca244c40fa477ba15">getPerc</a>() &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   61</span>  }</div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Indulas idopontja: &quot;</span>;</div>
+<div class="line"><span class="lineno">   59</span>    std::cout &lt;&lt; std::setw(2) &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt;<a class="code hl_variable" href="#afd496a684266b6f9a48c610bdb4ade81">indulas</a>.<a class="code hl_function" href="classIdo.html#af8343a13fda687245c926f1843a316d0">getOra</a>();</div>
+<div class="line"><span class="lineno">   60</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;:&quot;</span>;</div>
+<div class="line"><span class="lineno">   61</span>    std::cout &lt;&lt; std::setw(2) &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; <a class="code hl_variable" href="#afd496a684266b6f9a48c610bdb4ade81">indulas</a>.<a class="code hl_function" href="classIdo.html#a3cada14b52b883bca244c40fa477ba15">getPerc</a>() &lt;&lt; std::endl; <span class="comment">// Nagyon ronda, tudom...</span></div>
+<div class="line"><span class="lineno">   62</span>    </div>
+<div class="line"><span class="lineno">   63</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Érkezés idopontja: &quot;</span>;</div>
+<div class="line"><span class="lineno">   64</span>    std::cout &lt;&lt; std::setw(2) &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; <a class="code hl_variable" href="#ae25129bce29f369c949e5fae4f614a29">erkezes</a>.<a class="code hl_function" href="classIdo.html#af8343a13fda687245c926f1843a316d0">getOra</a>(); </div>
+<div class="line"><span class="lineno">   65</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;:&quot;</span>;</div>
+<div class="line"><span class="lineno">   66</span>    std::cout &lt;&lt; std::setw(2) &lt;&lt; std::setfill(<span class="charliteral">&#39;0&#39;</span>) &lt;&lt; <a class="code hl_variable" href="#ae25129bce29f369c949e5fae4f614a29">erkezes</a>.<a class="code hl_function" href="classIdo.html#a3cada14b52b883bca244c40fa477ba15">getPerc</a>() &lt;&lt; std::endl; <span class="comment">// Nagyon ronda, tudom...</span></div>
+<div class="line"><span class="lineno">   67</span> </div>
+<div class="line"><span class="lineno">   68</span>  }</div>
 <div class="ttc" id="aclassIdo_html_a3cada14b52b883bca244c40fa477ba15"><div class="ttname"><a href="classIdo.html#a3cada14b52b883bca244c40fa477ba15">Ido::getPerc</a></div><div class="ttdeci">int getPerc() const</div><div class="ttdef"><b>Definition</b> <a href="ido_8h_source.html#l00037">ido.h:37</a></div></div>
 <div class="ttc" id="aclassIdo_html_af8343a13fda687245c926f1843a316d0"><div class="ttname"><a href="classIdo.html#af8343a13fda687245c926f1843a316d0">Ido::getOra</a></div><div class="ttdeci">int getOra() const</div><div class="ttdef"><b>Definition</b> <a href="ido_8h_source.html#l00036">ido.h:36</a></div></div>
 </div><!-- fragment --><div class="dynheader">
@@ -470,29 +492,36 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classVonat_accf19f7143540d637a8b2234a47efee6_icgraph.png" border="0" usemap="#aclassVonat_accf19f7143540d637a8b2234a47efee6_icgraph" alt=""/></div>
 <map name="aclassVonat_accf19f7143540d637a8b2234a47efee6_icgraph" id="aclassVonat_accf19f7143540d637a8b2234a47efee6_icgraph">
-<area shape="rect" title=" " alt="" coords="603,57,690,85"/>
-<area shape="rect" href="classMav.html#aa9729202f8dac420111d5266bfa6c9e8" title=" " alt="" coords="460,5,538,33"/>
-<area shape="poly" title=" " alt="" coords="590,54,537,35,539,30,591,49"/>
-<area shape="rect" href="classMav.html#a77998398e7e7a0deedb86879012b098a" title=" " alt="" coords="453,57,545,85"/>
-<area shape="poly" title=" " alt="" coords="587,74,545,74,545,69,587,69"/>
-<area shape="rect" href="classJegy.html#aa9e954a340eff827792a81cdccdb7426" title=" " alt="" coords="443,109,555,137"/>
-<area shape="poly" title=" " alt="" coords="591,93,541,111,540,106,590,88"/>
-<area shape="rect" href="classKiosk.html#a196ec12845a5f5384f9145a3fbe086d1" title="Liszázza a vonatokat amiket beolvasott a fájlból." alt="" coords="285,5,385,33"/>
-<area shape="poly" title=" " alt="" coords="444,22,385,22,385,17,444,17"/>
-<area shape="rect" href="classKiosk.html#af4fe3883e13b6e3658ac7b1001532fb4" title="jegyet vált a kiválasztott vonatra" alt="" coords="108,57,226,85"/>
-<area shape="poly" title=" " alt="" coords="274,41,215,59,213,54,272,36"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,32,60,60"/>
-<area shape="poly" title=" " alt="" coords="269,28,60,46,60,41,269,22"/>
-<area shape="poly" title=" " alt="" coords="92,60,60,53,61,48,93,55"/>
-<area shape="rect" href="classDiak.html#a7121a13da47dce7a773809a385aefa27" title=" " alt="" coords="278,57,392,85"/>
-<area shape="poly" title=" " alt="" coords="438,107,380,88,382,83,439,102"/>
-<area shape="rect" href="classTeljes.html#a6f147b902c77f74ba1542b4978ed99a4" title=" " alt="" coords="274,109,395,137"/>
-<area shape="poly" title=" " alt="" coords="428,126,396,126,396,121,428,121"/>
-<area shape="rect" href="classKutya.html#a0bed6bf95538dcad16d1c8dfd53bb65d" title=" " alt="" coords="274,161,395,189"/>
-<area shape="poly" title=" " alt="" coords="439,145,382,163,380,158,438,140"/>
-<area shape="poly" title=" " alt="" coords="262,74,227,74,227,69,262,69"/>
-<area shape="poly" title=" " alt="" coords="272,107,213,88,215,83,274,102"/>
-<area shape="poly" title=" " alt="" coords="283,157,273,151,223,118,184,88,187,83,226,114,275,146,286,152"/>
+<area shape="rect" title=" " alt="" coords="603,188,690,216"/>
+<area shape="rect" href="classMav.html#aa9729202f8dac420111d5266bfa6c9e8" title=" " alt="" coords="460,188,538,216"/>
+<area shape="poly" title=" " alt="" coords="587,205,538,205,538,199,587,199"/>
+<area shape="rect" href="classMav.html#a77998398e7e7a0deedb86879012b098a" title=" " alt="" coords="453,240,545,268"/>
+<area shape="poly" title=" " alt="" coords="591,224,541,242,540,237,590,219"/>
+<area shape="rect" href="classJegy.html#aa9e954a340eff827792a81cdccdb7426" title=" " alt="" coords="443,84,555,112"/>
+<area shape="poly" title=" " alt="" coords="611,181,519,114,522,110,614,176"/>
+<area shape="rect" href="classKiosk.html#a196ec12845a5f5384f9145a3fbe086d1" title="Liszázza a vonatokat amiket beolvasott a fájlból." alt="" coords="285,161,385,189"/>
+<area shape="poly" title=" " alt="" coords="445,196,385,186,386,181,445,191"/>
+<area shape="rect" href="mav__test_8cpp.html#a3b25d4b163cc565ff4d2b4d0ae7db2d4" title=" " alt="" coords="287,213,383,241"/>
+<area shape="poly" title=" " alt="" coords="445,213,383,222,383,217,445,207"/>
+<area shape="rect" href="classKiosk.html#af4fe3883e13b6e3658ac7b1001532fb4" title="jegyet vált a kiválasztott vonatra" alt="" coords="108,109,226,137"/>
+<area shape="poly" title=" " alt="" coords="272,159,213,140,215,135,274,154"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,136,60,164"/>
+<area shape="poly" title=" " alt="" coords="269,172,60,155,60,149,269,167"/>
+<area shape="poly" title=" " alt="" coords="93,141,61,147,60,142,92,135"/>
+<area shape="rect" href="mav__test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="140,239,194,266"/>
+<area shape="poly" title=" " alt="" coords="271,239,195,251,194,246,270,234"/>
+<area shape="rect" href="mav__test_8cpp.html#a488bf57abf2a8719e20d8180c1f70889" title=" " alt="" coords="280,265,390,293"/>
+<area shape="poly" title=" " alt="" coords="438,266,391,273,390,268,438,261"/>
+<area shape="poly" title=" " alt="" coords="264,271,194,259,195,254,265,265"/>
+<area shape="rect" href="classDiak.html#a7121a13da47dce7a773809a385aefa27" title=" " alt="" coords="278,5,392,33"/>
+<area shape="poly" title=" " alt="" coords="455,79,394,48,368,36,370,31,396,43,458,74"/>
+<area shape="rect" href="classTeljes.html#a6f147b902c77f74ba1542b4978ed99a4" title=" " alt="" coords="274,57,395,85"/>
+<area shape="poly" title=" " alt="" coords="428,89,395,84,396,78,428,84"/>
+<area shape="rect" href="classKutya.html#a0bed6bf95538dcad16d1c8dfd53bb65d" title=" " alt="" coords="274,109,395,137"/>
+<area shape="poly" title=" " alt="" coords="428,111,396,116,395,111,428,106"/>
+<area shape="poly" title=" " alt="" coords="286,42,275,48,226,81,187,111,184,107,223,76,273,44,283,38"/>
+<area shape="poly" title=" " alt="" coords="274,93,215,111,213,106,272,88"/>
+<area shape="poly" title=" " alt="" coords="259,126,227,126,227,121,259,121"/>
 </map>
 </div>
 
@@ -529,11 +558,15 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classVonat_a53b9de572bc678ec86a8916473067375_icgraph.png" border="0" usemap="#aclassVonat_a53b9de572bc678ec86a8916473067375_icgraph" alt=""/></div>
 <map name="aclassVonat_a53b9de572bc678ec86a8916473067375_icgraph" id="aclassVonat_a53b9de572bc678ec86a8916473067375_icgraph">
-<area shape="rect" title=" " alt="" coords="263,5,399,33"/>
-<area shape="rect" href="classMav.html#a15899cdec1c1fe36a8460d956dad3104" title=" " alt="" coords="108,5,215,33"/>
-<area shape="poly" title=" " alt="" coords="248,22,215,22,215,17,248,17"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,33"/>
-<area shape="poly" title=" " alt="" coords="92,22,60,22,60,17,92,17"/>
+<area shape="rect" title=" " alt="" coords="437,32,574,60"/>
+<area shape="rect" href="classMav.html#a15899cdec1c1fe36a8460d956dad3104" title=" " alt="" coords="282,32,389,60"/>
+<area shape="poly" title=" " alt="" coords="422,49,390,49,390,43,422,43"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="144,5,198,33"/>
+<area shape="poly" title=" " alt="" coords="266,37,198,26,199,21,267,32"/>
+<area shape="rect" href="mav__test_8cpp.html#a036733b2ee6dfd299e68a0d0a7655838" title=" " alt="" coords="108,57,234,85"/>
+<area shape="poly" title=" " alt="" coords="267,59,235,64,234,59,266,54"/>
+<area shape="rect" href="mav__test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,57,60,85"/>
+<area shape="poly" title=" " alt="" coords="92,74,60,74,60,69,92,69"/>
 </map>
 </div>
 
@@ -569,11 +602,15 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classVonat_a6b31c3d13fe2bf39f70f4dac557d4b76_icgraph.png" border="0" usemap="#aclassVonat_a6b31c3d13fe2bf39f70f4dac557d4b76_icgraph" alt=""/></div>
 <map name="aclassVonat_a6b31c3d13fe2bf39f70f4dac557d4b76_icgraph" id="aclassVonat_a6b31c3d13fe2bf39f70f4dac557d4b76_icgraph">
-<area shape="rect" title=" " alt="" coords="263,5,396,33"/>
-<area shape="rect" href="classMav.html#a15899cdec1c1fe36a8460d956dad3104" title=" " alt="" coords="108,5,215,33"/>
-<area shape="poly" title=" " alt="" coords="247,22,216,22,216,17,247,17"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,33"/>
-<area shape="poly" title=" " alt="" coords="92,22,60,22,60,17,92,17"/>
+<area shape="rect" title=" " alt="" coords="437,32,571,60"/>
+<area shape="rect" href="classMav.html#a15899cdec1c1fe36a8460d956dad3104" title=" " alt="" coords="282,32,389,60"/>
+<area shape="poly" title=" " alt="" coords="422,49,390,49,390,43,422,43"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="144,5,198,33"/>
+<area shape="poly" title=" " alt="" coords="266,37,198,26,199,21,267,32"/>
+<area shape="rect" href="mav__test_8cpp.html#a036733b2ee6dfd299e68a0d0a7655838" title=" " alt="" coords="108,57,234,85"/>
+<area shape="poly" title=" " alt="" coords="267,59,235,64,234,59,266,54"/>
+<area shape="rect" href="mav__test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,57,60,85"/>
+<area shape="poly" title=" " alt="" coords="92,74,60,74,60,69,92,69"/>
 </map>
 </div>
 
@@ -610,11 +647,15 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classVonat_a27a2c9da752ab6cee10e8386c89e60a3_icgraph.png" border="0" usemap="#aclassVonat_a27a2c9da752ab6cee10e8386c89e60a3_icgraph" alt=""/></div>
 <map name="aclassVonat_a27a2c9da752ab6cee10e8386c89e60a3_icgraph" id="aclassVonat_a27a2c9da752ab6cee10e8386c89e60a3_icgraph">
-<area shape="rect" title=" " alt="" coords="263,5,389,33"/>
-<area shape="rect" href="classMav.html#a15899cdec1c1fe36a8460d956dad3104" title=" " alt="" coords="108,5,215,33"/>
-<area shape="poly" title=" " alt="" coords="247,22,215,22,215,17,247,17"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,33"/>
-<area shape="poly" title=" " alt="" coords="92,22,60,22,60,17,92,17"/>
+<area shape="rect" title=" " alt="" coords="437,32,564,60"/>
+<area shape="rect" href="classMav.html#a15899cdec1c1fe36a8460d956dad3104" title=" " alt="" coords="282,32,389,60"/>
+<area shape="poly" title=" " alt="" coords="422,49,390,49,390,43,422,43"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="144,5,198,33"/>
+<area shape="poly" title=" " alt="" coords="266,37,198,26,199,21,267,32"/>
+<area shape="rect" href="mav__test_8cpp.html#a036733b2ee6dfd299e68a0d0a7655838" title=" " alt="" coords="108,57,234,85"/>
+<area shape="poly" title=" " alt="" coords="267,59,235,64,234,59,266,54"/>
+<area shape="rect" href="mav__test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,57,60,85"/>
+<area shape="poly" title=" " alt="" coords="92,74,60,74,60,69,92,69"/>
 </map>
 </div>
 
@@ -650,11 +691,15 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classVonat_a114542b472a68e864279f367f88dd95e_icgraph.png" border="0" usemap="#aclassVonat_a114542b472a68e864279f367f88dd95e_icgraph" alt=""/></div>
 <map name="aclassVonat_a114542b472a68e864279f367f88dd95e_icgraph" id="aclassVonat_a114542b472a68e864279f367f88dd95e_icgraph">
-<area shape="rect" title=" " alt="" coords="263,5,399,33"/>
-<area shape="rect" href="classMav.html#a15899cdec1c1fe36a8460d956dad3104" title=" " alt="" coords="108,5,215,33"/>
-<area shape="poly" title=" " alt="" coords="248,22,215,22,215,17,248,17"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,33"/>
-<area shape="poly" title=" " alt="" coords="92,22,60,22,60,17,92,17"/>
+<area shape="rect" title=" " alt="" coords="437,32,574,60"/>
+<area shape="rect" href="classMav.html#a15899cdec1c1fe36a8460d956dad3104" title=" " alt="" coords="282,32,389,60"/>
+<area shape="poly" title=" " alt="" coords="422,49,390,49,390,43,422,43"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="144,5,198,33"/>
+<area shape="poly" title=" " alt="" coords="266,37,198,26,199,21,267,32"/>
+<area shape="rect" href="mav__test_8cpp.html#a036733b2ee6dfd299e68a0d0a7655838" title=" " alt="" coords="108,57,234,85"/>
+<area shape="poly" title=" " alt="" coords="267,59,235,64,234,59,266,54"/>
+<area shape="rect" href="mav__test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,57,60,85"/>
+<area shape="poly" title=" " alt="" coords="92,74,60,74,60,69,92,69"/>
 </map>
 </div>
 
@@ -692,11 +737,15 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classVonat_a191874e48371b4f07b8703cfd0c85934_icgraph.png" border="0" usemap="#aclassVonat_a191874e48371b4f07b8703cfd0c85934_icgraph" alt=""/></div>
 <map name="aclassVonat_a191874e48371b4f07b8703cfd0c85934_icgraph" id="aclassVonat_a191874e48371b4f07b8703cfd0c85934_icgraph">
-<area shape="rect" title="Setterek." alt="" coords="263,5,385,33"/>
-<area shape="rect" href="classMav.html#a15899cdec1c1fe36a8460d956dad3104" title=" " alt="" coords="108,5,215,33"/>
-<area shape="poly" title=" " alt="" coords="247,22,215,22,215,17,247,17"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,33"/>
-<area shape="poly" title=" " alt="" coords="92,22,60,22,60,17,92,17"/>
+<area shape="rect" title="Setterek." alt="" coords="437,32,560,60"/>
+<area shape="rect" href="classMav.html#a15899cdec1c1fe36a8460d956dad3104" title=" " alt="" coords="282,32,389,60"/>
+<area shape="poly" title=" " alt="" coords="422,49,390,49,390,43,422,43"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="144,5,198,33"/>
+<area shape="poly" title=" " alt="" coords="266,37,198,26,199,21,267,32"/>
+<area shape="rect" href="mav__test_8cpp.html#a036733b2ee6dfd299e68a0d0a7655838" title=" " alt="" coords="108,57,234,85"/>
+<area shape="poly" title=" " alt="" coords="267,59,235,64,234,59,266,54"/>
+<area shape="rect" href="mav__test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,57,60,85"/>
+<area shape="poly" title=" " alt="" coords="92,74,60,74,60,69,92,69"/>
 </map>
 </div>
 
@@ -732,11 +781,15 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classVonat_acec88991afa8817d7bd6f58190693155_icgraph.png" border="0" usemap="#aclassVonat_acec88991afa8817d7bd6f58190693155_icgraph" alt=""/></div>
 <map name="aclassVonat_acec88991afa8817d7bd6f58190693155_icgraph" id="aclassVonat_acec88991afa8817d7bd6f58190693155_icgraph">
-<area shape="rect" title=" " alt="" coords="263,5,373,33"/>
-<area shape="rect" href="classMav.html#a15899cdec1c1fe36a8460d956dad3104" title=" " alt="" coords="108,5,215,33"/>
-<area shape="poly" title=" " alt="" coords="247,22,215,22,215,17,247,17"/>
-<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,60,33"/>
-<area shape="poly" title=" " alt="" coords="92,22,60,22,60,17,92,17"/>
+<area shape="rect" title=" " alt="" coords="437,32,548,60"/>
+<area shape="rect" href="classMav.html#a15899cdec1c1fe36a8460d956dad3104" title=" " alt="" coords="282,32,389,60"/>
+<area shape="poly" title=" " alt="" coords="421,49,390,49,390,43,421,43"/>
+<area shape="rect" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="144,5,198,33"/>
+<area shape="poly" title=" " alt="" coords="266,37,198,26,199,21,267,32"/>
+<area shape="rect" href="mav__test_8cpp.html#a036733b2ee6dfd299e68a0d0a7655838" title=" " alt="" coords="108,57,234,85"/>
+<area shape="poly" title=" " alt="" coords="267,59,235,64,234,59,266,54"/>
+<area shape="rect" href="mav__test_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,57,60,85"/>
+<area shape="poly" title=" " alt="" coords="92,74,60,74,60,69,92,69"/>
 </map>
 </div>
 
